@@ -1,0 +1,455 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Curriculum Plans</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("units8_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Kilbirnie School music planning &#8211; Level 4</h2>
+
+<p><b>Curriculum area:</b> The Arts<br>
+<b>Discipline:</b> Music<br>
+<b>Level:</b> 4<br>
+<b>Timeframe:</b> Six weeks<br>
+<b>Syndicate:</b> Senior</p>
+
+<p><b>Achievement objectives</b></p>
+
+<p><b>Practical Knowledge (PK)</b> 	Students will identify through focused listening, and experiment with, a range of patterns, effects, sound qualities, and structural devices.</p>
+
+<p><b>Developing Ideas (DI)</b>	Students will use musical elements, instruments, and technologies to improvise and compose simple musical pieces.</p>
+
+<p><b>Communicating and Interpreting (CI)</b>	Students will prepare, rehearse, present, and evaluate brief music performances.</p>
+
+<p><b>Understanding Contexts (UC)</b>	Students will identify and investigate characteristics of music associated with particular contexts, purposes, and styles and past and present contexts.	</p>
+
+<p><b>Learning outcomes</b></p>
+
+<p>Students will:
+<ul>
+<li>listen to and note musical conventions and structures used in composition, such as the blue note, scale and riffs, the patterning of birdsong portrayed by Van Eyke, creating the mood and accompaniment of a song;</li><br><br>
+<li>use these musical conventions and structures to create a composition;</li><br><br>
+<li>rework, perform, and record their own compositions, making musical decisions as a group, and adjusting the composition throughout the process;</li><br><br>
+<li>improvise and explore different musical patterns and sounds, as a group, to create a piece of music;</li><br><br>
+<li>use available technologies: record music on different tracks and adjust the sound, with the help of a professional.</li><br><br>
+</ul></p>
+
+<p><b>Skills and attitudes</b>
+<ul>
+<li>Cooperation &#8211; composing music as a group, so everyone is included and valued.</li><br><br>
+<li>Communication as a performance, using electronic media.</li><br><br>
+<li>Problem solving &#8211; extending ideas and communicating them effectively.</li></ul>
+
+<p><b>Learning activities</b></p>
+
+<p>Divide children into three groups. Withdraw each group for a session, each week.</p>
+
+
+
+<p>1.	<b>Igneous group &#8211; birdsong</b>
+<ul>
+<li>Listen to the tui sing outside, and to birdsongs on tape. Note how calls are comprised of a few notes.</li><br><br> 
+<li>Write a cuckoo's call on the board and play it.</li><br><br> 
+<li>Write up another birdsong, and have a student suggest how it could be played and why. Add to this call and have another student play it, explaining why they played it the way they did.</li><br><br>
+<li>Have pairs of students compose their own birdcall using up to four notes. Practise and notate it. Have the students call to each other.</li><br><br>
+<li>Play Van Eyke's <i>Nightingale</i> and discuss how the sound is more continuous and covers a wide range but still has some repetition. Number the bird calls then make up a sequence, for example, 1231413  2314  41321.</li><br><br>
+<li>Read Issa's <i>Nightingale</i> poem and discuss how to represent the rain.</li><br><br> 
+<li>Nightingales sing at night and the poem talks of the morning &#8211; perhaps the sun is rising. How can we show this? Put the piece together, rework and practise it.</li><br><br>
+</ul></p>
+
+<p>2.	<b>Sedimentary group &#8211; blues</b>
+<ul>
+<li>Listen to <i>Cut lunch blues</i> by Laughton Pattrick (in the <i>Our Music</i> songbook) and <i>Who's that nibbling?</i> on Helen Willberg's Sounds Forty. Discuss what makes them blues.</li><br><br>
+<li>Learn the chords 1, 1V, and V, on guitars, ukuleles, and marimba. Practise these in the blues sequence 1111, 1V1V 1 1, and V V1 V.</li><br><br>
+<li>Develop riffs on bars 3, 4, 7, 8, 11, and 12, using the blues scale G, Bb, C, Db, D, F, and G.</li><br><br>
+<li>From <i>Choose music</i> (p.101), read <i>Butterflies</i> by Patricia Grace. Discuss. Develop a blues song using the chord pattern, riffs, and improvisation. Rework and practise.</li><br><br></ul></p>
+
+<p>3.	<b>Metamorphic group &#8211; titiwae</b>
+<ul>
+<li>Remind students of Hirini Melbourne's song <i>Titiwae</i> in the <i>Our music</i> songbook, and sing it. Learn the song's accompaniment and practise the chords.</li><br><br>
+<li>Discuss how to create an impression of darkness. What sounds do we need &#8211; deep or high, slow or fast, long or short, overlapping, quiet or loud?</li><br><br> 
+<li>Find instruments to make shimmering sounds on piano with sustained pedal, pipes, cello, marimba.</li><br><br> 
+<li> Put the points of the glowworm's light against this, using one to eight patterning and glockenspiels. Add the accompaniment and the song. When recording, consider the effect of the cave on the sound &#8211; should it echo?</li><br><br></ul></p>
+
+<p><b>All groups</b>
+<ul>
+<li>Record compositions and adjust the recording, in discussion with the technician.</li><br><br>
+<li>Evaluate the group effort and contribution throughout.</li><br><br>
+<li>After each session, have students identify and record the process and evaluation in journals &#8211; what we did; my contribution; and, what we will work on next time.</li><br><br></ul></p>
+
+<p><b>Assessment</b>
+<ul>
+<li>Keeping journals throughout the process.</li><br><br>
+<li>Teacher observation and questioning.</li><br><br>
+<li>Self- and peer assessment of the finished compositions.</li><br><br>
+<li>Positive, critical feedback.</li><br><br></ul></p>
+
+<p><b>Cross-curriculum links</b>
+<ul>
+<li>Mathematics</li><br><br>
+<li>The Arts</li><br><br>
+<li>M&#257;ori</li><br><br></ul></p>
+
+<p><b>Essential skills</b><br><br>
+
+This unit has had wide-ranging benefits in essential skills, especially:
+
+<ul>
+<li>communication</li><br><br>
+<li>problem solving</li><br><br>
+<li>social/cooperative</li><br><br>
+<li>self-management</li><br><br>
+<li>physical</li><br><br></ul></p>
+
+<p><b>Unit evaluation</b></p>
+<table cellspacing="10">
+<tr><td>Unit duration</td><td>Excellent</td><td>Good</td><td>Fair</td></tr>
+<tr><td>Objectives met</td><td>Excellent</td><td>Good</td><td>Fair</td></tr>
+<tr><td>Student enjoyment</td><td>Excellent</td><td>Good</td><td>Fair</td></tr>
+<tr><td>Suitability of activities	</td><td>Excellent</td><td>Good</td><td>Fair</td></tr>
+<tr><td colspan="4">Other</td></tr>
+</table><br>
+
+
+<p><b>Self-evaluation</b></p>
+
+<p>Group ________________	Name ___________________</p>
+
+<p>Evaluate how you worked, using a number from 1 to 10, with 10 being the best.</p>
+
+<ul><li>How well did your group work together?</li>
+<li>How well did your group listen to one another?</li>
+<li>How well did you listen to others?</li></ul>
+
+<p>Write an answer to these questions</p>
+
+<ul><li>In what ways did you contribute to the group effort?</li>
+<li>What could you do to improve your contribution to the group?</li>
+<li>How have you improved your composition?</li></ul>
+
+<p><b>Resources</b>
+<ul>
+<li>Guitars, glockenspiels, marimbas, percussion instruments.</li><br><br>
+<li>Gibbs, Cathy (1993). <i>Choose music</i>. Masterton: Wairarapa Education Resource Centre. </li><br><br> 
+<li>Grace, Patricia (1987). <i>Electric city and other stories</i>. Penguin Books (NZ) Ltd.</li><br><br>  
+<li>Kerr, Elizabeth (1989). <i>Our music</i> (songbook). Wellington: School Publications Branch, Department of Education.</li><br><br>
+<li>Madin, John (marimba resources) <a href="http://www.marimbamusic.com.au/" target="_blank">http://www.marimbamusic.com.au</a></li><br><br>
+<li><i>Sound inventions</i> <a href="http://www.soundinventors.org.uk/" target="_blank">http://www.soundinventors.org.uk</a></li><br><br>
+<li>McNichol, Richard. (2000). <i>Music explorer for infants</i>. The London Symphony Orchestra Ltd.</li><br><br> 
+<li>Music Educators National Conference, 1806 Robert Fulton Drive, Reston, VA 20191.  ISBN: 0-9525347-5-4</li><br><br></ul></p>
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

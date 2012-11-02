@@ -1,0 +1,586 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Research | Assessment in the Visual Arts
+Carol Langton, 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-4.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-4.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "research;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("updates2_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="updates_e.html" class="nav-research">Research</a><br>
+<a href="readings_e.html" class="nav-research">Readings</a><br>
+<a href="curriculum_e.html" class="nav-research">Curriculum support material</a>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a>
+<br>
+<br>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#999999" class="h-research" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Research / Readings</td>
+</tr>
+</table>
+<h2 class="h2-research">Research</h2>
+<h2 class="h2-research">Assessment in the Visual Arts Carol Langton, 2001
+</h2>
+
+      <h4> An edited excerpt from a paper presented at the Learning Though The 
+        Arts Conference in Wellington, New Zealand on 10 July 2001. 
+      </h4>
+
+<p>
+	After discussing the issue of teacher judgement, it explores three types of assessment methods that generalist teachers use to promote identity and stimulate creativity in their visual arts programme. It points out barriers to implementing these methods and suggests ways around these barriers.
+</p>
+<p>
+	<b>Introduction</b>
+</p>
+<p>
+	"The arts develop the artistic and aesthetic dimensions of human experience. They contribute to our intellectual ability and to our social, cultural, and spiritual understanding. They are an essential element of daily living and lifelong learning" (Ministry of Education, 2000:9).
+</p>
+<p>
+	<blockquote>
+			"What is Art?" I ask the 7-year-old girl in front of me. "Art is a kind of creation," 	she muses. "It's like when people make it they just start to want to do it all the time, 	they just start to always enjoy it. They do portraits of their friends or pictures of the 	sky or .... a sun setting behind the hills and the ocean, really still and quiet."
+
+	</blockquote>
+</p>
+<p>
+	According to the background paper on <i>The Arts in the New Zealand Curriculum</i>, "Students conceptualise, problem-solve, define, refine and give form to ideas through the creative processes of art making" (Foley, Hong & Thwaites, 1998: 12). 
+</p>
+<p>
+	It is this desire to create and re-create our surroundings that lifts the human spirit to one that seeks to create change and dares to affect thought with symbols. Art is a celebration of difference. Being process orientated, art allows for flexibility, creativity, and divergence of thought. In arts education, students are encouraged to explore this flexibility and seek a variety of creative solutions to a single problem. During the nationwide implementation of The Arts in the <i>New Zealand Curriculum</i>, consultation has raised awareness of the complexity and uniqueness of this learning area.
+</p>
+<p>
+	It is in the area of art assessment where teachers are having the most difficulty preserving this uniqueness. Educational researchers Black and Wiliam (1998) warn that to maintain accountability, assessment has to take place within a learning context. This is common sense to most art educators and generalist teachers alike, yet Black and Wiliam also stress that teacher judgement and student self-assessment are both essential to programme validity. There is work to be done within New Zealand's art education community to establish a shared understanding of assessment literacy that includes the concepts of teacher judgement and student self-assessment. 
+</p>
+<p>
+	The competency-based achievement movement believes that assessment in art is fraught. They maintain there is an ambiguity about art that makes assessment subjective, especially where teacher judgement is concerned. Not wanting to see art assessment become reduced to measurable behavioural objectives that comply to a set of developmentally determined standards and levels, international art educator Elliot Eisner (1999) says bring this ambiguity into the equation, nurture it as an "expressive outcome".
+</p>
+<p>
+	He believes that professional development trainers have an obligation to build the practical and theoretical art knowledge of their teacher trainees to the point where they have the confidence to welcome ambiguity into their assessment criteria. Working with restricted hours and the requirements of administrative accountability, professional development trainers are finding this challenge difficult to meet.
+</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+<b>Background</b>
+</p>
+<p>
+	New Zealand research projects about primary level visual arts have been few and far between. In 1995 the <i>New Zealand Journal of Educational Studies</i> published a paper called "Teachers' judgements about the teaching of art in primary schools" by Barry and Townsend. 
+</p>
+<p>
+	The aim of this study was to obtain information on generalist teachers' attitudes towards teaching art in schools, towards teaching art in their own classroom, and teacher practices and attitudes towards the evaluation of student art work. The findings concluded that, "In New Zealand, Art appears to have a prominent and regular place in primary classrooms" (Barry & Townsend, 1995:54). 
+</p>
+<p>
+	Despite a few reservations voiced about the adequacy of teacher training in art and resources available for art development in schools, they reported that "Teachers are positive and enthusiastic in their teaching of art, especially those teachers with special responsibilities or qualifications in art" (Barry & Townsend, 1995:62). Teacher judgement as an issue became apparent within the next few sentences.
+</p>
+<p>
+	<blockquote>
+		However there are some anxieties associated with teaching art, particularly in regard to 	the evaluation of students' art work. In view of the claim (Brookhart, 1991) that 	ambivalence about evaluation practices undermines the validity of assessment, future 	research is needed to document how such anxieties affect the teaching process and 	learning outcomes (Barry & Thompson, 1995: 62). 
+	</blockquote>
+</p>
+<p>
+	The social and economic climate, combined with educational expenditure, requires teachers to be more accountable on all levels of performance. Research in the arts may contribute to better funding decisions for teacher development programmes and offer some insight into defining and refining teacher judgement, which according to Eisner (1998) is "the balance between the concrete experiences and qualitative relationship of educators, art and artists". 
+</p>
+<p>
+	Both the Education Review Office (ER0) Winter, 1999 report on student assessment and the National Education Monitoring Project (NEMP) 2000 report on assessment in the visual arts, have identified a need for further research in arts assessment. Flockton, one of the creators of NEMP, says that "The Arts is a curriculum domain with critical dimensions of learning for life. Little has been available by way of assessment development to guide and inform or develop valid assessment tasks" (Education Review Office, 1999: 33). New Zealand is in a unique position to be pro-active in recognising and developing dynamic strategies in arts assessment.
+</p>
+<p>
+	In response to this call for further research, and with a commitment to the inclusion of expressive outcomes such as the acceptance of ambiguity and multiple resolutions in the visual arts, my MEd thesis paper is called "Observing creative problem solving in primary level visual art: A gateway to better assessment identification". Due for submission in early 2002, it assumes that until we identify what strategies primary level students use to creatively problem solve in the visual arts, we cannot devise effective assessment to meet their needs and the needs and requirements of their teachers. 
+</p>
+<p>
+	The Arts in the New Zealand Curriculum states that, "Effective assessment promotes students' learning, raises standards and reduces disparity of achievement. Classroom practice and school-wide arts programmes should use assessment for these purposes rather than as a means of comparing or ranking students' achievements" (Ministry of Education, 2000: 91).
+</p>
+<p>
+	The challenge as I see it, is to distinguish the characteristics of "effective assessment" that will recognise the student's own unique way of creative problem solving and knowledge about art, along with their ability to embrace the ambiguous nature of creativity, and relate these to the educational requirements that promote a high standard of achievement.
+</p>
+<p>
+	<b>Assessment models that are inclusive and manageable </b>
+</p>
+<p>
+	In my search for valid and manageable assessment models that include the concepts of ambiguity and teacher judgement, I have seen three methods that teachers are using to develop effective art assessment. By acknowledging student self-assessment as vital to programme validity, they promote a mutual recognition of the individuality and arts abilities of their students.
+</p>
+<p>
+	<ul type="disc">
+		<li>
+			Teacher/student conferencing and informal exchanges.<br>
+			<br>
+		<li>
+			Student self-evaluation using work portfolios.<br>
+			<br>
+		<li>
+			Still image and video recording used for assessment purposes.
+
+	</ul>
+</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+	<b>Issues and barriers relating to these methods</b>
+</p>
+<p>	<b>Issue	1:	Conferencing and informal classroom exchanges ...<br>
+Barrier:	expose teachers' lack of confidence in their own judgement
+</b>
+</p>
+<p>
+	As part of the implementation strategy for the visual arts discipline of <i>The Arts in the New Zealand Curriculum</i>, national coordinator Ann Brodie called a meeting of all visual arts professional development contract teams. One of the concerns reiterated by these educators was, that when involved in the formative assessment of interaction, teachers reported a lack of real confidence to ask the right questions, the questions that encouraged and guided children to see, and do, and discuss, their best work. 
+</p>
+<p>
+	So, what is it about the arts that makes it difficult for generalist teachers to feel confident when asking questions and making judgements during assessment tasks? Teachers claim they can assess practical aspects of art making but are not sure what to look for when judging the final artwork. They ask "What are the criteria for judging a 'good' painting?". In other words, is there a hidden "x" factor that only specialists can identify? 
+</p>
+<p>
+	Art educators Eisner and Best (1997) deny that a hidden "x" factor has anything whatsoever to do with arts assessment. They believe that art assessment is not the exclusive domain of the art specialist but that the trained generalist teacher, using his or her own judgement, can objectively assess finished art works. Best calls this judgement "subjective objectivity". 
+</p>
+<p>
+	By suggesting that assessment criteria include the acceptance of ambiguity and multiple resolutions, Best and Eisner are challenging teachers to preserve the open-ended nature of art, have confidence in their own developing assessment literacy and visual arts expertise, and recognise the self-evaluation skills of the student artists.
+</p>
+<p>
+	To develop confidence in teaching art, it is important to understand why making judgements in the arts can be challenging. This series of questions adapted from <i>Teach Yourself Philosophy</i> (Thompson, 1995: 168-70) provides a useful platform for discussion with teachers, both the generalist and art specialist. 
+</p>
+<p>
+<ul type="disc">
+<li>
+	What is the nature of artistic imagination?<br>
+	<br>
+<li>
+Where is the "art" located? In the object? In the mind of the artists? In the eye of the beholder?<br>
+<br>
+<li>
+Is art something that takes place in a triangular relationship: artist, art object, person appreciating it as "art"?<br>
+<br>
+<li>
+Is it pointing to something beyond itself - some feature of reality that I cannot describe literally but which I sense by looking at the art? Or is it simply being itself, and inviting me to give it my attention? Is the act of giving attention itself an act of aesthetic experience?<br>
+<br>
+<li>
+What emotions does it evoke in me? If only confusion and embarrassment, are these still valid as an aesthetic experience?<br>
+<br>
+<li>
+Does the artist create an illusion, trying to make me see something more than that which is actually before my eyes?<br>
+<br>
+Is art still art if it becomes an investment commodity?<br>
+<br>
+<li>A. sees a work of art and B. sees a pile of rubble. Is there any objective way of deciding between these two views? 
+</ul>
+</p>
+<p>
+		Thompson's questions challenge rational thinking. They indicate that artistic ability and motivation lets the artist change, extend, and think more deeply about possibilities. One way of using these is to choose several questions and embed them within a staff professional development focus on "Understanding the Visual Arts in Context" (Ministry of Education, 2000: 73).
+</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>		<b>Issue	2:	Student self evaluation using work portfolios...<br>
+Barrier:	challenges the credibility of psychometric quality controls</b>
+</p>
+<p>
+		Some primary schools have adopted a portfolio system to help evaluate the students' work and the teachers' programmes. When using these portfolios, as well as the notebook/workbook material, teacher judgement and student evaluation methods generally improve. While encouraging and supporting the possibility of multiple outcomes within an artwork, they help develop a fairer and more valid assessment outcome. 
+</p>
+<p>
+		Thompson's questions (scaled to the students' vocabulary) could guide teacher/student evaluation sessions towards a broader, more open-ended and thought provoking dialogue. The latest curriculum update, Assessment - Te Aro Matawai, (Curriculum Update, 47, 2001:2) begins by recommending that teachers encourage students to evaluate one another's work and provide opportunities where the student can talk about their own best pieces of work.
+</p>
+<p>
+		The barrier to using student self-evaluation is that it challenges the credibility of the psychometric quality controls of validity, and particularly, reliability. It involves seeking acceptance of qualitative over quantitative data, assessment by portrayal rather than by measurement. Art relies less on psychometric assessment and more on authentic, or performance, assessment that is criterion referenced, benchmarked,and ipsative - that which compares a student child with his or her own past performance.
+</p>
+<p>
+		International research suggests that learners engage in creative problem solving best through authentic activity which provides meaning for the learner and a base for assessment. The essential learning components of effective, authentic assessment are based within the activities of concrete experience and human interaction, concepts explored by Vygotsky (1986). 
+</p>
+<p>
+		Elliot Eisner (quoted in Cassie, 1998:8) maintains that art education not only provides this interaction, but requires attention to qualitative relationships and that refinement of such modes of attention and judgement is what art, and art research, is all about. Effective, authentic assessment shows the teacher the patterns or habits of the mind in a student's performance (Wiggins, 1993). 
+</p>
+<p>
+		The ability to inform consequent action, a formative phase, is a key feature. The contextual nature of information builds to create an overall picture, while maintaining the importance of student ownership. 
+</p>
+<p>
+		Let's look at the positioning of "assessment" in most planning templates. Traditionally placed at the end, it guides the teacher to make a summative statement about what the student has done, not how and why s/he's done it. I suggest that "assessment" be positioned at the beginning of the unit plan. 
+</p>
+<p>
+		The specific learning objectives of a lesson recognise the needs of the student(s), which have been determined from the previous lesson. Begin with this diagnostic assessment comment and then insert a column down one side of the template that recognises the vital position of formative assessment. 
+</p>
+<p>
+		"Specific, constructive feedback about learning, as it is occurring, is one of the most powerful influences on student achievement" (<i>Curriculum Update</i>, 47, 2001:9). 
+</p>
+<p>
+		Within this running column write prompts, generic questions known to elicit meaningful response. For example, "Show me the part of your art that you think works the best." Leave spaces for recording specific dialogue and moments of developmental awareness. At the bottom, have a section for several summative remarks. "Oh no" you say, "not more writing!" Why not then take photos to supplement and/or replace the statements?
+</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>		<b>Issue	3:	Still image and video recording for assessment purposes...<br>
+Barrier:	takes time, money and expertise that is not available.</b>
+
+</p>
+<p>
+		This method is quick and can easily be done by the teacher or student and used for an assessment conference and/or portfolio illustration. This type of recording serves two purposes. First, it chronologically records the year's work and helps teachers to assess their programme thereby ensuring coverage. Second, it allows students to self-review their work at different stages, place photos in the workbook for comment, and discuss these evaluations with their teacher and peers.
+</p>
+<p>
+		The barriers here are a perceived lack of time, money, and expertise by teachers who have not established the habit of recording visual work. Generally, teachers believe that the technology learning involved with photo-recording takes too much time and costs too much money. 
+</p>
+<p>
+		Most schools do have an instamatic camera yet budgeting for film development is another barrier in an era where school expenses are monitored extremely tightly. Disposable cameras can be a cheap option and analogue video cameras are in the second hand shops now for less than $500. Digital video cameras can be purchased but come loaded with other costs like tapes and software packages. 
+</p>
+<p>
+		From what I have observed, digital cameras and computer software are now commonplace in schools but, for the generalist classroom teacher, professional development in the area of computers, digital cameras, graphic arts, and audiovisual skills is scarce. It is expected that teachers will learn these in their own time. Many enthusiasts do, but it becomes yet another burden to those who lack the confidence and remain under skilled in technological capabilities.
+</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+	<b>Conclusion</b>
+</p>
+<p>
+		Essentially, debates on assessment reflect the search for a fairer picture of student understanding. Children thrive in the open-endedness of an art programme that allows them choice and gives them opportunities to discuss, modify, or completely change their work in progress. 
+</p>
+<p>
+		The development of artistic judgement and assessment literacy is just as essential for the student as for the teacher. Setting clear goals and teaching students how to self assess is a necessary part of an art programme. Just as necessary is the acceptance of ambiguity and multiple resolution. 
+</p>
+<p>
+		There are no right answers in art. Sometimes there are no answers at all. There is a creativity, spiritual and deeply felt, that when linked with imagination can become a powerful form of expression. The understanding that art can create change, both personal and social, is part of the acceptance of ambiguity, an intrinsic belief that personal expression and self-evaluation result in multiple possibilities.
+</p>
+<p>
+		With my research in progress, I have come to believe that children are very much in touch with their creativity. They are able to articulate, with surprising precision, honesty, and vision, the reasoning behind their artistry. They enjoy the challenge of sharing and explaining their work to others. For example, here is a comment from Rona, aged 13 years, "These silver bits around the dark purple are like when a frog jumps off the lily pad and the light bumbles along the top of the water." And, a comment earnestly made by little Hanna, aged 7 years, about her watercolour,
+	 "I drew the wavy lines that made it come alive."
+</p>
+<p>
+		"Research...has demonstrated time and time again that assessment has a powerful effect on shaping both curriculum content and teaching methods" (Hargreaves, 1989). Assessment policy, informed by targeted research, has an important part to play in ensuring that the arts do not become marginalised in the present culture of an overcrowded curriculum. 
+</p>
+<p>
+		The achievement objectives for the arts curriculum statement allow for flexibility of choice. Linked within this choice, it is how teachers develop their passion and knowledge about the arts and motivate their students accordingly, that will enliven their teaching methods. "Teachers' assessment literacy is a key factor in improving teaching and learning and in school development.... Assessment is at the heart of improved teaching and learning." (Curriculum Update, 47, 2001:15). 
+</p>
+<p>
+		In conclusion, to be 'at the heart of improved teaching and learning' in New Zealand art edcuation, models of assessment need to include exploratory and expressive outcomes alongside their curriculum achievement objectives at all levels.
+</p>
+<p>
+		<b>References</b>
+</p>
+<p>
+	Barry & Townsend. (1995). Teachers' judgements about the teaching of art in primary schools. <i>New Zealand Journal of Educational Studies</i>, 30(1), 51- 63.
+</p>
+
+	
+<p>Best, D. (1992). <i>The rationality of feeling: Understanding the arts in education</i>. London: Falmer Press.</p>
+	
+<p>Black, P. & Wiliam, D. (1998). <i>Inside the black box: Raising standards through classroom assessment</i>. London: School of Education, King's College.</p> 
+	
+<p>Brookhart, S. M. (1991). Grading practices and validity.<i> Educational Measurement: Issues and Practice</i>, (10), 35-36.</p>
+
+<p>Cassie, F. (14 May 1999).  <i>Arts curriculum ignites debate.</i> NZ Education Review, p. 3. Wellington: APN Educational Media Pty. Ltd.</p>	
+
+<p><i>Curriculum Update, He K&#333;rero Marautanga</i>, 47. (2001, August). </p>
+
+<p>Education Review Office. (1999). <i>Student assessment: Practices in primary schools, 2</i>. Wellington: ERO Publications.</p>
+	
+<p>Eisner, E. (1998, January). Does experience in the arts boost academic achievement? <i>Art Education</i>, 7-15.</p>
+	
+<p>Eisner, E. (1998). <i>The kind of schools we need</i>. New York: Heinemann.</p>
+	
+<p>Flockton, L. & Crooks, T. (2000). <i>National Education Monitoring Project, NEMP Report 14: Art, Assessment Results</i>. Dunedin: Educational Assessment Research Unit, University of Otago.</p>
+	
+<p>Foley, S., Hong, T. & Thwaites, T. (1999, May). <i>The arts in the New Zealand curriculum: A background paper</i>. Wellington: Ministry of Education.</p>
+	
+<p>Hargreaves, A. (1989). <i>Curriculum and assessment reform</i>. Milton Keynes: Oxford University Press.</p>
+	
+<p>Ministry of Education. (2000). <i>The arts in the New Zealand curriculum</i>. Wellington: Learning Media.</p>
+	
+<p>Thompson, M. (1995). The scope of philosophy today. In <i>Teach yourself philosophy</i> (pp. 168-170). London: Hodder & Stoughton.</p> 
+	
+<p>Vygotsky, L. (1986). <i>Thought and language</i>. Cambridge, MA: Harvard University Press.</p>
+	
+<p>Wiggins, G. (1993). <i>Assessing student performance: Exploring the purpose and limits of testing</i>. San Francisco: Jossey-Bass Publishers.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

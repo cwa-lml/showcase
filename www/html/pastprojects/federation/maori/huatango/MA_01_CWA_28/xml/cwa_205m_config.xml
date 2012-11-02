@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<config name="CWA_205M_4" type="4">
+	<sums>
+		<sum a="17" b="35" />
+		<sum a="23" b="71" />
+		<sum a="39" b="67" />
+		<sum a="45" b="54" />
+		<sum a="18" b="46" />
+		<sum a="23" b="72" />
+		<sum a="39" b="67" />
+		<sum a="45" b="54" />
+		<sum a="37" b="62" />
+		<sum a="25" b="44" />
+		<sum a="67" b="83" />
+		<sum a="47" b="56" />
+		<sum a="58" b="66" />
+		<sum a="67" b="76" />
+		<sum a="79" b="96" />
+		<sum a="26" b="73" />
+		<sum a="24" b="83" />
+	</sums>
+</config>

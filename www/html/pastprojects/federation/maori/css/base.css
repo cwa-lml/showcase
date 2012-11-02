@@ -1,0 +1,485 @@
+/* CSS Document */
+
+html, body {
+	background-color: #FFFFFF; 
+ 	margin: 0; 
+ 	padding: 0; 
+ 	text-align: center; 
+} 
+
+body, p, td, th, li, blockquote, input {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+form { 
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+a, a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #000000;
+}
+
+p {
+	margin-top: 0;
+}
+
+.current {
+	font-weight: bold;
+}
+/* page layout styles */
+
+#pagewidth { 
+ 	width: 700px; 
+	text-align: left; 
+ 	min-width: 500px;
+	margin-top: 5px;
+ 	margin-left: auto; 
+ 	margin-right: auto; 
+} 
+
+#inner {
+	margin: 0; 
+	width:100%;
+}
+
+/*	heading section 	*/
+
+#header {
+	width: 100%;
+	height: 86px;
+	background: url(../../img/header-bg.gif) no-repeat; 
+}
+
+#header div {
+	float: right;
+	text-align: right;
+	font-size: .7em;
+	padding: 8px;
+}
+
+#header div a, #header div a:visited, #topnav div a, #topnav div a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+#header div a:hover, #topnav div a:hover {
+	color: #000000;
+	text-decoration: underline; 
+}
+
+#heading {
+	float: left;
+	width: 300px;
+	height: 35px;
+}
+
+/*	top navigation section	*/
+
+#topnav {
+	width: 100%;
+	color: #FFFFFF;
+	font-size: .7em;
+	vertical-align: bottom;
+}
+
+#topnav div {
+	padding: 10px; 
+}
+
+/*	main content and related styles 	*/
+
+#maincontent {
+	width: 100%;
+}
+
+#content-top {
+	background: url(../../img/content-top.gif) no-repeat; 
+	height: 8px !important;
+	padding: 0;
+	font-size: 0;
+}
+
+#content-base {
+	background: url(../../img/content-base.gif) no-repeat; 
+	height: 7px;
+	padding: 0;
+	font-size: 0;
+}
+
+#content {
+	background: url(../../img/content-bg.gif) repeat-y 0 0; 
+	padding: 5px 12px;
+	color: #666666;
+}
+
+#content-inner {
+	background: url(../../img/content-inner-bg.gif) repeat-y 0 0; 
+	padding: 5px 12px;
+	color: #666666;
+}
+
+#content-inner h2, #content h2 {
+	margin-top: 0;
+}
+
+#content-inner a:hover {
+	text-decoration: none;
+}
+
+#content-rhs {
+	width: 208px;
+	float: right;
+	color: #666666;
+}
+
+#content-rhs h4 {
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+#content-rhs ul  {
+	list-style-image: url(../../img/list-rhs2.gif);
+	margin: 0;
+	padding: 0 0 0 1.3em;
+}
+
+#content-rhs ul li {
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 0;
+	font-size: .7em;
+}
+
+#content-lhs {
+	width: 444px;
+	float: left;
+}
+
+/* #content-lhs h2 {
+	margin-top: ;
+} */
+
+#h2-kiaora {
+  background: url(../../img/h2-kia-ora.gif) no-repeat; 
+	width: 83px;
+	height: 40px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-tapiripiri {
+  background: url(../../img/h2-tapiripiri.gif) no-repeat; 
+	width: 190px;
+	height: 41px;
+	margin: 0 10px 0 0;
+	float: left;
+}
+
+#h2-hautango {
+  background: url(../../img/h2-hautango.gif) no-repeat; 
+	width: 180px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-punarua {
+  background: url(../../img/h2-punarua.gif) no-repeat; 
+	width: 213px;
+	height: 40px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-tangotango {
+  background: url(../../img/h2-tangotango.gif) no-repeat; 
+	width: 203px;
+	height: 42px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-tukutuku {
+  background: url(../../img/h2-tukutuku.gif) no-repeat; 
+	width: 188px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-whakarea {
+  background: url(../../img/h2-whakarea.gif) no-repeat; 
+	width: 182px;
+	height: 40px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-whakamarama {
+  background: url(../../img/h2-whakamarama.gif) no-repeat; 
+	width: 178px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-pou-awhina {
+  background: url(../../img/h2-pou-awhina.gif) no-repeat; 
+	width: 135px;
+	height: 46px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-whakaako {
+  background: url(../../img/h2-whakaako.gif) no-repeat; 
+	width: 197px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-whakaako-p {
+ 	background: url(../../img/h2-whakaako-p.gif) no-repeat; 
+	width: 307px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-korero {
+  background: url(../../img/h2-korero.gif) no-repeat; 
+	width: 202px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	float: left;
+}
+
+#h2-kopae {
+  background: url(../../img/h2-kopae.gif) no-repeat; 
+	width: 354px;
+	height: 41px;
+	margin: 0 10px 0 0 !important;
+	/* float: left; */
+}
+
+h2.swap span {
+	display: none;
+}
+
+.content-images {
+	text-align: center;
+}
+
+.content-images img {
+	margin: 0 4px 8px 4px;
+}
+
+ul.level-select {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+
+ul.level-select li {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 16px 6px 0;
+	margin: 0 20px 6px 0;
+	float: left;
+}
+
+ul.level-select li a {
+	display: inline;
+	float: left;
+	background-color: #FFFFCC;
+	border: 1px solid #CCCC99;
+	padding: 8px 30px;
+	margin: 0;
+	color: #996600;
+	text-decoration: none;
+	display: inline;
+	text-align: center;
+	line-height: 1.8em;
+	white-space: nowrap;
+	width: 27em;
+}
+
+ul.level-select li a:visited {
+	color: #996600;
+}
+
+ul.level-select li a:hover {
+	color: #000000;
+	text-decoration: underline !important;
+}
+
+ul.inline {
+	list-style-image: url(../../img/list-rhs2.gif) !important;
+	list-style-type: circle;
+	margin: 10px;
+	padding: 0;
+}
+
+ul.inline li {
+	position: relative;
+	float: left;
+	margin-right: 25px;
+	margin-left: 10px;
+	font-size: .7em;
+	line-height: 1.8em;
+	white-space: nowrap;
+	vertical-align: top;
+	list-style-image: url(../../img/list-rhs2.gif) !important;
+	list-style-type: circle;
+}
+
+
+/*IE workaround*/
+/*All IE browsers*/
+* html .inline li {
+	background-image: url("../../img/list-rhs2.gif");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding: 0 1em 0 1.5em;
+	margin: 0 0.5em;
+}
+
+/*End hide*/
+
+/*	footer and copyright sections 	*/
+
+#footer {
+	width: 100%;
+	height: 68px;
+	padding-top: 10px;
+}
+
+#copyright {
+	width: 100%;
+	text-align: center;
+	font-size: .8em;
+	color: #666666;
+	padding: 4px;
+}
+
+
+/* generic layout - positioning */
+
+h4 {
+	margin-bottom: 0;
+	font-size: .9em;
+}
+
+h3 {
+	margin-top: 5px;
+}
+
+ul {
+	margin-top: 5px;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+ul li ul li {
+	font-size: 1em;
+}
+
+.hide {
+	display: none;
+}
+
+h1.hide {
+	display: none;
+}
+
+.clr {
+	clear:both;
+}
+
+.clr-l {
+	clear: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.float-l {
+	float: left;
+}
+
+.text-r {
+	text-align: right;
+}
+
+.nostyle {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nomargin {
+	margin: 0 !important;
+}
+
+.margin {
+	margin: 10px;
+}
+
+.margin-l-sml {
+	margin-left: 3px;
+}
+
+.margin-l-lrg {
+	margin-left: 10px;
+}
+
+.margin-r-sml {
+	margin-right: 3px;
+}
+
+.margin-r-lrg {
+	margin-right: 10px;
+}
+
+.margin-t-sml {
+	margin-top: 3px;
+}
+
+.margin-t-lrg {
+	margin-top: 10px;
+}
+
+.margin-b-sml {
+	margin-bottom: 3px;
+}
+
+.margin-b-lrg {
+	margin-bottom: 10px;
+}
+
+/* print style sheet classes */
+
+@media print {
+	#maincontent {width:85%;}
+	#content, #content-inner, #content-lhs {width:100%;color:#000;margin:0;padding:0;}
+	#content-rhs, #topnav, #header div {display: none;}
+	#content-lhs {color:#000;margin:0;padding:0;}
+	#header h1, h2.swap span {display:block;}
+	#content-inner, #content-top, #content-base, #header, #h2-kiaora, #h2-tapiripiri, #h2-hautango, #h2-punarua, #h2-tangotango, #h2-tukutuku, #h2-whakarea, #h2-whakamarama, #h2-pou-awhina, #h2-whakaako, #h2-whakaako-p, #h2-korero, #h2-kopae {background-image:none;width:100%;}
+	ul.level-select {list-style-type:disc;}
+}

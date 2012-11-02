@@ -1,0 +1,573 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | 12 September 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f45_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td><img src="../img/spacer.gif" width="550" height="23"  border="0" /></td>
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19"  border="0" /></td>
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+</tr>
+<tr valign="top">
+    <td> 
+      <table cellpadding="0" cellspacing="0" border="0">
+    <tr valign="top">
+	 <td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18"  border="0" align="left">Archived Forum Discussion</td>
+	</tr>
+  </table>
+      <h2 class="h2-forum"><a name="top"></a>The underlying philosophy of the Arts Curriculum </h2>
+      
+	  
+	  
+	  
+
+<p>Edited from the forum discussion with <strong>Camilla Highfield</strong>, Curriculum Facilitator for the Arts at The Ministry of Education</p>
+
+<p>Date: 21 May 2003</p>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a> </p>
+
+
+<h3>Introduction</h3>
+
+<p><strong>Sarah Wilson:</strong><br />
+This week's topic was suggested by several teachers. To help with the discussion, our online guest today is Camilla Highfield from the Ministry of Education. Camilla is responsible for the professional development of teachers, resource development and research for arts education in New Zealand. 
+</p>
+
+<p>Prior to taking up her position at the Ministry, Camilla was a Visual Arts advisor for TEAM Solutions in Auckland and concurrently the National Facilitator for Visual Arts for the NCEA development. Camilla has an MFA from RMIT University in Melbourne and has a history of working in secondary education in Auckland. She is also an author and a practicing artist. </p>
+
+  <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Forum discussion</h3>
+
+<p><strong>Carol Langton:</strong><br />
+Greetings everyone, and welcome Camilla. Thank you for taking the time to join our growing group of arts-focused schools.
+</p>
+
+<h3>Topic: Developing audiences</h3>
+
+<p><strong>Camilla Highfield:</strong><br />
+Hi Arts Online teachers!</p>
+
+<p>When thinking about the philosophy of The Arts in the New Zealand Curriculum, it is often useful to think about what we used to have or didn't have and how what we have now advances from the old syllabi. For me, the inclusion of dance and drama, and of the UC (Understanding the Arts in Context] and CI [Communication and Interpreting the Arts] strands are major indicators of how we now want students to learn in through and about the arts. </p>
+
+<p>When I first started teaching , there was a sense that teaching the arts was about 'finding the talented individuals' who could then be extended, groomed, and developed into becoming great artists. Although this curriculum allows talented students to excel, it is about giving all students equal opportunity and access to learning in the Arts, and giving them a well-rounded education where they learn to appreciate looking at, listening to, and talking about the arts. </p>
+
+<p>We need to develop audiences for the arts as well as creative and innovative thinkers. What do the rest of you think?</p>
+
+<p><strong>Bev Kemp:</strong><br />
+In order to develop the audience, we have to develop the artist. The arts programmes in schools allow us to promote an enthusiasm for the arts, [developing] 'artists as audiences' in much the same way we as we would expect to be developing 'readers for life' in literacy.
+</p>
+
+<p><strong>Carol Langton:</strong><br />
+Camilla, you wrote " it is about giving all students equal opportunity and access to learning in the arts, and giving them a well-rounded education where they learn to appreciate looking at, listening to, and talking about the Arts. We need to develop audiences for the arts as well as creative and innovative thinkers". 
+</p>
+
+<p>I agree with this statement wholeheartedly. Those students who say "I'm not too good at art" have opportunities to widen their understanding and appreciation of artworks, and of the meaning and value it brings to their lives. And yes, educated audiences are the creators of first-class cultural movements.</p>
+
+<p><strong>Norma Hubbard:</strong><br />
+Yeah! I love to hear teachers talking about developing the artist in all children the way we would in reading, maths, etc. Grooming the already talented is important too, but we need to approach the low self-esteemed artist in the same way we would a challenged reader. Just teach the skills, and encourage and provide experiences for them to grow.
+</p>
+  <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: CI  and UC strands</h3>
+
+<p><strong>Carol Langton:</strong><br />
+Hello to Jan Oliver!
+</p>
+
+<p>One of your questions that I have down here to respond to is: "Can you give me ways to zoom in and assess the CI [Communicating and Interpreting] strand with my students?" </p>
+
+<p>Camilla may be able to start this off... Camilla, could you talk about the philosophy behind the CI strand please?</p>
+
+<p><strong>Camilla Highfield:</strong><br />
+For me, the CI strand is about students making meaning of their own and others' art works (and I don't just mean visual art but dance, music and drama). CI gives students an opportunity to respond to performance. This needs to happen in an ongoing way in classrooms, so that it becomes a normal and expected part of classroom discussion.
+</p>
+
+<p><strong>Bigbird:</strong><br />
+Hi Camilla!
+</p>
+
+<p>I have been teaching intermediate level art for three years now and love it! Although I feel that I'm finally getting the hang of making time to discuss and teach aspects in the CI and UC strands - I just wish I didn't have to assess what they know about them after a five week cycle. </p>
+
+<p>I know I've become a more 'rounded' teacher by including them into my programme and certainly feel like I'm giving the students something extra to think about.</p>
+
+  <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: Arts literacies concept a central idea to curriculum</h3>
+
+<p><strong>Cathy Gibbs:</strong><br />
+Greetings everyone <br />
+The central and unifying idea underlying this arts curriculum is the concept of multiple literacies. Pages 10 and 11 discuss this at length. Generally though this is not well understood by many people involved in the PD (one of the findings of the NZCER report in 2002). 
+</p>
+
+<p>I have two questions: </p>
+
+<p>(1) to Camilla: Are there any communications between the designers of the MOE literacy strategy and the arts strategy to ensure that the underlying philosophy of growing literacy in the arts also plays a central role in improving student learning? </p>
+
+<p>(2) to the AOL schools: How can The Arts Online facilitators help you more easily understand this idea? Is the current programme beginning to address this for you? How does this central idea become a reality for you in the classroom?</p>
+
+<p><strong>Chris Lord:</strong><br />
+I guess the notion of literacies in the arts helps us get a handle on where the [curriculum] document is going. To that extent the CI and UC strands are important. 
+</p>
+
+<p>Not being much of an 'artist' myself, I have tended to think in terms of visual art as ART'. In my school, the cumulative record has a set of processes in the visual art column, for example, painting, construction, drawing. It says nothing about texture, tone, of composition - not that I really know what they mean! </p>
+
+<p>What are the important things? The coat-hanger ideas that unlock this document in all the disciplines?</p>
+
+<p><strong>Cathy Gibbs:</strong><br />
+Hi Chris
+</p>
+
+<p>This curriculum is a very crisply written one. For me, the key things about the structure to help you are, first of all, the Aims on page 12 [of the curriculum document]. [These are] simple - only three: 
+<ul>
+<li>developing literacies</li>
+<li>assisting participation for life, and </li>
+<li>knowing about by getting involved in our own arts making (in Aotearoa NZ).</li>
+</ul>
+</p>
+<p>The second 'coat-hanger' [of the curriculum] is the notion of the four interrelated strands (often integrated very closely). [These are] nicely interwoven on page 14 of the curriculum document. </p>
+
+<p>The trick is to plan around four unique disciplines so that you can achieve a balance that is inclusive and yet encourages diversity. A big ask - but hey! - NZ has the best teachers in the world!!</p>
+
+ <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<p><strong>Carol Langton:</strong><br />
+"Literacies in the arts involve the ability to communicate and interpret meaning in the arts disciplines. We develop these literacies in the arts as we acquire skills, knowledge, attitudes and understanding in the disciplines and use their particular vision, auditory, and kinaesthetic signs and symbols to convey and receive meaning." (The Arts in the New Zealand Curriculum, page 10). 
+</p>
+
+<p>Looking at this statement from the curriculum, some of the important things from my perspective would be, as Camilla says, making sure that teachers have the professional development that they need to be able to:
+<ul class="no-dot">
+<li>(a) teach the arts-related language presented in the four glossaries (on pages 32, 48, 66, and 84 of the curriculum document)</li>
+<li>(b) explore and develop an understanding of elements, principles, conventions, techniques, processes, and technologies with their students </li>
+<li>(c) choose sources of motivation that excites the teacher as well as the students </li>
+<li>(d) investigate artworks that relate directly to the students' experience and cultural backgrounds as well as more global works. </li>
+</ul>
+</p>
+
+<p>How about that, Chris... food for thought?</p>
+
+<p><strong>Tom Evans:</strong><br />
+Yes Chris, that has got to be also a big ask. I learn about art because I do it, music because I sing, dance because I dance, drama, well I watch. The old fashioned idea of learning by doing is a great way and there just have to be links or coat-hangers.
+</p>
+
+<p>There are, of course, skills peculiar to the various disciplines. There are ideas, and there is purpose or spirit "spirit of the age". Sometimes when I view what I consider to be a masterpiece, I am moved by some undefinable quality which communicates many things to my whole being. </p>
+
+<p>In my twenty years of teaching primary/intermediate, I have often observed the joy that children have as they explore any given art area. I think the coat-hangers might be more philosophical than concrete.</p>
+
+<p><strong>Camilla Highfield:</strong><br />
+I agree with your comments, Cathy. I find the document is a great basis for 'jumping off' into developing a whole range of classroom programmes, which explore a range of literacies, student interests, community ideas, etc.
+</p>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: Challenge to design whole curriculum around the arts</h3>
+
+<p><strong>Lesley Brown:</strong><br />
+It is exciting to be still involved in arts education, now that we have a curriculum document. It has taken some time to get this going at a secondary level, especially in relation to providing opportunity in all arts fields. 
+</p>
+
+<p>I would like to see a school take the initiative and design their curriculum around the arts document. There is numerous research stating the benefits of this approach in relation to English and maths skills.</p>
+
+<p><strong>Cathy Gibbs:</strong><br />
+Hi Lesley 
+</p>
+
+<p>I like the challenge you have set up. it is certainly a challenge for all secondary schools to design a really good arts programme around this new document, especially working in collaborative ways...</p>
+
+<p>I would be interested in anyone's comments regarding the notion that the moving image is the "territory of today" where the arts are seen no longer as subjects but as objects. Would this be a good platform for some school to explore???</p>
+
+<p><strong>Dianne Dunn:</strong><br />
+To Lesley Brown:<br />
+"A curriculum based around the arts document" - sounds good to me!
+</p>
+
+<p>I am really enjoying watching all the chat today. </p>
+
+<p>..."we need to develop audiences for the arts" .......yes a very important consideration. </p>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: Opportunities for exposure to all the arts</h3>
+
+<p><strong>Tom Evans:</strong><br />
+Hi Camilla. 
+</p>
+
+<p>To be educated in the arts, to have some knowledge and appreciation of the fuller spectrum of the arts, is a wonderful lifelong journey. I guess we start to grasp the depth or lack of depth of our culture as we become exposed to the arts. </p>
+
+<p>As the teacher and school community, we have to face the task of providing the means of delivering this exposure. We have to ensure that we have the people and the will to do it. I believe it is a very BIG ask and could lead to one or two areas of the arts being favoured above the rest. Do the parents of our children share the same vision?
+</p>
+
+<p><strong>Camilla Highfield:</strong><br />
+I agree this is all a very BIG ask. The fundamental question I ask myself daily is how can the Ministry support teachers to educate and create opportunities for students to learn the arts? 
+</p>
+
+<p>We know that teacher capability is the key to improving student outcomes, so investing in professional development and resources is really key in helping teachers and schools to reflect on what they are currently doing.</p>
+
+<p><strong>Lesley Brown:</strong><br />
+I would hope that all arts teachers work together to help our understanding of the arts curriculum and learn from each other the methods and materials used to deliver the different strands. The document provides a framework, we need to use it to best meet the needs of our students and community. [For example,] the new gallery on Christchurch is FAB - great for developing the UC aspect of the visual arts!
+</p>
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: Assessing CI and UC strands</h3>
+
+<p><strong>Bigbird:</strong><br />
+I agree its important to get students talking art and have managed to engage my Year 8 classes with some quite good discussions and investigations with the CI and UC strands. (I also have time in a 10-week cycle to feel that I can assess their interest and understanding. ) 
+</p>
+
+<p>However I really struggle with making an honest assessment of these strands (apart from a 'tick and flick' kind of self-assessment sheet or something similar) in my five-week Year 7 cycle. Seems I'm more pressed to try and get them to a level 3 standard in the PK area at times. (Enjoy the challenge though!)</p>
+
+<p><strong>Carol Langton:</strong><br />
+Hi BigBird!
+</p>
+
+<p>I think that you should seriously look at student self- reflection and self-evaluation for a way of assessing your CI and UC strands along with your own system. It is difficult, I know, doing all this assessing, but the students are very honest and aware of their own developments. Use this awareness!. Using portfolios and conferences if possible.</p>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+
+<h3>Topic: Difficulties covering all the arts disciplines</h3>
+
+<p><strong>Chris, Blaketown:</strong><br />
+I need some help if anyone has any ideas
+</p>
+
+<p>We are a three-teacher school and have now tried two different ways of implementing the arts programme. Last year we tried to have a major focus on two disciplines a term. This didn't work, as nothing seemed to get carried to a satisfactory conclusion and we felt the time span wasn't long enough. </p>
+
+<p>This year we are trialling one discipline per term. I know its only the beginning of term 2, but it seems like a huge break before you focus on things again.</p>
+
+<p>Any bright ideas for organising this?</p>
+
+<p><strong>Carol Langton:</strong><br />
+Chris from Blaketown - and anyone else who would like to grab the School Self Review form now - go to http://www.tki.org.nz/r/arts/artspd/materials/reviewforms_e.php 
+</p>
+
+<p>Chris, please contact me directly and we can talk about your PD needs in detail. We are here to help you in every way! <br />
+Cheers, Carol  Ph: (04) 3820307, 025 522746</p>
+
+<p><strong>Stephen, Whangara:</strong><br />
+Right this is all a big ask for me although I'll plod along. I'm a teaching principal. I have been focussing on literacy and numeracy over the last two years and am only just looking at the arts. How does someone teach music if they have no musical ability? I can't play anything at all except a stereo. Do I try and find a teacher with that strength in my school? What if there wasn't one?
+</p>
+
+<p><strong>Julie Lawson:</strong><br />
+Kia Ora Stephen at Whangara - the top of the coast. You know where we are - Hicks Bay.
+</p>
+
+<p>Yes, I'd like an answer to that question too. We are a two-teacher school where visual art has had heaps of attention and the others only as integrated themes for the obligatory end of year concert/prize-giving. Plus we are three hours from any main centre in any direction. HELP!</p>
+
+<p><strong>Carol Langton:</strong><br />
+Stephen: yes, play the stereo - a lot! And use the music [and other] resources that the Ministry has sent out to all schools - they are magnificent!
+</p>
+
+<h3>Farewells</h3>
+
+<p><strong>Camilla Highfield:</strong><br />
+Thankyou for inviting me to join in today. I will look forward to reading your on going professional discussions. 
+</p>
+
+<p>It's really grey in Wellington today but this was a great way to end the day. Take care out there!</p>
+
+<p><strong>Sarah Wilson:</strong><br />
+Thanks to everyone for your contributions this afternoon. So great to see so many of you online!
+</p>
+ 
+	  
+	  
+	  
+    
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+   <p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+  
+   </td>
+</tr>
+</table>
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

@@ -1,0 +1,391 @@
+/* Redefine of gen tki styles */
+.body-bg {
+    background: #fff url(../img/nav-bg.gif) repeat-y 0 0;
+}
+
+.banner-bg {
+    background: #fff url(../img/teaokori-banner.jpg) no-repeat 0 0;
+    height: 70px;
+}
+
+#head-banner-inside {
+    width: 580px;
+}
+
+#content {
+	padding: 0px 10px 20px 10px;
+}
+
+
+/* CSS Document */
+
+/* only if text is to be displayed above banner - remove otherwise*/
+/*
+#content h1 {
+
+} */
+
+#content h2 {
+	color:#996633;
+}
+#content h3 {
+	margin-bottom: 0;
+	color:#630;
+}
+
+#content h4 {
+	font-size: .9em;
+	margin-bottom: 0;
+}
+#content h5 {
+	font-size: .85em;
+	margin-bottom: 0;
+}
+
+
+#content p, #content ol, #content ul {
+	margin-top: 0;
+}
+
+#content a {
+	color:#660000;
+}
+
+
+
+/* Breadcrumb styles */
+
+#breadcrumb ul {
+    color: #666;
+    margin: 10px 0 9px !important;
+	padding: 0;
+    list-style: none;
+}
+
+#breadcrumb ul li {
+	display: inline;
+	font-size: 0.75em;
+}
+
+#breadcrumb strong {
+    color: #300;
+}
+
+
+
+/* Back to button on right hand nav */
+div#backto {
+    height: 70px;
+	background-color: #FFF;
+	margin: 0 1px; /* remove margin if border effect (from .body-bg background image) not required */
+	border-bottom: 1px solid #663300; /* demonstration to see white top border on Sample home link*/
+}
+
+div#backto p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    padding: 8px 5px 8px 32px;
+    margin: 0;
+	background: #FFF url(../img/backto-arrow.gif) no-repeat;
+}
+
+div#backto a:link, div#backto a:visited {
+	color: #330000;
+	font-weight: bold;
+}
+
+#right-nav {
+    position: relative;
+	padding: 0;
+	width: 170px !important;
+}
+
+/* this is required 'only' when the right nav needs a heading - can be removed otherwise */
+#right-nav h3 { 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+	color: #000;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #000;
+    background: #E5E5E5;
+    padding: 8px 5px 8px 10px;
+    margin: 0 1px; /* needed for right left border effect */
+}
+
+
+#right-nav li {
+    padding: 0 !important;
+    font-size: 0.9em;
+}
+
+ul.menu {
+    background-color: #CCCCB2;
+	margin: 0 1px !important;
+	padding: 0;
+	position: relative;
+	width: 168px !important;
+
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+    font-size: 0.9em;
+	border-top: 1px solid #FFF !important;
+}
+
+ul.menu li a:link, ul.menu li a:visited {
+    width: 153px;
+    display: block;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+ul.menu li a:hover {
+    background-color: #E4E4D8;
+}
+
+/*re-define of right hand nav styles */
+
+
+/* Menu Sub */
+
+.menu-sub {
+    background-color: #E4E4D8;
+}
+
+.menu-sub ul li {
+	border-top-color:#E4E4D8 !important;
+}
+
+.menu-sub1-item, .menu-sub1-item-last {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.1em !important;
+}
+
+.menu-sub1-item a, .menu-sub1-item a:visited, .menu-sub1-item-last a, .menu-sub1-item-last a:visited {
+    display: block;
+    width: 130px !important;
+	padding: 2px 2px 2px 10px !important; 
+	color: #000 !important;
+}
+
+.menu-sub1-item a:hover, .menu-sub1-item-last a:hover {
+/*	margin: 0;
+	color: #000; */
+}
+
+.menu-sub2-item, .menu-sub2-item-last {
+	margin-left: 40px !important; 
+	padding: 2px 2px 2px 0px !important;
+	font-size: 1em !important;
+	list-style-image: url(../img/bullet-arrow.gif) !important;
+	list-style-type: circle;
+	line-height: 1;	
+}
+
+.menu-sub2-item a, .menu-sub2-item a:visited, .menu-sub2-item-last a, .menu-sub2-item-last a:visited {
+	width: 120px !important;
+    display: block;
+	color: #000 !important;
+	margin: 0;
+	padding: 0px 0px 4px 0px !important;
+}
+
+.menu-sub2-item a:hover, .menu-sub2-item-last a:hover  {
+   /* background-color: #ffffff !important; */
+	margin: 0;
+	color: #000;
+}
+
+a.menu-current {
+	font-weight: bold;
+	text-decoration: none !important;
+	color: #000 !important;
+	display: block;
+	width: 80px;
+}
+
+a:hover.menu-current {
+	color:#000 !important;
+}
+
+.internal-nav li {
+	font-size: 1em !important;
+	font-weight: bold;
+	border-bottom: 0;
+}
+
+#right-nav a, #right-nav a:visited  {
+    color: #000;
+    text-decoration: none;
+}
+
+#right-nav a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* to keep nested lists formatted correctly */
+
+#content ul {
+	font-size: 1em;
+	margin-top: 0;	
+}
+
+ul.nested-ul {
+    list-style-type: disc;
+    font-size: 1em;
+}
+
+/* to push lists up against paragraphs , put on paragraph above list */
+.nobreak-bot {
+    margin-bottom: 0;
+}
+
+a.current {
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+a.sec-current {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+
+/* to fix CSS bug in nested lists */
+ol li {
+    font-size: 100%;
+}
+
+li li {
+    font-size: 100%;
+}
+
+/* to fix CSS bug in nested lists */
+li li li {
+    font-size: 100%;
+}
+ 
+ol li ol li {
+	font-size: 1.2em;
+}
+
+
+/* to separate list items with a paragraph break */
+.listbreak {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* remove stray bg colour fron input box */
+
+input {
+    background-color: #FFF !important;
+}
+
+.top-new {
+	 text-align: right;
+}
+
+hr {
+	color: #000;
+}
+
+/* styles for this site only */
+
+/* remove note before go live - highlights missing content for editor */
+.note{
+	background-color:yellow;
+}
+
+.intro{
+	text-align:center;
+	color:#630;
+}
+.ref{
+	text-align:right;
+}
+.copyright{
+	font-size:0.85em;
+}
+.boxed {
+	border:1px solid #630;
+	padding:5px;
+	margin-bottom:5px;
+}
+.matrix {
+	border-collapse:collapse;
+	vertical-align:top;
+	margin-bottom:20px;
+}
+.matrix td, .matrix th{
+	border:1px solid #ccc;
+	padding:3px;
+	vertical-align:top;
+}
+.matrix th{
+	font-size:0.8em;
+}
+
+.glossary{
+	border-collapse:collapse;
+	vertical-align:top;	
+	margin:5px 0 20px 0;
+	width:100%;
+}
+
+.glossary td{
+	border:1px solid #ccc;
+	padding:3px;
+	vertical-align:top;
+}
+
+table.videotbl {
+	margin-bottom:10px;
+}
+
+table.videotbl, table.videotbl td {
+	border:1px solid black;
+	border-collapse:collapse;
+	padding:2px;
+}
+
+table.videotbl td.desc {
+	background-color:#CCCCB2;
+}
+table.videotbl td.instruct {
+	background-color:#E4E4D8;
+}
+
+table.videotbl td.screenshot {
+	border-right-width:0px;
+	width:120px;
+}
+table.videotbl td.quicktime {
+	border-left-width:0px;
+}
+
+.imgright {
+	float:right;
+}
+
+.imgcenter {
+	text-align:center;
+}
+
+.imgcenter img {
+	border:1px solid #663300;
+}
+
+/* to fix bug in IE... italics break content div */
+ul.reflist li {
+	width:99%;
+	vertical-align:top;
+}

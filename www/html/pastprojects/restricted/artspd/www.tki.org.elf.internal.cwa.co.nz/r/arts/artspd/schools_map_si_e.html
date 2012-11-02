@@ -1,0 +1,360 @@
+<!--last updated 11am 15/03/2004 KM-->
+
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Schools</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "artspd;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("schools_map_si_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+onLoad="MM_preloadImages('img/si_detail_arthur.gif','img/si_detail_blackmount.gif','img/si_detail_fairlie.gif','img/si_detail_menzies.gif','img/si_detail_waihola.gif','img/si_detail_waitaria.gif')" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="style/artspd.css">
+<script language="JavaScript" src="jscript/main.js" type="text/javascript">
+</script>
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="2"><img src="img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2"><img src="img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2" bgcolor="#FF6600"><img src="img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../index_e.html"><img src="img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../index_e.html"><img 
+src="img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="implementation/index_e.html"><img 
+src="img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="materials/index_e.html"><img 
+src="img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="research/index_e.html"><img 
+src="img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="events/index_e.html"><img 
+src="img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#EEEEEE" class="h-general" width="550"><img src="img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">South Island Schools</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td><img src="img/spacer.gif" width="136" height="15" hspace="0" vspace="0" border="0">
+South Island schools in the Arts Online project are marked on this map. Move your mouse over the dots of the map image to view the names of the schools.
+ 
+<p>From this map, you will also be able to see the schools that are close to you. For school contact details click on the full list of schools link.</p>
+
+<p><a href="schools_list_e.html">Full list of schools</a></p></td>
+<td><img src="img/spacer.gif" width="132" height="15" hspace="0" vspace="0" border="0"><br><img src="img/map_chooser_si.gif" width="132" height="206" hspace="0" vspace="0" border="0" alt="Map navigation" usemap="#m_map_chooser"></td>
+          <td rowspan="2"><img src="img/map_south_island.gif" width="282" height="382" hspace="0" vspace="0" border="0" alt="Map of South Island schools" usemap="#m_map_south_island"> 
+            <map name="m_map_south_island">
+              <area shape="circle" coords="112,267,3" href="#" alt="Roxburgh Area School" title="Roxburgh Area School" onMouseOver="schoolLoad_si('schl_si_1');">
+              <!-- area shape="circle" coords="158,221,3" href="#" alt="Mountainview High" title="Mountainview High" onMouseOver="schoolLoad_si('schl_si_2');" -->
+              <area shape="circle" coords="126,287,3" href="#" alt="Lawrence Area School" title="Lawrence Area School" onMouseOver="schoolLoad_si('schl_si_3');">
+              <area shape="circle" coords="119,212,3" href="#" alt="Twizel Area School" title="Twizel Area School" onMouseOver="schoolLoad_si('schl_si_4');">
+              <area shape="circle" coords="103,307,3" href="#" alt="Menzies College" title="Menzies College" onMouseOver="schoolLoad_si('schl_si_5');">
+              <area shape="circle" coords="81,302,3" href="#" alt="Rockdale Park School" title="Rockdale Park School" onMouseOver="schoolLoad_si('schl_si_6');">
+              <area shape="circle" coords="81,312,3" href="#" alt="Makarewa School" title="Makarewa School" onMouseOver="schoolLoad_si('schl_si_7');">
+              <area shape="circle" coords="86,307,3" href="#" alt="Verdon College" title="Verdon College" onMouseOver="schoolLoad_si('schl_si_8');">
+              <area shape="circle" coords="76,307,3" href="#" alt="Southland Girls High" title="Southland Girls High" onMouseOver="schoolLoad_si('schl_si_9');">
+              <area shape="circle" coords="76,313,3" href="#" alt="Woodlands School" title="Woodlands School" onMouseOver="schoolLoad_si('schl_si_10');">
+              <area shape="circle" coords="155,246,3" href="#" alt="St Josephs School - Oamaru" title="St Josephs School - Oamaru" onMouseOver="schoolLoad_si('schl_si_11');">
+              <area shape="circle" coords="164,222,3" href="#" alt="St Josephs School - Timaru" title="St Josephs School - Timaru" onMouseOver="schoolLoad_si('schl_si_12');">
+              <area shape="circle" coords="213,174,3" href="#" alt="Springston School" title="Springston School" onMouseOver="schoolLoad_si('schl_si_13');">
+              <area shape="circle" coords="137,158,3" href="#" alt="South Westland Area School" title="South Westland Area School" onMouseOver="schoolLoad_si('schl_si_14');">
+              <area shape="circle" coords="98,237,3" href="#" alt="Mt Aspiring College" title="Mt Aspiring College" onMouseOver="schoolLoad_si('schl_si_15');">
+              <area shape="circle" coords="153,199,3" href="#" alt="Mackenzie College" title="Mackenzie College" onMouseOver="schoolLoad_si('schl_si_16');">
+              <area shape="circle" coords="99,295,3" href="#" alt="Longford Intermediate School" title="Longford Intermediate School" onMouseOver="schoolLoad_si('schl_si_17');">
+              <area shape="circle" coords="183,184,3" href="#" alt="Fairton School" title="Fairton School" onMouseOver="schoolLoad_si('schl_si_18');">
+            </map> 
+            <p align="center" class="altbar"><a href="schools_map_ni_e.html" class="alt">North Island map</a> | <a href="schools_map_si_e.html" class="alt">South Island map</a></p>
+</td>
+</tr>
+
+<tr valign="top">
+<td colspan="2"><img src="img/spacer.gif" width="260" height="23" hspace="0" vspace="0" border="0"><br><img src="img/si_detail_switch.gif" width="260" height="140" hspace="0" vspace="0" border="0" name="switcher" alt="">
+<div id="schoolLink">
+</div>
+</td>
+</tr>
+</table>
+<br />
+</td>
+</tr>
+</table>
+
+<map name="m_map_chooser">
+<area shape="poly" coords="61,84,61,8,123,8,123,102,81,102,81,84,61,84" href="schools_map_ni_e.html" title="North Island" alt="North Island" >
+<area shape="rect" coords="8,84,81,177" href="schools_map_si_e.html" title="South Island" alt="South Island" >
+</map>
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

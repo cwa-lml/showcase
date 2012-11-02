@@ -1,0 +1,635 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | 12 September 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f49_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td><img src="../img/spacer.gif" width="550" height="23"  border="0" /></td>
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19"  border="0" /></td>
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+</tr>
+<tr valign="top">
+    <td> 
+      <table cellpadding="0" cellspacing="0" border="0">
+    <tr valign="top">
+	 <td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18"  border="0" align="left">Archived Forum Discussion</td>
+	</tr>
+  </table>
+      <h2 class="h2-forum"><a name="top"></a>New Zealand Curriculum Exemplars for The 
+        Arts</h2>
+      <p>Edited from forum discussion with <strong>Tracey McLennan</strong>, Senior 
+        Project Officer for Teacher and Leadership Capability for the Ministry 
+        of Education.</p>
+      <p>Date: 12 November 2003 </p>
+      <p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+      <h3><br>
+        Introduction</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        This week we are un-wrapping the latest collection of New Zealand Curriculum 
+        Exemplars for The Arts. </p>
+      <p>The new arts exemplars have been distributed to your school and are also 
+        now online at <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/assessment/exemplars/arts/index_e.php">http://www.tki.org.nz/r/assessment/exemplars/arts/index_e.php 
+        </a> </p>
+      <p>The exemplars are samples of authentic student work annotated to illustrate 
+        learning, achievement, and quality in relation to levels 1&#8211;5 of 
+        The Arts in the New Zealand Curriculum. </p>
+      <p>This will be a great opportunity to explore ideas with others from The 
+        Arts Online community about how to make the most of this rich collection 
+        of exemplars in your classrooms. </p>
+      <p>Joining us online is <strong>Tracey McLennan</strong>, Senior Project 
+        Officer for Teacher and Leadership Capability for the Ministry of Education.</p>
+      <h3><br>
+        Background information</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        What is an arts exemplar? <br>
+        The purposes of the arts exemplars are to:
+        <ul>
+		<li>illustrate key features of learning, achievement, and quality at different 
+        stages of student development<br></li>
+        <li>help students and teachers to identify the next learning steps<br></li>
+        <li>guide teachers in their interpretation of curriculum levels. </li></p>
+		</ul>
+      <p><strong>Availability of the arts exemplars</strong><br />
+	  The arts exemplars materials are available in three formats: 
+     <ul>  
+	 <li> print</li>
+       <li> online</li>
+        <li> two CD-ROMs. </li>
+	</ul> 
+      In all of the dance, drama, and music exemplars, and some of the visual 
+        arts, video clips have been used to capture important sequences during 
+        the students&#8217; work over a period of time, as well as those elements, 
+        such as performing movement or singing, which cannot be displayed in a 
+        static image. </p>
+      <p>To give teachers maximum access to video clips, the arts exemplar materials 
+        are being provided on two CD-ROMs (in a dual high-impact case), as well 
+        as online. Note that It is essential to view the video clips on the CD-ROMs 
+        or online when working with the print materials for drama, dance, and 
+        music.</p>
+      <p>A pack, which includes the arts exemplars print materials and CD-ROMs, 
+        has now been sent to your school and the online resources were made live 
+        on the 1st November at <a href="http://www.tki.org.nz/r/assessment/exemplars/arts/index_e.php%20">http://www.tki.org.nz/r/assessment/exemplars/arts/index_e.php</a> 
+      </p>
+      <p>If you haven&#8217;t seen a copy of the resource yet make sure you track 
+        it down! The materials are wonderfully rich and quite inspirational.</p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Forum discussion</h3>
+      <p><strong>Simon Chiaroni:</strong><br>
+        Hi, I'm Simon Chiaroni, arts publisher at Learning Media. I worked a lot 
+        on the arts exemplars that you have in print form, so I am interested 
+        to hear your responses to the exemplars, answer any questions you have, 
+        ask some questions of my own.</p>
+      <p><strong>Carol Langton:</strong><br>
+        Kia ora koutou. Welcome to Tracy, and to Simon!</p>
+      <p>I would first of all like to say that the Ministry of Education, the 
+        five National Coordinators, and Learning Media have all done a tremendous 
+        job getting these exemplars funded, created and published... to a very 
+        high standard. Thank you on behalf of all the busy and delighted teachers.</p>
+      <p><strong>Tracey McLennan:</strong><br>
+        It is great to be on here representing the Ministry of Education. 'Thanks 
+        for the thanks' on behalf of Camilla Highfield, the National Co-ordinators 
+        and the rest of the team who were responsible for putting the exemplars 
+        together. A huge amount of work did go in, and now we get to enjoy all 
+        the wonderful work that will arise out of this. Great!</p>
+      <p><strong>Tom Evans:</strong><br>
+        Hi All! I am not able to stay online for long, however I would also like 
+        to express my thanks for the visual arts exemplars. I will be using the 
+        CD version next week at our teachers&#8217; only day to highlight the 
+        resources available to teachers in TKI for the arts in particular.</p>
+      <p><strong>Tracey McLennan:</strong><br>
+        Thanks Tom! I know that Ann Brodie will love to gratefully receive your 
+        thanks &#8211; the exemplars were not birthed without their moments, I 
+        think it would be fair to say!</p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Exemplars and &#8216;Unwrapping the arts&#8217; units</h3>
+      <p><strong>Angela:</strong><br>
+        I teach drama from year 9&#8211;11 at Stratford High School. I have had 
+        a good look at the exemplars and they look very useful. Will we be getting 
+        any drama exemplars at level 5? </p>
+      <p><strong>Simon Chiaroni:</strong><br>
+        In answer to your question, Angela, yes, there is a level 5 exemplar being 
+        worked on at present. The topic is Parihaka, and it's hoped it'll be sent 
+        out to schools and up on the Web early next year.<br>
+        <br>
+        <strong>Angela:</strong><br>
+        Sounds great, especially a resource based on life under our wonderful 
+        old mountain! </p>
+      <p>It would be great if the exemplar idea was extended to cover the sample 
+        tasks/units included in the 'unwrapping the arts' material on TKI... any 
+        thoughts? </p>
+      <p><strong>Simon Chiaroni:</strong><br>
+        I see the &#8216;Unwrapping the Arts&#8217; units having a different purpose 
+        to the exemplars. The sample units are examples of teaching activities 
+        that are analysed to show how they meet the curriculum aims, strands and 
+        AOs [achievement objectives]... whereas the exemplars are examples of 
+        students' work that are annotated to show and discuss the learning that's 
+        taken place. So they are different, but closely related too! And there 
+        will be lots of connections possible between the two.</p>
+      <p><strong>Sarah Wilson:</strong><br>
+        This idea of connections between the resources available on TKI is one 
+        that will, I think, continue to develop as links between different resources, 
+        collections, and complementary areas as they continue to be created.</p>
+      <p><strong>Angela:</strong><br>
+        Simon, I appreciate the differences between Unwrapping the Arts and the 
+        exemplars... I just thought, after seeing the exemplars, that it might 
+        be interesting to see the units taken one step further with trialling 
+        and outcomes recorded. I know that the exemplars project is still growing 
+        ... just a thought for the future.</p>
+      <p><strong>Tracey McLennan:</strong><br>
+        I think that the reason that the Arts is in such an exciting position 
+        at the moment, is that we have such a rich array of resources at our finger-tips, 
+        both in print and online media. As Simon points out, &#8216;The Arts Unwrapped&#8217; 
+        is different to the exemplars and serves quite different purposes, but 
+        seen as part of a package for teachers, they are very valuable. There 
+        seems to be many different directions that we can point people in at the 
+        moment.</p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Using exemplars for moderation of assessment</h3>
+      <p><strong>Carol Langton:</strong><br>
+        Greetings Angela! Nice to have you onboard. <br>
+        When you look at the standard of the drama exemplars, do they help you 
+        with the moderation of assessing your students' work?</p>
+      <p><strong>Angela:</strong><br>
+        To be honest, the level 4 exemplars were a little frightening... My year 
+        9 students do not arrive at high school with the literacy to be able to 
+        effectively reflect on their own or respond to others' performances as 
+        indicated in these clips. These clips are VERY useful for moderating assessment 
+        of students' work. I find using students reflections a very good teaching 
+        tool as well. </p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Exemplar formats</h3>
+      <p><strong>Simon Chiaroni:</strong><br>
+        I'm not sure how many are online here with us but, Angela and others, 
+        I'm curious to know how you're finding the print vs CD-ROM vs Web versions 
+        of the exemplars. Which are you using mainly when you're looking at them 
+        or working with them? Which versions are most helpful for various ways 
+        of working with them? Any thoughts?</p>
+      <p><strong>Angela:</strong><br>
+        As I have only been exploring at this stage, I am using the web (broadband 
+        is a delight in this situation)... I have visions of attempting to use 
+        the CD in class if appropriate next year.</p>
+      <h3><br>
+        Topic: Using exemplars for lower levels</h3>
+      <p><strong>Angela:</strong><br>
+        Even though there are no level 5 exemplars yet, I have still been able 
+        to get some very useful information on learning contexts and how to link 
+        assessment back to the curriculum from the lower levels &#8211; cheers!</p>
+      <p><strong>Sarah Wilson:</strong><br>
+        Hi Angela!<br>
+        Can you expand or give us an example of how you have done this?</p>
+      <p><strong>Angela:</strong><br>
+        Very briefly ... e.g. the 'Busted' exemplar gives a good description of 
+        the teaching and learning that occurred as well as the reflection. This, 
+        along with the &#8216;progress indicators&#8217; has really helped me 
+        to have stronger checkpoints for my assessment. Assessment of the devising 
+        process tends to be very 'subjective' and this has helped me to make it 
+        or 'objective'. </p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Sharing exemplars with students</h3>
+      <p><strong>Tracey McLennan:</strong><br>
+        I would be interested in knowing if any of you have shared exemplars yet 
+        with parents/students and what their response has been?</p>
+      <p><strong>Shirley:</strong><br>
+        I&#8217;ve been working with the exemplars recently with Carol, and looking 
+        for ways to help teachers find the resources that they need so they can 
+        implement our long-term planning. The exemplars have got really useful 
+        annotation. It helps to read these and we like the modelling. It helps 
+        our teachers to ask the right questions, to look for the teachable moment. 
+        It helps us to speak meaningfully and help the student grow towards their 
+        own expressive creativity. </p>
+      <p>The work itself helps us to judge the levels we must try to reach. The 
+        videos are fantastic and the instructions about using them are very clear. 
+      </p>
+      <p><strong>Simon Chiaroni:</strong><br>
+        Thanks, Angela. One of the thoughts behind the exemplars is that teachers 
+        will view them with students. Would you find it helpful do you think to 
+        view and discuss the students' reflections in the level 4 exemplars with 
+        your students? Or do you think that might be a bit intimidating or off-putting 
+        for them? </p>
+      <p><strong>Angela:</strong><br>
+        Intimidating? No, I think quite the opposite. My students find it a real 
+        confidence booster when they see other students doing stuff. It's not 
+        just me telling them they can do it &#8211; I have evidence! </p>
+      <p><strong>Simon Chiaroni:</strong><br>
+        Thanks, Angela, I find that really heartening! Also, high (but realistic) 
+        expectations from teachers are such an important component in students' 
+        self-esteem and achievement. </p>
+      <p><strong>Tracey McLennan:</strong><br>
+        Good point here Simon. I'm a firm believer that sometimes students and 
+        teachers need to step up to the mark and view material that may well be 
+        beyond them at that present moment in time. Not to totally freak them 
+        out, but to be used as a tool to show extension opportunities, &#8216;where 
+        to from here&#8217;. In this respect the progression of clips are really 
+        useful I think.</p>
+      <div align="right">
+        <h3><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></h3>
+      </div>
+      <h3>Topic: Wider uses of exemplars</h3>
+      <p><strong>Tracey McLennan:</strong><br>
+        Does anyone see possibilities for using exemplars across other groups 
+        such as parents, community groups, and school boards? Groups who perhaps 
+        need to see what quality Arts teaching and student work looks like. </p>
+      <p><strong>Carol Langton:</strong><br>
+        I agree with you Tracey. When I was travelling around the country last 
+        year to some of our more rural schools, some teachers were daunted by 
+        the standards on the resource videos. When I went back to them online, 
+        they said they tried it out and the kids loved it and DID step up to the 
+        mark. Kids are just little time bombs of talent sometimes &#8211; waiting 
+        for the right conditions to set them going. </p>
+      <p><strong>Tracey McLennan:</strong><br>
+        Absolutely Carol! never underestimate students&#8217; ability to observe 
+        others involved in an activity and then take themselves to a new level. 
+        Don't be overly worried that they may 'copy' some aspect of this viewed 
+        work, as so much of what we do in the Arts relies on exactly this happening. 
+      </p>
+      <p><strong>Sarah Wilson:</strong><br>
+        Shirley, it sounds like you have really started integrating the resources 
+        into your planning &#8211; have you done this in collaboration with other 
+        staff members? If so, have you led this yourself and how have you gone 
+        about introducing these ideas to them? </p>
+      <p><strong>Shirley:</strong><br>
+        I am preparing these planning documents with Carol at the moment. The 
+        school librarian has helped with resources as well as Cathy Gibbs, the 
+        music adviser, with staff PD &#8211; she was great.</p>
+      <p><br>
+        Once I have it all drafted up, I will present it to the staff for comment 
+        and then think of ways to do PD sessions with them so they can implement 
+        the planning next year. </p>
+      <div align="right">
+        <h3><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></h3>
+      </div>
+      <h3>Topic: Managing arts resources across the school</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        Can we help out with an answer to this? Sue wasn't able to make it on 
+        but has emailed me the following question: if you feedback I will contact 
+        her tomorrow and make sure she can log in to read the answers </p>
+      <p>&#8220;We had one question here which was, if all the school is doing 
+        the same art strand, how can resources be managed effectively so they 
+        can be utilised by all? Short of spending money, of course. </p>
+      <p><strong>Tracey McLennan:</strong><br>
+        It wouldn't be the ideal, I don't think, to have all the school working 
+        in this way. At the same time, is it totally unavoidable? Even if the 
+        progression was slightly out, i.e. one group ahead of the other, that 
+        would certainly work better for resource sharing, as well as the excellent 
+        peer-feedback that could also occur after lessons. We have much to learn 
+        from each other, and it would be a shame if this could not be shared and 
+        then feedback utilised to make shifts/changes.</p>
+      <p><strong>Carol Langton:</strong><br>
+        This is an excellent moment for the exemplars to walk in, stage right. 
+        For planning purposes, there are no better or more accessible resource 
+        along with the MOE resource packs for each discipline. </p>
+      <p>As far as physical resources go, well, that is why a good overview is 
+        necessary when planning for the year...stretching resources (everyone's 
+        fair share) is vital to peace of mind for the staff. I always used to 
+        start my music units with the making of percussive and stringed instruments 
+        and then added a few really good instruments to the final ensemble. </p>
+      <p>Innovation is the name of the game in a school where the resources are 
+        thin on the ground. </p>
+      <p><strong>Simon Chiaroni</strong>:<br>
+        First of all, what a fantastic problem to have, so many users that the 
+        arts resources are stretched!! </p>
+      <p>I'm not sure of your schools' circumstances, but one possibility might 
+        be team teaching, where each teacher prepares a module/activity based 
+        on a particular resource and then works with different classes at different 
+        times to teach it. Takes a bit of co-ordination, but the students get 
+        to experience different teachers' approaches and a range of activities/units.</p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Resources from MOE not getting through</h3>
+      <p><strong>Julie Lawson:</strong><br>
+        Tena koutou. Sorry so late &#8211; server playing up again, so wont be 
+        on for long. </p>
+      <p>Dare I say it, but we can&#8217;t find our exemplar CDs etc, so yet to 
+        view them! </p>
+      <p>sound great from everyone&#8217;s comments. Congrats to all concerned.</p>
+      <p><strong>Tracey McLennan:</strong><br>
+        Lost resources! That still seems to be such an issue in schools doesn't 
+        it, whereby teachers can't find the materials that we're sending out there! 
+        What's the solution everyone?</p>
+      <p><strong>Carol Langton:</strong><br>
+        There are already a few arts teachers/curriculum managers who have told 
+        me that the exemplar resources haven't made it into their hands. I suggest 
+        they first go to see the school secretary who handles the mail, then their 
+        school librarian... and then the principal, who may be going through them 
+        (familiarising him/herself). Julie has told me before that she has her 
+        mail delivered to her home because it often &quot;doesn't make it to the 
+        school mail box&quot;. </p>
+      <p>If the teacher goes through the process of trying to find the exemplars 
+        and still comes up with nothing, what should they do?</p>
+      <p><strong>Simon Chiaroni:</strong><br>
+        A good question for me, as Learning Media manages the Ministry distribution 
+        and warehouse. Most of the time it seems resources do turn up somewhere 
+        in the school. They're generally addressed to the principal in the first 
+        instance, so that's often where they're stalled. </p>
+      <p>But if they are still untraceable after searching, then the school should 
+        contact Customer Services at Learning Media for replacement copies. </p>
+      <h3><br>
+        Farewells</h3>
+      <p><strong>Tracey McLennan:</strong><br>
+        Thanks for all of your input everyone. I've enjoyed hearing what is happening 
+        at the grass roots level, as its so important not to lose sight of all 
+        this work you are doing. After all, that's why the exemplars were developed 
+        in the first place, and in the variety of formats that they are finally 
+        in.</p>
+      <p><strong>Sarah Wilson:</strong><br>
+        Thanks everyone for joining us today, and to Tracey and Simon for being 
+        our guests!</p>
+      <p>Until next time&#8230;<br>
+        Ka kite<br>
+        Sarah</p>
+    
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+   <p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+  
+   </td>
+</tr>
+</table>
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

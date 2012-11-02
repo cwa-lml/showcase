@@ -1,0 +1,55 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+/*	background-image: url(images/nz_map02.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #F4F5FA;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+}
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.mapBg {
+	background-image: url(/images/nz_map01.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+a:link {
+	color: #336699;
+}
+a:visited {
+	color: #6699CC;
+}
+a:hover {
+	color: #FF6600;
+}
+a:active {
+	color: #FF0000;
+}
+table.thumbnails td {
+	padding:15px;
+	text-align:center;
+	vertical-align:top;
+}
+
+.style-table {
+
+}
+
+.style-table td {
+vertical-align: top;
+}
+
+.style-table li {
+margin-bottom: 10px;
+}

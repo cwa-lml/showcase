@@ -1,0 +1,456 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Visual Arts | Creating rangoli patterns: A visual arts unit for levels 1-2 </TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-6.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-6.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "rangoli;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("teach_learn_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+ 
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0" alt="" /></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0" alt="" /></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0" alt="" /></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" alt="" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="../policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="../plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="../assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="../issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../materials/index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left" alt="" />Implementation</td>
+</tr>
+</table>
+      <h1 class="h2-implementation">Creating rangoli: A visual arts unit for levels 1&#8211;2</h1>
+
+
+
+<p>
+<a href="index_e.html">Introduction</a> |
+<a href="curric_links_e.html">Curriculum links</a> |
+<a href="teach_learn_e.html"><strong>Teaching and learning sequence</strong></a></p>
+
+<!-- Content goes here-->
+<h2>Teaching and learning sequence</h2>
+<h2>1. Investigating the values, purposes, and context of rangoli art, and responding to selected examples of this art form</h2>
+
+	  <p>Students look at images of traditional rangoli art (for examples, see 
+        <a href="http://www.asia2000.org.nz/educating/unit_plans/rangoli/bground/patterns.shtml" target="_blank">http://www.asia2000.org.nz/educating/unit_plans/rangoli/bground/patterns.shtml</a>) 
+        <br />
+        Teacher uses a range of questions to encourage students' engagement with 
+        the images by: 
+      <ul>
+	<li>describing what is seen</li>
+	<li>identifying formal qualities, such as line, shape, motif, pattern, repetition</li>
+	<li>interpreting meaning or mood, from a personal point of view</li>
+	<li>speculating on how the rangoli images might have been made.</li>
+	</ul>	
+	Teacher records the students' questions, then uses them to guide compilation 
+      of a resource about rangoli art (including images). This helps the children 
+      to find their answers and to learn more. 
+      <div class="caption">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/1.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/1.gif" alt="Rangoli resource" />
+Rangoli resource</a></p></div></p>
+
+<p>Teacher prompts students to reflect on the new knowledge gained and to relate it to their own culture. Examples of prompt questions are: 
+<ul>
+<li>Are there times when you and your family make artworks that might not last or need to be renewed?</li>
+
+<li>What symbols and patterns are used in these artworks that have special meaning for you?</li>
+</ul></p>
+
+
+<h2>2. Designing patterns</h2>
+
+
+      <p>Students explore line, shape, and pattern from a range of images and 
+        objects, such as flowers, animals, and geometric shapes through drawings.
+<div class="caption-left">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/2.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/2.gif" alt="Researching patterns" />
+Researching patterns</a></p></div></p>
+
+<p>Students enrich and develop ideas about repetition by considering concepts, such as symmetry, and processes, such as rotation, reflection, and gliding. They explore these repetition options through dance activities where the body represents a motif.
+
+<div class="caption">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/3.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/3.gif" alt="Exploring dance patterns" />
+Exploring dance patterns</a></p></div></p>
+
+<p>Using ideas generated from their research and dancing, students experiment with creating their own patterns. Guide them to select one or more key shapes (motifs) that can be used repetitively when exploring pattern making. Both representational and symbolic shapes are suitable. (Remember that, if optional orientations are desired, the motif shapes must be asymmetric.)</p>
+
+      <p>The students explore ways of repeating the motif shapes by rotating, 
+        gliding, and reflecting them to make a pattern. Refer them to how a pattern 
+        is built up in rangoli (considering symmetry and balance). They experiment 
+        with several ideas for their composition. For developing the designs, 
+        motifs can be cut out from photocopied shapes, or traced around (such 
+        as foam maths shapes). 
+      <div class="caption-left">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/4.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/4.gif" alt="Using objects as motifs" />
+Using objects as motifs</a></p></div> </p>
+
+
+<p>The composition can be refined by the addition of linking lines between the shapes to create variations of pattern.
+
+<div class="caption">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/5.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/5.gif" alt="Linking lines" />
+Linking lines</a></p></div></p>
+
+
+<p>The students share with partner or others in group how their pattern is made and what ideas are being expressed. The final design is kept for reference.
+
+<div class="caption-left">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/6.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/6.gif" alt="Feedback conversation" />
+Feedback conversation</a></p></div> </p>
+
+
+<h2>3. Preparing design to be recreated outside</h2>
+
+<p>Students use chalk or white pastel to draw their final design onto black paper, tracing around objects where required. They select colours, which may have symbolic meanings, and use them to enhance the symmetry (or other type of repetition) used to create their design.
+
+
+<div class="caption">
+<p>
+<a href="javascript:popUp(440,390,'tpo','large/7.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/7.gif" alt="Preparing designs" />
+Preparing designs</a></p></div> </p>
+
+
+<h2>4. Selecting and preparing materials</h2>
+
+<p>At this stage, the students could experiment with a variety of materials and decide which medium will be used for the outdoors version of their design. Possible materials include chalk, powdered paint, dyed rice, coloured rice powder, and coloured sand. Egg cartons are useful containers for keeping different colours separated.</p>
+
+
+<h2>5. Recreating patterns outside</h2>
+
+      <p>The students will need to decide how to combine the designs from the 
+        whole class on the outdoor ground area. For example, they could use random 
+        placement, alphabetical order (by student name), or groupings of similar 
+        patterns or colours to form a larger design. 
+      <div class="caption">
+<p>
+<a href="javascript:popUp(420,620,'tpo','large/group2.html');" title="Click on image to view enlarged picture">
+<img src="img/thumb/group2.gif" alt="Recreating designs outdoors" />
+Recreating designs outdoors</a></p></div></p>
+
+
+<p>Selecting from the prepared materials, each student recreates their own design on the outdoor surface.
+ </p>
+
+
+
+<p>Conclude with a debrief about the process of working outside, using de Bono's PMI (Plus/Minus/Interesting) headings to guide and record the discussion.</p>
+<br />
+<br /><br /><br /><br />
+<br />
+<!--End Content -->
+<br />
+<br />
+<br />
+<p align="left"> <a href="#top">Back to top</a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

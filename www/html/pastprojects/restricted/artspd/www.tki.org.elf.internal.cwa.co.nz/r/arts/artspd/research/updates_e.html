@@ -1,0 +1,452 @@
+<!--last updated 1.25pm 22/06/2001 MES-->
+
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Research | Research updates</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "research;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("updates_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="updates_e.html" class="nav-research">Research</a><br>
+<a href="readings_e.html" class="nav-research">Readings</a><br>
+<a href="curriculum_e.html" class="nav-research">Curriculum support material</a>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a>
+<br>
+<br>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#999999" class="h-research" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Research / Readings</td>
+</tr>
+</table>
+<h2 class="h2-research">Research</h2>
+
+<table width="160" cellpadding="0" cellspacing="0" border="0" align="left" style="margin-right:10px;">
+<tr>
+<td class="qlinks" style="width:150;height:23;padding-left:2px;background-image: url('../img/sample_top.gif');">Index</td>
+<td rowspan="3" width="10" style="width:10px;">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#EEEEEE" style="padding:2px; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;"><p class="quick-p"><a href="#1">Assessment in the Visual Arts Carol Langton, 2001</a></p>
+<p class="quick-p"><a href="#2">Boys and Drama</a></p>
+<p class="quick-p"><a href="#3">Curriculum Update 43</a></p>
+<p class="quick-p"><a href="#4">Dancing in the Millennium</a></p>
+<p class="quick-p"><a href="#5">NCEA Music for gifted and talented students</a></p>
+<p class="quick-p"><a href="#6">Teaching and Learning in Dance</a></p>
+<p class="quick-p"><a href="#7">Teaching in 3D</a></p>
+<p class="quick-p"><a href="#8">The Arts</a></p>
+<p class="quick-p"><a href="#9">Vision</a></p>
+<p class="quick-p"><a href="#10">What drama can do for literacy</a></p>
+</td>
+</tr>
+<tr>
+<td><img src="../img/sample_base.gif" alt="" width="150" height="32" border="0"></td>
+</tr>
+</table>
+
+<p><b>
+	<a name="1" href="updates2_e.html">Assessment in the Visual Arts Carol Langton, 2001</a>
+</b><br>
+
+An edited excerpt from a paper presented at the 'Learning Though The Arts Conference' 
+      in Wellington, New Zealand on 10 July 2001.The paper explores three types 
+      of assessment methods that generalist teachers use to promote identity and 
+      stimulate creativity in their visual arts programme. 
+    <br>(<a href="http://www.tki.org.nz/r/arts/artspd/research/updates2_e.php">http://www.tki.org.nz/r/arts/artspd/research/updates2_e.php</a>)</p>
+
+<p><b><a name="2" href="updates8_e.html">Boys and Drama</a></b><br>
+Paper by Chris Horne about the value of drama as a tool to enhance boys' learning. It includes guidelines teachers can follow 
+to establish a safe and structured drama environment for boys.<br>
+<a href="updates8_e.html">http://www.tki.org.nz/r/arts/artspd/research/updates8_e.php</a>
+</p>
+
+	<p>
+	
+	
+	<b>
+	<a name="3" href="http://www.tki.org.elf.internal.cwa.co.nz/r/governance/curric_updates/curr_update43_e.php">Curriculum Update 43</a>
+</b><br>
+	This publication outlines some of the Ministry of Education's planning and 
+      strategies to support boards of trustees, principals, and teachers in the 
+      arts. It also relates the arts curriculum to secondary assessment and the 
+      National Certificate of Educational Achievement (NCEA). It includes the 
+      contact details the network of regional spokespersons that has been formed 
+      to answer any media or school questions to do with the new arts curriculum. 
+<br>(<a href="http://www.tki.org.nz/r/governance/curric_updates/curr_update43_e.php">http://www.tki.org.nz/r/governance/<br>curric_updates/curr_update43_e.php</a>)</p>
+
+<p>
+
+<b>
+	<a name="4" href="updates1_e.html">Dancing in the Millennium</a>
+</b><br>
+
+
+	This paper by Tina Hong National Coordinator for Dance, proposes a postmodern approach to 
+	school&#8211;based dance curriculum. The discussion explores the dance literacy approach
+	based on a conceptual framework that conceives of dance as a literacy
+	located within the multiliteracies of postmodernity.
+<br>(<a href="http://www.tki.org.nz/r/arts/artspd/research/updates1_e.php">http://www.tki.org.nz/r/arts/artspd/research/updates1_e.php</a>)</p>
+
+
+<p><b>
+	<a name="5" href="updates6_e.html">NCEA Music for gifted and talented students</a>
+</b><br>
+
+Chris Archer, Secondary Music Adviser at the Christchurch College of Education, explains the traits of gifted students, and 
+gives ideas and activities to help cater for them in the mainstream music classroom at NCEA levels.<br>
+(<a href="updates6_e.html">http://www.tki.org.nz/r/arts/artspd/research/updates6_e.php</a>)</p>
+
+<p><b>
+	<a name="6" href="updates5_e.html">Teaching and Learning in Dance</a>
+</b><br>
+	Ralph Buck, University of Otago dance lecturer, first presented this paper as part of the Education and Training Symposium at World Dance Alliance 2001: Asia Pacific Dance Bridge, Singapore. It outlines his PhD research into what dance in the classroom means to primary school teachers. The paper describes the New Zealand context, Ralph's professional background, and his methodology. It presents some initial research observations, and discusses their implications for dance education in New Zealand. Since Ralph presented this paper his research has developed further. His most recent work will be presented on this site in 2003.
+<br>(<a href="http://www.tki.org.nz/r/arts/artspd/research/updates5_e.php">http://www.tki.org.nz/r/arts/artspd/research/updates5_e.php</a>)
+
+<p><b>
+	<a name="7" href="updates4_e.html">Teaching in 3D</a>
+</b><br>
+
+Merryn Dunmill, national coordinator for music, suggests research into teacher development is often based on the premise that the quality or outcome of teaching within a school-based music curriculum can be improved by understanding what teachers do and how they think. Her paper explores how improved music teaching makes for more informed students, better quality schools, and ultimately, a better society.
+<br>(<a href="http://www.tki.org.nz/r/arts/artspd/research/updates4_e.php">http://www.tki.org.nz/r/arts/artspd/research/updates4_e.php</a>)
+
+
+<p>
+
+<b>
+	<a name="8" href="http://www.edgazette.govt.nz/articles/show_articles.cgi?id=5420">The Arts</a>
+</b><br>
+This is an article about the planned publication of the draft arts national curriculum 
+      statement, published in the Education Gazette in August 1998. It outlines 
+      the developments to date including the writers, research about New Zealanders 
+      and the Arts, and the writing and consultation process. 
+  <br>(<a href="http://www.edgazette.govt.nz/articles/show_articles.cgi?id=5420">http://www.edgazette.govt.nz/articles/show_articles.cgi?id=5420</a>)    
+
+<p><b>
+	<a name="9" href="updates3_e.html">Vision</a>
+</b><br>
+	This paper by David Best (2000) discusses specifically why drama and in a wider context the arts are important.  From his pilosophical viewpoint he offers reasons to support the arts in education while raising issues and challenging some of the current justifications for the arts in education.
+<br>(<a href="http://www.tki.org.nz/r/arts/artspd/research/updates3_e.php">http://www.tki.org.nz/r/arts/artspd/research/updates3_e.php</a>)
+
+<p><b><a name="10" href="updates7_e.html">What drama can do for literacy</a></b><br>
+Some of the ways in which drama can contribute to more effective teaching of reading and writing are described 
+and discussed by Rachel Roper of the Massey University College of Education. This paper was first aired in a 
+discussion forum at the April 2003 NZADIE Conference in Auckland.<br>
+<a href="updates7_e.html">http://www.tki.org.nz/r/arts/artspd/research/updates6_e.php</a>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+<br>
+<br>
+<br>
+<br>
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

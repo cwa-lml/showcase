@@ -1,0 +1,493 @@
+H1 {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 16px; 
+font-weight: bold; 
+color: #000000; 
+}
+
+H2 {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 14px; 
+font-weight: bold; 
+color: #000000; 
+}
+
+.h2-events {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #CC3300; 
+}
+
+.h2-research {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #666666; 
+}
+
+.h2-materials {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #336600; 
+}
+
+.h2-implementation {
+font-family: Georgia,Times New Roman,serif;
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #0066FF; 
+}
+
+.h2-general {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #666666; 
+}
+
+.h2-forum {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #666666; 
+}
+
+H3 {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 14px; 
+font-weight: bold; 
+color: #000000; 
+}
+
+.h3-implementation {
+	font-family: Arial,Helvetica,sans-serif; 
+	font-size: 14px; 
+	color: #000000; 
+}
+
+th.lesson {
+font-family: Arial,Helvetica,sans-serif;
+font-size: 14px; 
+color: #000000;
+text-align: left; 
+}
+
+H4 {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+font-weight: bold; 
+color: #000000; 
+}
+
+.materials {
+color: #336600; 
+} 
+
+.homehead {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 14px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FFFFFF; 
+}
+
+.h-events {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FFFFFF; 
+}
+
+.qlinks {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 13px; 
+font-weight: bold; 
+color: #FFFFFF; 
+}
+
+.quick-list {
+margin-left:15px;
+list-style-image: url("/r/arts/artspd/img/ol_arrow.gif");
+}
+
+.quick-p {
+margin-top:0;
+margin-bottom:5px;
+}
+
+.h-research {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FFFFFF; 
+}
+
+.h-materials {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #0066FF; 
+}
+
+.h-implementation {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FFFFFF; 
+}
+
+.h-implement-alt1 {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 16px;
+font-weight: bold; 
+font-style: italic; 
+color: #0066FF; 
+margin-bottom: 0px;
+}
+
+.h-implement-alt {
+font-family: Georgia,Times New Roman,serif;
+font-size: 13px; 
+font-weight: bold;
+color: #0066FF; 
+margin-top: 0px;
+}
+
+.h-general {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FF6600; 
+}
+
+.h-forum {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 15px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FF6600; 
+}
+
+.boxes {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+padding: 4px; 
+}
+
+.materials-quote {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 13px; 
+font-weight: normal; 
+font-style: normal; 
+color: #0066FF; 
+padding: 6px; 
+}
+
+blockquote.lessmargin {
+	margin-top : 10px;
+	margin-left : 10px;
+	margin-right : 10px;
+}
+
+P {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+}
+
+P.indent {
+font-family: Arial,Helvetica,sans-serif; 
+margin-left : 40px;
+}
+
+TD {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+}
+
+A {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+text-decoration: underline; 
+}
+
+.b {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+font-weight: bold; 
+text-decoration: underline; 
+}
+
+.hilight {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 12px; 
+color: #000000; 
+background: #EEEEEE; 
+border: 1px solid #999999; 
+padding: 4px; 
+}
+
+.nav-events {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 12px; 
+line-height: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #FF9900;
+}
+
+.nav-research {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 12px; 
+line-height: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #666666;
+}
+
+.nav-materials {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 12px; 
+line-height: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #0066FF;
+}
+
+.nav-implementation {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 12px; 
+line-height: 16px; 
+font-weight: bold; 
+font-style: italic; 
+color: #0066FF;
+}
+
+.nav {
+font-family: Georgia,Times New Roman,serif; 
+font-size: 11px; 
+line-height: 16px; 
+font-weight: bold; 
+font-style: normal; 
+color: #0066FF; 
+}
+
+A.alt {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 10px; 
+color: #666666; 
+text-decoration: underline; 
+}
+
+.altbar {
+font-family: Arial,Helvetica,sans-serif; 
+font-size: 10px; 
+color: #666666; 
+}
+
+A:hover {color: #FF6600;}
+
+A:active {color: #0099FF;}
+
+
+HR { 
+color: #999999;
+}
+
+li.moregap {
+margin-top: 5px;
+}
+
+p.subnav-wrap {
+margin: 0px 0px 0px 7px;
+}
+
+.no-pad-top { 
+margin-top: 0px;
+}
+
+.no-pad-bottom { 
+margin-bottom: 0px;
+}
+
+.contentsmall {
+font-family: verdana,arial,helvetica,sans-serif;
+font-size:10px;
+color:#000000;
+margin-top: 2px;
+}
+
+.enlarge {
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	background-color: #EAEAEA;
+}
+
+.enlargebot {
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #EAEAEA;
+}
+
+.popup {
+	margin:3px;
+}
+
+.popup td {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size:xx-small;
+	text-align: center;
+	color:#000000;
+}
+
+.elements-table {
+	border: 1px solid #000000;
+	vertical-align: top;
+}
+
+.elements-tabletop {
+	border-top: 1px solid #000000;
+	vertical-align: top;
+}
+
+.elements-tableleft {
+	border-left: 1px solid #000000;
+	vertical-align: top;
+}
+
+.elements-tableright {
+	border-right: 1px solid #000000;
+	vertical-align: top;
+}
+
+.elements-tablebottom {
+	border-bottom: 1px solid #000000;
+	vertical-align: top;
+}
+
+.valign {
+	vertical-align: top;
+}
+
+.calign {
+	text-align: center;
+}
+
+.ralign {
+	text-align: right;
+}
+
+ul {
+	margin-top: 0px;
+}
+ul.flush {
+	margin-left:15px;
+}
+
+ol {
+	margin-top: 0px;
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+
+/*Hiria added for /implementation/dance_res/  files 9th July 04 Manager: Sarah*/
+.download{
+	border: solid 1px #000;
+	width: 400px;
+	
+}
+.download-content {
+margin: 5px;
+}
+
+.caption {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:smallest;
+	font-weight:bold;
+	width: 142px;
+	font-style: italic;
+	float: right;
+	
+}
+
+.caption-fix {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:smallest;
+	font-weight:bold;
+	font-style: italic;
+	text-align: right;
+	margin-top: 4px;	
+}
+
+.caption-left {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:smallest;
+	font-weight:bold;
+	width: 142px;
+	font-style: italic;
+	
+	
+}
+.caption-left a {
+	font-size: 0.75em;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+.caption a {
+	font-size: 0.75em;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+
+.large-caption {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:0.75em;
+	font-weight:bold;
+	width: 400px;
+	font-style: italic;
+	
+}
+
+img {
+	border: 0;
+}
+
+.no-dot {
+	list-style-type: none;
+}
+
+.flush {
+	padding: 0;
+	margin: 0;
+}
+
+.float-right{
+float: right;
+}
+
+

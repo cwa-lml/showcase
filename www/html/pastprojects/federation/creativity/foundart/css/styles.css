@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+	color: #000;
+	background-color: #FFF;
+}
+
+div {
+    height: 95%;
+}
+
+#divcenter {
+	text-align: center;
+}
+
+#copyright, #conditions {
+    font-family: Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+}
+
+#bold-italic {
+	font-weight: bold;
+	font-style: italic;
+}

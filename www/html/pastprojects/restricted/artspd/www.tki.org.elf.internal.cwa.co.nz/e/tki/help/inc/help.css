@@ -1,0 +1,48 @@
+.title {font-family:arial, helvetica, sans-serif;
+color:#ff6600;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+
+h1 {font-family:arial, helvetica, sans-serif;
+color:black;
+font-size:16px;
+font-weight:bold;
+text-decoration:underline;
+}
+
+h2, .heading {font-family:arial, helvetica, sans-serif;
+color:black;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+}
+
+h3 {font-family:arial, helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+}
+
+.text {
+font-family:Times New Roman, serif;
+color: #000000; 
+font-size:1.0em;
+text-decoration:none;	
+}
+
+.links {font-family:arial, helvetica, sans-serif;
+color:blue;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+}
+
+dt {
+font-weight: bold;
+padding-top: 15px;
+}
+
+dd {
+margin-left: 0px;
+}

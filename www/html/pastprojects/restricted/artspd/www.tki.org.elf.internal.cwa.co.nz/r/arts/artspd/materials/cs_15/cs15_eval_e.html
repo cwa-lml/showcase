@@ -1,0 +1,449 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Teacher PD Materials | Case Studies</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "cs_15;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("cs15_eval_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../implementation/index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0"><BR>
+<a href="../cs_e.html" class="nav-materials">Case studies</a>
+<nobr><br><a href="../ohts_e.html" class="nav-materials">OHTs for PD meetings</a></nobr><br>
+<a href="../pdmodels_e.html" class="nav-materials">PD models</a><br>
+<a href="../reviewforms_e.html" class="nav-materials">School self-review form</a><br>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#CCFF00" class="h-materials" width="550"><img src="../../../../../htdocs/r/arts/artspd/img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Teacher Professional Development Materials</td>
+</tr>
+</table>
+
+<h2 class="h2-materials">Printmaking &#8211; Makarewa School, Invercargill </h2>
+      
+	  <table cellpadding="0" cellspacing="0" border="0" height="24">
+        <tr align="center" valign="top"> 
+          <td class="h-materials" width="550"> 
+            <div align="left"><img src="../../../../../htdocs/r/arts/artspd/img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left"> 
+              <a href="cs15_index_e.html" class="nav">Introduction</a> | <a href="cs15_planning_e.html" class="nav">Organisation/Planning</a> 
+              | <a href="cs15_content_e.html" class="nav">Content</a> | <a href="cs15_issues_e.html" class="nav">Issues</a> 
+              | <a href="cs15_eval_e.html" class="nav">Evaluation/Reflection</a> 
+            </div>
+          </td>
+        </tr>
+      </table>
+     <br>
+
+<h4 class="materials">Evaluation/Reflection</h4>
+
+
+<p>The evaluative feedback process from The Arts Online team has been a positive and interactive group effort. The focus of the printmaking was not just on creating works  for the school's art exhibition but to learn how best to use  the Ministry of Education arts resources, and therefore raise the standard of teaching and learning outcomes.</p>
+
+
+<p><strong>Feedback from Ann Brodie &#8211; The Arts Online visual arts adviser</strong><br />
+Hi Diane,<br />
+What a neat context. I grew up in Invercargill but hadn't ever heard about this special identity. The prints are a great way to commemorate the existence of the cottage and its owner. I saw, as well as the qualities described, that some students show an awareness of form in the use of an orthogonal line (sloping) on the side of the house and a little overlapping too (especially the fence). Not an easy material to deal with. </p>
+
+<p><strong>Feedback from Carol Langton &#8211; The Arts Online manager</strong><br />
+Hi Dianne,<br />
+Your students' work looks good on the online forum. As Ann says, it's a wonderful and meaningful context with such strong links to the community history and the process of drawing to printmaking. </p>
+
+<p>When I visited the Invercargill art museum I found Jo Ogier's work there and discovered that she had been their artist in residence. They said she was quite happy to take phone calls. </p>
+
+<p>For a useful evaluation exercise, the children could phone or email her some questions and show her their work online like we have done on the October 8, 2004 forum.</p>
+
+
+<p><strong>Response from Dianne Cowan &#8211; teacher</strong><br />
+Thank you Carol,<br />
+It will be great to have this avenue to follow up on. I'm sure the children would get a thrill out of showing their work to a 'real artist'. Timing is great as we're away to the museum tomorrow. I shall keep you informed of how we get on. 
+Regards,<br />
+Dianne</p>
+
+<h5>Reflection from Catherine Gibbs, School Support Services adviser</h5>
+ 
+<p>"Whether we are creators or observers of art, the opportunity for richer and deeper understanding in the arts is nourished by our interaction with professional artists. This early interaction within the community shapes our adult lives.</p>
+
+<p>Professional artists are primary advocates of the authentic experience of creating, making, and experiencing their art form. A curriculum enriched by working with artists opens up new ways of approaching teaching and learning music."</p>
+
+
+<h4>What next </h4>
+
+<p>Since this unit, Makarewa School's ongoing commitment to working with Ministry of Education (MOE) resources has resulted in the following class units.</p>
+
+      <table border="1"  cellspacing="0" bordercolor="#000">
+        <tr> 
+          <th> Ministry of Education arts resources </th>
+          <th> Class </th>
+          <th> Visual arts focus </th>
+        </tr>
+        <tr> 
+          <td> <em>Exploring the visual arts in years 1&#8211;6: Fabric and Fibre</em>. 
+            Heeni Kerekere (pp 7&#8211;14) and Bev Christophersen (pp 15&#8211;19).</td>
+          <td> year 1 and 2 </td>
+          <td> weaving unit </td>
+        </tr>
+        <tr> 
+          <td><em>Exploring the visual arts in years 1&#8211;6: Painting</em>. 
+            Lindsay Crooks (pp 6&#8211;16). <br /> <em>Exploring the visual arts 
+            in years 1&#8211;6: Fabric and Fibre</em>. Bev Christophersen (pp 
+            19). </td>
+          <td> year 0 and 1 </td>
+          <td> crayon and dye, painted and mixed media clowns</td>
+        </tr>
+        <tr> 
+          <td><em>Exploring the visual arts in years 1&#8211;6: Printmaking.</em> 
+            (pg 26). </td>
+          <td> years 2, 3, and 4 </td>
+          <td> Monoprints &#8211; flowers</td>
+        </tr>
+        <tr> 
+          <td><em>Exploring the visual arts in years 1&#8211;6: Printmaking</em>. 
+            Gabrielle Belz (pp 20&#8211;25).</td>
+          <td>years 2, 3, and 4</td>
+          <td>Printmaking &#8211; PVA glue prints of trees in the winter</td>
+        </tr>
+        <tr> 
+          <td><em>Exploring the visual arts in years 1&#8211;6: Painting.</em> 
+            Randal Leach (pp 17&#8211;26). </td>
+          <td> year 4 and 5 </td>
+          <td> koru and koru patterns </td>
+        </tr>
+      </table>
+	 
+      <table align="center">
+        <tr> 
+          <td> <img src="../../img/weaving.gif" alt=" weaving unit" border="0"> 
+            <p class="caption"> weaving unit</p></a>
+            </td>
+          <td> <img src="../../img/clown-1.gif" alt=" painted clowns"  border="0"> 
+            <p class="caption"> painted clowns</p></td>
+          <td><p class="caption"> <img src="../../img/clown.gif" alt=" painted clowns"  border="0"> 
+            </p>
+            <p class="caption"> painted clowns</p></td>
+        </tr>
+        <tr> 
+         <td><img src="../../img/monoprint-1.gif" alt=" monoprints" width="216" height="162"  border="0"> 
+            <p class="caption"> monoprints</p></td>
+          <td> <img src="../../img/monoprint.gif" alt=" monoprints" width="122" height="162"  border="0"> 
+            <p class="caption"> monoprints</p></td>
+         <td> <img src="../../img/printmaking.gif" alt=" printmaking- trees" width="216" height="162"  border="0"> 
+            <p class="caption"> printmaking- trees</p></td>
+        </tr>
+       
+        <tr> 
+         <td colspan="3" align="right"> <img src="../../img/koru.gif" alt=" koru patterns" border="0"> 
+           
+            <p class="caption"> koru patterns</p></td>
+       
+      </table>
+			
+
+<h5>References</h5> 
+
+<p>Ministry of Education (2000). <em>The Arts in the New Zealand Curriculum</em>. Wellington: Learning Media.</p>
+
+<p>Ministry of Education (1997). <em>Social Studies in the New Zealand Curriculum</em>. Wellington: Learning Media.</p>
+
+<p>Ministry of Education (2001). <em>Exploring the Visual Arts in Years 1&#8211;6: Printmaking</em>. Wellington: Learning Media.</p>
+
+      <p>Ministry of Education (2001). <em>Exploring the Visual Arts in Years 1&#8211;6: 
+        Fabric and Fibre. </em>Wellington: Learning Media.<br>
+        <br>
+      </p>
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

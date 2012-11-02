@@ -1,0 +1,75 @@
+        '#ladder-drop' : {
+            type : 'css',
+            reset : {
+                left : '452px',
+                top : '-70px'
+            },
+            play : {
+                duration : 250,
+                easing : 'easeInCubic',
+                css : {
+                    left : '-50px',
+                    top : '+=200px'
+                }
+            },
+            then : {
+                '#ladder-drop' : {
+                    type : 'css',
+                    play : {
+                        duration : 10,
+                        css : {
+                            opacity : 0.0
+                        }
+                    }
+                },
+                '#ladder-splat' : {
+                    type : 'css',
+                    play : {
+                        duration : 10,
+                        css : {
+                            opacity : 1.0
+                        }
+                    },
+                    then : {
+                        '#ladder-splat' : {
+                            type : 'css',
+                            duration : 240,
+                            easing : 'linear',
+                            css : {
+                                top : '+=200px',
+                                left : '-=25px'
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+
+        '#ladder-splat' : {
+            type : 'css',
+            delay : 1500,
+            reset : {
+                left : '310px',
+                top : '-200px',
+                opacity : 0.0
+            },
+            play : {
+                duration : 500,
+                easing : 'linear',
+                css : {
+                    left : '-=80px',
+                    top : '+=400px',
+                    opacity : 1.0
+                }
+            },
+            then : {
+                '#ladder-splat' : {
+                    type : 'css',
+                    play : {
+                        css : {
+                            opacity : 0.0
+                        }
+                    }
+                }
+            }

@@ -1,0 +1,36 @@
+H1 {
+font-size: 16px;
+font-family: arial,  helvetica, sans-serif;
+color: #003366;
+}
+
+H1.tips {
+font-size: 100%;
+font-family: arial,  helvetica, sans-serif;
+}
+
+H2 {
+font-size: 16px;
+font-family: arial, helvetica, sans-serif;
+font-weight: normal;
+color: #003366;
+}
+
+H3 {
+font-size: 100%;
+}
+
+H4 {
+font-size: 100%;
+font-style: italic;
+font-weight: normal;
+}
+
+p.toplink {
+font-size: 90%;
+}
+
+.smalltext {
+font-size: 80%;
+}
+

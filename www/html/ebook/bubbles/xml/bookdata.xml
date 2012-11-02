@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<config>
+		<numberedPages>8</numberedPages>
+	</config>
+	
+	<legal_stuff>
+		<title><![CDATA[<b>Bubbles</b>]]></title>
+		<credits><![CDATA[by Dot Meharry<br>illustrated by Fraser Williamson]]></credits>
+		<copyright><![CDATA[© 2011 etc etc]]></copyright>
+	</legal_stuff>
+	
+	<analyses>
+		<item>
+			<heading><![CDATA[<b>Word count:</b>]]></heading>
+			<contents>39</contents>
+		</item>
+		<item>
+			<heading><![CDATA[<b>High-frequency words:</b>]]></heading>
+			<contents><![CDATA[<i>my, on, the, they, to, up</i>]]></contents>
+		</item>
+		<item>
+			<heading><![CDATA[<b>Content words:</b>]]></heading>
+			<contents><![CDATA[<i>birds, bubbles, cat, dog, hedgehog, wind</i>]]></contents>
+		</item>
+		<item>
+			<heading><![CDATA[<b>Comprehension/skills focus:</b>]]></heading>
+			<contents><![CDATA[using prior knowledge, making and confirming predictions]]></contents>
+		</item>
+		<item>
+			<heading><![CDATA[<b>Themes:</b>]]></heading>
+			<contents><![CDATA[personal interests, neighbourhood and personal environments, nature]]></contents>
+		</item>
+		<item>
+			<heading><![CDATA[<b>Anchor words</b>]]></heading>
+			<contents><![CDATA[]]></contents>
+		</item>
+	</analyses>
+	
+	<pages>
+	
+		<cover>
+			<full_text><![CDATA[]]>
+			</full_text>
+			<page_narration></page_narration>
+			<narration_delay></narration_delay>
+			<chunks>
+			</chunks>
+		</cover>
+		
+		<page_0>
+			<full_text><![CDATA[]]></full_text>
+			<page_narration></page_narration>
+			<narration_delay></narration_delay>
+			<chunks>
+			</chunks>
+		</page_0>
+	
+		<page_1>
+			<full_text><![CDATA[]]></full_text>
+			<page_narration>intro.mp3</page_narration>
+			<narration_delay>1.0</narration_delay>
+			<chunks>
+			</chunks>
+		</page_1>
+		
+		<page_2>
+			<full_text><![CDATA[The wind blew my bubbles.]]></full_text>
+			<page_narration>page_2_narration.mp3</page_narration>
+			<narration_delay>1.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[The wind]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[blew]]></word>
+					<cuepoint>1.276518</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[my bubbles.]]></word>
+					<cuepoint>1.664499</cuepoint>
+				</chunk>
+			</chunks>
+		</page_2>
+		
+		<page_3>
+			<full_text><![CDATA[They went up, up, up.]]></full_text>
+			<page_narration>page_3_narration.mp3</page_narration>
+			<narration_delay>1.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[up]]></word>
+					<cuepoint>0.5562737</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[up]]></word>
+					<cuepoint>1.880599</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[up.]]></word>
+					<cuepoint>3.1342753</cuepoint>
+				</chunk>
+			</chunks>
+		</page_3>
+		
+		<page_4>
+			<full_text><![CDATA[They went over the cat.]]></full_text>
+			<page_narration>page_4_narration.mp3</page_narration>
+			<narration_delay>2.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[over]]></word>
+					<cuepoint>0.752415</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[the cat.]]></word>
+					<cuepoint>1.118274</cuepoint>
+				</chunk>
+			</chunks>
+		</page_4>
+		
+		<page_5>
+			<full_text><![CDATA[They went over the dog.]]></full_text>
+			<page_narration>page_5_narration.mp3</page_narration>
+			<narration_delay>2.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[over]]></word>
+					<cuepoint>0.785394</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[the dog.]]></word>
+					<cuepoint>1.167241</cuepoint>
+				</chunk>
+			</chunks>
+		</page_5>
+		
+		<page_6>
+			<full_text><![CDATA[They went over the birds.]]></full_text>
+			<page_narration>page_6_narration.mp3</page_narration>
+			<narration_delay>1.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[over]]></word>
+					<cuepoint>0.763028</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[the birds.]]></word>
+					<cuepoint>1.151672</cuepoint>
+				</chunk>
+			</chunks>
+		</page_6>
+		
+		<page_7>
+			<full_text><![CDATA[They went down, down, down.]]></full_text>
+			<page_narration>page_7_narration.mp3</page_narration>
+			<narration_delay>1.0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[down]]></word>
+					<cuepoint>0.568429</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[down]]></word>
+					<cuepoint>1.915541</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[down.]]></word>
+					<cuepoint>3.759654</cuepoint>
+				</chunk>
+			</chunks>
+		</page_7>
+		
+		<page_8>
+			<full_text><![CDATA[They went on to the hedgehog.<br>Pop, pop, pop!]]></full_text>
+			<page_narration>page_8_narration.mp3</page_narration>
+			<narration_delay>0</narration_delay>
+			<chunks>
+				<chunk>
+					<word><![CDATA[They went]]></word>
+					<cuepoint>0.1</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[on to]]></word>
+					<cuepoint>0.79791</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[the hedgehog.]]></word>
+					<cuepoint>1.7757231</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[Pop,]]></word>
+					<cuepoint>4.085514</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[pop,]]></word>
+					<cuepoint>5.288619</cuepoint>
+				</chunk>
+				<chunk>
+					<word><![CDATA[pop!]]></word>
+					<cuepoint>6.997624</cuepoint>
+				</chunk>
+			</chunks>
+		</page_8>
+		
+		<page_z>
+			<full_text><![CDATA[]]>
+			</full_text>
+			<page_narration></page_narration>
+			<narration_delay></narration_delay>
+			<chunks>
+			</chunks>
+		</page_z>
+
+	</pages>
+
+</data>

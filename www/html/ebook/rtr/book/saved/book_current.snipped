@@ -1,0 +1,38 @@
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="left size1of2 page">
+	<img src="images/image1.jpg" alt="" height="343" width="451">
+	<p>The dragons flew down to the skate park.</p>
+	<p>The <span class="sel_1331762115515 highlighted color-picker-lightgreen highlighted-mask">people jumped</span> off their skateboards.</p>
+	<p><span id="masked-3-index-0" class="sel_1331791901036 masked masked-first"><span class="sel_1331798462347 highlighted color-picker-lightgreen highlighted-mask">Dragons! Dragons!</span></span><span id="masked-3-index-1" class="sel_1331791901036 masked masked-last"> Dragons!</span> they screamed.</p>
+	<p>"Run for you lives!"</p>
+	<p>"No friends here," <span class="sel_1331771290404 highlighted color-picker-lightblue highlighted-mask">sa</span><span class="sel_1331771295308 highlighted color-picker-lightgreen highlighted-mask">id</span> Dora.</p>
+</div>
+<div class="right size1of2 page">
+	<p><span id="masked-1-index-0" class="sel_1331791897525 masked masked-first masked-last">The dragons swished down to the market.</span></p>
+	<p>The people dropped their fruit.</p>
+	<p>Dragons! Dragons! Dragons! they screamed.</p>
+	<p><span class="sel_1331734181437 highlighted color-picker-yellow highlighted-mask">"Run for you lives!"</span></p>
+	<p>"No friends here," said Dora.</p>
+	<img src="images/image2.jpg" alt="" height="280" width="438">
+</div><span class="" style="display: none;"></span><span class="" style="display: none;"></span><span class=" masked-2-index-0 masked-2-index-1" style="display: none;">Dragons! Dragons! Dragons! </span><span class="" style="display: none;"></span><span class="" style="display: none;"></span><span class="" style="display: none;"></span><span class="masked-1-index-0" style="display: none;">The dragons swished down to the market.</span><span class="masked-3-index-0 masked-3-index-1" style="display: none;">Dragons! Dragons! Dragons!</span>

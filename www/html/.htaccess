@@ -1,0 +1,4 @@
+AuthName 'Learning Media Internal'
+AuthType Basic
+AuthUserFile /etc/httpd/passwords
+Require user internal

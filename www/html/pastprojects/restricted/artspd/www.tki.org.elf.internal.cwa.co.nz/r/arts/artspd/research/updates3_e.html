@@ -1,0 +1,606 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Research | Vision, David Best, 2000</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-4.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-4.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "research;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("updates3_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="updates_e.html" class="nav-research">Research</a><br>
+<a href="readings_e.html" class="nav-research">Readings</a><br>
+<a href="curriculum_e.html" class="nav-research">Curriculum support material</a>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a>
+<br>
+<br>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#999999" class="h-research" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Research / Readings</td>
+</tr>
+</table>
+<h2 class="h2-research">Research</h2>
+<h2 class="h2-research">Vision
+</h2>
+
+      <h4>David Best, Professor of Philosophy, University of Wales
+<br>Reprinted with permission of the publishers from Best, D. (2000, December).  Vision. <i>NZADIE Journal</i>, 22, pp. 7-26</h4>
+
+<p><a href="../pdfs/vision.pdf">Download the Vision paper in PDF format</a> (51kb, PDF)
+
+<p>
+
+"I am delighted that Lyn Shillingford has done me the honour of
+asking for my address at the York conference to be reprinted in NZADIE.
+I hope that it will stimulate some helpful thoughts among my 
+good friends in drama in New Zealand.  My best wishes to
+you, and I very much hope that I shall be able to meet you all soon"
+
+<p>
+My theme today is Vision.  Without vision there can be no adequate answer to the question: "Why is drama, why are the arts, so important?", because these questions necessarily involve much wider and deeper general concerns, educationally and socially.
+<p>
+If we, committed to drama, cannot offer a soundly argued case, there is surely little or no hope of seeing drama recognised as central to any enlightened concept of education.
+<p>
+It is not only useless but actually self-defeating to offer, in supposed support of the arts, the vague, metaphysical, subjectivist mystery-mongering which is still all-too-common.  The still prevalent assumption that artistic meaning can be located only by introspective delving into subjective feelings makes the arts look ridiculous, and rules them out as legitimate educational activities.  Yet an influential theorist of arts education&sup1; proclaims that artistic experience in general involves "being overwhelmed with powerful sensations", having "tranced consciousness", being "ecstatic", "transfixed", "spell-bound", "mesmerised".  He evens claims that all artistic experience is "religious, and drug-like".  To repeat this kind of approach, which has bedevilled the arts for many years makes the arts look ridiculous.  Small wonder that a leading philosopher has dismissed the whole field of support for the arts as: "The natural home of rapturous and soporific effusion."
+<p> Why are the arts important then? We need philosophically sound arguments. 
+It is not enough to bring in someone like me to provide such justification. Every 
+teacher of the arts must be able to give not the usual heart-on-sleeve rhetorical 
+clich&eacute;s, but logically sound reasons. 
+<p> I, now, could do what many of the influential arts-theorists do: I could play 
+the charisma game by offering popular romantic, stirring rhetoric, recycling the 
+old clich&eacute;s; playing to the gallery for self-promoting charisma. You must 
+have seen this kind of thing all too often, as I have, at conferences of art-educators. 
+I most earnestly hope that this audience is more perceptive, and would regard 
+such shallow rhetoric as an insult to intelligence. After a recent arts conference 
+I was told that our one keynote speaker was very impressive because he had spoken 
+for and without notes, and for that reason had been warmly applauded. But when 
+I asked what he had said I could not obtain a satisfactory answer. Knowing the 
+speaker as I did, I was not surprised that he had adopted such a superficial device 
+as a charisma promoting trick, as a substitute for a carefully thought-out argument. 
+<p>
+It is easy to talk for an hour without notes.  But it shows far more respect for an audience to give time and careful thought to preparation for a contribution, which cannot be as rigorous without notes.
+<p>
+Too often people are so dazzled by the method of delivery that they overlook the question of substance, if any, of what has been delivered.  The self-promoting gurus trade on this by adopting seductive ways of saying little or nothing.  Beware of charisma! I am often inclined to think that people with charisma should be banned from serious conferences.
+<p> It is impossible to do justice to the complexities involved in the question 
+of the importance of the arts in one session. I have written and spoken on some 
+of the main issues very widely. It is a mark of how profoundly the arts relate 
+to vital human issues that any simple answer is inevitably a distortion. Yet for 
+instance, <i>The Arts in Schools Project</i>, written by Ken Robinson (1990), 
+is riddled with over simple distortions. For example, he states authoritatively 
+that all the arts are "forms of description", and that they "represent experience". 
+Abbs also repeats the misconceived clich&eacute; that "all art is concerned with 
+is representation"&sup1;. I mentioned these fallacies at Canterbury, but they 
+are so confused, and so demean the arts, that the damage they do cannot be emphasised 
+too often. For these over-simple caricatures fail to capture by far the most powerful 
+educational contribution of the arts. They fail to recognise the dynamic potential 
+of the arts, how they can open horizons of thought and feeling, and thus have 
+a significant effect on the development of personality. Most arts are not merely 
+representational or descriptive: on the contrary, the arts can powerfully express 
+feeling and influence attitudes. 
+<p>
+The prominence of those theorists who are apparently incapable of serious, profound thought about the arts, yet who are regarded as leaders in the field, should be a matter of alarm, for all of us who are concerned for the arts in education.
+<p>
+Why are the arts important?  I shall offer what I believe to be philosophically sound reasons, to help and stimulate you to answer that question.
+<p>
+The main reason for the marginalisation of drama especially, but of the arts generally, is that they are so widely misunderstood, and, as I have said, current art theorists themselves continue to purvey and reinforce these misunderstandings, which inevitably involve undervaluing the arts.
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+<b>Scientism</b>
+<p>
+Most of the disastrous subjectivism, which dominates discussion of the arts stems from inadequate conceptions of knowledge, understanding, reasons, emotions, and underlying concepts.  I want to draw attention now to another very prevalent misconception, which is in fact, the opposite side of the same coin as subjectivism, namely scientism.  This is the deeply mistaken, but the increasingly accepted, assumption that the empirical sciences can answer all intelligible questions.  Scientism has elevated the sciences to the status of an unquestioned fundamentalist religious belief.  For example, that progress in an activity can be measured is regarded as a major criterion of its being educationally worthwhile.  So dominant has this conception become that assessment is almost universally assumed to be measurement.  This is not only false, but potentially involves a gross distortion of education, and therefore of the students and children for whom we are responsible.  It is true and important that every legitimately educational activity must be open to 
+objective assessment, but that is emphatically not to say that it must be measurable. 
+<p>
+Measurement is not the same as assessment.  The most important assessments we make in education, as in life generally are certainly not measurements. 
+<p>
+For instance, we constantly judge or assess facial expressions, but the notion of measurement here is obviously absurd. 
+<p>
+I read recently an educational theorist referring to the measurement of emotional development.  What are the units of measurement? Five inches of emotional progress?
+<p>
+Yet, for instance, the influential Howard Gardner writes of the electrophysiological measure of feelings, including emotions.  When one reflects on the vast range of subtly discriminated emotions one can easily recognise how absurd it is to claim that they can be measured in this way.  Often they are so subtle and individual that they cannot be characterised.  For instance, I would have no idea precisely how to characterise my feelings this morning while preparing to give this talk.  The suggestion that they could be measured in my nervous system is frankly ludicrous.  One is reminded of Dickens' <i>Hard Times</i>: 
+<blockquote>Thomas Gradgrind, sir.  A man of realities.  A man of fact and calculation.  A man who proceeds upon the principle that two and two are four, and nothing left over, and who is not to be talked into allowing for anything over ... with a rule and a pair of scales, and the multiplication tale in his pocket, sit, ready to weigh and measure any parcel of human nature, and tell you exactly what it comes to! </blockquote>
+The point was made in the cartoon of a young man replying to his beloved: "I can't actually tell you how much I love you: I have forgotten my calculator."
+<p>
+This makes clear my contention that subjectivism is the opposite side of the same coin as scientism.  For the subjectivist, rightly rejecting the absurdity and distortion involved in the assumption that such aspects of education and humanity can be measured, goes to the equally absurd opposite extreme of assuming that these aspects are in the province of unattainably, introspective subjective psychology &#8211; and that is to rule out assessment altogether, which is to rule out the possibility of education altogether.
+<p>
+What underlies and creates this resort to self-defeating subjectivism is the assumption that the only objective assessment is scientific. In order to provide a sound argument for the arts, and other aspects of education, we need to reject the conflation of assessment and measurement; we need to reject the central tenet of both scientism and subjectivism that the only objectivity is scientific.
+<p>
+Of course, objective assessment by judgement is often more difficult, less clear cut and certain, than measurement, but that is precisely because we are dealing with human beings not machines.  And, thank heaven; the most crucial aspects of human beings cannot be neatly measured.  Simone Weil wrote: "For men burdened with a fatigue that makes any effort of attention painful, it is a relief to contemplate the unproblematic clarity of gurus futures."
+<p>
+It might be a shock to those of logical positivist, or scientism, inclination to note a trenchant remark by one of my former teachers at Cambridge, very aptly, for a Professor of Philosophy, named John Wisdom: "We know that (human) nature is not neat: we need to recognise that logic isn't either."
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+
+<b>Testing, measuring, assessment</b>
+<p>
+Vision is required to recognise one of the most dangerously distorting errors in current educational policy &#8211; the more dangerous because its increase prevalence often passes unnoticed.  This is the tendency to confer educational priority on those issues of the curriculum, which are easiest to test or assess, rather than those which are of greatest human importance.
+<p>
+That is, simplicity of assessment, such as tick boxes, seems to have become, in some areas, a defining characteristic of educational priority. To take a clear example, the Cox Report on the learning of English was rejected by the secretary of State because of its proposed learning targets were, and I quote: "not precise enough for efficient testing".  This reveals a compete failure to understand the character of the learning involved.  The most important kinds of learning are just not susceptible to "precise, efficient testing".  It is nonsense to assume that progress in understanding the complex; subtle and varied uses of language can be precisely tested.  The same, of course applies to the arts.
+<p>
+To avoid misunderstanding, let me say that I certainly support the current emphasis on literacy, although I wonder whether the importance of numeracy is exaggerated.  Such vital aspects of language learning as spelling and grammatical accuracy may be precisely and efficiently testable, and these aspects have often been badly neglected in the past.  As my students, especially PhD students, would tell you wryly, I am the last person to condone or overlook sloppy spelling and grammar, although crucially necessary, is by no means sufficient, for the rich, varied uses of language which allow for an indefinite extension of human experience and development.
+<p>
+No test of grammatical accuracy would have helped the history student who wrote in his A level exam: "When Queen Elizabeth exposed herself the troops all cheered."
+Rush Rhees wrote: "What do we learn when we learn a language?  A list of verbal expressions would be no answer."  He also makes the crucial point: "We learn logic as we learn to speak."  He was referring not only to the narrow sense of "logic" beloved of logical positivists and their like, and which is commonly assumed to be the only kind of logic.  What he means, to put it roughly, is that in learning a language a child is learning to make sense of life and the world in its terms, and is developing a vast and indefinite extendable range of feelings.  Language is emphatically not a mere message-carrying tool, to express and communicate independently existing ideas and feelings.  It is a fundamental, if common, misconception, shared, for example, by Howard Gardner, to regard language and the arts as mere codes for transmitting messages.  On the contrary, without language and the arts, an enormous range of thoughts and feelings could not even exist.  To put it briefly, the medium in which the thoughts are expressible is inseparable from those thoughts themselves.  Thus in learning and the arts, the child is learning to think and feel in ways, which would otherwise be impossible.
+<p>
+I wish I had more time to discuss the vital issue of judgement.  It is an indication of the shallowness of dominant concepts of education that the teacher's professional judgement is at best marginalised in favour of slick testing.  Yet, despite current tendentiously misleading usage, assessment in not the same as measurement.  The most important aspects of the human condition, and therefore, the most important aspects of education, cannot be measured, but they can be assessed by judgement.  No education is possible at all without assessment &#8211; assessment not measurement.  Sensitive, informed judgement is the foundation of education; which is why there is no substitute for high quality teachers.
+<p>
+The crucial educational point is that we must remain ever vigilant to ensure that over simple, neat assessment criteria do not define educational values, but on the contrary, are always answerable to educational values.  Often at present, good sense is stood on its head, In that the tests determine what is educationally valuable, rather that what is educationally valuable determining the character of the assessment. 
+<p>
+To relate to my theme, we have declined to this position because we lack vision. We are so bogged down in short-term targets that we do not lift our heads to look where we are going.
+<p>
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<b>Clarifying scientism</b>
+<p>
+I must make clear what I mean by scientism.  My criticism is not, of course, directed at the legitimate concerns of the sciences.  I am not criticising science, but rather pointing out that, despite the increasingly accepted assumption to the contrary, there are fully objective questions, which are not simply within the province of the sciences.  Indeed, these questions, which it makes no sense to assume could be answered by the sciences, are the most important questions about the human condition.  To repeat, this emphatically does not imply a resort to woolly metaphysics, or the absurdities of subjectivism.
+<p>
+As Peter Winch (1958) has put it:
+<blockquote>It should not be assumed ... that what I say must be ranked with those reactionary anti-scientific movements, aiming to put the clock back, which have appeared and flourished in certain quarters since science began.  My only aim is to make sure the clock is telling the right time.  But philosophy must be on its guard against the extra-scientific pretensions of science.  Since (scientism) is one of the chief shibboleths of the present age this is bound to make the philosopher unpopular; he is likely to meet a similar reaction to that met by someone who criticises the monarchy.</blockquote>
+<p>
+Scientism should not be confused with an enlightened attitude to science.  A genuine scientist is not necessarily, or even usually, guilty of scientism &#8211; he recognises the limits of scientific enquiry.
+<p>
+There are many, and increasing, examples of scientism: one of the most confused and potentially damaging is the assumption that all aspects of human thought, emotions etc are brain-processes.  A recent clear example of this common confusion is that of Howard Gardner, who wrote that one of the criteria for intelligence is that there should be "a particular representation in the brain for the ability".  To talk of something's being represented is, on the face of it, absurd: it is certainly very vague.  How can something be represented in the brain?  Quite apart from that problem, a consequence of Gardner's view, if it makes sense at all, is that how to find out whether someone is intelligent would require neuro-surgery.
+<p>
+The absurdity here is that of crossing conceptual wires, or trying to answer a question in a grotesquely inappropriate way.  This is like asking the weight in kilograms of heavy sarcasm or light entertainment.  The popular assumption that it is our brains which think is equally absurd, if less obviously so.
+<p>
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<b>Four distorting conceptions</b>
+<p>
+Notice how each of the misconceptions I am criticising not only distorts but demeans our essentially human nature.
+<ul>
+<li>Subjectivism reduces us to totally inaccessible ghosts in machines.<br><br>
+<li>Scientism reduces us to physical mechanisms (e.g. brains, so that, according to Gardner, even our emotional feelings can be electrophysiologically measured).<br><br>  <li>Materialism (which I shall consider soon) reduces human value to monetary value.<br><br>  
+<li>Dominating power of the media (closely related to materialism): the media create our thinking, feeling, attitudes, personal identity.<br><br>
+</ul>
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+<b>Social context of education</b>
+<p>
+What I have said may seem highly abstract, and far from the daily concerns of drama teachers.  But it is precisely the assumption that such philosophical issues are irrelevant, increasingly prevalent among British educators, and which informs Government policy, which is the root cause of our fundamental problem.
+<p>
+Consider again: "Why is drama, why are the arts, so important?"  That question simply cannot be answered adequately in terms of any of the dominant philosophies, which I have located.  In order to be able even to consider the question intelligibly we need to take into account the context of philosophy of life, which underlies it.  A friend, a lecturer in dance, weary of arguing for the importance of dance, visited Bali many years ago, and was astounded to discover that dance there expresses such deep cultural values, and was so fundamental to their whole way of life, that the question: "Why is dance important?" could never even arise.  Dance lay at the roots of social and personal identity and value.
+<p>
+To put it briefly, in order for people to recognise the importance of drama in education, we need a different philosophy of education generally: and for that we need a richer, more enlightened philosophy of life generally.  As T S Eliot has put it, our theory of education derives from our philosophy of life.  That is, our educational system and policy are inseparable from the values of society; they are determined fundamentally by the attitudes of society which are implicitly shaping the kind of human beings, which it regards as most desirable.
+<p>
+This is precisely why I chose the topic of vision.  Education has become exclusively concerned with short-term, practical attainment targets: there is no wider vision, no raising our heads to see longer and wider vistas.  We urgently need, frequently, to loom at the further horizons.  We need to ask, in a fundamental sense, "What are we educating for?"  The broader vision always comes first, logically it determines the kind of answers we can give to the more practical and immediate questions.
+<p>
+The Government tells teachers what to teach without encouraging them to ask themselves why; what they are teaching for.  According to the prevailing doctrine, good teaching is indistinguishable from technical expertise.  Yet the teacher who never asks why she or he is teaching may be technically accountable, but cannot in the fullest sense, be educationally or morally accountable.  Teachers are becoming, to an alarming extent, classroom technicians.  The clearer we are about the ends for which we are aiming in education, the less prescriptive we need to be about the means.  "Why is drama so important in education?"  That question cannot be answered in a void, independently of a consideration of the much deeper and wider context of the kind if education we want, which in turn is determined by out beliefs about the kinds of people we want out children to become.
+<p>
+Of course, all these considerations will seem intolerably, laughably irrelevant to those with a much narrower, more utilitarian attitude to education.  A college of education lecturer friend in Australia wrote recently of the experience of one of his students in trying to open the eyes of parents to the values of the arts.  One father looked at him coldly and said: "I want my lad to come out a good pig farmer."
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+<b>Values</b>
+<p>
+This leads me to the issues which overrides, or underlies, everything I have been saying, and which is the most crucial question implicit in everything we do in education, namely value.
+<p>
+Yet, despite its fundamental importance, educators tend to be very nervous about values, mainly, I think because they confuse value with something like indoctrination.  For this reason, some educators insist they should avoid all matters of value, since they assume that to involve themselves in values would be to impose on their students.  But this is seriously confused. For any and all education is necessarily concerned with values: values are necessarily implicit in what we do. 
+<p>
+A conscientious teacher constantly strives to teach better, and "better" is of course, a 
+value term.  Some things are better than others.  Why do we educate children at all?  Because we believe that our students will benefit i.e. we believe that education is valuable, that our students will be better for it.
+<p>
+Some years ago I was speaking at a drama course in Scarborough. The previous evening I had walked along the sea front, and I remarked to the teachers on the course how sad it was to see so many people spending their evenings in Bingo halls.  Some were horrified and objected that I was not justified in passing such a value-judgement, that value is purely subjective matter.  So I asked them whether they believed that they offered their pupils something valuable in drama, and thus whether their pupils were better off for it.  After a hotly contentious debate, most, I think, came to agree that any involvement, for instance in drama, was preferable to, more personality enriching than, playing Bingo most nights.  Incidentally, and ironically, they of course, were passing a value judgement on me saying that I had been unjust! So they were contradicting themselves.
+<p>
+It is surprising how persistent is the largely unquestioned conviction that value judgements must be merely subjective.  If it were so, no education at all, in any subject, would make sense.  For to learn any discipline, including for example, sciences and mathematics, is to learn to discriminate what counts as good, better or worse within it.
+<p>
+Yet one still frequently hears people say: "Oh, that is just a value judgement", as if that is the end of the matter, and nothing more can be said, since it is assumed that value judgements are the expression of mere subjective preferences, to which objective reasoning is inappropriate.  In fact, on the contrary, the expression of a value judgement, so far from being the end of the matter, is only the beginning, since once can then give reasons in support of it.  There may be disagreements, but the notion of disagreement presupposes objective rationality.
+<p>
+It should be emphasised that there could be no place at all in education for the arts if artistic value judgements amounted merely to expressions of subjective non-rational personal preferences.
+<p>
+Incidentally, it should be noted that tolerance, for instance of other people's opinions, is itself a value.  It should also be noted that tolerance cannot be a subjective matter, if this should imply that it allows for the "anything-goes, any-value-is-as-good-as-any-other" syndrome.  Are we to regard attitudes to women by the Taliban in Afghanistan as perfectly acceptable, as good as ours?  I was at a seminar where a social worker who had just returned from doing admirable work in Africa, insisted throughout her talk, that one must never express out values but always accept the values of the particular society in which one is working.  I asked her whether this would apply, or would have applied, to the society where most baby girls were left to die in the jungle, since only boys were valued.  Would it have applied to cannibalism, or to the tribe where morality applied only internally, and members could be as savage as they liked to outsiders? Could we, should we, say or do nothing in such cases?
+<p>
+The point I am trying to make is that there are limits, if vague and indefinable limits, to tolerance.
+<p>
+It was, I think, Goering who said, of the condemnation of Nazi atrocities during the war: "Morality is what we decide."
+<p>
+Are we to accept that?
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+<b>Educational values</b>
+<p>
+What I have been trying to bring out is that values necessarily underlie conceptions of education, and those values are not non-rational, subjective preferences.  Despite its great appeal to governments and educators who do not wish to recognise the unavoidable responsibility implied, the very idea of a value-neutral education makes no sense.
+<p>
+Dickens' <i>Hard Times</i> reveals attitudes and values, which, to a lesser degree, persist, and to which, to some extent we may even be returning.  Gradgrind, the inspector, is examining a class at the local school.  He exhorts the teacher:
+<blockquote>"Teach these boys and girls nothing but facts.  Facts alone are wanted in life ... you can only form the minds of reasoning animals upon Facts: nothing else will ever be of service to them. Stick to the Facts, Sir."</blockquote>
+The speaker swept with his eyes the inclined plane of little vessels arranged in order, ready to have imperial gallons of facts poured into them until they were full to the brim.
+<p>
+Clearly this conception of education places great, if not ultimate, value on fact acquisition.  And it is by no means out of date.  The persistent and prevalent assumption that education consists in acquiring a store of facts, and that the ability to quote other people's thought and ideas, is clearly manifested in various radio and television contests, such as "Brain of Britain", "Mastermind", University Challenge", and the corruptive "Top of the Form", where the principal criterion for being educated is assumed to be, self-evidently, the ability to answer correctly numerous questions of unrelated facts.  I contend, on the contrary, that it is a criterion of shallowness to litter one's mind in this way.  Someone once said that the greatest benefit he has derived from his Oxford education has been that he had learned how much there was which he did not want to know.  Einstein is reported to have developed a technique for relentless concentration on a problem, part of which was to avoid committing fact to memory, since this, he was convinced, would clutter his mind needlessly.  Dickens writes of the teacher in <i>Hard Times</i>: "If only he had learnt a little less, how indefinitely better he might have taught much more."
+<p>
+I am not saying that there is no place in education for learning the facts, but rather that unless it is recognised as secondary, the primary aspects may be seriously impaired, if not stifled altogether.  But the fact-acquisition conception is tempting for the over simple because it is easy to test. There is a similar absurdity, again induced by the seduction of neatness of testing, in the very idea of an Intelligence Quotient.  But I cannot digress to discuss that issue. We need to lift our heads from the subterranean, myopic concerns with short term targets, and to take a longer, wider look.  We need a vision to ask what we are educating for.  To illustrate, let me refer again to Dickens:
+<blockquote>Sissy Jupe is a girl from a circus horse-breaking family.  When asked by Gradgrind, she is unable to offer a definition of a horse, and is enlightened by a boy named Bitzer: Quadruped.  Graminivorous.  Forty teeth, namely twenty-four grinders, four eyeteeth and twelve incisors.  Sheds coat in spring; in marshy countries, sheds hoofs too.  Hoofs hard, but requiring to be shod with iron.  Age known by marks in the mouth.  Thus (and much more) Bitzer.
+"Now girl number twenty" says Gradgrind, "you know what a horse it".</blockquote>
+<p>
+Yet obviously Sissy Jupe knows far more about horses than anyone else in the room, including Bitzer and Gradgrind. It is absurd to assume that it is Bitzer's ability to enunciate a series of propositions about a horse, rather than Sissy Jupe's having grown up with them and having learned at first hand what they are like which constitutes substantive knowledge of a horse. This is surely the kind of knowledge, or understanding, which we want our children and students to acquire.  To put it briefly, the priority should be not so much knowing about, for instance, science as knowing science: we want them to understand science from the inside, as at were.  (I cannot consider this complex issue adequately here; I discuss it more fully elsewhere (Best, 1991). This relates to Dorothy Heathcote's Mantle of the expert approach.  To achieve education in this sense requires vision, to extricate ourselves from the blinkers of short-termism, in order to look to horizons.
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+<b>Formative social values</b>
+<p>
+We should remind ourselves frequently of the deep impregnation of society values, which we breathe in like surrounding air, and which inevitably affect education.  We can open our eyes and the eyes of our children and students, to recognise these social pressures, in ourselves and them, only if we strongly promote the vision to lift our heads and have a clear, objective look at how we are being influenced.  For the greatest danger is remaining unaware of such influences, which largely determine our values, and thus our identity.
+<p>
+There are confusions in post-modernism; indeed confusion seems to be a tenet of some adherent.  However, in my view its most significant insight is it emphasis on the hugely dominating and value-conditioning influence of what is called these days "the media", by which I mean especially television, film, the popular press, information technology, and their implicit language and attitudes.  Some years ago I heard a talk in which it was argued that such has been the significance of the nuclear age in which we live and that the calendar should have started anew at the date of the first atom bomb.  While I do not deny the significance of the nuclear age, it seems to me that there would be a good case for arguing for anno televisioni, such has been television's powerful and pervasive influence on social values and attitudes; so much so that it is not too far fetched to believe that societies these days are largely conditioned into what to think and feel by television and the media generally.
+<p>
+Post-modernists insist that even the truth is determined by what the media tell us; that with the deconstruction of the notion of absolute truth (with which I agree), we are left only with the truth as purveyed by the media.  Although there is much to be said for this view, I do not agree with some of the consequences drawn by some post-modernists.  For instance, I do not agree that we are necessarily completely helpless as we are immersed in, and carried along by, these admittedly overwhelmingly powerful tides.  However, I confess that I may be unduly optimistic.  I cannot discuss this issue in the length it merits.  My chapter on "The Arts, morality, and Post-Modernism" considers I to a limited extent.  It is to appear in a book entitled <i>Education in Morality</i>.
+<p>
+My point now is that at least post-modernism has the great merit of making us aware of these powerful but often hidden trends; and to be aware it is a vital necessary condition for resistance, change of direction, or a least being in a position to consider what we are being taken, what kid of human beings we are becoming.  In short, vision again: lifting our heads above the maelstrom, instead of being merely carried along by it.
+<p>
+To repeat, perhaps the greatest danger is that we remain unaware of what is happening to us.  It is vital that we, with our enormous responsibility as educators, should lift our eyes to alternative possible horizons, and that we should strongly encourage our children to do so.  Of course, this is extremely difficult.  But it is likely that if we, as teachers, do not do it, our children and students will never become aware of other possibilities, other values, and therefore other selves.
+<p>
+For, as Ruskin once said: "When I know what you value, I know what you are."  What you value, what you are, revealed not so much by what you say as by what you do, in your actions and attitudes.
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+<b>Materialism</b>
+<p>
+Another dominating influence in society and education is materialism.  Some years ago, I wrote an article entitled, "How much am I?", whose gist was that these days the identity and essential value of human beings is often determined by their money and possessions.  That is, "Who am I?" has largely become "How much am I?"  In her heyday, there was a cartoon of Margaret Thatcher standing with Mother Teresa under a bridge in London, where destitute, homeless people lay huddled for shelter.  Margaret Thatcher exclaims to Mother Teresa: "I know it's disgraceful.  How much rent would you charge them?"
+<p>
+I need hardly tell this audience how this attitude has infected education.  The worse case of which I heard was recounted to me by one of my former students, a very idealistic girl who, at the first staff meeting of her first appointment, was shocked to hear her colleagues refer to the children, in all seriousness, as "units of income".  At graduation at Cambridge, those who had done reasonably well were headhunted by business firms.  I remember being wooed with tempting financial and career prospects by Lever Brothers.  So, instead of addressing you today, I might be a wealthy director, having spent my life selling millions of packets of washing powder.
+<p>
+I was staying with friends in Brazil some years ago.  After a social evening, an American guest who works for 3M, mainly known for manufacturing Sellotape etc., asked my host what I did for a living.  He replied: "He is a philosopher." To which the guest responded: "That seems a useless occupation." My host's rejoinder was: "It seems rather more worthwhile than sticky paper."
+<p>
+The power of advertising was bought home to me when in an assembly at a primary school, I heard the children, in all seriousness, sing the hymn: "O hear us we cry thee, For those in Persil in the sea."  Christmas had become Jelly, Belly and Telly.  In Philosophy the slogan used to be "Cogito ergo sum" &#8211; "I think therefore I am".  It has become "Tesco ergo sum."  Our values are dominated by money, sex, football, idolatry of personalities: we have become insatiable consumers of entertainment.  Mahatma Ghandi was once asked what he thought of civilisation in the West.  He replied: "I think it would be a good idea."  As his protest, Burne-Jones once exclaimed that the more materialistic society became, the more he would paint angels.
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+<b>Personality cult</b>
+<p>
+Another, related, deeply corrupting influence on our society and children is the perniciously obsessive, and apparently irreversible personality-cult.  People become gods for reading the news, presenting trivial chat shows, etc.  Then they become more famous for being famous.  Mike Tyson, the boxer, despite being a convicted rapist, and having violently beaten two innocent elderly people in a road rage incident, was mobbed by thousands of people in Brixton, who cheered and even tried to touch him.
+<p>
+There was absurd hysteria whipped up over Princess Diana, a very ordinary, rather unintelligent, spoiled and superficial young lady.  She was transformed by the media into a saint.  I remember seeing a large front-page picture of Diana holding a little African baby who had been injured by a mine.  She was on a brief visit, taking time off from her normal luxurious life, her fashion and her romance with Dodi.  On an inside page, tucked away in a corner was a small paragraph reporting the death of a dedicated army officer, who spent ten years of his life in Africa, clearing mines.  He had always led from the front, and had been injured several times.  Now he had been killed by a mine. There is to be a memorial to Diana: there are even calls for her to be canonised.  The army officer, who saved countless lives and limbs, is forgotten.
+<p>
+Some years ago, in the porch of St. Martins in the Fields, I saw a book with a large, odiously grinning picture on the front cover of Jimmy Savile, under which was the title: <i>God'll Fix It</i>.  Think of the hysteria whipped up over football.  It is a game.  Yet national status and identity is often based on it.  The Ivory Coast team was imprisoned because they lost.  Fans in South America have been known to commit suicide.  Trivial young men are paid millions just to kick a ball.  Yet, even in this country, a shocking number live below the poverty line.
+<p>
+New Zealand, which I recently had the privilege of visiting, was in deep mourning because the All Blacks had lost to France.  Sportsmen have become gods.
+We even have gardening gurus!  I am sick of seeing Alan Titchmarsh's face it seems in almost every paper or magazine I pick up.  His guru status has been deliberately created by the media, since the death of the previous guru.
+<p>
+My views on this matter have rebounded ironically.  I received a very tentative letter from a young lady in Liverpool congratulating and thanking me for my work for the arts, and saying how it had influenced her, and several colleagues.  But, she said she had nor felt able to write before, and was apprehensive about doing so now, in case I should regard her letter as in any way guru-worship!
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+<b>Arts as central</b>
+<p>
+I said that drama will be fully appreciated a central only within a much more enlightened philosophy of education generally, which in turn requires a context of more enlightened philosophy of life generally.  You may think, pessimistically, "So what can I do about it? How on earth can I shift such a general attitude to life, when I am taking drama with class 4 on a Monday?"
+<p>
+Such a reaction would be very understandable.  But at worst, it is vital to keep alive in a personally meaningful way, in a pervasively hostile climate, the higher values: they must be allowed to atrophy and die.  However, I want to respond more positively in three ways:
+<ul>
+<li>First, to quote Shakespeare: "Our doubts are traitors, And makes us lose the good we oft might win By fearing to attempt."<br><br>
+<li>Second, I am sure that you frequently have the excited gratification of seeing, as a direct result of their drama sessions, the developing confidence of your students; their progressive ability to question and to think about issues in an independent way, their growth emotionally and spiritually.<br><br>
+<li>Third, drama, and the arts generally, can achieve far more than is commonly appreciated.  Drama can offer fresh visions, new horizons, standpoints from which to question, reflect on, criticise, accepted concepts and attitudes.  This is what constitutes the power of the arts, especially drama and literature.  An American professor told me that one of her students, reflecting a modern version of Gradgrind, said that if he wants to know anything he can simply look it up on the Internet.  That is a modern seduction.  But you cannot acquire the kind of knowledge, or, better, understanding, offered by drama and the arts by consulting the Internet.  And these are by far the most important kinds of knowledge and understanding.<br><br>
+</ul>
+<p>
+The most significant contribution of education is not the acquisition of facts and useful skills, important though these may be, but rather the opening of horizons of thought and feeling which would otherwise be closed, perhaps permanently.  The responsibility of the teacher is daunting in this respect, for he or she may offer the only possibility of visions different from the clich&eacute;s purveyed by the media, and reinforced by family and peer-group pressure.  How else can our children learn to question, criticise, search rigorously for their own individuality, in the prevailing, media-conditioning atmosphere of bland uniformity, which suffocates creative individuality?  You cannot change to attitudes and a way of life of which you are not even aware.
+<p>
+Education should stimulate progressive individual development in search of ideals; ideals concerned with the ultimate values of human beings.  To repeat, these are not necessarily statable, or at least explicitly stated, but are expressed in action.
+<p>
+This is why drama can be so powerful.  For it is a medium, which is centrally concerned with active learning; much is expressed in language and action.  Moreover, it is interactive, by stark contrast with the Gradgrind/Internet conception (which is not to deny the value of the Internet).  The development of understanding is achieved in acting and interacting with others, as well as reflective practice.
+<p>
+The extreme which I reject is that which regards pupils as objects.  By contrast the conception of education, which I advocate, and which, I am confident, is practised by my audience today, centrally involves the active responsibility of students for their own learning.
+<p>
+The ideal model for teachers (and philosophers!) can be adapted from the remark of a Chinese philosopher that good leaders are those who are not noticed; and the very best leaders are those who give people the excited sense of personal achievement: "We did it ourselves."
+<p>
+Our responsibility in this respect is unavoidable.  There can be no opting out of the fact that we inevitably impart values.  Will our children become quasi-Gradgrind desiccated fact-regurgitators? Or concerned only to make money and climb career-ladders?  Or will they become progressively open-minded, questing, caring, thoughtful, emotionally and spiritually enriched human beings?  A mixture no doubt, but teachers will influence what is possible for them to become, and the proportions.
+<p>
+Someone said to Socrates that a friend, despite travelling widely, had not broadened his outlook on life.  Socrates replied; "I am not surprised: he took himself with him."
+To adapt a quotation from Ruskin, which I used at Canterbury: "The most important achievement in education is not what students get from it, but what they become by it."
+<p>
+I believe that children are enthusiastic for drama and the arts because they are intuitively aware of their own, personal involvement in the development of what, centrally, they amount to as human beings: they themselves are actively engaged in opening their minds and feelings, in shaping their own attitudes.  In short, they are creating their own identities.
+<p>
+The arts can make space for vision, to rise above short-term pressures, to look for what is fundamental in education.  It is a daunting responsibility to influence the shaping of personal values and identity.  But it is very exciting and enormously worthwhile responsibility.
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>
+
+<b>Note:</b>
+<p>
+&sup1; Peter Abbs in "Making the art beat faster", <i>The Times Higher</i>, 18 September, 1992; and in "The primacy of the aesthetic: On understanding the nature of aesthetic experience in relationship to works of art". <i>Curriculum, 15</i>, (1), Spring 1994.
+<p> I criticise this absurd and damaging kind of supposed support for the arts 
+in "Minds at work in the empire of the senses" <i>The Times Higher</i>, 19 February, 
+1993; Educating artistic response: Some vital pointers for research: <i>Journal 
+of the National Association for Drama in Education, (Australia); 20</i>, (2), 
+December 1996. 
+<p><b>References:</b> 
+<p>
+Best, D. (1991, August). Creativity: Education in the spirit of enquiry. <i>British Journal of Education Studies, 39</i>, (3).
+<p>
+Robinson, K. (1990). <i>The Arts 5-16: A Curriculum Framework</i>.  London: Oliver and Boyd (pp 24, 25, 53).
+<p>
+Winch, P. (1958). <i>The idea of social science</i>. London: Routledge.
+<p>
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

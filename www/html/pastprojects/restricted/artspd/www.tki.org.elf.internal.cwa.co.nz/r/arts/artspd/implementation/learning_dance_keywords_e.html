@@ -1,0 +1,472 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Planning in The Arts</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("learning_dance_keywords_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+
+<a name="top"></a>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+
+</tr>
+
+</table>
+
+<h2 class="h2-implementation">Dance Objectives - Key Words</h2>
+
+<p>by Polly Thin-Rabb, Dance Facilitator, University of Waikato</p>
+
+<p>This reference provides teachers with a memory aid for planning dance units. It lays out the key action words (verbs) from the achievement objectives of the dance strands (in <em>The Arts in the New Zealand Curriculum</em>) alongside examples of key words that can be used in learning objectives related to these achievement objectives.</p>
+
+<table width="100%">
+<tr>
+<td width="50%" valign=top><strong>Achievement objectives</strong></td>
+<td width="50%" valign=top><strong>Learning outcomes</strong></td>
+</tr>
+<tr>
+<td width="50%" colspan="2"><br /><p>Strand: Developing<font size=3><strong>P</strong></font>ractical <font size=3><strong>K</strong></font>nowledge in Dance</p></td>
+</tr>
+<tr>
+<td width="50%" valign=top><strong>Students will...</strong></td>
+<td width="50%" valign=top><strong>For example, students will be able to...</strong></td>
+</tr>
+<tr>
+<td width="50%" valign=top>
+<li>explore</li>
+<li>identify and explore</li>
+<li>explore, combine and contrast</li>
+<li>use</li>
+<li>explore and use</li><p>
+</td>
+<td width="50%" valign=top><strong>explore</strong> through movement...<br />
+<strong>experiment</strong> with...<br />
+<strong>combine</strong> movements that...<br />
+<strong>improvise</strong> movements based on...<br />
+<strong>create</strong> a body movement that...<br />
+<strong>select</strong> movements that...<br />
+<strong>move</strong> in response to...<br /><p>
+</td>
+</tr>
+<tr>
+<td width="50%" colspan="2"><br /><p>Strand: <font size=3><strong>D</strong></font>eveloping <font size=3><strong>I</strong></font>deas in Dance</p></td>
+</tr>
+<tr>
+<td width="50%" valign=top><strong>Students will...</strong></td>
+<td width="50%" valign=top><strong>For example, students will be able to...</strong></td>
+</tr>
+<tr>
+<td width="50%" valign=top>
+<li>use</li>
+<li>express</li><br /><br />
+<li>initiate and express</li>
+<li>develop</li>
+<li>select, combine and use</li><br /><br />
+<li>explore and use</li><p>
+</td>
+<td width="50%" valign=top>
+<strong>develop</strong> ideas in response to...<br />
+<strong>create</strong> a movement to depict...<br />
+<strong>talk about</strong> the way...<br />
+<strong>express</strong> ideas using...<br />
+<strong>make</strong> a movement sequence that...<br />
+<strong>investigate</strong> the way the body...<br />
+<strong>brainstorm</strong> about...<br />
+<strong>explore</strong> words and visual images<br />
+<strong>explore</strong> different ways that...<br /><p>
+</td>
+</tr>
+<tr>
+<td width="50%" colspan="2"><br /><p>Strand: <font size=3><strong>C</strong></font>ommunicating and <font size=3><strong>I</strong></font>nterpreting in Dance</p></td>
+</tr>
+<tr>
+<td width="50%" valign=top><strong>Students will...</strong></td>
+<td width="50%" valign=top><strong>For example, students will be able to...</strong></td>
+</tr>
+<tr>
+<td width="50%" valign=top>
+<li>share</li><br /><br />
+<li>describe</li><br /><br />
+<li>present</li><br /><br />
+<li>respond</li><br /><br />
+<li>interpret</li><br /><br />
+<li>record responses</li><p>
+</td>
+<td width="50%" valign=top>
+<strong>talk about</strong> own and another's work<br />
+<strong>share</strong> movement sequences<br />
+<strong>describe</strong> the meaning/effect of...<br />
+<strong>observe</strong> the way...<br />
+<strong>rehearse and perform</strong><br />
+<strong>communicate</strong> images/meanings<br />
+<strong>view and discuss</strong> a performance<br />
+<strong>suggest</strong> ways that...<br />
+<strong>discuss</strong> the images suggested by...<br />
+<strong>reflect</strong> on...<br />
+<strong>record</strong> responses to/ ideas about...<br />
+<p>
+</td>
+</tr>
+<tr>
+<td width="50%" colspan="2"><br /><p>Strand: <font size=3><strong>U</strong></font>nderstanding Dance in <font size=3><strong>C</strong></font>ontext</p></td>
+</tr>
+<tr>
+<td width="50%" valign=top><strong>Students will...</strong></td>
+<td width="50%" valign=top><strong>For example, students will be able to...</strong></td>
+</tr>
+<tr>
+<td width="50%" valign=top>
+<li>demonstrate awareness of</li><br /><br />
+<li>explore and describe how</li><br /><br />
+<li>compare and contrast</li><br /><br />
+<li>investigate</li>
+<li>research</li><p>
+</td>
+<td width="50%" valign=top>
+<strong>talk about</strong> dance in the community...<br />
+<strong>create</strong> original dances that...<br />
+<strong>learn</strong> a dance from...<br />
+<strong>participate</strong> in celebratory dance<br />
+<strong>list</strong> similarities and differences of...<br />
+<strong>compare</strong> dances from...<br />
+<strong>classify</strong> types of dance<br />
+<strong>find out</strong> about a dance used for...<br />
+<p>
+</td>
+</tr>
+<tr>
+<td colspan=2 valign=top><strong>Printing this page</strong><br />
+To download and print a chart version of this dance objectives reference, select from Word or PDF options:<br />
+<li><a href="docs/DanceKeyWords.doc">Dance objectives - key words (Word, 45k)</a></li><br />
+<li><a href="pdfs/DanceKeyWords.pdf">Dance objectives - key words (PDF, 16k)</a>  <a href="javascript:popUp(400,300,'PDF_info','../pdf.html');"><img src="../img/about_pdf4.gif" border="0" alt="About PDFs"></a></li><br />
+<p>
+</td>
+</tr>
+<tr>
+<td colspan=2 valign=top align=right><p><a href="#top"><strong>Back to top</strong></a></p></td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

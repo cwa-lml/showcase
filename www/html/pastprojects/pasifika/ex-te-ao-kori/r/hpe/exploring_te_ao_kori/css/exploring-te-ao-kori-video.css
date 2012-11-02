@@ -1,0 +1,44 @@
+/* CSS Document */
+
+body, p, td, a {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    /* Hide from IE5 mac \*/
+    font-size: 90%;
+    /* End hide from IE5/mac */    
+}
+
+body {
+	background: #fff url(../img/video_banner.jpg) no-repeat top left;
+}
+
+table {
+	border:1px solid black;
+	width:100%;
+}
+
+td {
+	vertical-align:top;
+	padding:3px;
+}
+
+h1 {
+	position:relative;
+	left:-1200px;
+}
+
+.metadata a, .close-win a {
+	font: bold 0.85em Verdana;
+	text-decoration:none;
+	border:1px solid black;
+	width:100px;
+	padding:3px;
+	background-color:#CCCCB2;
+	color:#000;
+}
+.close-win {
+	float:left;
+}
+.copyright {
+	float:right;
+}

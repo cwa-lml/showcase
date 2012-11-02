@@ -1,0 +1,594 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | What's New</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-4.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-4.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "events;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("new_page_2_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<a name="top"></a>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2" bgcolor="#FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="conferences_e.html" class="nav-events">Conferences / Forums</a><br>
+<a href="../../../../e/community/arts/calendar.html" class="nav-events">Calendar</a><br>
+<a href="guests_e.html" class="nav-events">Guests online</a><br>
+<a href="prof_assoc_e.html" class="nav-events">Professional associations</a><br>
+<a href="new_e.html" class="nav-events">What's new</a><BR>
+<a href="pending_e.html" class="nav-events">Pending new developments</a><br>
+</p>
+<br>
+<br>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#FF6600" class="h-events" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Events</td>
+</tr>
+</table>
+
+<h2 class="h2-events">What's new</h2>
+
+<!-- begin quicklinks table -->
+
+<table width="160" cellpadding="0" cellspacing="0" border="0" align="left" style="margin-right:10px;">
+<tr>
+<td class="qlinks" style="width:150;height:23;padding-left:2px;background-image: url('../img/sample_top.gif');margin-right:10px;">Quicklinks</td>
+<td rowspan="3" width="10" style="width:10px;">&nbsp;</td>
+
+</tr>
+<tr valign="top">
+<td bgcolor="#EEEEEE" style="padding:2px; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;">
+<p class="quick-p"><a href="#music-3">Into Music 3: Classroom Music for Years 7&#8211;10</a></p>
+<p class="quick-p"><a href="#kidsongs-11">Kiwi Kidsongs 11</a></p>
+<p class="quick-p"><a href="#kidsongs-12">Kiwi Kidsongs 12</a></p>
+<p class="quick-p"><a href="#mentors">Musician Mentors in Schools</a></p>
+<p class="quick-p"><a href="#on-tape">ON TAPE &#8211; A moving-image resource for secondary schools</a></p>
+<p class="quick-p"><a href="#vum">Online VUW Collection Tour</a></p>
+<p class="quick-p"><a href="#blue">Painting My Teacher Blue</a></p>
+<p class="quick-p"><a href="#print">Printmaking</a></p>
+<p class="quick-p"><a href="#tissot">Restoring Tissot</a></p>
+<p class="quick-p"><a href="#royal">Royal New Zealand Ballet Dance Education Resource</a></p>
+<p class="quick-p"><a href="#sweet">Sweet! A Taste of New Zealand Music</a></p>
+<p class="quick-p"><a href="#lotr">Teachers' Guide to The Lord of the Rings Exhibition</a></p>
+</td>
+</tr>
+<tr>
+<td><img src="../img/sample_base.gif" alt="" width="150" height="32" border="0"></td>
+</tr>
+</table>
+
+<!-- end quicklinks table -->
+
+<div align="center"><a href="new_e.html">Page 1</a> | <b>Page 2</b> | <a href="new_page_3_e.html">Page 3</a></div>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+
+<a name="music-3"></a>
+
+<h4 class="h4-events"><i>Into Music 3: Classroom Music for years 7&#8211;10</i></h4>
+
+<img src="../img/into_music3.jpg" width="48" height="69" hspace="3" vspace="3" align="right" border="0" alt="Into Music 3">
+
+<p><i>Into Music 3</i> is the third book and CD in a series of music resources for classroom teachers. The series is designed to provide practical, contemporary ideas for classroom music that link directly to <i>The Arts in the New Zealand Curriculum</i>. The book has four main chapters &#8211; Listening, Singing, Playing, and Creating and Representing &#8211; and each chapter includes three teaching units. Also online on TKI are two downloadable MIDI files that support the "Twelve-bar Blues" unit in the Playing chapter (page 51).<br>
+<a href="http://www.tki.org.nz/r/arts/music/into_music_e.php" target="_blank">http://www.tki.org.nz/r/arts/music/into_music_e.php</a>
+</p>
+
+<p>Copies of <i>Into Music 3</i> are being distributed to schools on the basis of roll size. Schools are entitled to a further three copies free on request. More copies or a teacher's own personal copy can be purchased at the additional price of $19.90. Please use item number 27579 when ordering.</p>
+
+<p>Schools that require additional copies may request or purchase them from:<br>
+Learning Media Customer Services, Box 3293, Wellington.<br>
+Phone: (04) 471 5549, Freephone : 0800 800 565, Email: <a href="mailto:orders@learningmedia.co.nz" target="_blank">orders@learningmedia.co.nz</a>
+</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+</td></tr></table>
+
+
+<a name="kidsongs-11"></a>
+
+<h4 class="h4-events"><i>Kiwi Kidsongs 11</i></h4>
+<p><img src="../img/1kiwi_kids.jpg" width="50" height="70" alt="Kiwi Kidsongs Eleven" border="0" align=right></p>
+<p>
+There are 10 songs on this CD compilation of music for primary schools. The songs are suitable for students of different ages, cultures, abilities, and interests, and support the teaching of music as described in <i>The Arts in the New Zealand Curriculum</i>.
+</p>
+<p>
+There are two tracks of each song: one is sung, and the other is an instrumental version to sing along with or use for backing performances. There is also an accompanying booklet of teachers' notes, lyric sheets, and music.
+</p>
+<p style="margin-bottom:0px;">
+The notes give background information about each song and suggestions for its use. Kiwi Kidsongs can be used for:
+</p>
+
+<ul type="disc" style="margin-top:0px;">
+<li>teaching children to sing</li>
+<li>acting out songs</li>
+<li>identifying instruments and sounds</li>
+<li>beating out rhythms.</li>
+</ul>
+
+<p>
+Appropriate songs can be used as a starter for discussion &#8211; for example, the cultural setting or the characters.
+</p>
+
+<p>Published 2003 by Learning Media for the Ministry of Education.</p>
+
+<p>A reference copy of each kit is distributed free to primary schools. Additional copies may be purchased from Learning Media Ltd:<br>
+<a href="http://www.learningmedia.co.nz/" target="_blank">www.learningmedia.co.nz</a><br>
+Phone: 0800 800 565<br>
+Fax: 0800 800 570<br>
+Postal address: Learning Media Ltd, PO Box 3293, Wellington 6001<br>
+Item number: 26588</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="kidsongs-12"></a>
+
+<h4 class="h4-events"><i>Kiwi Kidsongs 12</i></h4>
+<p><img src="../img/kidsongs12_sm.gif" width="50" height="73" alt="Kiwi Kidsongs 12" border="0" align="right"></p>
+<p>
+The latest in the <i>Kiwi Kidsongs</i> series contains 10 songs, most of which were written specifically for this publication. As well as ten vocal versions, the CD provides instrument-only tracks for accompanying classroom singing and school performances. Provided with the CD are teachers' notes, lyric sheets, music for each song, and two arrangements for classroom instruments. To guide learners of these arrangements, there is a separate recording of each instrumental part. 
+</p>
+<p>
+Published 2003 by Learning Media for the Ministry of Education. A reference copy of each kit is distributed free to primary schools. Additional copies may be purchased from Learning Media Ltd:<br>
+<a href="http://www.learningmedia.co.nz/">www.learningmedia.co.nz</a><br>
+Phone: 0800 800 565<br>
+Fax: 0800 800 570<br>
+Postal address: Learning Media Ltd, PO Box 3293, Wellington 6001
+</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="mentors"></a>
+
+<h4 class="h4-events">Musician Mentors in Schools</h4>
+
+<p>The NZ Music Commission has a contract with the Ministry of Education to provide a free music mentoring scheme to year 7&#8211;13 students in schools throughout New Zealand. Professional musicians in the pop/rock genre will visit chosen schools for five sessions, offering expertise in recording, performance and song-writing. This opportunity is currently open to schools in the Wairarapa, Canterbury and Nelson.</p>
+
+<p>Applications and enquires should be emailed to:<br>
+<a href="mailto:stephanie@nzmusic.org.nz">stephanie@nzmusic.org.nz</a></p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="on-tape"></a>
+
+<h4 class="h4-events">ON TAPE<br>
+A moving-image resource for secondary schools</h4>
+
+<p><img src="../img/1film_arch.jpg" width="50" height="70" alt="The New Zealand Film Archive" border="0" align="right"></p> 
+
+<p>The New Zealand Film Archive has launched the ON TAPE video library. This library will enable New Zealanders to access some of the archive's outstanding collection of contemporary and historical moving images.</p> 
+
+<p>&quot;The general aim of the ON TAPE programme is to produce a series of resources on video that link directly to the topic areas in the New Zealand curriculum.  The intent has been to allow film and television images to tell their own story, with no attempt made to alter the message that the images provide.  Detailed background notes provide necessary information on the source and context of extracts, but the analysis of the images is, as it should be, the task of the learner and facilitator.&quot;<br>
+<i>Alex Burton, Education Co-ordinator, New Zealand Film Archive</i></p>
+
+<p style="margin-bottom:0px;">Videos are available in subject areas which support the New Zealand Arts Curriculum, including:</p>
+
+<ul style="margin-top:0px;">
+<li>&nbsp;English / Media Studies;</li>
+<li>&nbsp;History / Social Studies;</li>
+<li>&nbsp;Art / Art History;</li>
+<li>&nbsp;Music.</li>
+</ul>
+
+<p>There is no rental charge to schools for the videos. The only cost is a postage levy to ensure efficient delivery and return.</p>
+
+<p>For more information, or to order videos online, visit <a href="http://www.filmarchive.org.nz/" target="_blank">www.filmarchive.org.nz</a></p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="vum"></a>
+
+<h4 class="h4-events">Online VUW Collection Tour</h4>
+
+<img src="../img/1online_vuw_tour.jpg" width="70" height="50" hspace="3" vspace="3" align="right" border="0" alt="Online VUW Collection Tour">
+<p>The Adam Art Gallery presents the new Online VUW Collection Tour.  This has been developed as a learning resource for secondary students of art history and practical art.</p>
+
+<p>The tour looks at selected works from Victoria University of Wellington's art collection. The works relate to the Modern New Zealand Art component of Bursary Art History, NCEA levels 2 and 3, and to The Visual Arts in the New Zealand arts curriculum.</p> 
+
+<p>An innovative and stimulating approach to learning in and out of the classroom, this resource gives secondary students access to information and images about significant artists and artworks in New Zealand.</p>
+ 
+<p>Visit: <a href="http://www.vuw.ac.nz/adamartgal/ed/artcollectiontour" target="_blank">www.vuw.ac.nz/adamartgal/ed/artcollectiontour</a></p>
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="blue"></a>
+
+<h4 class="events"><i>Painting My Teacher Blue</i></h4>
+<img src="../img/1blue.gif" width="50" height="70" hspace="3" vspace="3" border="0" align="right" alt="Painting My Teacher Blue">
+<p>Written by five New Zealand art specialists, this book will enable New Zealand primary school teachers to plan and teach visual arts programmes that reinforce the richness and depth of <i>The Arts in the New Zealand Curriculum</i>. The book includes sample lessons on talking with students about art, demonstrates how to plan using the curriculum document, and outlines processes and units for commonly used media, as well as showing assessment and evaluation procedures. Accompanying illustrations provide alternative directions for each unit and/or exemplar of work. In addition, the authors discuss the advocacy of visual art by providing explanations about why we teach art. Authors are Lola MacKinnon, Robert Hoeberigs, Carole Johnston, Cathy Warden, and Elizabeth Hanna-Latham. The book is published in 2001 by Gilt Edge Publishing, Lower Hutt, Wellington, New Zealand.
+</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+   
+   
+<a name="print"></a>
+
+<h4 class="events"><i>Printmaking</i></h4>
+<img src="../img/print.gif" width="50" height="70" hspace="3" vspace="3" border="0" align="right" usemap="#Printmaking" alt="Printmaking">
+      <p> <i>Printmaking</i> is the third of five books and posters from the Exploring 
+        Visual Arts in Years 1 &#8211; 6 series. The book is designed to enrich 
+        children's practical experience of learning in, through, and about printmaking. 
+        The book introduces two printmakers: Jo Ogier and Gabrielle Belz. It explores 
+        Jo's woodcut print "Nikau", and Gabriel's linocut and monoprint "Hinemanu 
+        &#8211; Singing in the Dawning (2000)". Posters accompanying the book 
+        show each artist's work, as well as an image of each artist at work.<br>
+      </p>
+      <p> To help student interaction with the art works, notes and suggested 
+        activities are provided. These include ways of viewing, interpreting and 
+        discussing the works. Also included is a practical section on classroom 
+        organisation, a glossary, and a list of teaching and learning resources. 
+        Published by <a href="http://www.learningmedia.co.nz/">Learning Media Ltd</a>  
+        (Box 3293, Wellington, New Zealand) for the Ministry of Education.<br>
+        <br>
+      </p>
+	  
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+
+<a name="tissot"></a>
+
+<h4 class="events"><i>Restoring Tissot</i></h4>
+
+<img src="../img/tissot.gif" width="50" height="70" hspace="3" vspace="3" border="0" align="right" alt="Restoring Tissot">
+      <p> <i>Restoring Tissot</i> by Tessa Duder is a booklet from the Applications 
+        series, which is intended for use by students in years 9&#8211;11. The book uses the 
+        story of New Zealand's first major art theft, the armed robbery of James 
+        Tissot's valuable painting "Still on Top", to present science concepts 
+        and technological practice involved in the restoration of the art work. 
+        The booklet describes the three stages of treatment &#8211; documentation 
+        and research, conservation, and restoration. Teacher's notes accompany 
+        the booklet. These include background information, topic-based activities, 
+        a concept map, and worksheets. Published by <a href="http://www.learningmedia.co.nz/">Learning 
+        Media Ltd</a> (Box 3293, Wellington, New Zealand) for the Ministry of 
+        Education.<br>
+      </p>
+	  
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+	  
+	  
+<a name="ballet"></a>
+
+<h4 class="events"><i>Royal New Zealand Ballet Dance Education Resource</i> (book and CD-ROM)</h4>
+<img src="../img/1dancemid.gif" width="50" height="65" hspace="3" vspace="3" align="right" border="0" alt="Royal New Zealand Ballet Dance Education Resource">
+<p>This resource was written by the Royal New Zealand Ballet Company for primary, intermediate and lower secondary school teachers and their students. It is available in both CD-ROM (with video footage) and hard copy. It provides a brief introduction to the history and development of the Royal New Zealand Ballet, and highlights some of its major artists and directors.</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+<a name="sweet"></a>
+
+<h4 class="h4-events"><i>Sweet! A Taste of New Zealand Music</i></h4>
+<img src="../img/1sweet_cover.jpg" width="50" height="70" hspace="3" vspace="3" align="right" border="0" alt="Sweet! A Taste of New Zealand Music">
+<p>This music education resource consists of a booklet, "Teachers' guidelines: Popular New Zealand Music for years 9&#8211;10 school music study", an audio CD, a companion CD-ROM, and a poster featuring New Zealand musicians. <i>Sweet!</i> is designed for teachers and students of year 9&#8211;10 in New Zealand secondary schools, but can be readily adapted to meet the needs of years 7 and 8. It encompasses all four strands in <i>The Arts in the New Zealand Curriculum</i> up to level 5 in the discipline music.</p>
+
+<p>The CD-ROM provides for high levels of student interaction, as well as providing a comprehensive introduction to the music industry through links to music sites. Around 50 New Zealand artists from a wide range of genres are presented throughout the resource.</p>
+
+<p><i>Sweet!</i> is published by the New Zealand Music Industry Commission, P O Box 37&#8211;386, Parnell, Auckland, <a href="mailto:info@nzmusic.org.nz">info@nzmusic.org.nz</a>. It was produced with funding support from the Ministry of Education.</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+<a name="lotr"></a>
+
+<h4 class="h4-events">Teachers' Guide to <i>The Lord of the Rings</i> Exhibition</h4>
+
+<p><img src="../img/1tg_lord_tepapa.jpg" width="70" height="50" alt="Teachers' Guide to The Lord of the Rings Exhibition" border="0" align="right"></p> 
+ 
+<p>For Te Papa, Learning Media developed a guide for all teachers of students in years 7&#8211;11. It complements class visits to <i>The Lord of the Rings Motion Picture Trilogy &#8211; The Exhibition</i>.</p> 
+
+<p>The activities in this guide put your students in the director's chair. They encourage the same sort of creativity and ingenuity that Peter Jackson and his team used in making <i>The Lord of the Rings</i>.</p>
+
+<p style="margin-bottom:0px;">Topics include:</p>
+
+<ul style="margin-top:0px;">
+<li>&nbsp;How do you make chain mail that looks like the real thing but doesn't weigh a ton?</li>
+<li>&nbsp;How do you make big look small and small look big?</li>
+<li>&nbsp;How do you make new stuff look worn and torn?</li>
+</ul>
+
+<p>While the exhibition reveals some of the filmmakers' secrets for creating such effects, the activities allow your students to come up with their own solutions. The guide is also an invaluable resource for schools unable to visit Te Papa.</p>
+
+<p><i>The Lord of the Rings</i> Exhibition Teachers' Guide website can be found at <a href="http://www.tepapa.govt.nz/rings/teachers" target="_blank">www.tepapa.govt.nz/rings/teachers</a></p>
+
+<p>Published by <a href="http://www.learningmedia.co.nz/" target="_blank">Learning Media Ltd</a> (Box 3293, Wellington, New Zealand) for Te Papa Tongarewa &#8211; The Museum of New Zealand.</p>
+
+<p align="right"><a href="#top" style="color:red;">Back to top</a></p>
+
+<div align="center"><a href="new_e.html">Page 1</a> | <b>Page 2</b> | <a href="new_page_3_e.html">Page 3</a></div>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

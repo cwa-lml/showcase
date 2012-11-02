@@ -1,0 +1,98 @@
+// jquery.animatify.js
+//
+// eBook plugin for jQuery.
+(function($) {
+
+    // plugin 'animatify'
+    $.fn.animatify = function(options) {
+
+        // build options
+        var opts = $.extend({}, $.fn.animatify.defaults, options);
+
+        // for all of the pages on this webpage
+        return this.each(function(i, el) {
+            var $page = $(el);
+
+            // console.log('Inside page ' + i + ' with ', el );
+
+            // for every 'prev' button in this page
+            $page.find(opts.btnPrevSelector).click(function(ev) {
+                ev.preventDefault();
+
+                // get the prev page for this button (if it exists)
+                var $btn = $(this);
+                var $thisPage = $btn.parents(opts.pageSelector).first();
+                var $prevPage = $thisPage.prev();
+                if ( $prevPage.size() ) {
+                    // animate this previous page on
+                    $prevPage.animate(
+                        { left: '0px' },
+                        1250, // duration
+                        function() { opts.pageTurnComplete($prevPage); }
+                    );
+                } // else, no previous page
+
+                // set the prev page to be the current one
+                $thisPage.removeClass('current');
+                $prevPage.addClass('current');
+            });
+
+            // for every 'next' button on this page
+            $page.find(opts.btnNextSelector).click(function(ev) {
+                ev.preventDefault();
+
+                // get this page
+                var $btn = $(this);
+                var $thisPage = $btn.parents(opts.pageSelector).first();
+                var $nextPage = $thisPage.next();
+                if ( $nextPage.size() ) {
+                    // animate this previous page on
+                    $thisPage.animate(
+                        { left: '-' + $thisPage.width() + 'px' },
+                        1250, // duration
+                        function() { opts.pageTurnComplete($nextPage); }
+                    );
+
+                    // set the next page to be the current one
+                    $thisPage.removeClass('current');
+                    $nextPage.addClass('current');
+
+                } // else, no previous page
+            });
+
+            // for every 'restart' button on this page
+            $page.find(opts.btnRestartSelector).click(function(ev) {
+                ev.preventDefault();
+
+                // get all of the pages
+                var $btn = $(this);
+                var $thisPage = $btn.parents(opts.pageSelector).first();
+                var $pages = $thisPage.parent().find(opts.pageSelector);
+
+                $pages.reverse().each(function(i, el) {
+                    setTimeout(function() {
+                        $(el).animate({ 'left' : '0px' });
+
+                        // If this is the final turn, call pageTurnComplete(). ToDo: this really needs to check if this
+                        // element is the first page (since we might have a 'restart' button in the middle of the book
+                        // for some reason.
+                        if ( i === $pages.size()-1 ) {
+                            opts.pageTurnComplete( $(el) );
+                        }
+                    }, 75*i);
+                });
+            });
+
+        });
+    };
+
+    // private functions
+    // none
+
+    // plugin defaults
+    $.fn.animatify.defaults = {
+        // all we need are different animation threads, these all start at the same time
+        threads : []
+    };
+
+})(jQuery);

@@ -1,0 +1,436 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | Gareth Farr 21 November 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f8_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Archived Forum Discussion</td>
+
+</tr>
+
+</table>
+
+<h2 class="h2-forum">Music &#8211; Gareth Farr</h2>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>Excerpts from forum discussion with Gareth Farr (musician, percussionist)<br>
+21 November 2001</p>
+
+<p><b>Val Duthie: </b><br>
+Gareth Farr, composer and percussionist, was born in Wellington, New Zealand, 1968. 
+He studied composition, orchestration and electronic music at Auckland University and was a regular player with the Auckland Philharmonia and the Karlheinz Company.</p> 
+
+<p>Further study followed at Victoria University, Wellington, where he became known for his exciting compositions, often using the Indonesian gamelan. He played frequently as part of the NZSO before going to the Eastman School in Rochester, New York, where he graduated Master of Music.</p> 
+
+<p>Gareth is also well known for developing the character Lilith Lacroix. As Lilith, Gareth performed <i>Drumdrag</i> to sold-out houses, won a fashion award at the Trentham Races wearing her own high-fashion handiwork, appeared in television commercials, and was recently seen recording a pop video for the theme song from <i>Drumdrag</i>.</p> 
+
+<p><b>Val Duthie: </b><br>
+I am really interested in your percussion work. Can you tell me which approaches to teaching percussion you would recommend for primary school students so that they can best learn how to compose and perform?</p>
+
+<p><b>Gareth Farr:</b><br>
+I'm afraid I'm no authority on teaching techniques, so I'm not going to be a huge amount of help on this question. I can say however, that using percussion to get kids interested in music (particularly the creative side) is definitely the right thing to do. </p>
+
+<p>I was introduced into the world of percussion and composition by Don McGlashan who was at the time in the percussion group <i>From Scratch</i>. He and Phil Dadson (founder of the group) wrote the most fantastic rhythm workbook for kids. I think it's probably a bit advanced for primary students, but it may be worth you looking at to give you some ideas.</p> 
+
+<p>Another avenue worth persuing may be Carl Orff's children's music. It's very percussion-based and rather revolutionary. Don't know about it's availability, but give it a go. <i>Das Schulwerk, Musik fur Kinder</i>.</p>
+
+<p><b>Virginia: </b><br>
+I am always looking at ways to increase and improve my music resources in school. At present I am working in primary school. What instrument resources can you recommend for primary schools? Would these be similar for secondary schools too, or would you recommend others for this group? </p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Gareth Farr:</b><br>
+Again, I'm afraid I'm not going to be a huge help here, as I haven't really looked into the educational music area. But I would say that a wide array of basic (and hardy) percussion instruments for primary school kids is the best way for them to explore. Another idea would be looking into constructing your own instruments: log drums, PVC pipes (hit on the end with a jandal), etcetera.  Most music shops will have percussion catalogues you can look through.</p> 
+
+<p>Secondary school kids would probably be better off with instruments which are more in the professional category, and hence more expensive. A good Marimba is upwards of $10,000!</p> 
+
+<p><b>Merryn Dunmill:</b><br> 
+Can you tell us how the music you listen to has influenced your compositions, for example, Asian and M&#257;ori musical components?</p>
+
+<p><b>Gareth Farr:</b><br>
+I think there is an initial period of influence, the years leading up to the moment you discover composition. These years solidify so much of how you come up with creative ideas. The years after that are entirely governed by what you listen to. So in that respect, everything I've listened to since 1986 has had a major impact on my music. The list would be <b>very</b> long, and the explanation of all of those influences would be longer!</p>
+
+<p>Specifically Asian and M&#257;ori music, I've been particularly captivated by 3 musical traditions, the music of Bali, the Cook Islands, and of course, New Zealand. Bali has a wonderful musical tradition, the gamelan orchestra, an orchestra entirely made up of bronze percussion instruments. Cook Island log drumming is also one of my passions because of it's wonderful high energy and exciting rhythms. I've written many pieces for western ensembles in combination with these non-western ensembles, notably, <i>Tabuh Pacific</i> for balinese gamelan and symphony orchestra, and <i>Te Papa</i> for m&#257;ori singer, log drums and symphony orchestra. These pieces are both available on CD from Trust Records (<a href="http://www.trustcds.com/">http://www.trustcds.com</a>).</p>
+
+<p><b>Sue Cheesman:</b><br>
+I am interested in relating your process to children's composition. 
+When composing one of your latest scores can you outline the process (steps) you went through for us, for example, did you start with the idea and then improvise around that idea using percussion or was it completely different?
+
+<p><b>Gareth Farr:</b><br>
+I'll use a piece I wrote for flute and harp in August, <i>Taaheke</i>, as an example. The first inspiration is often done for you &#8211; the instrumentation of the piece. If the piece has been commissioned by a specific ensemble (which almost all of my work is) you don't really have much say over which instruments are going to play the piece. So that is your foundation, and all subsequent ideas must come from there. For me, the best way of starting the piece off is to visualise the premiere. If I imagine the performers on stage at the premiere (I'm in the audience) I just have to imagine what they do as the first gesture of the piece. I imagine the anticipation and the silence just before the piece starts, and then think "what is the first sound I want to hear from these instruments?". Is it a delicate pianissimo texture, or a huge crashing chord?</p>
+
+<p>And then I'm off, it all flows from there. Once I've got a few ideas down on paper, the tedious task of wrestling them all into a coherent piece of music must be undertaken. This is partly a mental exercise; if I'm writing for orchestra for example, much of the creating has to be done in my head, as a piano is not much use when trying to come up with ideas that are based on orchestral colours; but also a bit of improvising on the keyboard inevitably helps me out of sticky corners sometimes.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Phil:</b><br>
+When you were at school, which musician(s) influenced you most. How were you introduced to them?</p>
+
+<p><b>Gareth Farr: </b><br>
+Don McGlashan, without a doubt (lead singer of the Muttonbirds, composer for the <i>Street Legal</i> television programme. If he hadn't come to teach at my secondary school when I was 16 I would probably be a botanist by now, seriously! He introduced me to percussion and composition, and some wonderful rhythmic concepts. I think the rhythm book I mentioned above would interest you too.</p>
+
+<p>I think I should also give Stravinsky a little credit here too, as it was hearing <i>The Rite of Spring</i> at 15 that first made me sit up and think &#8211; wow, this is <b>fantastic</b>, I want to do something like that!</p> 
+
+<p><b>Ann: </b><br>
+Can you describe the style(s) of music that you compose? What are the points that distinguish them?</p>
+
+<p><b>Gareth Farr: </b><br>
+That question is harder and harder to answer every year! As I am asked to write music for different media, stage, television, film, etcetera, the styles of music I am required to produce become more and more diverse.  For example, at the moment, I am writing for a television programme, and the style of music has to be firmly within the "alternative pop" category. I would say my native environment is the Western Classical tradition, but the sky's the limit for the future.</p>
+
+<p><b>Ann: </b><br>
+How does movement and music relate particularly in <i>Strike</i> performances?</p> 
+
+<p><b>Gareth Farr: </b><br>
+Huge topic there! But a very interesting one. Without going to deeply into the area, the basic philosophy is, percussion is dance. It's almost impossible to play percussion without creating movement, and we've taken it all from there.</p> 
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Shelley: </b><br>
+Our senior class of 10- to 13-year-olds will be in Wellington next week. Can you recommend any musical events that will be on?</p>
+
+<p><b>Gareth: </b><br>
+I'm so busy writing for the TV series I'm involved with that I haven't been to a concert in months! I would recommend looking at <a href="http://www.artscalender.co.nz/">http://www.artscalender.co.nz</a> &#8211; it's a website hosted by Trust Records, the company that puts out my CDs.</p> 
+
+<p>It may be worthwhile contacting the New Zealand Symphony Orchestra to see if it might be possible for the kids to attend a rehearsal of the orchestra. I think it's better for shorter attention spans as they don't have to sit through the whole concert.</p>
+
+<p><b>Val Duthie:</b><br> 
+Gareth, thanks for giving so generously of your time this week and for responding to the wide range of questions our forum members have sent to you.</p> 
+
+<p>It is interesting for us to see how one of your teachers was a significant influence on your future career along with dance, percussion, Stravinsky.</p> 
+
+<p>It was a privilege to hear how you find your inspiration for composing. That first sound can be so terrifyingly difficult to make. We realise how much hard work is involved in getting to the final piece, but somehow believe that it should get easier the longer we perform.</p> 
+
+<p>Clearly from what you have said, your role as composer and percussionist gets more and more complex and at the same time, more and more exciting.</p> 
+
+<p>We've really enjoyed your responses and hope that you can join us on the forum again some time in the future.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>&nbsp;</p>
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

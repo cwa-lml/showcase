@@ -1,0 +1,682 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Tane and the Stars - A Tane Me Nga Whetu</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-6.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-6.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "tanestars;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("lesson_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+ 
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+<style type="text/css">
+<!--
+
+-->
+</style>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="../policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="../plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="../assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="../issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../materials/index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Tane and the Stars &#8211; A Tane me ng&#257; Whetu <span style="font-style: normal;">continued</span></h2>
+
+<p><a href="index_e.html">Contents</a> | <a href="objectives_e.html">Achievement objectives</a> | <a href="learnintent_e.html">Learning intentions, knowledge and skills</a> | <a href="resourcetexts_e.html">Resources</a> | 
+<b>Lesson sequence</b></p>
+
+<h3 style="margin-bottom: 0px;">Lesson sequence</h3>
+
+<p style="margin-bottom: 0px;"><b>Printing this page &#8211;</b> select from Word or PDF formats:</p>
+
+<ul style="margin-top: 0px;">
+	<li><a href="docs/tane-stars-lesson-seq.doc" target="_blank">'Tane and the Stars' Lesson sequence</a> (Word, 22kb)</li>
+	<li><a href="pdfs/tane-stars-lesson-seq.pdf" target="_blank">'Tane and the Stars' Lesson sequence</a> (PDF, 53kb)</li>
+</ul>
+
+
+<p><a href="#1">Session 1: The sky</a> / <a href="#2">Session 2: The stars and the kete</a> / <a href="#3">Session 3: Tane motif</a> / <a href="#4">Session 4: Bringing it all together</a></p>
+
+<h3>Introduction</h3>
+
+<p>Start each session with a game that engages students in listening, while using a range of sound sources of various categories.</p>
+
+<h4 style="margin-bottom: 0px;">Pass around the sound</h4>
+<p style="margin: 0px;">For example, try the 'Pass the sound around' game, as follows:</p>
+<ol style="margin-top: 0px;">
+	<li>In a circle, students explore several sounds with their instruments.</li>
+	<li>Each student passes their instrument to the right, to the second person along.</li>
+	<li>Students explore sounds with their new instruments.</li>
+	<li>Students play sounds one after the other around the circle ('passing the sound around' to the left). The aim is to race the 
+	sounds around the circle, with the proviso that the next person can play only after the sound from their neighbour has 
+	died away.</li>
+	<li>If/when the same sound is played twice, change the direction of the sound around the circle.</li>
+</ol>
+
+<p style="margin-bottom: 0px;">Try the following variations:</p>
+<ul style="margin-top: 0px;">
+	<li>play sounds fast/slow/soft/loud;</li>
+	<li>find a different way to play the instrument;</li>
+	<li>play in groups of instruments with similar tone colours.</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="1"></a><h2>Session 1: The sky</h2>
+
+<h3 style="margin-bottom: 0px;">Preparation</h3>
+
+<p style="margin: 0px;">Set the scene for the story of the myth through questioning and discussion, such as through the following 
+process.</p>
+
+<ol style="margin-top: 0px;">
+	<li>Read the story aloud and discuss the pictures.</li>
+	<li>Find clues from the images and the text about what kinds of sounds might suggest the characters of sky, Tane, basket, stars, 
+	and moon.</li>
+	<li>Ask the students: "How does the artist portray each character through use of colour, shape, and size?"</li>
+	<li>Share the learning intentions of the unit with the students, and suggest that their work could become a soundtrack for a 
+	series of images from the book.</li>
+</ol>
+
+<h4 style="margin-bottom: 0px;">The sky &#8211; ideas</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Model the character of sky.
+		<ul>
+			<li>Ask: "What words and phrases might describe sky?"</li>
+			<li>Ask: "How might we portray sky by using space and sound?"</li>
+		</ul>
+	</li>
+	<li>Students use their bodies to show the spiral shape that sky is given in the book, and describe the image.</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">The sky &#8211; sound possibilities</h4>
+
+<ul>
+	<li>Ask: "What sounds could we make to represent descriptions of sky?" Such descriptions could include 'vast', 'darkness', 
+	'never-ending'. </li>
+	<li>Experiment with continuous sounds, using vocal and body sounds, found sounds, and spun drones (bull-roarers) &#8211; see <i>Our 
+	Music</i>, page 35. Some examples are:
+		<ul>
+			<li>dull, low sounds made by randomly flapping thick card;</li>
+			<li>hiss of a brush stroking the skin of a drum in a circular movement.</li>
+			
+		</ul>
+	</li>
+	<li>Pass sounds continuously around the spiral shape that the students made with their bodies.
+			<ul>
+				<li>Ask: "Which sounds suggest the mood of sky best?"</li>
+			</ul>
+	</li>
+	<li>Ask: "How else might we build a soundscape of sky?"</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">Developing sound possibilities</h4>
+<ul style="margin-top: 0px;">
+	<li>Discuss ways of using contrast to alter mood as the soundscape progresses, for example:
+		<ul>
+			<li>gradually increasing volume;</li>
+			<li>changing the number of players;</li>
+			<li>altering the colour of the sounds by changing sound sources.</li>
+		</ul>
+	</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Group task</h4>
+
+<ul style="margin-top: 0px;">
+	<li><b>Aim:</b> To build a sound work that expresses mood, using continuous sounds. When choosing and combining these sounds, 
+	encourage students to consider the pictures in the book, and the descriptions of the sky they came up with in 'The sky &#8211; sound 
+	possibilities'.</li>
+	<li><b>Process:</b> Divide the class into groups of 4&#8211;5 students.
+		<ol>
+			<li>Provide each group with sound sources that make continuous sounds, such as hand-drums with soft-haired brushes, 
+			plastic/metal bowls with marbles inside, and autoharps.</li>
+			<li>Encourage the groups to find techniques of playing these and other sound sources.</li>
+			<li>Allow time for groups to explore, select, combine, organise, and refine their piece.</li>
+		</ol>
+	</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Share work in progress</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Audio- and video-record students' work, and play it back to them.</li>
+	<li>Support students' feedback to their peers by prompting them.</li>
+	<li>Work with the students to clearly identify the process they have worked through to create their sound work.</li>
+	<li>Invite each group to draw, in a simple way, the intent of their soundscape.</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="2"></a><h3>Session 2: The stars and the kete</h3>
+
+<h4 style="margin-bottom: 0px;">The stars &#8211; ideas</h4>
+
+<p style="margin: 0px;">Use a similar approach to the sky session, such as:</p> 
+
+<ol style="margin-top: 0px;">
+	<li>Focus on the book's images related to stars.</li>
+	<li>Encourage students to share their knowledge about stars, and to come up with descriptive words and ideas. For example:
+			<ul>
+				<li>bright,</li>
+				<li>twinkling,</li>
+				<li>shooting stars,</li>
+				<li>distant clusters,</li>
+				<li>the sun is a star.</li>
+			</ul>
+	</li>
+</ol>
+
+<h4 style="margin-bottom: 0px;">The stars &#8211; sound possibilities</h4>
+<ul style="margin-top: 0px;">
+	<li>Prompt students with the following questions:
+			<ul>
+				<li>"What kinds of sounds might we use to portray different kinds of stars?"</li>
+				<li>"How might we show the building of stars? Would we use the same sounds to show the scattering of the stars?"</li>
+				<li>"What techniques are needed to play short, dry sounds? What different techniques are needed to play sustained 
+				and/or twinkling sounds?"</li>
+			</ul>
+	</li>
+	<li>In pairs, students experiment with sound sources to find sounds that 'ring on' (are sustained). For example, this can be done by using a 
+	variety of beaters with things like:
+		<ul>
+			<li>chains,</li>
+			<li>triangles,</li>
+			<li>tins,</li>
+			<li>metal cheese graters,</li>
+			<li>suspended metal rods,</li>
+			<li>glasses,</li>
+			<li>water.</li>
+		</ul>
+	</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">The kete &#8211; ideas and sound possibilities</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Ask: "What do you notice about the pattern on the kete (basket) in the pictures from the book? How might we show this weaving 
+	pattern in sound?"
+		<ol>
+			<li>Model the weaving pattern in sound, taking turns with a student to vocalise.</li>
+			<li>In pairs, all students 'weave' a gibberish conversation.</li>
+		</ol>
+	</li>
+	<li>Ask: "How might we build a rhythmic conversation using bamboo, poi, and/or stones? What kind 
+	of overlapping pattern could we create?"
+		<ol>
+			<li>Work with students to visually display the process of creating the overlapping pattern.</li>
+			<li>Encourage students to explore, select, combine, organise, and refine the piece.</li>
+		</ol>
+	</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Group tasks</h4>
+<ul style="margin-top: 0px;">
+	<li>Using natural sound sources (such as poi, bamboo, and stones), build a sound-piece that is woven rhythmically as a 
+	'conversation' between the sounds.</li>
+	<li>Using a range of metal sound sources, and interesting ways of playing and combining their sounds, build a sound picture 
+	of stars that expresses mood. Consider:
+		<ul>
+			<li>the making of the stars;</li>
+			<li>different ways stars appear, such as 'twinkling' and 'shooting';</li>
+			<li>stars being thrown into the sky.</li>
+		</ul>
+	</li>
+	<li>Divide the class into groups of 4-5 students with tasks related to the images of stars or the kete. As a variation, 
+	ask one group to choose their own materials to build sounds to represent the moon.</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">Share work in progress</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Share with one group at a time.</li>
+	<li>Audio- and video-record students' work, and play it back to them.</li>
+</ul>
+
+<p style="margin-bottom: 0px;">First sharing session:</p>
+
+<ol style="margin-top: 0px;">
+	<li>Ask two or three listeners to factually describe what they heard. For example, "I heard contrast in the way you used 
+	spaces between the sounds." Encourage use of specific music vocabulary.</li>
+	<li>Ask students to personally interpret what they heard.</li>
+</ol>
+
+<p style="margin-bottom: 0px;">Before next sharing session:</p>
+<ol style="margin-top: 0px;">
+	<li>Encourage groups to refine their work after the first sharing session by asking:
+			<ul>
+				<li>"What might we alter to improve our sound pieces?"</li>
+				<li>"How best might we show contrasts between making the stars and scattering the stars?"</li>
+			</ul>
+	</li>
+	<li>Prior to the next sharing session, encourage students to prepare by asking "What changes, if any, did you make to your piece 
+	after the first session? Why?"</li>
+</ol>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="3"></a><h3>Session 3: Tane motif</h3>
+
+<h4 style="margin-bottom: 0px;">Tane &#8211; ideas</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Review pictures and text in the book to identify what Tane does in the sequence of the story.</li>
+	<li>Explain that Tane is going to be represented by a musical 'motif'. Explain the concept of 'motif' &#8211; a brief, 
+	identifiable, musical idea, that may be repeated and developed further.</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Tane motif &#8211; rhythmic possibilities</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Explore and echo short rhythmic patterns in the air with two beaters. Encourage some students to take the lead while 
+	others imitate.</li>
+	<li>Demonstrate and chant a rhythmic motif that can be repeated and extended, such as, "Tini whetu, tini whetu, tini 
+	whetu ki te rangi".</li>
+	<li>Ask: "What do you notice about the movement of pitch between the sounds?"</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Tane motif &#8211; melodic possibilities</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Listen to an excerpt from Prokofiev's <i>Peter and the Wolf</i> in which the wolf motif is played.
+			<ul>
+				<li>Ask: "What do you notice about the wolf motif? What has the composer done to develop it further?"</li>
+			</ul>
+	</li>
+	<li>Listen to Hirini Melbourne's <i>Namunamu</i>.
+		<ol>
+			<li>Ask: "What do you notice about the way Melbourne uses his motif? Has he used a wide or narrow range of pitches?"</li>
+			<li>Discuss the essence and the feel of this example of M&#257;ori music, especially how it differs from the European 
+			(Prokofiev) example.</li>
+			<li>Talk about Hirini Melbourne's contributions to M&#257;ori music.</li>
+		</ol>
+	</li>
+	<li>Students chose partners, and each pair is given a tuned percussion instrument with the bars for the C pentatonic 
+	scale (that is, with the B natural and E natural bars removed or marked).
+		<ol>
+			<li>Ask: "How might we express the phrase 'He purapura whetu' (seeding stars)?" </li>
+			<li>Students experiment in pairs, using any two pitches selected from the C pentatonic scale (that is, C natural, 
+			D natural, F natural, G natural, A natural). Explain the terms 'pentatonic' (five-tone) and 'scale' (ladder of pitches).</li>
+			<li>Students first chant their motif, then play it with fingers on the tuned percussion, before using the beaters.</li>
+		</ol>
+	</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">Share work in progress</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Find in the text where Tane was sad.
+		<ol>
+			<li>Ask: "How might you change your motif to suggest a mood of sadness?" For example, by altering the tempo and the dynamics.</li>
+			<li>Allow time for students to alter their work, then share some examples.</li>
+			<li>Ask a few students to describe factually what they hear.</li>
+			<li>Ask some students to offer a personal interpretation of what they hear.</li>
+		</ol>
+	</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Group task</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Each group builds a motif, which may be played or sung, using a different part of the story but the same rhythmic 
+	pattern &#8211; that of the words: "He pu-ra-pu-ra whe-tu" (meaning 'seeding stars').
+		<ul>
+			<li><b>Group 1 &#8211;</b> Use text and picture(s) for "Tane made the stars" section. Ask: "How might you develop 
+			this motif to suggest this way of making?"</li>
+			<li><b>Group 2 &#8211;</b> Use text and picture(s) for "Tane made a big basket" section. Ask: "How might you develop this motif to suggest a process of making?"</li>
+			<li><b>Group 3 &#8211;</b> Use text and picture(s) for "Tane took them up to the sky" section. Ask: "How might you develop this motif to show the movement of flying high?"</li>
+			<li><b>Group 4 &#8211;</b> Use text and picture(s) for "Tane scattered them over all the night sky" section. Ask: "How 
+			might you suggest Tane's strength and movement in the way you play the motif?"</li>
+		</ul>
+	</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Share work in progress</h4>
+
+<ul style="margin-top: 0px;">
+	<li>Each group shares their motif.
+		<ul>
+			<li>Ask two or three listeners to factually describe what they heard, followed by some personal interpretation. 
+			Encourage use of specific musical vocabulary.</li>
+		</ul>
+	</li>
+	<li>Audio- and video-record students' work, and play it back to them.</li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="4"></a><h3>Session 4: Bringing it all together</h3>
+
+<h4 style="margin-bottom: 0px;">Linking the motifs</h4>
+<p style="margin-top: 0px;">Students share ideas about ways the sound-pieces could be ordered or linked together. The sequence could be determined by the story 
+sequence (forwards/backwards), or by linking contrasting sound-pieces randomly. Alternatively, each sound-piece could stand alone.</p>
+
+
+<h4 style="margin-bottom: 0px;">Performance</h4>
+<p style="margin: 0px;">If the class decides to prepare a performance of their sound-pieces for an audience, several rehearsals would be required. 
+When planning these sessions, consider the following points.</p>
+
+<ul style="margin-top: 0px;">
+	<li>Students could be encouraged to develop specific performance skills and techniques, such as focusing on 
+	co-ordination and timing.</li>
+	<li>It is important students understand that they need to not only refine (alter to improve) their work, which takes time, but 
+	also to rehearse ('re-hear' the decisions already made) prior to a performance, when all the details, including starting and 
+	finishing, are practised.</li>
+</ul>
+
+<h4 style="margin-bottom: 0px;">Evaluation</h4>
+
+<p style="margin-top: 0px;">Encourage students to evaluate their own and others' creative musical inventions, based on agreed creating and 
+performing criteria (as suggested above).</p>
+
+<p align="right"><a href="index_e.html">Back to 'Contents'</a> | <a href="#top">Back to top</a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

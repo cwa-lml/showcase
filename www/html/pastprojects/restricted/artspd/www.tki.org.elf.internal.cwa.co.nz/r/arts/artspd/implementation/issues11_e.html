@@ -1,0 +1,506 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Issues | M&#257;ori Pedagogies</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-4.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-4.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("issues11_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Teacher Issues</td>
+
+</tr>
+
+</table>
+
+<h2 class="h2-implementation">M&#257;ori pedagogies</h2>
+
+<h3>Question</h3>
+
+<b>When teaching and learning in the arts in the New Zealand curriculum, what kind of M&#257;ori pedagogies can be considered?</b>
+
+<h3>Answer</h3>
+
+<p>This question is addressed in two parts, firstly by looking at what M&#257;ori pedagogy is and secondly how Keri Kaa, arts education consultant, and four people she interviewed, acquired knowledge through M&#257;ori pedagogy.</p>
+
+<h3>What is M&#257;ori pedagogy?</h3>
+
+<p>M&#257;ori pedagogy can be thought of as "practices" or ways of learning. Each of these has been categorised below, but they are not necessarily separate. They often rely on one another.</p>
+
+<p>The categories are:</p>
+
+<table cellpadding="2">
+<tr>
+<td width="105"><b>Exposure</b></td>
+<td>Role modelling, listening, observation, imitation, hands-on.</td>
+</tr>
+
+<tr>
+<td><b>Role</b></td>
+<td>Whereby the deeper learning and understanding takes place in waiata, karakia, and whakapapa.</td>
+</tr>
+
+<tr>
+<td><b>Ako</b></td>
+<td>This is the term used for both learning and teaching.</td>
+</tr>
+
+<tr>
+<td><b>Teina tuakana</b></td>
+<td>Peer tutoring.</td>
+</tr>
+
+<tr>
+<td><b>Groups</b></td>
+<td>Co-operative learning style, for instance kapa haka and heterogeneous groups. Groups can be any number above 1.</td>
+</tr>
+
+<tr>
+<td><b>P&#363;r&#257;kau</b></td>
+<td>In this context p&#363;r&#257;kau means stories and legends. 
+Links are made to: principles to be taught, messages in whakapapa, M&#257;ori theories and M&#257;ori world view.</td>
+</tr>
+</table>
+
+<p>This information was presented at the Arts Hui, September 2001 by Raiha Ruwhiu, Opotiki Primary School. She gathered this information from research by Ted Glyn, Angus MacFarlane, Rose Pere, Wharehuia Hemara, and Bill Walters.</p>
+
+<p>All the above is underpinned by the theory on the tapawha, taha hinengaro, taha tinana, taha wairua, and taha wh&#257;nau.</p>
+
+<p>For further information on this refer to Ministry of Education. (1999). <i>Health and Physical Education in the New Zealand Curriculum</i>. Wellington: Learning Media. 
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/health/curriculum/statement/toc_e.php">http://www.tki.org.nz/r/health/curriculum/statement/toc_e.php</a></p>
+<br>
+
+<p><b>Personal experiences of how knowledge is acquired through M&#257;ori pedagogy </b></p>
+
+<p>Keri Kaa, well-known arts education consultant from Tikitiki, East Coast, offers her understandings of the various ways knowledge has been acquired. She also interviewed four people, who offer their memories of a way of life and learning that is fast disappearing.</p>
+
+<p>The examples they give arise from their personal experiences of learning and their own understandings of the various ways knowledge was acquired. These relate directly to the above categories and provide pertinent examples.</p>
+
+<p><b>Keri writes about her personal experiences:</b></p>
+
+<blockquote><p>M&#257;ori pedagogy seems to be a new discovery for people with a vested interest in education and education theory.  For people like me who were raised in the traditions of these "practices" or "ways of learning" it was just "what old people did" and how they went about "handing on the knowledge"!</p>
+
+<p><b>Background</b><br>
+I grew up in the 1940s in a family of 13 children.  We lived in a big house with paternal grandparents, parents, and an assortment of cousins and foster children (tamariki wh&#257;ngai) who passed through for indefinite periods.</p>
+
+<p>I was taught all the basics a child needs to know to survive by my older sister (older by 10 years). She taught me how to count, say the alphabet, answer the telephone, and read.  She was a surrogate mother to me right up until I turned 21.</p>
+
+<p><b>Bilingual</b><br>
+In our household we were bilingual from an early age and at our father's insistence had to observe strict rules about answering in the language being used at the time.  We were not permitted to use what our father called "grasshopper's language". That is being spoken to in M&#257;ori and replying in English nor vice versa.</p>
+
+<p><b>Acquisition of traditional knowledge</b><br>
+Traditional knowledge was passed on and around from elders to children and grandchildren.  We listened, observed, imitated, and then tried to reproduce.  Speaking out of turn was discouraged.  There was a definite pecking order.  Younger children waited for older siblings to speak first.  They were our role models.  But when it came to meal times, younger children were looked after by older siblings and fed first.  We all helped clear the table and wash, dry, and put away dishes.</p>
+
+<p><b>Learning about kawa and tikanga</b><br>
+Learning about the kawa (protocols) and tikanga (customs) was initiated by actual marae experiences.  We went with our mother and father to the marae to work.  We fetched and carried water and firewood, peeled vegetables, set tables, and washed and dried dishes for years.</p>
+
+<p>Going outside to watch what was taking place on the marae was allowed if we didn't ask too many questions.  Learning with your eyes and ears was the norm.  Usually, we were allowed to discuss with our parents the things we had observed on the marae, once we got home.  Our father was stern, but patient and happy to explain.  Our mother, who was often busy with household chores, would say, "Ask you father, I'm too busy right now."</p>
+
+<p><b>Acquisition of deeper knowledge</b><br>
+Getting to grips with the deeper knowledge was achieved through the constant repetition of karakia, waiata, whakapapa, and k&#333;rero p&#363;r&#257;kau.  Knowledge was "caught" most of the time, "taught" occasionally in formal learning sessions at night, and generally absorbed over a long period of time.</p>
+
+<p><b>Storytelling</b><br>
+Stories were, and still are, the key to learning.  Family stories in particular, whereby familiar names are recited, repeated at intervals, and then brought up again in conversations over the years.  In our own family, learning to do the haka took years of listening, observing, and then imitating.  There were no formal periods of instruction. We simply absorbed the knowledge slowly over a long period of time.  We also acquired the knowledge in small instalments, what a colleague describes as "an incremental process".  One day we stood up and joined the elders who simply nodded in satisfaction as we followed with ease.</p>
+
+<p><b>The role of the elders</b><br>
+To reach a standard of excellence requires years of training and the tacit and verbal support of elders.  Their role is to remind learners of the knowledge and secrets hidden in the stories.  Direct questions were, and still are, answered with an anecdote or the re-telling of a significant incident.</p></blockquote>
+<br>
+
+<h3>Interviews</h3>
+
+<p>Keri interviewed four people ranging in age from 35 to 85 years, so that she could provide a wider perspective with more examples. All are M&#257;ori, and all were raised in small rural settlements.  Two interviewees moved to cities to find work and establish careers.  Two are fluent speakers of M&#257;ori, one has a good understanding of the language, but the fourth can follow the M&#257;ori language, but lacks the confidence to respond in M&#257;ori.</p>
+
+<p>None of the interviewees wished to be identified in any way, but all were happy to share memories of a way of life and learning fast disappearing.  It's interesting to note that the mentor in all their lives was not necessarily a parent, but usually a nanny or grandfather figure.  Often the relationship was close, intense, and affectionate.  Three people returned to their parents when the elder died, but they were unable to establish the strong bonds they had enjoyed with their elders.</p>
+
+<p>They also have not forgotten the things they saw and heard.  Keri is grateful for their assistance and willingness to share their experiences in the hope that teachers will have a better understanding of M&#257;ori pedagogy.</p>
+
+<p><b>Interviewee (H)</b><br>
+<b>General background:</b><br>
+Female, mid 40s, married with 1 child.</p>
+
+<p><b>Occupation/interests:</b><br>
+H is a keen gardener who practises organic techniques, works with clay and does traditional M&#257;ori weaving.</p>
+
+<p><b>Acquisition of knowledge through M&#257;ori pedagogy:</b><br>
+When asked how she acquired her knowledge, H said excitedly, "My nanny told stories, stories, stories!  Everywhere we went, she told my cousin and me stories.  When we piled into her bed at night it was more stories.  We went to sleep hearing her stories.  We woke up to more stories."</p>
+
+<p><b>Summary:</b><br>
+This constant repetition of the stories is what eventually leads to the dawning of understanding much later in life.</p>
+<br>
+
+<p><b>Interviewee (M)</b><br>
+<b>General background:</b><br>
+Male, mid 40s, married with 6 children.</p>
+
+<p><b>Occupation/interests:</b><br>
+M is a farmer, fisherman, gardener, and mystic.</p>
+
+<p><b>Acquisition of knowledge through M&#257;ori pedagogy:</b><br>
+M was set aside from his siblings as a toddler and told secrets and rituals concerned with food gathering, by a tohunga (a tribal expert with special knowledge).  He said the old man lived in another valley and he was always taken to him.</p>
+
+<p>M explained, "He used to say things over and over to me, and my mum used to remind me.  I always had to say a karakia no matter how short it was.  Every time I caught a fish, gathered seaweed, or picked puha.  I still believe all that stuff, I keep to all the rules to be safe."</p>
+
+<p><b>Summary:</b><br>
+M is typical of M&#257;ori people who are raised in this way.  He maintains these rituals and practices in the belief that these will keep his family safe both physically and spiritually.  M is knowledgeable about planting by the moon, fishing according to the M&#257;ori calendar, observing the climate conditions, and noting the behaviour of animals in their natural habitat.</p>
+<br>
+
+<p><b>Interviewee (R)</b><br>
+<b>General background:</b><br>
+Male, mid 30s, married with two children was raised by a female elder.  Her name was Nana.</p>
+
+<p><b>Occupation/interests:</b><br>
+R is a casual worker who is interested in music, especially folk songs of the 60s.  R is also interested in poetry.</p>
+
+<p><b>Acquisition of knowledge through M&#257;ori pedagogy:</b><br>
+R explained: "Nana taught me whakapapa, not just the names of family ancestors and descendants but stories about them and where they lived.  I followed her everywhere.  At night I'd be in bed, she'd be singing a long song and I would fall asleep.  Then she would prod me with her walking stick, tell me to stay awake and then there would be more stories.  It's funny, but they are the ones I really remember."</p>
+
+<p><b>Summary:</b><br>
+R is now a prominent composer and performer.
+<br>
+
+<p><b>Interviewee 4 (T)</b><br>
+<b>General background:</b><br>
+Female, mid-80s, mother, grandmother, great-grandmother.</p>
+
+<p><b>Occupation/interests:</b><br>
+Traditional weaver who is still practising as an artist.</p>
+
+<p><b>Acquisition of knowledge through M&#257;ori pedagogy:</b><br> 
+T explains: "I didn't learn any of the tikanga until I was a lot older.  Too busy bringing up eight kids.  The old lady I went to learn from was in her 60s.  She was wonderfully patient, kind and generous.  She taught me where the right plants grew, how to pick the flax and harvest it correctly.  She showed me special places where I could find the right mud to dye the fibres in.  To this day, I am still the only person who knows where these resources are."</p>
+
+<p>T is currently teaching two apprentice weavers. She is still deciding which one of these will be told all the necessary information.  She prays for guidance and waits for a sign to indicate which of her two students will be chosen.</p>
+<br>
+
+<h3>Summary</h3>
+<p>Keri summarises these interviews as follows:<br>
+"Much of this information illustrates the need for teachers involved in arts programmes to focus in on communities and family stories and story-telling in particular. It's probably the most useful starting point".</p>
+
+<p>To reiterate:<br>
+"For people like me who was raised in the traditions of these 'practices' or 'ways of learning' it was just 'what old people did' and how they went about 'handing on the knowledge!"<br>
+Keri Kaa</p>
+
+<p>&nbsp;</p>
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>He Kurī</title>
+  <script type="text/javascript" src="./js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.pageify.js"></script>
+  <script type="text/javascript" src="./js/jquery.narrateify.js"></script>
+  <script type="text/javascript" src="./js/jwplayer-5.9/jwplayer.js"></script>
+  <script type="text/javascript" src="console.js"></script>
+  <script type="text/javascript" src="narration.js"></script>
+  <script type="text/javascript" src="ready.js"></script>
+  <script type="text/javascript" src="click-word.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="stage">
+
+    <!-- EDUTAINMENT MODE -->
+    <div id="edutainment-video-container">
+      <div id="edutainment-video"></div>
+      <div id="edutainment-video-text">&nbsp;<span>&nbsp;</span>&nbsp;</div>
+    </div>
+
+    <!-- EDUTAINMENT SELECT SCREEN -->
+    <div id="video-mode-select-screen" style="background-image: url(read-to-me.jpg);">
+      <a href="#"
+         id="btn-next-alone-with-text"
+         title="Yes Please"
+         style="position: absolute; left: 305px; top: 335px; width: 225px; height: 172px;">
+        &nbsp;
+      </a>
+      <a href="#"
+         id="btn-next-alone-no-text"
+         title="No Thanks"
+         style="position: absolute; left: 542px; top: 335px; width: 225px; height: 172px;">
+        &nbsp;
+      </a>
+    </div>
+
+    <!-- NORMAL MODE -->
+    <div id="book">
+
+      <div id="entry" class="page">
+        <div id="introduction-video" data-video="entry"></div>
+        <div id="entry-overlay"></div>
+        <div style="text-align: center; position: absolute; top: 620px; width: 100%; z-index: 10;">
+          <a href="#" class="btn-next-alone"  title="Read Alone (Māori?)"><img src="i/btn-entry-mode-1.png" /></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#" class="btn-next-together" title="Read Together (Māori?)"><img src="i/btn-entry-mode-2.png" /></a>
+          <a href="#" class="btn-next" title="Next" style="display: none;">&nbsp;</a>
+        </div>
+        <a href="#"
+           class="btn-jump"
+           data-pageify-jump="notes"
+           title="Teachers Notes"
+           style="position: absolute; left: 80px; top: 600px; width: 185px; height: 85px; z-index: 15;">
+          &nbsp;
+        </a>
+      </div>
+
+      <div id="dog" class="page">
+        <div class="start-img" style="background-image: url('dog/bg.jpg')"></div>
+        <div class="jwplayer" id="dog-video" data-video="dog"></div>
+        <div class="end-img" style="background-image: url('dog/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="dog">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</a>.
+          </p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="snail" class="page">
+        <div class="start-img" style="background-image: url('snail/bg.jpg')"></div>
+        <div class="jwplayer" id="snail-video" data-video="snail"></div>
+        <div class="end-img" style="background-image: url('snail/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="snail">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="nui">nui</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="man" class="page">
+        <div class="start-img" style="background-image: url('man/bg.jpg')"></div>
+        <div class="jwplayer" id="man-video" data-video="man"></div>
+        <div class="end-img" style="background-image: url('man/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="man">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="iti">iti</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="slippers" class="page">
+        <div class="start-img" style="background-image: url('slippers/bg.jpg')"></div>
+        <div class="jwplayer" id="slippers-video" data-video="slippers"></div>
+        <div class="end-img" style="background-image: url('slippers/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="slippers">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="pai">pai</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="cement" class="page">
+        <div class="start-img" style="background-image: url('cement/bg.jpg')"></div>
+        <div class="jwplayer" id="cement-video" data-video="cement"></div>
+        <div class="end-img" style="background-image: url('cement/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="cement">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="kino">kino</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="coal" class="page">
+        <div class="start-img" style="background-image: url('coal/bg.jpg')"></div>
+        <div class="jwplayer" id="coal-video" data-video="coal"></div>
+        <div class="end-img" style="background-image: url('coal/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="coal">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="pango">pango.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="soap" class="page">
+        <div class="start-img" style="background-image: url('soap/bg.jpg')"></div>
+        <div class="jwplayer" id="soap-video" data-video="soap"></div>
+        <div class="end-img" style="background-image: url('soap/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="soap">
+          <p class="sentence s1">
+            <a class="word" data-word="he">He</a>
+            <a class="word" data-word="kuri">kurī</>
+            <a class="word" data-word="ma">mā</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="ladder" class="page">
+        <div class="start-img" style="background-image: url('ladder/bg.jpg')"></div>
+        <div class="jwplayer" id="ladder-video" data-video="ladder"></div>
+        <div class="end-img" style="background-image: url('ladder/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="ladder">
+          <p class="sentence s1">
+            <a class="word" data-word="aue">Auē</a>!
+          </p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="paint" class="page">
+        <div class="start-img" style="background-image: url('paint/bg.jpg')"></div>
+        <div class="jwplayer" id="paint-video" data-video="paint"></div>
+        <div class="end-img" style="background-image: url('paint/end.jpg')"></div>
+        <div class="narration" data-narrateify-id="paint">
+            <p class="sentence s1">
+              <a class="word" data-word="he">He</a>
+              <a class="word" data-word="kuri">kurī</>
+              <a class="word" data-word="kakariki">kākāriki</a>.
+            </p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-listen" href="#"><img src="./i/btn-listen.png" title="Listen" alt="Listen"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="index" class="page">
+        <p>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="entry"><img src="nav/0.png" /></a>
+        </p>
+        <p>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="dog"><img src="nav/1.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="snail"><img src="nav/2.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="man"><img src="nav/3.png" /></a>
+          <br />
+          <a href="#" class="btn-jump thumb" data-pageify-jump="slippers"><img src="nav/4.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="cement"><img src="nav/5.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="coal"><img src="nav/6.png" /></a>
+          <br />
+          <a href="#" class="btn-jump thumb" data-pageify-jump="soap"><img src="nav/7.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="ladder"><img src="nav/8.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="paint"><img src="nav/9.png" /></a>
+        <p>
+          <a href="/ebook/"><img src="i/btn-more-books.png" /></a>
+        </p>
+      </div>
+
+      <div id="notes" class="page" style="background-image: url(notes/bg.jpg);">
+        <a href="#"
+           class="btn-jump"
+           data-pageify-jump="entry"
+           title="Back to Title Page"
+           style="position: absolute; left: 920px; top: 670px; width: 42px; height: 42px;">
+          &nbsp;
+        </a>
+      </div>
+
+      <div id="nav-btn">
+        <a href="#" id="btn-nav"><img src="i/btn-menu-up.png" width="49" height="24"></a>
+      </div>
+      <div id="nav">
+        <a href="" class="btn-nav-jump" data-pageify-jump="entry"><img src="nav/0.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="dog"><img src="nav/1.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="snail"><img src="nav/2.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="man"><img src="nav/3.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="slippers"><img src="nav/4.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="cement"><img src="nav/5.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="coal"><img src="nav/6.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="soap"><img src="nav/7.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="ladder"><img src="nav/8.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="paint"><img src="nav/9.png" /></a>
+      </div>
+
+    </div><!-- /#book -->
+
+    <div style="display: none">
+      <!-- word player (for when  -->
+      <div class="jwplayer" id="word-jwplayer"></div>
+
+      <!-- narration phrases -->
+      <div class="jwplayer" id="dog-fluent"></div>
+      <div class="jwplayer" id="snail-fluent"></div>
+      <div class="jwplayer" id="man-fluent"></div>
+      <div class="jwplayer" id="slippers-fluent"></div>
+      <div class="jwplayer" id="cement-fluent"></div>
+      <div class="jwplayer" id="coal-fluent"></div>
+      <div class="jwplayer" id="soap-fluent"></div>
+      <div class="jwplayer" id="ladder-fluent"></div>
+      <div class="jwplayer" id="paint-fluent"></div>
+    </div>
+
+  </div><!-- /#stage -->
+
+</body>
+</html>

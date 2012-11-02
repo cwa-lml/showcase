@@ -1,0 +1,460 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | Tim Balme 28 November 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f10_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Archived Forum Discussion</td>
+
+</tr>
+
+</table>
+
+<h2 class="h2-forum">Drama &#8211; Tim Balme</h2>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>Excerpts from forum discussion with Tim Balme (actor)<br>
+28 November 2001</p>
+
+<p><b>Val Duthie: </b><br>
+A special welcome to Tim Balme who is our Arts Celeb this week.</p> 
+
+<p>Tim Balme is currently directing <i>A Way of Life</i>, the new play by Roger Hall.
+Tim is a well known New Zealand actor. You may well remember Tim as Greg in Shortland street. He is a member of the New Zealand Actors Company and you may have seen them perform when they toured their show on Shakespeare around New Zealand.</p> 
+
+<p><b>Janet:</b><br>
+How have you made Shakespeare accessible to students?</p> 
+
+<p><b>Tim Balme:</b><br> 
+With <i>A Midsummer Nights Dream</i> we simply honoured the script, that is, we didn't change it but found a way to tell the story in an athletic, physical, and colourful way. It's such a fun play that the stage must reflect the movement in the story. As long as that occurs students find it compelling.</p>
+
+<p><b>Fiona: </b><br>
+Can you describe the response you received from schools during your tour of schools?</p> 
+
+<p><b>Tim Balme:</b><br> 
+Extreme enthusiasm for giving them an opportunity to experience Shakespeare that wasn't dull or incomprehensible. Shakespeare is trendy now because of Baz Luhrman's <i>Romeo and Juliet</i> and <i>Shakespeare in Love</i> but ultimately they're still films. We offered them a similar vibrant time in the theatre and they responded wonderfully.</p> 
+
+<p><b>Janet: </b><br>
+When you tour with your work, do you have to change the way that you approach the work?</p>
+
+<p><b>Tim Balme: </b><br>
+Staging has to be practically thought out to fit into many varied theatres and also a truck. Those limits often provoke creative solutions. Having said that, we try to deliver as high production values as possible. Coming to the theatre should be colourful and visually exciting too.</p> 
+
+<p><b>Andy:</b><br> 
+Hi Tim. You have worked in a variety of roles, in a range of countries, and have used different conventions. In addition, you have worked as both a director as well as an actor.</p> 
+
+<p>Have you found that some skills cross over the role of actor and director? If so, what are they? And how do you have to adapt your work when working in different countries? </p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p><b>Tim Balme:</b><br> 
+Funnily enough, Andy, I've never directed at all. Not a scene! It's something I've never had a calling for. I've produced and written but never directed.</p> 
+
+<p>I toured my one man show <i>Jimmy Costello</i> to Edinburgh, Ireland, Israel, and England. It was a very "kiwi" story but with universal themes of the underdog struggling against the opressor, etcetera. I changed nothing. I let the idiosyncrasies of our country and our language speak for themselves. It worked well. Partly the audience were after an "exotic" experience.</p>
+
+<p><b>Phil:</b><br> 
+Great to have you on our forum. I try to encourage my students to use their personal experiences and imagination when they are preparing to get "into role". I guess that you must do the same. How much lead time and preparations do you need to "get into character"?</p>
+
+<p><b>Tim Balme:</b><br>
+We generally rehearse for theatre six days a week for up to six weeks. Once that is complete and the show is opened we generally slip in and out of character very quickly. Little things become the trigger: the costume, or the pre-show music, or a couple of key lines that your character says that sums up who they are and what they want most in life.</p> 
+
+<p>Every actor is different. But basically the rehearsal period is weeks of trying different things out, making choices, trying them, maybe throwing them away. Generally there are many ways to play a character and you as an actor have to make strong choices and make that character your own.</p>
+
+<p><b>Phil: </b><br>
+Could you also tell us more about the Actors Company and why you became a founder member?</p> 
+
+<p><b>Tim Balme: </b><br>
+The Actors Company was set up to mount large scale professional shows and tour them. Often most professional theatre stays in the big cities and we wanted to see that it moved around to other places too. We were the founders because the four of us: Katie Wolfe, Simon Bennett, Robyn, and myself felt if we didn't do it no one else would.</p> 
+
+<p><b>Virginia: </b><br>
+I have children in my class who aspire to be actors. They would love to hear your stories. Why did you choose to become an actor?  Did you have mentors who inspired you?</p> 
+
+<p><b>Tim Balme: </b><br>
+I fell in love with acting at high school when I first was in a school musical. I was 13-years-old and I played an 80-year-old king! The response I got from the audience was amazing and satisfying. I never wanted to do anything else after that. I had three amazing teachers who supported my desire and thanks to them I persevered and went off to university to study drama and then on to New Zealand Drama School.</p> 
+
+<p><b>Virginia:</b><br> 
+What is the most challenging work that you do now?</p>
+
+<p><b>Tim Balme:</b><br> 
+Maintaining the momentum of the New Zealand Actors Company and various roles that come by. I am currently filming a feature in Wellington that is the most challenging role I've ever taken on. Some jobs are really exciting some are fairly easy ... our production of King Lear (<i>Leah</i>) next year will be a real challenge!</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Val Duthie:</b><br>
+I am interested in the range of work you do. 
+It would seem to me that the mediums of theatre, film and television would provide a range of different challenges for you as an actor.</p> 
+
+<p>What do you see as the major differences in these media from an actor's point of view?  For example, the relentlessness of scripts that you must have to learn when working on <i>Shortland Street</i> and the repetitiveness of the performance lines when you are working in theatre.</p>
+
+<p><b>Tim Balme:</b><br> 
+You've summed it up really. <i>Shortland Street</i> is relentless so you have to find a way to make it fresh, exciting. If you are bored so will the audience be. Theatre is repetitive but that is its challenge. Our skill is to walk out every night and make it sound and feel like it's the first time it's been performed because that audience only exist for one night and you have to deliver.</p> 
+
+<p><b>Val Duthie:</b> <br>
+Is any one of these mediums more challenging than another?</p>
+
+<p><b>Tim Balme:</b><br> 
+Each hold their challenge. That's why as New Zealand actors we are blessed with the opportunity to cross mediums often. In the course of year you may do television, film, and theatre.  Variety is the spice, keeps it fresh for me, anyway.</p>
+
+<p><b>Sue Cheesman: </b><br>
+Solo shows, monologues, are often very daunting experiences but also can provide avenues for your own ideas, thoughts and beliefs and can be very empowering experiences.  What has been your experience with regard to the above?</p>
+
+<p><b>Tim Balme: </b><br>
+I've toured two full length solo shows &#8211; Anthony McCarten's <i>Let's Spend the Night Together</i> and my own <i>Jimmy Costello</i>. Both shows were performed around a 150 times. Enormously rewarding. When it's just you and the audience, the audience keeps it fresh. They are like a wave that you catch and surf down for the whole evening.</p> 
+
+<p><i>Jimmy Costello</i> allowed me to express my own thoughts and literary voice to a theatre show. That was a challenge and I allowed it to be a continual work in progress. Mounting the show for many different tours and seasons allowed me to make changes to passages I never felt happy with.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Sue Cheesman:</b><br> 
+Does improvisation play a role in your the company, if so what sort of activities do you do and and how does it relate to the work you are doing?</p> 
+
+<p><b>Tim Balme: </b><br>
+Improvisation plays a small role in rehearsal but certainly not in performance, not with Shakespeare. Generally, we are not an improvisation company, but it can be a useful tool for unlocking the creative juices in a rehearsal room.</p>
+
+<p><b>Fiona:</b><br> 
+Why do you think it's important that students are encouraged to participate in the arts at school?</p> 
+
+<p><b>Tim Balme:</b><br> 
+Arts are an important dimension of any civilised society. They help us understand who we are as people, and other people around us. The arts allow us to reflect ourselves, or as Hamlet said, "hold a mirror as it t'were up to nature". Students may excel in sport or academics or arts or all! But school is where we should be allowed to find out. I wouldn't be an actor today if it weren't for arts at school.</p>
+
+<p><b>Fiona:</b><br> 
+What kind of influences helped to foster your passion for the theatre when you were at school?</p> 
+
+<p><b>Tim Balme:</b><br> 
+Great teachers who were passionate about drama, simple as that.</p> 
+
+<p><b>Val Duthie:</b><br> 
+Dear Tim, thank you so much for your fabulous responses to our questions.  We really appreciate the time you have taken to provide such full and thoughtful responses to each of our questions.</p>
+
+<p>You have shown, through your own story, the importance of positive drama experiences for students in the classroom. You have also identified for us the importance of supportive teachers who can provide opportunities for students to search for and find their own particular strengths. And then there is that glorious word &#8211; passion.</p> 
+
+<p>Clearly you are passionate about the work that you do and it shows in your responses. We sometimes feel a bit left out as some of us live in rural and isolated places. Thank you and your company of actors for taking the initiative to set up the Actors Company so that we too can be part of your theatre world and share in some of your great ideas.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>&nbsp;</p>
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

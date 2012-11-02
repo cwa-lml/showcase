@@ -1,0 +1,527 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | 12 September 2001</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f48_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td><img src="../img/spacer.gif" width="550" height="23"  border="0" /></td>
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23"  border="0" /></td>
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19"  border="0" /></td>
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+</tr>
+<tr valign="top">
+    <td> 
+      <table cellpadding="0" cellspacing="0" border="0">
+    <tr valign="top">
+	 <td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18"  border="0" align="left">Archived Forum Discussion</td>
+	</tr>
+  </table>
+      <h2 class="h2-forum"><a name="top"></a>Maori performing arts</h2>
+      <p>Edited from forum discussion with:
+        <ul>
+		<li><strong>Rawiri Hindle</strong> &#8211; the Ministry of Education&#8217;s 
+        National Coordinator for Nga Toi, a lecturer at the Wellington College 
+        of Education, and the Maori Content Coordinator for Te Kete Ipurangi (TKI)</li>
+        <li><strong>Jojo Rangihaeata</strong> &#8211; a Maori Web Developer for TKI, 
+        and a long-time kapa haka performer.</p></li>
+     </ul>
+	  <p>Date: 15 October 2003 </p>
+      <p><a href="index_e.html">Back to Archived Forum Discussion index</a> </p>
+      <h3>Introductions</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        This week we are talking about Nga Mahi a te Rehia &#8211; Maori Performing 
+        Arts with Rawiri Hindle and Jojo Rangihaeata. Both guests have a wealth 
+        of experience in this field so look forward to some excellent discussion 
+        around this subject. </p>
+		<ul class="flush">
+      <li><p><strong>Rawiri Hindle</strong> is the Ministry of Education&#8217;s National 
+        Coordinator for Nga Toi and a lecturer at the Wellington College of Education. 
+        He is also the Maori Content Coordinator for Te Kete Ipurangi where he 
+        assists with developing materials for Maori language teachers in the general 
+        stream and for those working in the Maori immersion Kura Kaupapa schools. 
+      </p></li>
+     <li> <p><strong>Jojo Rangihaeata</strong> is a Maori Web Developer for Te Kete 
+        Ipurangi and a highly experienced kapa haka performer. Here she introduces 
+        herself:</p></li>
+		</ul>
+      <p class="indent">Ko Pukehapopo te maunga<br>
+        Ko Waiomoko te awa<br>
+        Ko Ngati Konohi te iwi.<br>
+        Ko Whangara-Mai-Tawhiti te marae <br>
+        Ko Paikea te tipuna <br>
+        Ko Jojo Rangihaeata toku ingoa </p>
+      <p class="indent">I am a part of a unique kapa haka roopu Whangara-Mai-Tawhiti, which hails 
+        from the mighty East Coast of the North Island. I am a descendant of Paikea 
+        from a long line of chiefs. I have been performing in kapa haka since 
+        I was a little girl in the Patea Maori Club, and since moving back to 
+        Gisborne and doing kapa haka all my life. I have competed at in regional 
+        kapa haka level for about 10 years, and have competed in the nationals 
+        for nine years. My life's passion is evolved around kapa haka and anything 
+        Maori. I live and breath anything Maori and especially my own native tongue 
+        and of course Nga mahi a te Rehia (performing arts). </p>
+      <p class="indent">No reira te whanau kei te mihi ki a koutou katoa kua tae mai ki konei 
+        ki te korerorero nga ahuatanga e pa ana ki Nga Toi.</p>
+      <h3><br>
+        Useful resources on TKI</h3>
+      <ul class="flush">
+        <li>
+          <p> TKI Hot Topic on Kapa Haka <br>
+            <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/hot_topics/kapahaka_e.php">http://www.tki.org.nz/r/hot_topics/kapahaka_e.php 
+            </a> </li>
+        <li>Kapa Haka Festival Gala &#8211; Okaiawa Primary School <br>
+          How the small rural school of Okaiawa initiated, organised, and ran 
+          a kapa haka festival gala for total immersion and mainstream schools 
+          in the local area. <br>
+          <a href="../materials/cs_8/cs8_index_e.html">http://www.tki.org.nz/r/arts/artspd/materials/cs_8/cs8_index_e.php</a></li>
+      </ul>
+      <br>
+     
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Forum discussion</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        Kia ora and welcome Rawiri and Jojo! </p>
+      <p><strong>Carol Langton:</strong><br>
+        Tena korua Rawiri and Jojo <br>
+        Welcome to the forum and thanks for taking the time to share your experience 
+        and knowledge with us today.</p>
+      <p><strong>Rawiri Hindle:</strong><br>
+        Kia ora koutou </p>
+      <p>Nga mihi nui kia koutou me nga ahuatanga o te ra. Ko te whakatauaki ki 
+        toku hinengaro i tenei wa &quot;Ko tou rourou, ko toku rourou ka ora ai 
+        te iwi.&#8221;</p>
+      <p>Greetings to you all and to the circumstances of the day &#8211; whatever 
+        they may be. The proverb that comes to mind for this session makes reference 
+        to the fact that what you have to offer and what I have to offer brings 
+        sustenance to the people.</p>
+      <h3><br>
+        Topic: Help with mau rakau actions</h3>
+      <p><strong>Julie Lawson:</strong><br>
+        Tena korua Rawiri, raua ko Jojo. Naumai haramai ki tenei wahi 'Ipurangi'. 
+      </p>
+      <p>Looking forward to this afternoon, and need help with mau rakau actions 
+        for a battle scene in our forthcoming end-of-year production. Heoi ano</p>
+      <p><strong>Jojo Rangihaeata:</strong><br>
+        Julie, if you know any men in a kapa haka group near you who would be 
+        willing to help, I&#8217;m sure that it wouldn't be a problem. </p>
+      <p><strong>Rawiri Hindle:</strong><br>
+        Kia ora Julie<br>
+		Thanks for your question &#8211; big one really. There's no step by step 
+        process for what you're looking at &#8211; there's just what you already 
+        know, and seeking out and working with someone (obviously in your area) 
+        who has knowledge in mau rakau to support you with your vision. Another 
+        possibility that you may already have explored is to find out if your 
+        students can help you. Good luck!! </p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Maori content in national qualifications </h3>
+      <p><strong>Carol Langton:</strong><br>
+        I have been surfing for web links, and found this is the NZQA one:<br>
+        <a href="http://www.nzqa.govt.nz/for-maori/publications/akk/akk-03/kapa-haka.html">http://www.nzqa.govt.nz/for-maori/publications/akk/akk-03/kapa-haka.html</a> 
+        Did you know there are 96 items found under Kapa Haka on the NZQA site?! 
+      </p>
+      <p>Click on this <a href="http://www.nzqa.govt.nz/framework/explore/field-maori.do;jsessionid=68838674">link</a> 
+        to find information about the Maori Framework Search, and unit standards 
+        and national qualifications with Maori content </p>
+      <p><strong>Jojo Rangihaeata:</strong><br>
+        Kia ora for that Carol! It&#8217;s just really nice to get our culture 
+        out there in the open whether it be traditional or contemporary. </p>
+      <h3><br>
+        Topic: Breadth of Nga Mahi a Te Rehia</h3>
+      <p><strong>Rawiri Hindle</strong>:<br>
+        Nga Mahi a Te Rehia is a huge area &#8211; not just kapa haka. It covers 
+        areas such as whaikorero (speech making), karanga (the call in the context 
+        of powhiri), welcome ceremonies, mau rakau, stilt walking, puppetry, dance, 
+        stick games, string games, drama, performance... </p>
+      <p>Kapa haka components include waiata a ringa (action songs), poi, haka, 
+        waiata tawhito (chanting, entrance and exits on to stage).</p>
+      <h3><br>
+        Topic: Impact of waiata and kapa haka</h3>
+      <p><strong>Tom Evans:</strong><br>
+        Tena kotou. Good to be online again! </p>
+      <p>Friends at the Australian conference were very moved by a waiata from 
+        Taranaki &#8211; even on the lips of a Welshman like me, te reo calls 
+        to many cultures. We need more of it in our schools and reflected in our 
+        lives and our practice.</p>
+      <p><strong>Rawiri Hindle:</strong><br>
+        Ae tika!! I agree totally &#8211; there's something very special about 
+        performing waiata. I'm constantly moved by the expression of kapa haka, 
+        and I think it's to do with the fact that everything is involved: voice, 
+        sound, movement, gesture. And then there&#8217;s the inward emotions being 
+        projected to the listening audience. </p>
+      <p>I also love the fact that more and more people/students are learning 
+        and performing waiata &#8211; for the fact that that the expression is 
+        rooted in the environment and connects to where we live in this great 
+        big world! </p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Finding inspiration and help</h3>
+      <p><strong>Norma Hubbard:</strong><br>
+        At present there are no Maori performing arts within our school. I have 
+        included it in the long-term plan that I am completing and would like 
+        to know where to find simple resources that might inspire other teachers 
+        for its inclusion.</p>
+      <p><strong>Jojo Rangihaeata:</strong><br>
+        Norma, my old high school in Gisborne is one of the first schools to bring 
+        performing arts in a an academy. There are a few other academies now at 
+        Lytton High, and the performing arts one seems to be soaring to higher 
+        heights.</p>
+      <p>Also, my brother at Dannevirke High School is also trying to starts a 
+        performing arts academy for the kids. So if you want details, I can post 
+        some up for you.</p>
+      <p><strong>Norma</strong>:<br>
+        Thanks Jojo! Any assistance I can get would be helpful. I don&#8217;t 
+        know how far I&#8217;ll get with my ideas, but I have the full support 
+        of the Te Reo teacher, which is a great help.</p>
+      <p><strong>Carol Langton:</strong><br>
+        Jacinda Gilligan from Lytton High is on The Arts Online roll. I can contact 
+        her for further details if you are interested. Even though it is a high 
+        school, there are often good protocols that would suit a primary school 
+        year 1&#8211;8 programme like yours, Norma.</p>
+      <p>As far as resources go, Rawiri, are there any inspirational videos we 
+        can suggest?<br>
+        <br>
+        <strong>Rawiri Hindle:</strong><br>
+        There are links to Mahi a te Rehia resources on TKI in Nga Toi Online 
+        in the Mahia te Rehia section under 'Kohinga rawa whakaako' then 'Nga 
+        Rauemi kua puta.' </p>
+      <p><strong>Norma:</strong><br>
+        Thanks for the ideas and help, and the directions to useful sites. I will 
+        carry on with my plans, and make contact with anyone who can help.</p>
+      <p>I look forward to the next forum &#8211; they are always very helpful 
+        and informative.</p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+      <h3>Topic: Getting started, keeping going</h3>
+      <p><strong>Tom Evans:</strong><br>
+        Hi Norma! Over the years teaching in an Intermediate school I have seen 
+        many attempts at teaching kapa kaka. Some have been very successful, and 
+        the children and school community have benefited greatly. </p>
+      <p>But the experts are in short supply and there is an immense call upon 
+        their time and energy. Nurturing and valuing these precious people and 
+        supporting them in what can be a foreign environment seems essential. 
+      </p>
+      <p>At the moment one of our teachers belonging to South Taranaki is doing 
+        a crash course to help the school and the children she obviously loves 
+        and cares for. I hope she does not burn out. It is great to see her practice 
+        poi any time she has a moment &#8211; her enthusiasm is infectious.</p>
+      <p><strong>Rawiri Hindle</strong>:<br>
+        Ki ora Tom!<br>
+        Great to hear that your teachers is so onto it, and, yes, it is important 
+        to watch the burn out thing. Its very inspirational that she&#8217;s so 
+        into it and often the inspiration aspect is infectious &#8211; be great 
+        if it rubs off onto some of the other staff!</p>
+      <h3><br>
+        Topic: Integrating the disciplines</h3>
+      <p><strong>Sarah Wilson:</strong><br>
+        Mona, it&#8217;s great that you could make it! Have you got anything you 
+        would like share with us about the arts at your school?</p>
+      <p><strong>Mona:</strong><br>
+        Well, that's a biggy! We had our first big go at integrating all the disciplines 
+        in the arts and tying up our cultural representation within the school 
+        (Maori/European) into what we called &#8216;Stars in their Eyes&#8217;. 
+        We thought it was great and the kids enjoyed the term, and the spin-offs 
+        have been great.</p>
+      <h3><br>
+        Topic: Virtual marae</h3>
+      <p><strong>Carol Langton:</strong><br>
+        Want to visit a &quot;Virtual Marae&quot;? Check this site out!<br>
+        <a href="http://www.maori.org.nz/kapahaka/">http://www.maori.org.nz/kapahaka/</a></p>
+      <p><strong>Sharon Smith:</strong><br>
+        Thanks you for the virtual marae URL. We&#8217;ve go to go now. </p>
+      <p><strong>Sarah Wilson:</strong><br>
+        Thanks everyone for joining us and for all your contributions today! <br>
+        See you next time!</p>
+      <p>&nbsp;</p>
+      <p></p>
+      <div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17"  border="0" alt="Back to top" /></a></div>
+   <p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+  
+   </td>
+</tr>
+</table>
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

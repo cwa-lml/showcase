@@ -1,0 +1,28 @@
+<div class="left size1of2 page">
+	<img width="451" height="343" src="images/image1.jpg" alt="" />
+	<p><span class="color-yellow color-group2 visual-text color-mask">F</span>our <span class="color-lightblue color-group1 meaning-text color-mask"><span class="color-yellow color-group2 visual-text color-mask">f</span>iery</span> dragons <span class="color-green color-group1 structure-text color-mask">lived</span> <span class="color-lightblue color-group1 meaning-text color-mask">in a cave</span> <span class="color-yellow color-group2 structure-text color-mask">near a town</span>.</p>
+	<p>They were <span class="color-lightblue color-group1 meaning-text color-mask">very lonely</span>.</p>
+	<p>"We <span class="color-green color-group1 structure-text color-mask">need</span> to make some friends&#34;, they said.</p>
+</div>
+<div class="right size1of2 page">
+	<p>The dragons <span class="color-green color-group1 structure-text color-mask">flew</span> down <span class="color-yellow color-group2 structure-text color-mask">to the skate park</span>.</p>
+	<p>The people <span class="color-green color-group1 structure-text color-mask">jumped</span> off their skateboards.</p>
+	<p>Dragons&#33; Dragons&#33; Dragons&#33; they <span class="color-green color-group1 structure-text color-mask">screamed</span>.</p>
+	<p>&#34;<span class="color-lightblue color-group1 meaning-text color-mask">Run for your lives&#33;</span>&#34;</p>
+	<p>&#34;No friends here,&#34; said <span class="color-green color-group1 structure-text color-mask">Dora</span>.</p>
+	<img width="438" height="280" src="images/image2.jpg" alt="" />
+</div>
+<div style="display:none;">
+	<div class="lesson-prompt inline-colorbox-content help-colorbox">
+		<h3>Lesson Prompts</h3>
+		<p>Look at the illustration together before reading the text.</p>
+		<p>Where do the dragons live?</p>
+		<p>Why are they sad?</p>
+		<p>Explore the meaning of "fiery":</p>
+		<p>Show me how you can be a fiery dragon. Will making friends be easy for four fiery dragons?<p>
+		<p>Share the reading purpose: <i>To find out why the dragons are lonely and how they try to make friends</i></p>
+		<a href="#" class="btn print-parent-button">Print</a>
+	</div>
+</div>
+
+<input type="hidden" value="enable" class="setting-phrase-mode" name="phrasemode">

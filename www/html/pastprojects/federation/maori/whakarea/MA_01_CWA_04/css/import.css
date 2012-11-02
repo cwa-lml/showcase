@@ -1,0 +1,64 @@
+p {
+font-family: verdana, sans-serif;
+font-size: small;
+}
+
+a.nav {
+line-height: 220%;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+border: solid #FFCC00;
+border-width: 1px 1px 1px 1px;
+background-color: #003399;
+color: #FFFF66;
+}
+
+a.nav:hover {
+line-height: 220%;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+border: solid #FFCC00;
+border-width: 1px 1px 1px 1px;
+background-color: #000099;
+color: #FFFF66;
+}
+
+h1.header1-padd {
+font-family: georgia, sans-serif;
+font-size: large;
+font-weight: normal;
+padding-left: 14px;
+}
+
+h2.header2-padd {
+font-size: medium;
+}
+
+.bars { 
+font: normal 100% arial, helvetica, sans-serif;
+color: #ffffff;
+background-color : inherit;
+}
+
+.btm-links {
+font-family: verdana, sans-serif;
+font-size: x-small;
+}
+
+.close-link {
+font-size: x-small;
+}
+
+
+.descBox {
+	border: solid 1px black;
+	background-color : #FFFFFF;
+	color: inherit;
+	font-size: 10pt;
+	text-align : center;
+	padding: 2px;
+}

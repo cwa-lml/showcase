@@ -1,0 +1,431 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Curriculum Plans</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("units4_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Environmental Canons</h2>
+
+<p>Year 6&#8211;8 dance unit by Libby Armstrong, Waikato.</p>
+
+<h3>Level 4 curriculum objectives</h3>
+
+<p><b>Developing Practical Knowledge in Dance</b><br>
+Students will use elements of dance to share personal movement vocabularies and to explore the vocabularies of others.</p>
+
+<p><b>Developing Ideas in Dance</b><br>
+Students will explore and use choreographic devices to give form to dance ideas.</p>
+
+<p><b>Communicating and Interpreting in Dance</b><br>
+Students will present dance for a particular purpose and record responses to their own and others' dance.</p>
+<br>
+
+<h3>Specific learning outcomes</h3>
+
+<p>By the end of the lesson the students should be able to:
+<ul>
+<li>describe what a canon is, and</li><br><br>
+<li>present a dance they have choreographed as a group.  This dance should be on the theme of an environmental image (for example, tornado, hurricane, volcano, waterfall, waves, lightning, avalanche, earthquake etc).</li><br><br>
+</ul></p>
+<br>
+
+<h3>Curriculum links</h3>
+<ul>
+<li>Music</li>
+<li>Drama</li>
+<li>Science &#8211; weather</li>
+<li>Social studies &#8211; environmental issues, disasters</li>
+<li>English &#8211; reading, writing, visual language</li>
+</ul>
+<br>
+
+<h3>Assessment ideas</h3>
+<ul>
+<li>Video group dances and then watch the recording together</li>
+<li>Peer assessment as groups perform</li>
+<li>Discussion and feedback</li>
+<li>Self-assessment</li>
+<li>Written assessment</li>
+<li>Teacher assessment</li>
+</ul>
+<br>
+
+<h3>Lesson ideas</h3>
+
+<p><b>Canon</b><br>
+<ol>
+<li>Introduce the idea of choreographic structures/devices.  Discuss what they are, and how and why they may be used. (They are specific ways movement is structured, organised, or manipulated to develop and shape a dance.) Ask students to contribute what they know. Introduce and discuss canon.</li><br><br>
+
+<li>Discuss and execute a Mexican wave &#8211; arms, arms and legs, whole body.</li><br><br>
+
+<li>Firecrackers/guns &#8211; class spreads out, bobbing down, knees bent, heads down. On each alternate beat, some jump, throwing hands above head then landing with feet apart, arms stretched up high in a "y" shape (firecrackers), while others stand feet wide apart, arms in front, palms together, finger pointed to make gun shape (guns).</li><br><br>
+
+<li>Practise movements together, then try in canon &#8211; each group beginning after a predetermined count.  Half the class watch and observe, then swap.</li><br><br>  
+
+<li>Repeat, but with a longer sequence of movement, for example, eight counts.</li><br><br>
+
+<li>Discuss how, when using canon, groups don't always start after an even number of counts.  It can be quite irregular and appear random.</li><br><br> 
+
+<li>In groups of four, each student creates a simple frozen shape, with everyone trying to use a different level.  Each group member teaches their shape to the group.  Then they put the four shapes together in a sequence.  The group changes to a new shape every four or eight counts.  Practise it together until everyone in the group has the routine memorised.  Introduce the concept that they are now performing in unison.</li><br><br> 
+
+<li>Split each group into two and have them try the routine in canon.  Students practise.</li><br><br>
+
+<li>Canon dance &#8211; use the sequence of four shapes to create a short dance:
+<ul>
+<li>devise a connected frozen shape to begin the dance;</li> 
+<li>perform a sequence of four shapes in unison, twice;</li> 
+<li>then do as a  canon, twice; finally</li>
+<li>add a connected frozen shape to end.</li>
+</ul>
+</li><br><br>
+
+<li>Practise. Present the routines to the class.  Discuss the use of canon and its effect.  Discuss the use of space and levels.</li><br><br>
+</ol>
+<br>
+
+<h3>Environmental images</h3>
+<ol>
+<li>Students spread out, walk/dance around the space, and the teacher calls out "freeze" and gives an image such as "tree".  Students must freeze and use their body to express the shape of a tree.  Repeat a few times with different environmental objects.</li><br><br>  
+
+<li>When the teacher says "freeze" students have 20 seconds to make a shape in a group (group sculpture).  The teacher says how many must be in the group and what the shape should be. (For example, groups of three make a flax bush.  Other ideas: leaf pile, river, wave, sandy beach, driftwood, field of poppies, hail storm, cloud).  Count down the last five to ten seconds before the freeze.  Then the teacher counts for five seconds as the groups make their shape come to life and move.</li><br><br>
+
+<li>Students work in groups of 4 to 8. Give each group a picture of an environmental image, for example, tornado/hurricane, volcano, waterfall, waves, lightning, avalanche, earthquake).</li><br><br>
+
+<li>Students look at the picture and, on a piece of paper, record all the action words they can think of relating to their picture.</li><br><br>
+
+<li>In groups, students explore movements and static poses that might represent the image, using their action words as motivators.</li><br><br>
+
+<li>Students make a dance on the theme of their environmental image. The dance should be 45&#8211;90 seconds long, and include:
+<ul>
+<li>a frozen shape to begin with;</li>			
+<li>at least one movement sequence using canon;</li>			
+<li>at least two moves related to the action words;</li>	
+<li>locomotive and non-locomotive movements; and</li>
+<li>a definite and interesting ending.</li>
+</ul>
+</li><br><br>
+
+<li>Students perform their dances to the rest of the class.  They may be videoed so they can watch and analyse their own dances.</li><br><br>
+
+<li>Feedback &#8211; discuss the performances and dance content.</li><br><br>
+</ol>
+<br>
+
+<h3>Possible summative assessment questions</h3>
+
+<p>To introduce the idea of a canon, you performed a Mexican wave.  Describe how a  Mexican wave is a type of canon.</p>
+
+<p>Your group produced a dance with an environmental theme.  Describe how your group used a canon in this dance.  (You may want to use diagrams.)</p>
+
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

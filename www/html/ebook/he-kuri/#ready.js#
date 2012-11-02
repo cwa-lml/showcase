@@ -1,0 +1,656 @@
+if ( typeof console === 'undefined' ) {
+    console = {};
+    console.log = function() {};
+}
+
+// add a reverse plugin to jQuery :)
+$.fn.reverse = [].reverse;
+
+var narrationData = {
+    'dog-fluent' : {
+        jplayerId : '#dog-fluent',
+        soundfile : 'dog/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.20, end : 0.53 },
+            w2 : { start : 0.60, end : 0.89 }
+        }
+    },
+    'dog-slow' : {
+        jplayerId : '#dog-slow',
+        soundfile : 'dog/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.24, end : 0.80 },
+            w2 : { start : 1.04, end : 1.53 }
+        }
+    },
+
+    'snail-fluent' : {
+        jplayerId : '#snail-fluent',
+        soundfile : 'snail/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.22, end : 0.47 },
+            w2 : { start : 0.57, end : 0.82 },
+            w3 : { start : 0.87, end : 1.30 }
+        }
+    },
+    'snail-slow' : {
+        jplayerId : '#snail-slow',
+        soundfile : 'snail/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.25, end : 0.60 },
+            w2 : { start : 0.74, end : 1.24 },
+            w3 : { start : 1.24, end : 1.65 }
+        }
+    },
+
+    'man-fluent' : {
+        jplayerId : '#man-fluent',
+        soundfile : 'man/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.20, end : 0.47 },
+            w2 : { start : 0.57, end : 0.91 },
+            w3 : { start : 1.11, end : 1.54 }
+        }
+    },
+    'man-slow' : {
+        jplayerId : '#man-slow',
+        soundfile : 'man/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.20, end : 0.71 },
+            w2 : { start : 0.87, end : 1.41 },
+            w3 : { start : 1.86, end : 2.22 }
+        }
+    },
+
+    'slippers-fluent' : {
+        jplayerId : '#slippers-fluent',
+        soundfile : 'slippers/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.15, end : 0.51 },
+            w2 : { start : 0.71, end : 1.15 },
+            w3 : { start : 1.29, end : 1.60 }
+        }
+    },
+    'slippers-slow' : {
+        jplayerId : '#slippers-slow',
+        soundfile : 'slippers/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.26, end : 0.57 },
+            w2 : { start : 0.73, end : 1.23 },
+            w3 : { start : 1.59, end : 1.90 }
+        }
+    },
+
+    'cement-fluent' : {
+        jplayerId : '#cement-fluent',
+        soundfile : 'cement/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.18, end : 0.47 },
+            w2 : { start : 0.67, end : 1.17 },
+            w3 : { start : 1.34, end : 1.79 }
+        }
+    },
+    'cement-slow' : {
+        jplayerId : '#cement-slow',
+        soundfile : 'cement/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.19, end : 0.54 },
+            w2 : { start : 0.74, end : 1.25 },
+            w3 : { start : 1.56, end : 2.17 }
+        }
+    },
+
+    'coal-fluent' : {
+        jplayerId : '#coal-fluent',
+        soundfile : 'coal/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.18, end : 0.32 },
+            w2 : { start : 0.44, end : 0.67 },
+            w3 : { start : 0.75, end : 1.08 }
+        }
+    },
+    'coal-slow' : {
+        jplayerId : '#coal-slow',
+        soundfile : 'coal/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.17, end : 0.36 },
+            w2 : { start : 0.44, end : 0.87 },
+            w3 : { start : 1.16, end : 1.50 }
+        }
+    },
+
+    'soap-fluent' : {
+        jplayerId : '#soap-fluent',
+        soundfile : 'soap/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.18, end : 0.32 },
+            w2 : { start : 0.46, end : 0.74 },
+            w3 : { start : 0.79, end : 1.14 }
+        }
+    },
+    'soap-slow' : {
+        jplayerId : '#soap-slow',
+        soundfile : 'soap/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.18, end : 0.35 },
+            w2 : { start : 0.52, end : 0.90 },
+            w3 : { start : 1.09, end : 1.52 }
+        }
+    },
+
+    'ladder-fluent' : {
+        jplayerId : '#ladder-fluent',
+        soundfile : 'ladder/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.14, end : 1.30 }
+        }
+    },
+    'ladder-slow' : {
+        jplayerId : '#ladder-slow',
+        soundfile : 'ladder/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.23, end : 1.34 }
+        }
+    },
+
+    'paint-fluent' : {
+        jplayerId : '#paint-fluent',
+        soundfile : 'paint/fluent',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.14, end : 0.41 },
+            w2 : { start : 0.58, end : 1.02 },
+            w3 : { start : 1.28, end : 2.24 }
+        }
+    },
+    'paint-slow' : {
+        jplayerId : '#paint-slow',
+        soundfile : 'paint/slow',
+        highlightSelector : 'word',
+        timings : {
+            w1 : { start : 0.10, end : 0.64 },
+            w2 : { start : 0.84, end : 1.49 },
+            w3 : { start : 1.73, end : 3.13 }
+        }
+    }
+
+};
+
+var animationData = {
+
+    'dog' : {
+        '#dog-eyes' : {
+            type : 'flipcard',
+            repeat : 1,
+            reset : 'dog/eyes-open.jpg',
+            play : [
+                { delay :    0, src : 'dog/eyes-open.jpg'     },
+                { delay :  500, src : 'dog/eyes-left.jpg'     },
+                { delay : 1500, src : 'dog/eyes-open.jpg'     },
+                { delay : 2700, src : 'dog/eyes-halfopen.jpg' },
+                { delay : 2900, src : 'dog/eyes-closed.jpg'   },
+                { delay : 3300, src : 'dog/eyes-halfopen.jpg' },
+                { delay : 3400, src : 'dog/eyes-open.jpg'     }
+            ]
+        },
+        '#dog-tail' : {
+            type : 'css',
+            reset : {
+                top : '188px',
+                left : '261px'
+            },
+            repeat : 7,
+            play : {
+                duration : 150,
+                easing: 'easeInOutSine',
+                css : {
+                    top : '+=15',
+                    left : '+=5'
+                }
+            },
+            then : {
+                '#dog-tail' : {
+                    type : 'css',
+                    repeat : 1,
+                    play : {
+                        duration : 150,
+                        easing: 'easeInOutSine',
+                        css : {
+                            top : '-=15',
+                            left : '-=5'
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    'snail' : {
+        '#snail-sprite' : {
+            type : 'css',
+            reset : {
+                left : '740px',
+                top : '480px'
+            },
+            play : {
+                duration : 4000,
+                easing: 'easeInOutSine',
+                css : {
+                    left : '590px',
+                    top : '480px'
+                }
+            }
+        }
+    },
+
+    'man' : {
+        '#man-snail' : {
+            type : 'css',
+            reset : {
+                opacity: 0.0
+            },
+            play : {
+                duration : 1500,
+                easing: 'linear',
+                css : {
+                    opacity: 1.0
+                }
+            },
+            then : {
+                '#man-dog-container' : {
+                    type : 'css',
+                    play : {
+                        duration : 1500,
+                        easing: 'linear',
+                        css : {
+                            opacity: 1.0
+                        }
+                    },
+                    then : {
+                        '#man-man' : {
+                            type : 'css',
+                            play : {
+                                duration : 1500,
+                                easing: 'linear',
+                                css : {
+                                    opacity: 1.0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        '#man-dog-container' : {
+            type : 'css',
+            reset : {
+                opacity: 0.0
+            }
+        },
+        '#man-man' : {
+            type : 'css',
+            reset : {
+                opacity: 0.0
+            }
+        },
+        '#man-eye' : {
+            type : 'flipcard',
+            reset : 'man/eye-open.gif',
+            play : [
+                { delay : 2050, src : 'man/eye-halfopen.jpg' },
+                { delay : 2150, src : 'man/eye-closed.jpg'   },
+                { delay : 2550, src : 'man/eye-halfopen.jpg' },
+                { delay : 2750, src : 'man/eye-open.gif'     },
+                { delay : 3350, src : 'man/eye-halfopen.jpg' },
+                { delay : 3450, src : 'man/eye-closed.jpg'   },
+                { delay : 3850, src : 'man/eye-halfopen.jpg' },
+                { delay : 3950, src : 'man/eye-open.gif'     }
+            ],
+            timeouts : []
+        }
+    },
+
+    'slippers' : {
+        '#slippers-pupils' : {
+            type : 'css',
+            reset : {
+                top : '278px',
+                left : '569px'
+            },
+            play : {
+                duration : 350,
+                easing : 'linear',
+                css : {
+                    top : '283px',
+                    left : '572px'
+                }
+            },
+            then : {
+                '#slippers-pupils' : {
+                    type : 'pause',
+                    play : {
+                        duration : 2000,
+                    },
+                    timeout : undefined,
+                    then : {
+                        '#slippers-pupils' : {
+                            type : 'css',
+                            play : {
+                                duration: 350,
+                                easing : 'linear',
+                                css : {
+                                    top : '275px',
+                                    left : '574px'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    'cement' : {
+        '#cement-print-a' : {
+            type : 'css',
+            reset : { opacity : 0.0 },
+            play : { duration : 750, css : { opacity : 1.0 } },
+            then : {
+                '#cement-print-d' : {
+                    type : 'css',
+                    play : { duration : 750, css : { opacity : 1.0 } },
+                    then : {
+                        '#cement-print-h' : {
+                            type : 'css',
+                            play : { duration : 750, css : { opacity : 1.0 } },
+                            then : {
+                                '#cement-print-l' : {
+                                    type : 'css',
+                                    play : { duration : 750, css : { opacity : 1.0 } }
+                                },
+                                '#cement-print-m' : {
+                                    type : 'css',
+                                    play : { duration : 750, css : { opacity : 1.0 } }
+                                },
+                                '#cement-print-n' : {
+                                    type : 'css',
+                                    play : { duration : 750, css : { opacity : 1.0 } },
+                                    then : {
+                                        '#cement-dog' : {
+                                            type : 'css',
+                                            play : { duration : 2000, css : { opacity : 1.0 } }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        '#cement-print-i' : {
+                            type : 'css',
+                            play : { duration : 750, css : { opacity : 1.0 } }
+                        },
+                        '#cement-print-j' : {
+                            type : 'css',
+                            play : { duration : 750, css : { opacity : 1.0 } }
+                        },
+                        '#cement-print-k' : {
+                            type : 'css',
+                            play : { duration : 750, css : { opacity : 1.0 } }
+                        }
+                    }
+                },
+                '#cement-print-e' : {
+                    type : 'css',
+                    play : { duration : 750, css : { opacity : 1.0 } }
+                },
+                '#cement-print-f' : {
+                    type : 'css',
+                    play : { duration : 750, css : { opacity : 1.0 } }
+                },
+                '#cement-print-g' : {
+                    type : 'css',
+                    play : { duration : 750, css : { opacity : 1.0 } }
+                }
+            }
+        },
+        '#cement-print-b' : {
+            type : 'css',
+            reset : { opacity : 0.0 },
+            play : { duration : 750, css : { opacity : 1.0 } }
+        },
+        '#cement-print-c' : {
+            type : 'css',
+            reset : { opacity : 0.0 },
+            play : { duration : 750, css : { opacity : 1.0 } }
+        },
+        '#cement-print-d' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-e' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-f' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-g' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-h' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-i' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-j' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-k' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-l' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-m' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-print-n' : { type : 'css', reset : { opacity : 0.0 }, },
+        '#cement-dog'     : { type : 'css', reset : { opacity : 0.0 }  }
+    },
+
+    'coal' : {
+        '#eyes-blink' : {
+            type : 'flipcard',
+            reset : 'coal/eyes0.png',
+            play : [
+                { delay : 250, src : 'coal/eyes1.png' },
+                { delay : 350, src : 'coal/eyes2.png' },
+                { delay : 450, src : 'coal/eyes3.png' },
+                { delay : 750, src : 'coal/eyes2.png' },
+                { delay : 850, src : 'coal/eyes1.png' },
+                { delay : 950, src : 'coal/eyes0.png' }
+            ],
+            timeouts : []
+        }
+    },
+
+    'soap' : {
+        '#soap-brush' : {
+            type : 'css',
+            reset : {
+                left : '423px'
+            },
+            repeat : 7,
+            play : {
+                duration : 250,
+                easing: 'easeInOutSine',
+                css : {
+                    left : '+=30'
+                }
+            },
+            then : {
+                '#soap-brush' : {
+                    type : 'css',
+                    repeat : 1,
+                    play : {
+                        duration : 250,
+                        easing: 'easeInOutSine',
+                        css : {
+                            left : '-=30'
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+$(function() {
+    // mode that this book is in
+    var mode = 'alone';
+
+    // turn all these pages into real ones
+    $('.page').pageify({
+        pageTurnStop : function($page) {
+            // this is called when we need to stop something on the current page
+            if ( animationData[$page.attr('id')] ) {
+                $page.animateify('stop', animationData[$page.attr('id')]);
+            }
+        },
+        pageTurnReset : function($page) {
+            // this is called when this page will appear soon
+            $page.animateify('stop', animationData[$page.attr('id')]);
+            $page.animateify('reset', animationData[$page.attr('id')]);
+        },
+        pageTurnComplete : function($page) {
+            // this is called when this page has been completely shown
+            var $narration = $page.find('.narration');
+            var id = $narration.data('narrateifyId');
+
+            // play the animation
+            $page.animateify('stop', animationData[$page.attr('id')]);
+            $page.animateify('reset', animationData[id]);
+            $page.animateify('play', animationData[id]);
+
+            // play the narration (fake a 5s delay for now)
+            if ( mode !== 'alone' ) {
+                setTimeout(function() {
+                    $narration.narrateify(
+                        'play',
+                        narrationData['' + id + '-' + mode]
+                    );
+                }, 4000);
+            }
+        }
+    });
+
+    // find all the things to narrate
+    $('.page .narration').each(function(i, el) {
+        var $el = $(el);
+        var id = $el.data('narrateifyId');
+        if ( narrationData['' + id + '-fluent'] ) {
+            $el.narrateify( narrationData['' + id + '-fluent'] );
+        }
+        if ( narrationData['' + id + '-slow'] ) {
+            $el.narrateify( narrationData['' + id + '-slow'] );
+        }
+    });
+
+    // for any repeat buttons, restart the narration
+    $('.btn-repeat').click(function(ev) {
+        ev.preventDefault();
+
+        var $btn = $(this);
+        var $page = $btn.parents('.page').first();
+        var $narration = $page.find('.narration');
+        var id = $narration.data('narrateifyId');
+
+        // stop the current animation, reset it and play it again
+        $page.animateify('stop', animationData[id]);
+        $page.animateify('reset', animationData[id]);
+        $page.animateify('play', animationData[id]);
+
+        // restart the narration
+        if ( mode !== 'alone' ) {
+            setTimeout(function() {
+                $page.find('.narration').first().narrateify( 'play', narrationData['' + id + '-' + mode] );
+            }, 4000);
+        }
+    });
+
+    // for the mode buttons, set the mode and then do a page turn
+    $('.btn-next-alone').click(function(ev) {
+        ev.preventDefault();
+        mode = 'alone';
+        $(this).siblings().filter('.btn-next').click();
+    });
+    $('.btn-next-fluent').click(function(ev) {
+        ev.preventDefault();
+        mode = 'fluent';
+        $(this).siblings().filter('.btn-next').click();
+    });
+    $('.btn-next-slow').click(function(ev) {
+        ev.preventDefault();
+        mode = 'slow';
+        $(this).siblings().filter('.btn-next').click();
+    });
+
+    // ---
+
+    // play the words when the user clicks them
+
+    var $jplayer = $('#common-jplayer');
+
+    $jplayer.jPlayer({
+        swfPath: "/js/jQuery.jPlayer.2.1.0/",
+        solution: 'html, flash',
+        supplied: "mp3, oga",
+        wmode: "window",
+        ready: function (ev) {
+            // console.log('jPlayer ready', options.soundfile);
+        },
+        progress: function (event) {
+            // console.log('jPlayer - progress event - ' + event.jPlayer.status.seekPercent);
+        },
+        play: function () {
+            // console.log('jPlayer - play event');
+        },
+        pause: function () {
+            // console.log('jPlayer - pause event');
+        },
+        stop: function () {
+            // console.log('jPlayer - stop event');
+        },
+        ended: function () {
+            // console.log('jPlayer - ended event');
+        },
+        error: function (event) {
+            alert("Error Event: type = " + event.jPlayer.error.type);
+            alert("Error: " + event.jPlayer.error.message);
+            alert("Hint: " + event.jPlayer.error.hint);
+            switch(event.jPlayer.error.type) {
+            case $.jPlayer.error.URL:
+                alert('Error : ', event.jPlayer.error);
+                break;
+            case $.jPlayer.error.NO_SOLUTION:
+                alert('No Solution');
+                break;
+            }
+        }
+    });
+
+    // find all the words and make the clickable and play a sound
+    $('.word').click(function(ev) {
+        ev.stopPropagation();
+        ev.preventDefault();
+
+        // get which word this is
+        var word = $(this).data('word');
+        console.log('Trying to play sound for ' + word);
+
+        // set the media for this sound
+        $jplayer.jPlayer("setMedia", {
+            "mp3" : 'http://' + location.host + '/ebook/he-kuri/word/' + word + '.mp3',
+            "oga" : 'http://' + location.host + '/ebook/he-kuri/word/' + word + '.ogg'
+        });
+
+        // finally, play it
+        $jplayer.jPlayer('play');
+
+        return false;
+    });
+});

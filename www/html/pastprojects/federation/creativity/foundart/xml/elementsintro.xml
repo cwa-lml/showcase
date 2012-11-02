@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<elements timelimit="45">
+	<el id="welcome"><font size="16"><b>Welcome to Found art: beach!</b></font><br /><br /><font size="14">Walk over the beach and find buried objects in the sand.<br />How many can you find before the time is up?</font></el>
+	<el id="well_done">Well done!</el>
+	<el id="end1">You found</el>
+	<el id="end2">Now select <b>Next</b>.</el>
+	<el id="zero">zero</el>
+	<el id="one">one</el>
+	<el id="two">two</el>
+	<el id="three">three</el>
+	<el id="four">four</el>
+	<el id="five">five</el>
+	<el id="six">six</el>
+	<el id="seven">seven</el>
+	<el id="eight">eight</el>
+	<el id="nine">nine</el>
+	<el id="ten">ten</el>
+	<el id="time">Time</el>
+	<el id="score">Score:</el>
+	<el id="go">Go</el>
+	<el id="next">Next</el>
+	<el id="object">object</el>
+	<el id="objects">objects</el>
+</elements>

@@ -1,0 +1,410 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | General 11 October 2002</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f44_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+
+</tr>
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Archived Forum Discussion</td>
+
+</tr>
+</table>
+
+<h2 class="h2-forum">Where to next?</h2>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>Excerpts from forum discussion with Camilla Highfield (Curriculum Facilitator for the Arts, Ministry of Education)<br>
+11 October 2002</p>
+
+<p><b>Val Duthie:</b><br>
+Kia ora, welcome. This week our guest online will be Camilla Highfield (Curriculum Facilitator for the Arts, Ministry of Education). In this role, Camilla has the opportunity to gain a national overview of the arts in schools. She meets regularly with all five National Coordinators &#8211; Dance, Drama, Music, the Visual Arts and Nga Toi as well as College of Education personnel in the arts professional development contracts. The future direction of professional development for teachers in the arts is currently being decided and so this is an excellent opportunity for you to find out what will be available to you in 2003 and beyond.</p>
+
+<p><b>Camilla Highfield:</b><br>
+I am the Arts Curriculum Facilitator at the Ministry of Education and I have been in this role since July this year. Prior to taking up this position I worked for TEAM Solutions (Auckland College of Education) as a secondary advisor in Visual Arts and Art History. While at TEAM Solutions I worked on various NZQA and MoE contracts to help implement NCEA in the Visual Arts.  Since training as an art teacher in 1986 I have worked at two Auckland schools &#8211; Selwyn College and Epsom Girls Grammar School. Currently I work in the Teacher and Leadership Capability team within the Curriculum, Teaching and Learning Group at the Ministry of Education. The main focus of my job has been in planning the future professional development for teachers of the arts. I am currently focused on ensuring that the money available is spent in a way that has the most impact on students in classrooms. I work closely with the National Coordinators in Dance, Drama, Music and the Visual Arts who provide leadership within each of the individual disciplines, and I coordinate the work that they do so that it fits into the strategy the Ministry of Education has for delivering <i>The Arts in the New Zealand Curriculum</i> document. There is also a materials publishing budget for the Arts, which is focused on producing resources for teachers within each of the four disciplines. My role is to ensure that these publications are of a high standard and will be useful for teachers in classrooms.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><i>How to recognise in-depth understanding as opposed to 'understanding for the merit' criteria</i></p>
+
+<p><b>Question 1</b><br>
+In <a href="http://www.nzqa.govt.nz/ncea/ach/Visual%20Arts/index.html" target="_blank">Visual Arts 1.2</a>, where the achievement standard involves recording information from subject matter using a variety of drawing media, techniques and conventions, and composing elements or forms for a variety of art-making purposes.  The achievement with excellence criteria is to: <i>'Record specific information from subject matter to demonstrate in-depth understanding of particular drawing and compositional conventions'</i>. Can you explain how we recognise 'in-depth understanding' as opposed to 'understanding' for the merit criteria?</p>
+
+<p><b>Camilla Highfield:</b><br>
+The questions that teachers and students need to ask themselves are: 'how is understanding of drawing and compositional conventions demonstrated in artwork? What are the drawing conventions that need to be understood? e.g., tone, line, mark making, perspective, proportion, etc. What are the compositional conventions that need to be understood? e.g., balance, shape, linear and aerial perspective.' Once these conventions are taught to students then evidence of them can be identified in a series of art works. The word 'in-depth' is used to describe the work of a student who consistently uses and understands these conventions. They are described as 'in-depth' because the student understands them so well that they are always used.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><i>How much has the new curriculum statement impacted on teaching and learning in the arts so far?</i></p>
+
+<p><b>Question 2</b><br>
+How, from your perspective, has this new curriculum statement impacted on the teaching and learning about the arts so far?</p> 
+
+<p><b>Camilla Highfield:</b><br>
+<i>The Arts in the New Zealand Curriculum</i> statement has had an enormous impact on how schools deliver the arts to students. Obviously the introduction of drama and dance at Year 1 with equal status for all four disciplines up to Year 10 has had implications for teachers and schools throughout New Zealand. Primary teachers need to up-skill themselves in the content and pedagogy of teaching in all four disciplines in order to teach children effectively. With the introduction of scholarship NCEA standards in all four disciplines greater demand will be put on secondary schools from parents and communities to offer dance and drama options at Years 9 and 10.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><i>Will there be new resources for schools?</i></p>
+
+<p><b>Question 3</b><br>
+The new resources (books, tapes, wall charts etc) have been great. Will there be more resources for schools and if so, what can we expect for 2003?</p> 
+
+<p><b>Camilla Highfield:</b><br>
+The following resources are currently in development and will be published next year:</p> 
+<ul>
+<li><i>Into Music 3</i></li> 
+<li><i>Music Planning and Assessment</i></li>
+<li><i>Maori Visual Arts Years 7&#8211;10</i></li> 
+<li><i>The Drama Handbook Years 7&#8211;10</i></li> 
+<li><i>Moving Image in Visual Art Years 1&#8211;10&nbsp; &#8211; available in 03/04</i></li>
+<li><i>The Dance Handbook &#8211; available in 03/04</i></li>
+</ul>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><i>What are the benefits of joining an online contract for my staff and me?</i></p>
+
+<p><b>Question 4</b><br>
+I am working in a small rural school. My question is, given that the arts are by their very nature, hands on and practical, what do you see as the benefits of joining an online contract for me and my staff?</p> 
+
+<p><b>Camilla Highfield:</b><br>
+There are lots of benefits in being involved in an online contract. The continuity and consistency of contact is always going to be better than face-to-face contact for a rural school. Being involved in The Arts Online does not stop you from contacting your local facilitators at School Support Services and asking for help, or attending workshops in your nearest town or city. The online contract gives you regular and easy access to helpful information and helps you to become involved in an arts professional community and can also be supplemented with becoming involved in other professional communities further away in geographical distance.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><i>What is the best process to give a balanced coverage and assessment?</i></p>
+
+<p><b>Question 5</b><br>
+With four disciplines in the arts what is the best process to give a balanced coverage and assessment? Should this be over one year or two years?</p> 
+
+<p><b>Camilla Highfield:</b><br>
+It is difficult to tell from your question if you are talking about primary, intermediate or secondary. In primary it is ideal to weave the teaching of the arts throughout a years planning so that all four can be covered in a meaningful and on going way. Therefore children experience all four disciplines within a calendar year. Children need to experience the arts on a regular basis so that they can gain confidence and skills that will help them develop. Unfortunately some schools dedicate two weeks of the school year to teaching the arts and I think this is unfortunate for students and the community. I know that in some intermediate schools time for the arts is "blocked' so that student's experience in a discipline is limited to a certain time-frame over a two year period. Everybody is talking about the crowded curriculum and how we fit the arts into an already tight timeframe. I think teachers need to think creatively about how they can take a cross-curricular approach to teaching the arts.</p>
+
+<p><b>Question 6</b><br>
+I've seen the videos and trialled some of the ideas in dance and drama but I think what I really need is to have some hands on PD workshops. Is there anything in the pipeline along these lines for us?</p> 
+
+<p><b>Camilla Highfield:</b><br>
+Yes, all of the professional development for the Arts in 2003/04 will be conducted by School Support Services or The Arts Online. Facilitators or advisors at the School Support Service will be able to support you in using the MOE published resources.</p>
+
+<p>If you have specific requests for workshops, contact your local School Support Services office and speak to an arts facilitator.</p>
+
+<p><b>Question 7</b><br>
+Is the arts curriculum still going to be officially gazetted in 2003?</p>
+
+<p><b>Camilla Highfield:</b><br>
+We are currently going through a process of making a decision about gazetting the document. ERO is conducting some research on readiness to implement. My advice to schools is to proceed as if the document will be gazetted at this stage.</p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

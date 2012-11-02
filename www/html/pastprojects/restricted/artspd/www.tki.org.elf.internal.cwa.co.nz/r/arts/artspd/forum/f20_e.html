@@ -1,0 +1,466 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion | Oliver Driver 3 May 2002</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("f20_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Archived Forum Discussion</td>
+
+</tr>
+
+</table>
+
+<h2 class="h2-forum">Drama &#8211; Oliver Driver</h2>
+
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>Excerpts from forum discussion with Oliver Driver (Associate Director, Auckland Theatre Company)<br>
+3 May 2002</p>
+
+
+
+<p><b>Val Duthie:</b> 
+<br>
+Welcome to our Arts Celebs Forum. Our guest this week is Oliver Driver, Associate Director with the Auckland Theatre Company. Oliver's acting credits include TV, Film and Theatre credits and he is recently been acclaimed for directing <i>The Vagina Monologues,</i> the sensation currently playing throughout the world. "(Eve Ensler's glorious show is warm, open, exciting, enchanting and hilariously funny!)," The New York Times. Do you think live theatre is still relevant to young people in New Zealand? </p>
+
+<p><b>Oliver Driver:</b> 
+<br>
+Truth be told, probably not... but it should be. Theatre is based in the word and promotes a love of language. It provides New Zealand stories, characters and role models. It is a shared experience that, at its best, demands those who have experienced it to discuss, debate and direct the work they have seen. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What do you think live theatre offers that television and film doesn't offer? </p>
+<p>
+<b>Oliver Driver:</b> 
+<br>
+Magic. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What things should kids learn about being a good audience? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+First there are some basic issues of respect. The actors are real and they have ears. Turn off phones, don't talk, and don't play with chip bags and stuff, common sense really. Secondly, though they need to learn they have a right to be there, to not be intimidated, to yell and cheer if they want to. Ask questions and give opinions. </p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What's the difference between a good audience and a bad audience? </p>
+
+<p>
+<b>Oliver Driver:</b> 
+<br>
+There is none really. There are some vague industry theories, but although an audience can be a completely different animal each night, it cannot be good or bad. Different work affects different audiences differently. We must be wary of judging an audience's feelings by only their laughter and curtain call applause. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+Would you encourage young people to pursue a career in the arts? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+If they have no choice. It is a harsh and defeating occupation. You are constantly judged and your life is a series of rejections, with occasional moments of acceptance. There is a lack of money in the industry and huge competition. You will never be rich or famous and if you are, you will hate it. That said, if you have no choice, if it is in your veins and you can't suppress it, then you are already mad, and you love it like me. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What skills do you think you need to be successful in the theatre? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+Communication. The most important &#8211; master this and voice projection or rigging is a doddle. 
+</p>
+
+<p><b>Val Duthie:</b> 
+<br>
+Is there any value in making kids attend a performance as part of a class programme when they don't want to? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+Depends, I guess. If they don't want to because they are informed and have concluded that they are not interested in the project, then they don't want to go and fair enough &#8211; no amount of encouragement will get me to <i>The Hollow Crown!</i> If they don't want to go without being informed, they hate theatre but have never seen it, then yes, get them to a show that they will like (nobody will like all theatre, we cannot expect it of young people) then who knows what will happen. </p>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<p>
+<b> Val Duthie: </b>
+<br>
+What influenced you to become an actor? Did you have a mentor? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+I had no choice, this industry tends to pick you: you just have to decide if you want to suppress it or go for the ride. Mentors are a huge part of this industry and I have many &#8211; they keep changing. Some I outgrow, others will be teaching me forever. They come from all areas, and without them I would know nothing and be nowhere. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What skills do you need to be a successful director and how are these different from those skills required of an actor? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+Communication. I really believe this to be the key to every field in the industry. As a director you need to be able to communicate in all the different languages (each individual actor, designer, technician has their own) and keep everybody on the one path. You must listen to all, be the first audience member and make all your choices with a small "c". </p>
+
+<p><b>Val Duthie: </b>
+<br>
+What advice would you offer a student who is interested in pursuing a career in live theatre? </p>
+
+<p>
+<b>Oliver Driver:</b> 
+<br>
+Be your own ally. A lot of people in this industry will tell you that you cannot do it and you will not make it. You must have one person who is always on your side and has total belief in you. The best person for this job is you. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What fostered your interest in the arts when you were at school? </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+Friends, individual teachers, seeing stuff. Careers teachers always told me to get a trade or something &#8211; they did not help. The biggest influence was at the end of sixth form when I joined Maidment Youth Theatre. It was then that I went from being the one kid who was into theatre and met 50 others just like me. They helped. They made it happen. Like most things in life, it is yourself and those travelling with you that get you to the locations. </p>
+
+<p><b>Val Duthie:</b> 
+<br>
+What was your greatest challenge when directing <i>The Vagina Monologues?</i> </p>
+
+<p>
+<b>Oliver Driver:</b>  
+<br>
+To honour the women, the stories. To not rely on the name to sell the show, but to ensure that all those who come to the production have the best possible experience.</p>
+
+<p><b>Val Duthie: </b>
+<br>
+Thank you for these neat responses to our questions. You have given us lots to think about. It's clear how much you enjoy the challenging work that you are doing and how you have been creating some real 'magic' along the way. Thanks for your honest responses and guidance to those who are considering a career in the theatre. We look forward to seeing the next production you are involved with and hope that you will join us on the forum again.</p>
+
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<p><a href="index_e.html">Back to Archived Forum Discussion index</a></p>
+
+<p>&nbsp;</p>
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

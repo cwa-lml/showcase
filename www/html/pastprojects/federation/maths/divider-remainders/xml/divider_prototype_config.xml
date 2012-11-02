@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<config name="prototype_divider" type="3">
+	<sums>
+		<sum a="153" b="6" />
+		<sum a="189" b="5" />
+		<sum a="24"  b="9" />
+		<sum a="256" b="8" />
+	</sums>
+</config>

@@ -1,0 +1,466 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Waiting for Godot</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-6.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-6.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "godot;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("worldplay_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+ 
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+<style type="text/css">
+<!--
+
+-->
+</style>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="../policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="../plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="../assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="../issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../materials/index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Waiting for Godot <span style="font-style: normal;">continued</span></h2>
+
+<p><a href="index_e.html">Introduction</a> | <a href="curriclinks_e.html">Curriculum links</a> | <a href="thewriter_e.html">Writer</a> | <a href="thewriter-activities_e.html">Activities: Writer</a> | <strong>World of play</strong> | <a href="worldplay-activities_e.html">Activities: World of play</a> | <a href="actors_e.html">Actors</a> | 
+<a href="actors-activities_e.html">Activities: Actors</a> | <a href="design_e.html">Design</a> | <a href="design-activities_e.html">Activities: Design</a> | <a href="extracts-references_e.html">Script extracts</a></p>
+
+<h1>The world of the play</h1>
+
+<p>Jump to > <a href="#1">Definitions</a> / <a href="#2">Existentialism</a> / <a href="#absurd">Theatre of the absurd</a></p>
+
+<a name="1"></a><h3>Definitions</h3>
+
+<a name="exist"></a><p><strong>Existentialism &#8211;</strong> A (mostly) twentieth century approach that emphasises the primacy of individual existence over any presumed natural 
+essence for human beings. Although they differ on many details, existentialists generally suppose that the fact of my existence as a 
+human being entails both my unqualified freedom to make of myself whatever I will, and the awesome responsibility of employing 
+that freedom appropriately, without being driven by anxiety toward escaping into the inauthenticity or self deception of any 
+conventional set of rules for behaviour, even though the entire project may turn out to be absurd.</p>
+
+<p><strong>Theatre of the absurd &#8211;</strong> A form of drama that emphasises the absurdity of human existence by employing disjointed, repetitious, and 
+meaningless dialogue, purposeless and confusing situations, and plots that lack realistic or logical development. Something that is 
+absurd is contrary to reason or beyond the limits of rational thought; paradoxical, nonsensical or meaningless. According to Camus, 
+Sartre and other existentialists, absurdity is an inescapable consequence of any sensitive effort to live in the face of an indifferent 
+reality.</p>
+
+<a name="alienation"></a><p><strong>Alienation &#8211;</strong> The process whereby people become foreign to the world that they live in. The concept is deeply embedded in all the 
+great religions and social and political theories of the civilised epoch &#8211; namely the idea that some time in the past people lived 
+in harmony, followed by some kind of rupture that left people feeling like foreigners in the world. However some time in the future 
+this alienation would be overcome and humanity would again live in harmony with itself and nature.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="2"></a>
+<h3>Existentialism</h3>
+
+<p>The following extract is from <em>Nausea</em>, one of the most famous works of leading existentialist Jean Paul Sartre (1905&#8211;1980).</p>
+
+<div style="float:right;">
+	<img src="images/worldplay.gif" width="268" height="163" alt="Jean Paul Sartre" />
+	<p style="margin-top: 0px; margin-left: 170;"><strong>Jean Paul Satre</strong></p>
+</div>
+<br />
+
+<blockquote>The Nausea hasn't left me and I don't believe it will leave me for quite a while; but I am no longer putting up with it, it is no longer an illness or a passing fit: it is me &#8230; I had this revelation. It took my breath away. Never, until these last few days, had I suspected what it meant to 'exist'. I was like the others, like those who walk along the seashore in their spring clothes. I used to say like them: 'The sea is green; that white speck up there is a seagull', but I didn't feel that it existed, that the seagull was an 'existing seagull'; usually existence hides itself. It is there, around us, in us, it is us, you can't say a couple of words without speaking of it, but finally you can't touch it&#8230; We were a heap of existents inconvenienced, embarrassed by ourselves, we hadn't the slightest reason for being there, any of us, each existent, embarrassed, vaguely ill at ease, felt superfluous in relation to the others.</blockquote>
+
+<blockquote>And I &#8211; weak, languid, obscene, disgusting, tossing about dismal thoughts &#8211; I too was superfluous. &#8230; I dreamed vaguely of killing myself, to destroy at least one of these superfluous existences. But my death itself would have been superfluous. Superfluous, my corpse, my blood on these pebbles, between these plants, in the depths of this charming park. And the decomposing flesh would have been superfluous in the earth which would have received it, and my bones, finally, cleaned, stripped, neat and clean as teeth, would also have been superfluous; I was superfluous for all time.<br />
+<span style="float: right;">from <em>Nausea</em> by Jean Paul Satre</span></blockquote><br />
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">Why do I exist?</h4>
+<p style="margin-top: 0px;"><em>Nausea</em> is one of many texts that tackle the tricky problem of our existence. At some point in our lives most of us ask, "Why do 
+I exist? What does it all mean? What's the point after all?"</p>
+
+<p>After thinking about it for a few minutes, we realise these are difficult questions, which we probably can't answer, and so we get on 
+with the very messy, arguably nauseating business of life. But for some philosophers and writers, this is not good enough. We have 
+to think about existence and then, after we have thought about it, we have to think about it some more. Like Jean Paul Sartre, 
+Samuel Beckett was one of these remarkable people.</p>
+
+<p><a href="#exist">Existentialism</a> is the branch of philosophy that deals with the problem of our existence. Arguably the first 
+existentialist philosopher was a Dane by the name of S&oslash;ren Kierkegaard (1813&#8211;1855).</p> 
+
+<p>Kierkegaard was a deeply religious man. He could not, however, overlook the fact that parts of Christianity are illogical and 
+that one's belief in the bible cannot be based on rational principles. Believing in God and the bible was a leap of faith. That was 
+precisely Kierkegaard's point &#8211; because there is no rational basis for God, religion or even our existence, and a religion 
+riddled with paradoxes was absurd, then faith is of paramount importance.</p>
+
+<p>Thinkers like Sartre and Albert Camus (1913&#8211;1960) wrestled with this question of our absurdity. What do we mean when we say that life 
+is absurd? Essentially it means we can find no reason or purpose for our existence. Simply, we are here, we suffer, and finally we die, 
+without having any idea what purpose it serves. Camus argues that humanity has to resign itself to the fact that a satisfying rational 
+explanation of the universe is completely beyond its reach and therefore the world must be absurd.</p>
+
+<h4 style="margin-bottom: 0px;">Something rather than nothing</h4>
+<p style="margin-top: 0px;">If you find this all a bit depressing, you can at least take comfort in the following question, posed by 
+arguably the greatest philosopher of the twentieth century, Martin Heidegger (1889&#8211;1976): "Why is there something, rather 
+than nothing?"</p>
+
+<p>The more you think about it, the more you realise that is a surprisingly optimistic question. We cannot escape the fact that we 
+are here, that we do exist, and that, even though there could have been nothing, there is something.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="absurd"></a>
+<h3>Theatre of the absurd</h3>
+
+
+<!-- need to add link to def of absurb here -->
+<p>The playwrights loosely grouped under the label of '<a href="#absurd">absurd</a>' convey in their works a sense of bewilderment, anxiety, and wonder in the face of an inexplicable or absurd universe.</p>
+
+<p>Absurdist plays have an unreal and dreamlike quality, and the fantasies and nightmares of these plays often portray the inner 
+emotional conflicts of the characters rather than actual events in the world. These plays are less concerned with sociology 
+than they are with metaphysics. By this we mean that the central problem of these plays is <strong>being</strong> or <strong>existing</strong>.</p>
+
+<p>So what does it mean to exist? What is being? These are enormously complicated questions that have dominated European philosophy 
+for nearly a hundred years. People like Heidegger have written some of the most obscure and difficult-to-understand philosophy 
+about these very questions.</p>
+
+<p>We cannot attempt to look at the multiplicity of answers that have been given but just being aware that these sorts of questions 
+underpin <em>Waiting for Godot</em> is a good start to understanding the play.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h4 style="margin-bottom: 0px;">History of absurdism</h4>
+<p style="margin-top: 0px;">So when did this all begin? People like Beckett and Sartre were certainly not the first to recognise the absurd. Many writers from 
+the Ancient Greeks to Shakespeare have pondered on the absurd nature of our existence, and their influence can certainly be seen on 
+the likes of Beckett.</p> 
+
+<p>What differentiates absurdist writers is that the question of existence is the central theme of the play. It is in the work of 
+people like Antonin Artaud that we see the emergence of what we commonly call '<a href="#absurd">theatre of the absurd</a>' today.</p>
+
+<p style="margin-bottom: 0px;">Artaud defined the two major purposes of his work as:</p>
+<ul style="margin-top: 0px;">
+	<li>bringing humanity face to face with the apprehension of his own dark nature</li>
+	<li>drawing our attention to the implacable, cruel forces that threaten us all the time.</li>
+</ul>
+
+<p>Sartre would reject the notion that humanity necessarily has a dark nature, as he was one of the greatest champions of free will. 
+However, he and other writers of the absurd would have had a great deal of sympathy for the notion that humans are a victim of cruel 
+and implacable forces. That we are at the mercy of forces that are beyond our control and understanding could be another definition of 
+'absurd'.</p>
+
+<p style="margin-bottom: 0px;">Though many writers have the central theme of the absurd in common, each writer's works are coloured by their particular view of 
+humanity and the world. The themes that these works usually deal with are:</p>
+
+<ul style="margin-top: 0px;">
+	<li>a sense of humanity's <a href="#alienation">alienation</a></li>
+	<li>the cruelty of existence</li>
+	<li>the futility of conventional objectives</li>
+	<li>the futility of struggle</li>
+	<li>a strong vein of fantasy.</li>
+</ul>
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td>
+			<p style="margin-bottom: 0px;"><strong>Printing this page</strong><br />
+			To download and print this page, select from Word or PDF formats:</p>
+				<ul style="margin-top: 0px;">
+					<li><a href="docs/godot-world-of-the-play.doc" target="_blank">Godot &#8211; World of play</a> (Word, 37kb)</li>
+					<li><a href="pdfs/godot-world-of-the-play.pdf" target="_blank">Godot &#8211; World of play</a> (PDF, 41kb) <a href="javascript:popUp(400,300,'PDF_info','../../pdf.html');"><img src="../../img/about_pdf4.gif" border="0" alt="About PDFs" align="middle"></a></li>
+				</ul>
+		</td>
+	</tr>
+</table>
+<p align="right">next: <a href="worldplay-activities_e.html">Activities: World of the play </a> | <a href="#top">Back to top</a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

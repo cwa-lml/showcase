@@ -1,0 +1,207 @@
+body {margin:0;color:#000;position:relative;font:75%/1.667 /* 100% / 16 = 6.25 (equivalent to setting the font size to 10pt). 6.25 * 12 = 75 (%)  */ Arial, Verdana, Helvetica, sans-serif;background: url(../images/ready-to-read-logo.jpg) no-repeat right bottom}
+
+/* GRID */
+.line:before,.line:after{content:"";display:table;}
+.line:after{clear:both;}
+.line{*zoom:1;}
+.unit{float:left;}
+.unitRight{float:right;}
+.size1of1{float:none;}
+.size1of2{width:48%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit{float:none;display:block;display:table-cell;width:9999em;*width:auto;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
+
+/* CSS Document */
+
+/* ====== Default spacing ====== */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .map{padding:0 0 5px}
+h1, h2, h3, h4, h5, h6,img{padding-bottom:0px;}
+pre{margin: 10px;}
+table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl,
+ul h1,ul h2,ul h3, ul h4, ul h5, ul h6, ul p, ul ul, ul ol, ul dl,
+ol h1,ol h2,ol h3, ol h4, ol h5, ol h6, ol p, ol ul, ol ol, ol dl {padding:0;}
+
+/* ====== Elements ====== */
+h4, h5, h6 {line-height:1.2}
+img{display:block}
+em{font-style:italic}
+strong{font-weight:bold}
+code{color:#000;font-family:"Courier New", Courier, monospace;font-size:1em}
+p {padding:0}
+
+/* ====== ALIGNMENT ====== */
+.left{float:left;}
+.right{float:right;}
+.content-title{margin:0;padding:0 0.25em;position:absolute;font-size:2em;line-height:1.2}
+
+.bg-outer{background: url(../images/bg-outer.jpg) no-repeat center bottom;}
+.bg-inner{background: url(../images/bg-inner.jpg) no-repeat center top;}
+#content-wrapper {clear:both;width:992px;margin:0 auto}
+#content-wrapper {padding-top:30px}
+#navigation {width:1030px/*980px*/;margin:0 auto}
+#book-wrapper {width:940px;padding-top: 20px;margin:0 auto}
+.page{padding:.5em;}
+.slide{display: none;}
+div.active-slide{display: block;}
+
+/*###########
+FORM ELEMENTS
+########## */
+select.margin-top {margin:0.5em 0 0}
+
+/* #########
+LANDING PAGE
+######### */
+#content-wrapper .size1of2 img {margin:0 auto}
+#content-wrapper ul {margin-top:25%;list-style:none outside none}
+#content-wrapper .right li {margin-top:1em}
+.plan-lesson {width:290px}
+.play-lesson .btn {margin:0 0 0 10px}
+/*NEW PLAN BOX*/
+#new-plan-form input {margin:0}
+
+/* ####
+GENERAL
+### */
+.read-mode img {cursor:pointer}
+
+/* BOOTSTRAP OVERRIDES */
+a:focus{outline:none !important}
+.btn {margin-right:0.25em;font-size:1.25em !important;line-height:1.2 !important}
+h4 {font-size:13px !important}
+hr {margin:0 !important;border:1px solid #aaa !important;border-right:none !important;border-bottom:none !important;border-left:none !important}
+.page p {margin-bottom:0.75em;padding:0;font-size:170%;line-height:1.2;/*font-family:'Didact Gothic',Verdana,sans-serif;*/color:#000}
+/*select {margin-bottom:0 !important}*/
+
+/* sticky footer */
+html, body {height:100%}
+.wrapper {min-height:100%;height: auto !important;height:100%;margin:0 auto -52px}
+#controller {width:940px;height:70px;margin:0 auto;position:relative}
+.push {height:0}
+
+/* COLOR PICKER */
+#highlight_color_picker {display:inline-block;padding: 4px 10px;margin-right: 0.25em;}
+#highlight_color_picker span{padding:10px;}
+.color-picker-lightgreen{background-color: lightgreen;}
+.color-picker-yellow{background-color: yellow;}
+.color-picker-lightblue{background-color: lightblue;}
+.selected-color{border: 2px solid black;}
+.highlighted-mask{background-color: transparent !important;}
+.color-mask{background-color: transparent !important;}
+
+#existing-plans, #new-plan-form, .inline-colorbox-content, .colorbox-content, .colorbox-image {background: none repeat scroll 0 0 #FFFFFF;padding: 30px 10px 10px;border: 1px solid black;font-size: 200%;line-height: 100%;white-space: nowrap;}
+#existing-plans, #new-plan-form, .inline-colorbox-content {font-size: 100%;}
+.plans-list {min-width: 500px;}
+.help-colorbox {width: 300px;white-space: normal;}
+.round-conner-box {border: 1px solid black;display: inline-block;padding: 10px;margin-top: 20px;}
+.round-conner-box h2 {margin:0 0 0.25em;line-height:1.2}
+.round-conner-box select {clear: both;float: left;}
+
+.mode-link{background: url(../images/read.png) no-repeat center top;display: inline-block;margin: 10px;padding-top: 40px;width: 70px;text-align: center;}
+span.plan-active-link{background-image: url(../images/plan_active.png);}
+span.read-active-link{background-image: url(../images/read_active.png);}
+a.plan-link{background-image: url(../images/plan.png);}
+a.close-book{width:auto;padding:2px 32px 2px 0;background:url(../images/icon-close-lightbox.png) no-repeat right top}
+
+#next-slide{background: url(../images/next.png) no-repeat center top;float: right;margin-top: -45em;overflow: hidden;text-indent: -300px;width: 21px;height: 26px;}
+#previous-slide{background: url(../images/prev.png) no-repeat center top;float: left;margin-top: -45em;overflow: hidden;text-indent: -300px;width: 21px;height: 26px;}
+
+/* READ SETTING TAB */
+#read-setting-pane {width: 300px;position: absolute;top: 100px;display: none;}
+#tabs-header ul {list-style: none;padding: 0;margin: 0;}
+#tabs-header li {float: left;margin: 0;width: 100px;}
+#tabs-header a {border: 1px solid #bbb;border-bottom-width: 0;text-decoration: none;display: block;background: white;padding: 0.24em 1em;color:#555;text-align: center;}
+#tabs-header a:hover {background: #eee;}
+#tabs-header li.selected-tab {border-color: black;}
+#color-scheme-selected {margin:0 0 5px}
+#tabs-header li.selected-tab a {position: relative;top: 1px;background: #eee;color:#333;font-weight: bold;}
+#tabs-content {clear:both;padding:10px;background:#eee}
+#show-setting-pane {width:70px;position:absolute;right:36px;top:40px}
+.box-bottom-border {border-bottom: 1px solid black; margin-top: 5px;}
+.title {clear:both;font-weight:bold;margin:15px 0 5px;padding-bottom:2px;border-bottom:1px solid #aaa}
+.title-ext {/*margin:15px 10px 0 24px;border-bottom:none*/}
+.goto-page {width:65px;margin:0 0 0 10px;position:relative;top:-5px;letter-spacing:1px}
+.tab-content .btn {font-size:13px !important}
+div.refrence-link .btn {margin:8px 4px 0 0}
+.tab-content .enter-phrase-mode {margin-bottom:6px}
+.help-icon-div, #structure-controller {position:relative}
+#structure-controller .btn {width:75px;margin:0 0 6px;display:block}
+#structure-controller .clear-view-mode {position:absolute;left:105px;top:0}
+#structure-controller .inline-colorbox {margin:4px 5px 0 0;float:left}
+
+#read-setting-pane .summary {position:relative}
+.summary .read-more, .summary .read-less {position:absolute;right:0;bottom:-10px}
+#read-setting-pane .summary p {padding:0 0 5px}
+#read-setting-pane h3 {margin:10px 0 1px;font-size:1.3em;font-weight:normal;line-height:1.2}
+#read-setting-pane h4.title {margin:10px 0 6px;padding:0 0 5px}
+#read-setting-pane h4.title a {margin:0 4px 0 0;display:block;float:left}
+
+/* */
+span.color-red {background: red;}
+span.color-green {background: lightgreen;}
+span.color-yellow {background: yellow;}
+span.color-blue {background: lightblue;}
+span.color-magenta {background: magenta;}
+span.color-gold {background: gold;}
+span.color-lightblue {background: lightblue;}
+
+.tools-controller, .view-controller{display: inline-block;padding: 5px 10px;float: left;}
+.view-controller{float: right;}
+.view-toggle-button{border: 1px solid darkgray;margin-right: 5px;padding: 5px 10px;color: white;background-color: gray;}
+.active-view{border: 3px solid darkgray;}
+
+/* #############
+STLYING FOR ZOOM
+############# */
+#cboxTitle .zoom-colorbox-content {width:18px;height:20px;margin-top:2px;text-indent:-9999px;background:url(../images/magnifying-glass.png) no-repeat top left}
+#cboxClose {top:4px !important}
+
+/* #################
+OVERRIDING JQUERY UI
+################ */
+.wrapper .ui-corner-top {-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px}
+
+/* STYLING FOR phrase */
+.active-slide span.phrase{ border-bottom: 3px dotted darkgray;cursor: pointer; }
+.active-slide span.active-phrase{background-color: yellow !important;}
+
+/* STYLING FOR TOOLTIP */
+.truncate-block{margin-bottom: 1em;}
+.truncate-block, .truncate-block .details{background-color: white;border: 1px solid #aaa;padding: 5px;}
+.truncate-block .details{z-index: 999;}
+
+.read-more, .read-less{float:right; clear:both;}
+
+/*############
+TOP TOOLS AREA
+########### */
+.mode-switch {position:relative}
+
+/*WORKSPACE*/
+#workspace-navigation {width:500px;}
+#workspace-wapper {border: 1px solid darkgray;width:940px;padding: 5px;background-color: #FFFFFF;color: #333333;}
+#workspace-currentslide{padding:22px; width:460px; min-height:600px;}
+#workspace-next-slide{background: url(../images/next.png) no-repeat center top;float: right;margin-top: -25em;overflow: hidden;text-indent: -300px;width: 21px;height: 26px;}
+#workspace-previous-slide{background: url(../images/prev.png) no-repeat center top;float: left;margin-top: -25em;overflow: hidden;text-indent: -300px;width: 21px;height: 26px;}
+#workspace-form {min-height:570px;width:400px; padding:10px;background: none repeat scroll 0 0 darkgray;float: right; margin-top:30px;}
+#workspace-drop-container{width:96%; height: 300px;margin-bottom: 1em;width: 100%;background: none repeat scroll 0 0 lightgray;border: 2px solid white;}
+#workspace-drop-container ul{margin: 0 5px 0;list-style-type: none;}
+#workspace-drop-container ul li {background: none repeat scroll 0 0 white;font-size: 150%;margin: 0 0 5px;list-style-type: none;}
+span.span-draggable{float: none; margin: 0;}
+#workspace-save-content textarea{width: 98%;height: 200px;color: black;font-size: 18px;}
+.phrase-play {width:48px;height:48px;position:absolute;left:338px;top:-1px;background:url(../images/start-icon.png) no-repeat;text-indent:-9999px}
+.stop-button {background: url(../images/stop-red-icon.png) no-repeat;}
+/*LESSON PROMPT*/
+.prompt-link{height:22px;width:196px;background:url(../images/prompt_bg.png) no-repeat;display:block;padding:4px 5px;margin-top:5px}
+.prompt-link a {background: url(../images/prompt_arrow.png) no-repeat;padding-left: 20px;}
+a.refrence-link{margin:1em;}
+
+div.video-preview{background:url(../images/video_bg.png) no-repeat;margin:0 0 0 13px;padding:10px;width:256px}
+div.video-preview .video-text{background: url(../images/video_preview.png) no-repeat;height:55px;margin:6px 0;padding:0 0 0 70px;width:180px}

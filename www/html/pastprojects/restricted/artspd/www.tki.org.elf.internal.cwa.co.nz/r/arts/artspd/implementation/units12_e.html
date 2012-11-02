@@ -1,0 +1,663 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Three-year overview for the visual arts</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("units12_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Three-year overview for the visual arts</h2>
+
+<p><a href="#1">Core processes</a> | <a href="#2">Focus processes</a> | <a href="#3">Cross-curricula processes</a></p>
+
+<p>This three-year long-term plan has been developed by Jeanette Bishop, who is a contract facilitator for the visual arts at the 
+Auckland College of Education. It is based on the <a href="units10_e.html#two-year">two-year plan</a> 
+that the Auckland College of Education team used in the first part of The Arts Online professional development contract.</p>
+
+<h4 style="margin-bottom: 0px;">Process focus</h4>
+
+<p style="margin-top: 0px;">This approach to planning is process/media-based, that is, the plan is organised around specific visual arts processes or media, 
+(as opposed to, for example, a thematic focus).</p> 
+
+
+<p>Three processes &#8211; drawing, painting, and printmaking &#8211; are seen as core activities to be covered every year. Other activities are 
+focussed on for one year each of the three year period &#8211; collage with fabric and fibre, modelling/casting/carving, and 
+construction/assemblage.</p>
+
+<p>Other activities that cross over in subject matter with other curriculum programmes (such as computer-generated art with ICT, 
+and photography with technology) are taught in conjunction with those programmes.</p>
+
+<p>Drawing is used throughout to develop ideas, and to gather/record information on the stages of making an artwork.</p>
+
+
+<h4 style="margin-bottom: 0px;">Structure of resource</h4>
+
+<p style="margin-top: 0px;">This overview resource is organised under the three groups of processes &#8211; core processes, focus processes, 
+and cross-curricula processes. The information is provided below in that order.</p> 
+
+
+<h4 style="margin-bottom: 0px;">Printing this resource</h4>
+
+<p style="margin: 0px;">To print the three-year overview in a chart layout, select from either Word or PDF formats:</p>
+
+<ul style="margin-top: 0px;">
+	<li><a href="docs/visual-arts-chart.doc" target="_blank">Three-year overview for visual arts</a> (Word, 67kb)</li>
+	<li><a href="pdfs/visual-arts-chart.pdf" target="_blank">Three-year overview for visual arts chart</a> (PDF, 25kb) <a href="javascript:popUp(400,300,'PDF_info','../pdf.html');"><img src="../img/about_pdf4.gif" border="0" alt="About PDFs" align="middle"></a></li>
+</ul>
+
+
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="1"></a><h3>Core processes</h3>
+
+<table cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000000;">
+	<tr>
+		<td valign="top" style="border-right: solid 1px #000000;">
+			<h4 style="margin-bottom: 0px;">Drawing</h4>
+				<p style="margin: 0px;">Use a range drawing materials, such as:</p>
+					<ul style="margin-top: 0px;">
+						<li>pencils or pens,</li>
+						<li>chalk,</li>
+						<li>felt-tip pens,</li>
+						<li>charcoal,</li>
+						<li>coloured pencils,</li>
+						<li>'Aquarel' pencils,</li>
+						<li>crayons,</li>
+						<li>oil pastels,</li>
+						<li>oil sticks,</li>
+						<li>chalk pastels,</li>
+						<li>Indian ink.</li>
+					</ul>
+					
+					<p style="margin-bottom: 0px;">Use specific techniques, including:</p>
+						<ul style="margin-top: 0px;">
+							<li>crayon or pastel,</li>
+							<li>layering and blending,</li>
+							<li>limited colour range,</li>
+							<li>crayon and dye, or pastel and dye,</li>
+							<li>crayon or pastel sgraffito,</li>
+							<li>crayon or dye and Indian ink,</li>
+							<li>crayon batik.</li>
+						</ul>
+					
+
+		</td>
+		<td valign="top" style="border-right: solid 1px #000000;">
+				<h4 style="margin-bottom: 0px;">Painting</h4>
+					<p style="margin: 0px;">Use a range of the following:</p>
+						<ul style="margin-top: 0px;">
+							<li><b>paints &#8211;</b> such as tempera, acrylic, watercolour, dye;</li>
+							<li><b>painting tools &#8211;</b> such as brushes, card, sponges, rollers;</li>
+							<li><b>painting surfaces &#8211;</b> such as paper, card, hessian, canvas, hardboard, 3D forms;</li>
+							<li><b>styles &#8211;</b> such as impressionist, pointillism, cubist;</li>
+							<li><b>genres &#8211;</b> such as still-life, portraiture, landscape, seascape;</li>
+							<li><b>techniques &#8211;</b> such as blending, under-painting, dry-brush work, over-painting, detailing, limited palette.</li>
+						</ul>
+			
+		</td>
+		<td valign="top">
+			<h4 style="margin-bottom: 0px;">Printmaking</h4>
+				<p style="margin: 0px;">Use a range of the following:</p>
+					<ul style="margin-top: 0px;">
+						<li>stamps or leaves;</li>
+						<li>polystyrene or ball-point pen;</li>
+						<li>PVA glue and string;</li>
+						<li>monoprints;</li>
+						<li>card or collage relief;</li>
+						<li>screen prints;</li>
+						<li>lino or wood cuts &#8211; single colour and multi-coloured;</li>
+						<li>bamboo and 'Perspex' etching;</li>
+						<li>repeated patterns &#8211; such as tapa, fabric design, and border patterns;</li>
+						<li>marbling.</li>
+					</ul><br>
+						
+		</td>
+	</tr>
+	<tr>
+		<td style="border-right: solid 1px #000000;" valign="top">
+			<p><b>Reference:</b> Ministry of Education (2001)<i> Drawing &#8211; exploring the Visual Arts 
+				in Years 1&#8211;6</i>. Wellington: Learning Media</p>
+		</td>
+		<td style="border-right: solid 1px #000000;" valign="top">
+				<p><b>Reference:</b> Ministry of Education (2001) <i>Painting &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: 
+				Learning Media</p>		
+		</td>
+		<td style="border-right: solid 1px #000000;" valign="top">
+			<p><b>Reference:</b> Ministry of Education (2001) <i>Printmaking &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: Learning Media</p>
+		</td>
+	</tr>
+</table>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="2"></a><h1>Focus processes</h1>
+
+<h3>2004: Collage, and fabric and fibre</h3>
+
+<table cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000000;">
+	<tr>
+		<td valign="top" width="50%" style="border-right: solid 1px #000000;"><h4 style="margin-bottom: 0px;">Collage</h4>
+				<p style="margin: 0px;">Use a range of papers, including:</p>
+					<ul style="margin-top: 0px;">
+						<li>torn paper,</li>
+						<li>cut paper,</li>
+						<li>magazine pages,</li>
+						<li>made papers,</li>
+						<li>commercial papers,</li>
+						<li>tissues,</li>
+						<li>corrugated card.</li>
+					</ul>
+			
+
+				<p style="margin-bottom: 0px;">Use other materials, such as:</p>
+					<ul style="margin-top: 0px;">
+						<li>natural materials &#8211; for example, leaves, bark, feathers;</li>
+						<li>fabric.</li>
+					</ul>
+					
+				<p style="margin-bottom: 0px;">Use different techniques, including:</p>
+					<ul style="margin-top: 0px;">
+						<li>flat collage;</li>
+						<li>relief (raised) pictures;</li>
+						<li>mosaic.</li>
+					</ul>		
+					
+		</td>
+		<td valign="top" width="50%"><h4 style="margin-bottom: 0px;">Fabric and fibre</h4>
+				<p style="margin: 0px;"><b>Weaving</b> options</p>
+					<ul style="margin-top: 0px;">
+						<li>paper;</li>
+						<li>card/frame looms;</li>
+						<li>range of fibres, such as flax, wool, raffia;</li>
+						<li>range of techniques, such as tukutuku, taniko, plaiting.</li>
+					</ul>
+					
+					<p style="margin: 0px;"><b>Stitchery</b> options:</p>
+					<ul style="margin-top: 0px;">
+						<li>simple embroidered stitches;</li>
+						<li>sewn collage;</li>
+						<li>appliqu&eacute;.</li>
+					</ul>
+					
+					<p style="margin: 0px;"><b>Fabric treatment</b> options:</p>
+					<ul style="margin-top: 0px;">
+						<li>painting and drawing onto fabric;</li>
+						<li>batik;</li>
+						<li>printing onto fabric &#8211; for example, block prints and screen prints;</li>
+						<li>dyeing fabric;</li>
+						<li>soft sculpture;</li>
+						<li>wearable arts;</li>
+						<li>paper making.</li>
+				</ul><br>
+		
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-top: solid 1px #000000;">
+			<p><b>Reference:</b> Ministry of Education (2001) <i>Fabric and Fibre &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: Learning Media</p>
+		</td>
+	</tr>
+</table>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h3>2005: Modelling, casting, and carving</h3>
+
+<table cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000000;">
+	<tr>
+		<td valign="top" width="50%" style="border-right: solid 1px #000000;">
+			<p style="margin-bottom: 0px;"><b>Dough and clay</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>relief tiles;</li>
+					<li>three-dimensional (3D) models/sculptures;</li>
+					<li>pinch pots, coiled work, slabs;</li>
+					<li>finishing techniques &#8211; for example, oxidising and glazing;</li>
+					<li>firing.</li>
+				</ul>
+				
+			<p style="margin-bottom: 0px;"><b>Carving</b> materials:</p>
+				<ul style="margin-top: 0px;">
+					<li>clay,</li>
+					<li>wood,</li>
+					<li>bone.</li>
+				</ul><br>
+		</td>
+		<td valign="top" width="50%"> 
+			<p style="margin-bottom: 0px;"><b>Papier mach&eacute;</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>paper strips,</li>
+					<li>paper pulp,</li>
+					<li>relief,</li>
+					<li>applied over 3D armatures.</li>
+				</ul>
+				
+			<p style="margin-bottom: 0px;"><b>Casting:</b></p>
+				<ul style="margin-top: 0px;">
+					<li>plaster.</li>
+				</ul><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-top: solid 1px #000000;">
+			<p><b>Reference:</b> Ministry of Education (2001) <i>Sculpture &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: Learning Media</p>
+		</td>
+	</tr>
+</table>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<h3>2006: Construction/assemblage</h3>
+
+<table cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000000;">
+	<tr>
+		<td width="50%" style="border-right: solid 1px #000000;">
+			<p style="margin-bottom: 0px;">Make:</p>
+				<ul style="margin-top: 0px;">
+					<li>puppets,</li>
+					<li>mobiles,</li>
+					<li>dioramas,</li>
+					<li>models.</li>
+				</ul>
+				
+			<p style="margin-bottom: 0px;">Create armatures, such as for:</p>
+				<ul style="margin-top: 0px;">
+					<li>kites,</li>
+					<li>masks,</li>
+					<li>totems,</li>
+					<li>vehicles,</li>
+					<li>animal models.</li>
+				</ul><br>
+		</td>
+		<td width="50%" valign="top">
+			<p style="margin-bottom: 0px;">Materials options:</p>
+				<ul style="margin-top: 0px;">
+					<li>flat and rolled paper,</li>
+					<li>plain and corrugated card,</li>
+					<li>used boxes,</li>
+					<li>wood,</li>
+					<li>wire,</li>
+					<li>cane,</li>
+					<li>junk/found items,</li>
+					<li>natural materials.</li>
+				</ul><br>			
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-top: solid 1px #000000;">
+			<b>Reference:</b> Ministry of Education (2001) <i>Sculpture &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: Learning Media
+		</td>
+	</tr>
+</table>
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="3"></a><h1>Cross-curricula processes</h1>
+
+<p>The following processes are taught in conjunction with the Technology, English, and ICT (Information and communication technology) 
+curriculum programmes.</p>
+
+
+
+<table cellpadding="4" cellspacing="0" border="0" width="100%" style="border: solid 1px #000000;">
+	<tr>
+		<td width="50%" valign="top" style="border-right: solid 1px #000000;">
+			<p style="margin-bottom: 0px;"><b>Design and make</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>tools,</li>
+					<li>toys</li>
+					<li>containers,</li>
+					<li>furniture,</li>
+					<li>books,</li>
+					<li>jewellery.</li>
+				</ul>
+
+			<p style="margin-bottom: 0px;"><b>Graphics</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>signs,</li>
+					<li>symbols,</li>
+					<li>emblems,</li>
+					<li>banners.</li>
+				</ul>		
+		</td>
+		<td width="50%" valign="top">
+			<p style="margin-bottom: 0px;"><b>Illustration</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>book illustrations,</li>
+					<li>cartoon strips,</li>
+					<li>storyboards for videos,</li>
+					<li>flip books.</li>
+				</ul>
+			
+			<p style="margin-bottom: 0px;"><b>Photography and video</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>making and using pin-hole cameras;</li>
+					<li>producing video sequences.</li>
+				</ul>
+			
+			<p style="margin-bottom: 0px;"><b>Computer-generated art</b> options:</p>
+				<ul style="margin-top: 0px;">
+					<li>slide shows,</li>
+					<li>animation.</li>
+				</ul>	
+						
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-top: solid 1px #000000;"><p><b>Reference:</b> Ministry of Education (2002) <i>Design &#8211; exploring the Visual Arts in Years 1&#8211;6</i>. Wellington: Learning Media</p></td>
+	</tr>	
+</table>
+
+<p align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+
+
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

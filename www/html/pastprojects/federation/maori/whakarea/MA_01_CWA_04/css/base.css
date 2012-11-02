@@ -1,0 +1,150 @@
+body {
+	color: inherit;
+	margin: 0px;
+	padding: 0px;
+	background-color: White;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: medium;
+}
+
+.padding {
+padding-left: 14px;
+padding-right: 14px;
+}
+
+/* link tags */
+
+a {
+color: #0000FF;
+background-color: inherit;
+text-decoration: underline;
+}
+
+a:visited {
+color: #800080;
+background-color: inherit;
+text-decoration: underline;
+}
+
+a:hover {
+color: #CC3300;
+background-color: inherit;
+text-decoration: underline;
+}
+
+a.nav {
+font-family: arial, helvetica, sans-serif;
+font-size: medium;
+text-decoration: none;
+white-space: nowrap;
+color: #000099;
+font-weight: bold;
+background-color: inherit;
+}
+
+a.nav:hover {
+font-family: arial, helvetica, sans-serif;
+font-size: medium;
+text-decoration: none;
+white-space: nowrap;
+color: #000099;
+font-weight: bold;
+background-color: inherit;
+}
+
+/* make vertical bars between nav elements invisible */
+
+.bars { 
+font: normal 100% arial, helvetica, sans-serif;
+color: #FFFFFF;
+background-color: inherit;
+}
+
+/* make the skip link invisible */
+
+.skip {
+display: none;
+}
+
+/* heading classes */
+
+h1.header1-padd {
+font-family: georgia, sans-serif;
+font-size: large;
+font-weight: normal;
+padding-left: 14px;
+}
+
+h2.header2-padd {
+font-family: arial, verdana, sans-serif;
+font-size: medium;
+font-weight: bold;
+padding-left: 14px;
+}
+
+/* left right cell backgrounds and middle width */
+
+.border-leftbg {
+	background: #CCCCCC url("../png/bg.png");
+	color: inherit;
+	border: solid #666666;
+	border-width: 0px 1px 0px 0px;
+	width: 10%;
+}
+
+.border-rightbg {
+background: #CCCCCC url("../png/bg.png");
+color: inherit;
+border: solid #666666;
+border-width: 0px 0px 0px 1px;
+width: 10%;
+}
+
+.middle-width {
+width: 80%;
+}
+
+/* top and bottom cell background */
+
+.topbottom-cell {
+background: #000000;
+color: inherit;
+}
+
+/* smaller text links at bottom of page */
+
+.btm-links {
+font-family: verdana, sans-serif;
+font-size: small;
+text-align: center;
+}
+
+.close-link {
+font-family: verdana, sans-serif;
+font-size: small;
+text-align: right;
+}
+
+
+/* styles for images to replace hardcoded hspace vspace border and align tags */
+
+img.img-title {
+border-color: #CCFF99;
+padding: 0px 5px 2px 0px;
+float: left;
+}
+
+img.img-w3c {
+	padding: 5px;
+	border: 0px;
+}
+
+/* padding classes */
+
+.padd-left-14px {
+padding-left: 14px;
+}

@@ -1,0 +1,733 @@
+
+		
+
+<html>
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<head>
+<!-- top.php -->
+<script language="Javascript">
+
+function win() {
+
+window.open("http://www.tki.org.elf.internal.cwa.co.nz/r/kete/comms-stat/private/tkipad3.html","CS_PAD","height=380,width=380");
+
+}
+
+</script>
+
+<title>TKI - The Arts Community Calendar</title>
+
+<link	type="text/css"
+	rel="stylesheet"
+	href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- 
+///////////////////////
+// FUNCTIONS FOR TKI //
+///////////////////////
+
+
+/***************
+** POP-UP BOX **
+***************/
+
+function popWin(wid,high,labell,link) {
+	
+	labell = window.open(link,labell,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width="+wid+",height=350");
+	
+	labell.opener = window;
+	
+	if (labell.closed)
+	{
+		labell = window.open(link,labell,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width="+wid+",height="+high);
+	}
+	
+	else {
+		labell.focus();
+	}
+
+}
+
+
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "The Arts;All Communities;All ELAs";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+	searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("http://www.tki.org.elf.internal.cwa.co.nz/community/arts/calendar_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	//alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</SCRIPT><STYLE TYPE="text/css">
+<!-- 
+.sidelink {	color:#ff6600;
+			font-family: arial mori, arial, helvetica, sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-decoration : none		
+			}
+			
+.sidedate {	color:#000000;
+			font-family: arial mori, arial, helvetica, sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-decoration : none;
+			background-color: #FFFF66
+			}
+
+.footdateps {
+	color:#666666;
+	font-family: "Times New Roman", Times, serif;
+	font-size: smaller;
+	text-decoration : none;
+}
+			
+			
+a:hover { color: #993300 }
+			
+.side { background-color: #ffffcc;
+		font-family: arial mori, arial, helvetica, sans-serif;
+
+ }
+
+.rhform {margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.sidebanner {
+color:#000000; 
+		font-family: arial mori, arial, helvetica, sans-serif;
+padding: 5px;
+ }
+
+.rhsubheading {
+		font-family: arial mori, arial, helvetica, sans-serif;
+ }
+
+.rhtext {
+		font-family: arial mori, arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+text-decoration:none;
+ }
+
+a.textlink {
+font-family: arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+text-decoration:none;
+}
+
+
+a.textlink:hover {
+color:#cc0000;
+text-decoration:none;
+}
+
+a.textlinkps {
+	font-family: "Times New Roman", Times, serif;
+	font-size: smaller;
+	color:#666666;
+	text-decoration:none;
+}
+
+
+a.textlinkps:hover {
+color:#666666;
+text-decoration:none;
+}
+
+
+a.rightnav {
+font-family: arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+font-weight:bold;
+text-decoration:none;
+}
+
+
+a.rightnav:hover {
+color:#cc0000;
+text-decoration:none;
+}
+
+.sideborder { background-color: #ffffcc; 
+border: solid 1px #ffcc66;
+ }
+
+h2.toolbox {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    border-top: 1px solid #f60;
+    border-bottom: 2px solid #f60;
+    background: #fd6;
+    padding: 5px 6px 5px 6px;
+    margin: 6px 0 6px 0;
+}
+
+ul.toolbox {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+ul.toolbox li {
+    padding: 3px 10px 2px 10px;
+    font-size: .8em;
+}
+
+.bg_side { background-color: #FF6600 }
+
+.bg_side_link { background-color: white }
+
+.result-table th {
+	text-align: left;
+}
+
+/*
+Footer
+------------------
+*/
+
+#footer {
+    width: 750px;
+    border-bottom: 1px solid #fff;
+    clear: both;
+    background: #fff;
+    font-size: small;
+    
+}
+
+#footer .footer-text {
+    font-family: arial, helvetica, sans-serif;
+    color:#000;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: #fff;
+	padding: 0;
+}
+
+#footer .footer-nav {
+    text-align: left;
+    margin-top: 0;
+    border-top: 1px solid #f60;
+    border-bottom: 1px solid #f60;
+    background: #ffc;
+    padding: 4px 0 4px 30px;
+}
+
+#footer .footer-nav a {
+    font-family: arial, helvetica, sans-serif;
+    color: #000; 
+    text-decoration: none;
+}
+
+#footer .footer-nav a:visited {
+    color:#000;
+}
+
+#footer .footer-nav a:hover {
+    color:#000;
+    text-decoration:underline;
+}
+
+ Times New Roman, Times,  arial, helvetica, sans-serif
+// }
+?>
+
+//-->
+</STYLE>
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../inc/js_browser_detect-3.js"></script>
+<script type="text/javascript" src="../../../inc/js_general-3.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "The Arts;All Communities;All ELAs";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("http://www.tki.org.elf.internal.cwa.co.nz/community/arts/calendar_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+<!-- /home/tki/htdocs , /home/tki/htdocs/community/arts/calendar_e.php, /e/community/arts/calendar.php -->
+<!-- TKI SHELL BEGINS -->
+<a name="top"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+<!-- GLOBAL NAV BEGINS -->
+<tr>
+<td colspan="2" valign="top" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../img/tab_tki_home_e-3.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../img/tab_tki_news_e-3.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../img/tab_tki_about_e-3.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../img/tab_tki_communityHL_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../img/tab_tki_search_e-3.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../img/tab_tki_schools_e-3.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../img/tab_tki_interact_e-3.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../img/tab_tki_gateway_e-3.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../img/tab_tki_help_e-3.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></td>
+</tr>
+<!-- GLOBAL NAV ENDS -->
+</table>
+
+<!-- PLACE BANNER BEGINS -->
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+<tr>
+<td colspan="2" valign="top" width="750"><img border="0" hspace="0" alt="" height="50" src="img/ban_place_community_arts_e.gif" width="750"></td>
+</tr>
+<!-- PLACE BANNER ENDS -->
+
+
+<!-- NEW LOGIN STRIP BEGINS -->
+    <tr>
+	<td colspan="2" valign="top" width="750" bgcolor="#FF6600"><img border="0" hspace="0" src="../../tki/img/spacer.gif" height="1" width="750" alt=""></td>
+    </tr>
+    <tr>
+<td colspan="2" width="750" height="20" bgcolor="#FFB500" align="center"><table cellpadding="2" cellspacing="0" border="0">
+<tr>
+<td valign="middle"><form action="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/calendar.php" method="post" name="mylogin" class="rhform">&nbsp;<img src="../../tki/img/login_username.gif" align="absmiddle" width="70" height="16" hspace="0" vspace="0" border="0" alt="Username"><input type="text" name="tkiuser" size="20"><img src="../../tki/img/login_password.gif"  align="absmiddle" width="70" height="16" hspace="0" vspace="0" border="0" alt="Password"><input type="password" name="password" size="20"> &nbsp; &nbsp; <input type="image" src="../../tki/img/login_login.gif" align="absmiddle" width="80" height="16" alt="Login" border="0" name="submit">&nbsp;&nbsp;<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/kete/admin/kete_index.php"><img src="../../tki/img/kete_register.gif" align="absmiddle" width="80" height="16" alt="Need a password?  Register here" border="0" /></a><!-- 
+		<a href="javascript:void(login('yes'))"><img src="/e/tki/img/login_login.gif" align="absmiddle" width="80" height="16" alt="Login" border="0"></a> 
+		&#160; <a href="javascript:void(login('no'))"> <img src="/e/tki/img/login_no.gif" align="absmiddle" width="80" height="16" alt="No Thanks" border="0"></a>
+--></form></td>
+</tr>
+</table></td>
+</tr>
+<!-- NEW LOGIN STRIP ENDS -->
+
+
+<tr>
+<!-- LANGUAGE BANNER BEGINS -->
+<td width="750" colspan="2">
+<IMG border="0" alt="" height="20" hspace="0" src="../../img/ban_lang_e.gif" width="750" usemap="#LanguageMap"><map name="LanguageMap"><area shape="rect" coords="212,2,340,19" href="http://www.tki.org.elf.internal.cwa.co.nz/m/community/arts/calendar.php" alt="Maori Language" title="Maori Language" target="_top"></map></td>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+</tr>
+
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+<tr>
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+	  <td valign=top width="580">
+	    <table border="0" cellpadding="10" cellspacing="0"	    hspace="0" vspace="0" width="100%">
+
+	      <tr>
+		<td class="content"><br>
+
+				<!-- MAIN CONTENT BEGINS -->
+
+
+
+
+
+
+ 
+
+
+
+
+
+<table width="540" border="0" cellspacing="0" cellpadding="0">
+
+<tr valign="top"> 
+
+<td width="451"><table border="0" cellspacing="0" cellpadding="0">
+<tr><td></td>
+<td colspan="3" bgcolor="#FF9900"><img src="../../../img/head1_pixspacer.gif" 
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+<tr valign="middle">
+<td width="3"><img src="../../../img/head1_pixspacer.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+<td bgcolor="#FF9900"><img src="../../../img/head1_pixspacer.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+
+<td background="../../../img/head1_backg.gif" bgcolor="#ffffcc" class="side"><font 
+size="3"><b><nobr> &#160; The Arts Community Calendar&#160;&#160;</nobr></b></font></td>
+
+<td bgcolor="#ff9900"><img src="../../../img/head1_pixspacer.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+<td width="3"><img src="../../../img/head1_pixspacer.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+<tr>
+<td colspan="5" bgcolor="#ff3300"><img src="../../../img/head1_pixspacer.gif" 
+alt="" height="3" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+</table></td>
+
+
+
+
+
+<td width="111" align="center"><noscript><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/site_alert.php">Site alert</a></noscript><a href="javascript:popUp(400,350, 'myWindow', 'http://www.tki.org.elf.internal.cwa.co.nz/e/tki/site_alert.php')" alt="Tell us about links to inappropriate material"><img src="../../tki/img/alert_button.gif" width="91" height="20" vspace="0" hspace="0" border="0" alt="Tell us about inappropriate material"></a>
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td colspan="2"><IMG SRC="../../../img/head1_pixspacer.gif" ALT="" WIDTH="1" HEIGHT="5" HSPACE="0" VSPACE="0" BORDER="0"></td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td align="left">&nbsp;</td>
+
+
+
+<td align="center"></td>
+
+
+
+ </tr>
+
+
+
+</table>
+
+<table width="540" border="0" cellspacing="0" cellpadding="0">
+
+<tr valign="top"> 
+
+<td width="30">&nbsp;</td><td>
+
+
+
+<P>
+
+
+
+
+
+<p>The TKI The Arts calendar provides information about courses, conferences, and events relevant to New Zealand educators.</p><p>If you would like to add something on the calendar, or amend an existing notice, please contact <a href="mailto:events@tki.org.nz">events@tki.org.nz</a></p><p>Notices are published at the discretion of TKI for the information of learning institutions. However, TKI does not accept responsibility for the information contained in such notices.</p><table width='99%' cellpadding='5' class='cal' style='background: #ff9933;'><tr><td class='calmonth' colspan='4' align="right"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/calendar.php?month=2006-05">View all events on TKI</a></td></tr><tr><td class='calhead' colspan='4'> <b>2006</b></td></tr><tr><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-1" class='cal'>Jan</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-2" class='cal'>Feb</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-3" class='cal'>Mar</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-4" class='cal'>Apr</a></td></tr><tr><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-5" class='cal'>May</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-6" class='cal'>Jun</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-7" class='cal'>Jul</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-8" class='cal'>Aug</a></td></tr><tr><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-9" class='cal'>Sep</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-10" class='cal'>Oct</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-11" class='cal'>Nov</a></td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2006-12" class='cal'>Dec</a></td></tr><tr><td class='calhead' colspan='4'> <b>2007</b></td></tr><tr><td align='center' class='calmonth'>Jan</td><td align='center' class='calmonth'>Feb</td><td align='center' class='calmonth'>Mar</td><td align='center' class='calmonth'><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/?month=2007-4" class='cal'>Apr</a></td></tr><tr><td align='center' class='calmonth'>May</td><td align='center' class='calmonth'>Jun</td><td align='center' class='calmonth'>Jul</td><td align='center' class='calmonth'>Aug</td></tr><tr><td align='center' class='calmonth'>Sep</td><td align='center' class='calmonth'>Oct</td><td align='center' class='calmonth'>Nov</td><td align='center' class='calmonth'>Dec</td></tr><tr><td class='calmonth' colspan='4'><h3>May 2006</h3><p><b>Culture Moves! Dance Costumes of the Pacific</b><br />23 September 2005 &#8211; 1 August 2006<br />Eyelights Gallery, Museum of New Zealand Te Papa Tongarewa, Wellington<br />Culture Moves! is a celebration of dance, and dance costumes, across thousands of kilometres of the Pacific Ocean. Dance in the Pacific celebrates history, expresses belief, asserts identity  –  and dance costumes are a part of the drama and artistry of the dance itself. This exhibition features both historical and contemporary dance costumes from Te Papa's Collections.<br /><a href="mailto:mail@tepapa.govt.nz">mail@tepapa.govt.nz</a><br />(0)4 381 7000<br /><a href="http://www.tepapa.govt.nz/TePapa/English/WhatsOn/ShortTermExhibitions/CultureMoves.htm" target="_blank">http://www.tepapa.govt.nz/TePapa/English/WhatsOn/ShortT<br>ermExhibitions/CultureMoves.htm<br></a></p><p><b>Hei tiki</b><br />29 January 2006 &#8211; 21 May 2006<br />Pataka Museum of Arts and Cultures: Porirua<br />This exhibition celebrates New Zealand's Hei Tiki, illustrating it's iconic value to both Maori and Pakeha, and revealing its fresh lease of life in contemporary art<br />Pataka Museum of Arts and Cultur<br /><a href="mailto:pataka@pcc.govt.nz">pataka@pcc.govt.nz</a><br />(04) 237 &#8211; 1511<br /><a href="http://www.pataka.org.nz/" target="_blank">http://www.pataka.org.nz</a></p><p><b>New Zealand Young Filmmakers Awards  –  Call for entries!</b><br />30 March 2006 &#8211; 30 August 2006<br />Paramount Theatre, Wellington<br />Entries are sought for the New Zealand Young Filmmakers Awards, which will be presented on Sunday 8th October at the Paramount Theatre, Wellington. This event, formerly the Young Filmmakers Showcase, gives the directors of the future the opportunity to exhibit their work on a big cinema screen and receive feedback from leading members of the NZ film industry, such as Gaylene Preston & Richard Taylor. Entries close on 30 August 2006.<br />Rajeev Mishra<br /><a href="mailto:contactnzyfa@gmail.com">contactnzyfa@gmail.com</a><br />0210361483</p><p><b>Entries sought for International High School Student Art Contest</b><br />30 March 2006 &#8211; 1 May 2006<br />Otorohanga, New Zealand<br />An international art contest organised by the Rotary Club of Otorohanga, open to High School students under 18 years. Elimination contests will be organised by local Rotary clubs, prior to final judging and an exhibition in Otorohanga from 15 – 27 July 2006. Total prize packages include international air travel, and cash awards.<br />Barry Marx<br /><a href="mailto:art@otenz.co.nz">art@otenz.co.nz</a><br />07 8737190<br />07 8737744 (fax) (fax)<br /><a href="http://www.oto-rotary.org/" target="_blank">http://www.oto-rotary.org</a></p><p><b>Almost a Bird Theatre Collective: 'Mirad, A Boy from Bosnia'</b><br />11 April 2006 &#8211; 31 June 2006<br />Wellington<br />Fringe award winning Almost A Bird Theatre Collective (Amper een Vogel), is producing the New Zealand premiere of Mirad, A Boy from Bosnia in June 2006. This theatre production, specially targeted at high school students, tells the moving story of a young Bosnian refugee and his search for a place in a new culture. This performance is being offered to Wellington Secondary Schools for the reduced fee of $300 for an audience up to 60 students. The package includes a comprehensive resource kit and an interactive forum, discussing the current issue of refugees in New Zealand.<br />Anna Drakeford<br /><a href="mailto:anna.w.Drakeford@gmail.com">anna.w.Drakeford@gmail.com</a><br />021 151 0048</p><p><b>NZ Music Month – Band of Strangers</b><br />13 April 2006 &#8211; 21 May 2006<br />Auckland<br />Band of Strangers is a concept of the Play It Strange Charitable Trust, formed to encourage young New Zealanders to develop interests and skills in music, composing and performance. Year 12 and 13 students can apply for the opportunity to perform with some of the country's best known musicians in a concert in Auckland's town hall on 21 May. Tickets to the concert are available through ticketek outlets.<br /><a href="http://www.playitstrange.co.nz/" target="_blank">http://www.playitstrange.co.nz</a></p><p><b>Contemporary Dance  –  Long Haul</b><br />13 April 2006 &#8211; 15 August 2006<br />Auckland, Mt Maunganui, Hamilton, Palmerston North, Christchurch, Wellington<br />During August 2006, the Unitec Dance programme is touring performances of best student works in contemporary dance from 2005. Secondary schools that have a particular focus on performing arts are invited to contact Unitec if they would like a workshop visit during the tour. Tickets for performances are available at www.iticket.co.nz by clicking on the Unitec logo.<br />Sarah Peart<br /><a href="mailto:speart@unitec.ac.nz">speart@unitec.ac.nz</a><br />09 815 4321 etc 7811</p><p><b>2006 MAA Composition Competition</b><br />1 May 2006 &#8211; 12 August 2006<br />National<br />A music competition open to anyone under 20 years of age on 12 August, 2006. Students are required to compose a 4 &#8211; 8 minute piece for a quartet of any instruments, one of which must be voice, or a traditional Chinese instrument. Deadline is 12 August 2006.<br />Elsa Lam<br /><a href="mailto:elsatw.lam@gmail.com">elsatw.lam@gmail.com</a><br /><a href="http://www.maa.net.nz/competition.asp" target="_blank">http://www.maa.net.nz/competition.asp</a></p><p><b>The Victorian College of the Arts (VCA) Information Sessions</b><br />9 May 2006 &#8211; 12 May 2006<br />Heritage Hotel, Auckland and Rydges Hotel, Christchurch<br />Celia Roach will be providing information sessions about VCA's visual and performing arts programmes. VCA degrees are conferred by the University of Melbourne.
+<br>Session times as follows: 7 &#8211; 8.30pm 9 May, Auckland; 7 &#8211; 8.30pm 11 May, Christchurch. Celia is available to speak to school groups in Auckland on 10 May, and Christchurch on 12 May.<br />Celia Roach<br /><a href="mailto:croach@vca.unimelb.edu.au">croach@vca.unimelb.edu.au</a><br /><a href="http://www.vca.unimelb.edu.au/" target="_blank">http://www.vca.unimelb.edu.au</a></p><p><b>The Big Look &#8211; See</b><br />13 May 2006 &#8211; 14 May 2006<br />Wellington<br />The Big Look &#8211; See is a weekend of fun and discovery for anyone who is curious about what goes on behind the scenes in some of the Wellington region's scenes best theatres, galleries, museums, heritage sites and arts organisations.<br /><a href="mailto:info@artswellington.org.nz">info@artswellington.org.nz</a></p><p><b>Tenth Early Childhood Conference of Performing Arts (ECCPA)</b><br />27 May 2006 &#8211; 30 May 2006<br />Melbourne<br />A celebration of the performing arts in Early Childhood (Age 0 &#8211; 8)<br /><a href="http://www.vosa.org/" target="_blank">http://www.vosa.org/</a></p><p><b>Maui: One Man Against the Gods</b><br />31 May 2006 &#8211; 11 June 2006<br />Isaac Theatre Royal, Christchurch<br />Maui is an original New Zealand theatre production that tells the life story of the Maori demi &#8211; God, Maui, using an exciting mix of kapa haka, acting, song, dance, breath &#8211; taking aerial theatre and original music by New Zealand composer Gareth Farr. Three special performances will be staged for schools at heavily discounted prices.<br />Clare Needham<br /><a href="mailto:clare@teaomarama.com">clare@teaomarama.com</a><br /><a href="http://www.mauitheshow.com/" target="_blank">http://www.mauitheshow.com</a></p></td></tr></table></td>
+
+
+
+ </tr>
+
+
+
+</table>
+
+
+
+<p align="right"><a href="#top"><img src="../../tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+
+
+					</FONT>
+				<!-- MAIN CONTENT ENDS -->
+		
+				</TD>
+			</TR>
+</TABLE>
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+</TD>
+
+
+<!-- RIGHT SIDEBAR TABLE BEGINS -->
+
+<td valign="top" width="170" align="center" class="side">
+<table border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" width="100%">
+	      
+	    <tr>
+		<td align="center">
+
+<!-- RIGHT SIDEBAR CONTENT BEGINS -->
+
+
+
+
+<div align="left"> 
+
+<IMG SRC="../../../community/arts/img/sidebar_h_arts_e.gif" ALT="The Arts / Ng&#257; Toi" TITLE="The Arts / Ng&#257; Toi" WIDTH="170" HEIGHT="26" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+<a href="index.html" title="Back to The Arts Community News page"><img src="img/sidebar_arts_backhm_e.gif" alt="Back to The Arts Community News page" width="170" height="46" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<!--key collections-->
+
+<IMG SRC="../../../community/arts/img/sidebar_arts_keycollect_e.gif" ALT="Key collections" TITLE="Key collections" WIDTH="170" HEIGHT="20" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="materials.html" title="The Arts / Ng&#257; Toi Materials"><img src="img/arts_materials_e.gif" alt="The Arts / Ng&#257; Toi Materials" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="../../../../index_e.html" title="The Arts Online PD"><img src="img/arts_onlinepd.gif" alt="The Arts Online PD" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/ngatoi/index_e.php" title="Ng&#257; Toi Online"><img src="img/nga_toi_online.gif" alt="Ng&#257; Toi Online" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/ssac/index_e.php" title="Secondary School Arts Coordinators Project"><img src="img/ssacp.gif" alt="Secondary School Arts Coordinators Project" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/student_gallery/index_e.php" title="Student Gallery"><img src="img/sidebar_gallery_e.gif" alt="Student Gallery" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="12" hspace="0" vspace="0" border="0"><br>
+
+
+
+<!--assessment links-->
+
+<IMG SRC="../../../community/img/sidebar_assessment_banner_e.gif" ALT="Assessment" TITLE="Assessment" WIDTH="170" HEIGHT="26" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+
+
+<IMG SRC="../../../img/head1_pixspacer.gif" ALT="" WIDTH="170" HEIGHT="4" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/assessment/exemplars/index_e.php" title="Exemplars"><IMG SRC="../../../community/img/sidebar_exemplars_e.gif" ALT="Exemplars" WIDTH="170" HEIGHT="32" HSPACE="0" VSPACE="0" BORDER="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/ncea/" title="National Certificate of Educational Achievement"><IMG SRC="../../../community/img/sidebar_assess_ncea_e.gif" ALT="National Certificate of Educational Achievement" WIDTH="170" HEIGHT="32" HSPACE="0" VSPACE="0" BORDER="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<img src="../../../img/sidebar_stripe_default.gif" alt="" width="170" height="3" hspace="0" vspace="0" border="0"><br>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- RIGHT SIDEBAR CONTENT ENDS -->
+
+				</td>
+			</tr>
+</table>
+</td>
+
+<!-- RIGHT SIDEBAR TABLE ENDS -->
+
+</tR>
+</table>
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+<br>
+<br>
+
+<!-- TKI SHELL ENDS -->
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

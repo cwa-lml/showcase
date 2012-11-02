@@ -1,0 +1,210 @@
+
+
+<html>
+<head>
+<title>TKI - Error 404</title>
+<link	type="text/css"
+	rel="stylesheet"
+	href="javascript:;">
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="/inc/js_browser_detect.js"></script>
+<script type="text/javascript" src="/inc/js_general.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "tki;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("/e/tki/error_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+<!-- TKI SHELL BEGINS -->
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+<tr>
+<td valign="top" width="750"><a href="/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="/img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="/img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="/img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="/img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="/e/search/" target="_top" title="Search TKI for specific information"><img src="/img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="/img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="/img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="/img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="/e/tki/help/" target="_top" title="A guide to using TKI"><img src="/img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></td>
+</tr>
+
+<!-- GLOBAL NAV ENDS -->
+
+
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+<!-- NEW LOGIN STRIP BEGINS -->
+<!-- NEW LOGIN STRIP ENDS -->
+
+<tr>
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+<td width="750">
+<IMG border="0" alt="" height="20" hspace="0" src="../img/ban_lang_e.gif" width="750" usemap="#LanguageMap"><map name="LanguageMap"><area shape="rect" coords="212,2,340,19" href="/m/e/tki/error.php?code=404" alt="Maori Language" title="Maori Language" target="_top"></map></td>
+<!-- LANGUAGE BANNER ENDS -->
+
+</tr>
+
+
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+<tr>
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+	  <td valign=top width="750">
+	    <table border="0" cellpadding="10" cellspacing="0" 
+	    hspace="0" vspace="0" width="100%">
+	      
+	      <tr>
+		<td class="content">
+
+				<!-- MAIN CONTENT BEGINS -->
+
+                <center>
+                <br>
+                <p>
+                        <h3>The file you requested does not exist.</h3>
+                </p>
+                <p>
+                        Please <a href="javascript:history.go(-1)">click here</a> to go back to the previous page you came from.
+                </p>
+                <br>
+                </center>
+                
+				<!-- MAIN CONTENT ENDS -->			
+		
+				</TD>
+			</TR>
+</TABLE>
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+</TD>
+
+
+</TR>
+</TABLE>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750" class="content">
+<tr> 
+<td colspan="2"><img src="/img/sidebar_stripe_default_thin.gif" alt="" width="750" height="1" hspace="0" vspace="0"></td>
+</tr>
+
+<tr>
+<!-- COPYRIGHT FOOTER -->
+
+    <td colspan="2" align="center" bgcolor="#ffffcc"><p>    &#169; Ministry of Education, Wellington, New Zealand<br />
+    </p></td>
+</tr>
+
+<tr>
+<td colspan="2"><img src="/img/sidebar_stripe_default_thin.gif" alt="" width="750" height="1" hspace="0" vspace="0"></td>
+</tr>
+<tr>
+<td colspan="2" align=center>
+<br>
+<font size="1" face="arial">
+    This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+    While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.
+	<br>
+Last updated 01 December 2003</font>
+</td>
+</tr>
+</table>
+<br><br>
+
+<!-- TKI SHELL ENDS -->
+
+</BODY></HTML>

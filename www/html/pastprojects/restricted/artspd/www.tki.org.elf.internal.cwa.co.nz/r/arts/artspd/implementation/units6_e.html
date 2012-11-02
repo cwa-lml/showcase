@@ -1,0 +1,402 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Curriculum Plans</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "implementation;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("units6_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img src="../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="index_e.html"><img src="../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img src="../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img src="../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img src="../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Myths and Legends &#8211; Rona and the Moon (years 3&#8211;4)</h2>
+
+<p>Year 3&#8211;4 dance unit prepared by Catherine Kelly, Auckland College of Education.</p>
+
+<p><b>PK:</b> Students explore magnetism by mirroring in pairs and moving through different environments, making different pathways and shapes, for example, explore the changing shape of the moon: the full round moon shrinking to a thin arc moon; make the shape of a star; the shape of a water gourd empty, then full of water; make the crouched shape of Rona's reflection in the pond: a mirror image, then Rona's curled-up shape captured inside Marama, the moon; use mirroring and magnetism to show the moon's gravitational pulling and pushing powers &#8211; its magnetic field.</p>
+
+<p>Spend some time letting the students experiment with and experience each movement.</p>
+
+<p><b>DI:</b> Students develop direct and indirect pathways in the air and on the floor, creating a non-locomotive and locomotive sequence. Teach the sequence to someone else and combine with another pair.</p>
+
+<p><b>CI:</b> The dance or dances are performed. Students can try to identify the shapes and pathways of the moon and the stars.</p>
+
+<p><b>UC:</b> Students investigate ritual dances from other cultures that celebrate night or day, the seasons, the sun and moon, and the planets.</p>
+
+<p><b>Other ideas</b><br>
+Students watch a documentary about the moon and its pull on planet Earth's tides. Observe and discuss gravity and how people walk on the moon. Read about cloud formations covering the moon and sun. Discuss and research myths and legends from other cultures about the moon, sun, and stars.</p>
+
+<p>Use simple poems about the moon as a starting point for dance, for example, nursery rhymes such as 'The Cow Jumped Over the Moon', 'The Moon-Sheep' by Christopher Morley (in Brewton, J.E. (1937). <i>Under the tent of the sky.</i> New York: MacMillan), 'Clouds' by Matsuo Basho (in Summerfield, G (Ed.). (1970). <i>Junior voices.</i> Harmondsworth: Penguin).</p>
+
+<p>Students discuss and view images of the changing shape of the moon, nocturnal creatures, moonlit nights etc, then make a dance inspired by these images.</p>
+
+<p>Make a map of southern hemisphere stars. Create a group dance inspired by the patterns of the Southern Cross in relation to the moon.</p>
+
+<p><b>Myth: Rona and the Moon</b><br>
+Graham, P. (1995). <i>M&#257;ori nature traditions: Children of earth and sky.</i> Auckland: Bush Press of New Zealand.</p>
+
+<p>To lighten the long darkness of the night, Tane asked Marama to shine. The moon gives but a soft, grey light, yet people can see by it. Tane also set up the stars, tiny people whose eyes sparkle from invisible bodies.</p>
+
+<p>Marama, the moon, also controls the tides. They swell with the body of the moon and recede as it grows old.</p>
+
+<p>While the moon was shrinking to a sliver in the sky, Rona was at the pond, filling hollow gourds with water. The dying moon slipped behind a cloud and suddenly it was dark. Even the stars were hidden. Rona, crouching by the pond, went to stand up, but slipped. A gourd broke, as did the little shrub of ngaio that she grabbed for support. The moon heard Rona's curse. The angry Marama leaned down and took Rona up to the heavens.</p>
+
+<p>Rona's people heard only a cry among the stars. Yet when the new moon rose, there was something grey and indistinct in Marama's belly. As the belly swelled to the time of the full moon, the grey figure took on the shape of Rona.</p>
+
+<p>Take a look at the full moon. You will see Rona there, captured inside Marama. There is the crouched grey figure, still carrying the water gourds, and bearing the bundle of ngaio twigs broken off as Rona was lifted to the moon.</p>
+<br>
+
+<h3>Dance activities related to a theme</h3>
+
+<p>This dance could be adapted for any age group, but is particularly suitable for students in years 1 to 4.</p>
+
+<p><b>Activities</b><br>
+Marama the moon makes pathways in the air and over the ground:
+<ul>
+<li>changing her shape from a thin crescent moon to a large, round, full moon;</li><br><br> 
+<li>capturing Rona and making her prisoner by storing her in her stomach;</li><br><br>
+<li>mirroring by pulling and pushing, reflecting her image within the pond and lifting Rona up into the sky; and</li><br><br>
+<li>making circular, arching, indirect  flight pathways.</li><br><br>
+</ul></p>
+
+<p>Rona makes shapes and pathways in the air and over the ground:
+<ul>
+<li>walking towards the pond through native forest;</li><br><br>
+<li>captured by the moon and pulled up into the sky;</li><br><br>
+<li>curled up like a foetus inside the moon's belly; and</li><br><br>
+<li>filling the empty, flat gourd with water, increasing its shape, size, and weight  like the changing face and shape of the moon.</li><br><br>
+</ul></p>
+
+<p><b>Developing ideas</b>
+<ul>
+<li>Remember three non-locomotive and two locomotive movements, and combine these into a short movement sequence.</li>
+<li>Teach your sequence to someone else, then combine the two sequences.</li>
+</ul></p>
+
+<p><b>Performing and interpreting</b>
+<ul>
+<li>The sequences are performed 1&#8211;3 at a time.</li>
+<li>The audience interprets and critiques.</li>
+</ul></p>
+<br>
+
+<h3>Dance planner</h3>
+
+<p>Download Catherine Kelly's <a href="pdfs/units6.pdf">dance planner</a> &#8211; PDF (15kb).</p>
+
+<BR>
+<h3>Elements of Dance chart</h3>
+
+<P>
+When writing your own dance plan, use the <a href="pdfs/elements_dance.pdf">Elements of Dance</a> chart from <I>Dancing the Long White Cloud: Teaching dance in years 1-10</I> (reprinted with permission from the publisher, Learning Media Ltd <a href="http://www.learningmedia.co.nz/" target="_blank">http://www.learningmedia.co.nz</a>) to inform your learning outcomes &#8211; PDF (11kb).
+</P>
+
+<p><a href="javascript:popUp(400,300,'PDF_info','../pdf.html');"><img src="../img/about_pdf4.gif" border="0" alt="About PDFs"></a></p>
+
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-image:url(img/containerbg.png);
+	background-repeat:repeat-y;
+	}
+
+H2 {
+	color:#212144;
+	margin-top:0px;
+	}
+
+H2 a {
+	color:#212144;
+	margin-top:0px;
+	text-decoration:none
+	}
+	
+#banner {
+	background-color:#212144;
+	height:60px;
+	}
+	
+.container {
+	margin-top: 2px;
+	width:990px;
+	}
+	
+.leftbanner {
+	margin-left:124px;
+	padding-top:32px;
+	padding-right:16px;
+	padding-bottom:60px;
+	float:left;
+	}
+
+
+.project {
+	padding-top:32px;
+	width:410px;
+	float:left;
+	}
+.project img {
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom:20px;
+	}

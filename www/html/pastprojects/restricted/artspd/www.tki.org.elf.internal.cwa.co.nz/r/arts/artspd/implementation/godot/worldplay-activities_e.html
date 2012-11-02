@@ -1,0 +1,473 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Waiting for Godot</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-6.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-6.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "godot;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("worldplay-activities_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+ 
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+<style type="text/css">
+<!--
+
+-->
+</style>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="../policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="../plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="../assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="../issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../materials/index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Waiting for Godot <span style="font-style: normal;">continued</span></h2>
+
+<p><a href="index_e.html">Introduction</a> | <a href="curriclinks_e.html">Curriculum links</a> | <a href="thewriter_e.html">Writer</a> | <a href="thewriter-activities_e.html">Activities: Writer</a> | <a href="worldplay_e.html">World of play</a> | <strong>Activities: World of play</strong> | <a href="actors_e.html">Actors</a> | 
+<a href="actors-activities_e.html">Activities: Actors</a> | <a href="design_e.html">Design</a> | <a href="design-activities_e.html">Activities: Design</a> | <a href="extracts-references_e.html">Script extracts</a></p>
+
+<h1>Activities: World of the play</h1>
+
+<p>Jump to > <a href="#act3">Activity: 3: Exploring existentialism</a> / <a href="#act4">Activity 4: Chewing the fat</a> / <a href="#act5">Activity 5: Verbatim</a></p>
+
+<p style="margin-bottom: 0px;"><strong>Specific learning outcomes</strong><br />
+Students will:</p>
+<ul style="margin-top: 0px;">
+	<li>research and understand existentialist ideas and how they are represented in the theatre of the absurd</li>
+	<li>identify and respond to the absurdist elements in the play.</li>
+</ul>
+
+<p>These learning outcomes relate to the Communication and Interpreting in Drama (CI) and Understanding Drama in Context (UC) strands 
+in <em>The Arts in the New Zealand Curriculum</em>.</p> 
+
+<a name="act3"></a>
+<h3>Activity: 3: Exploring existentialism</h3>
+
+<ul>
+	<li>Read the notes on <a href="worldplay_e.html#exist">existentialism</a> and the <a href="worldplay_e.html#absurd">theatre of the absurd</a>.</li><br /><br />
+	<li>Add to your knowledge by researching these topics using your library and the Internet.</li><br /><br />
+	<li>List key ideas in the following table. </li><br /><br />
+</ul>
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td width="40%" style="border-right: solid 1px #000; border-bottom: solid 1px #000;"><p><strong>Topic</strong></p></td>
+		<td width="30%" style="border-right: solid 1px #000; border-bottom: solid 1px #000;"><p><strong>Facts</strong></p></td>
+		<td width="30%" style="border-bottom: solid 1px #000;"><p><strong>Explanation</strong></p></td>
+	</tr>
+	<tr>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;">
+			<p style="margin-bottom: 0px;"><strong>Key people:</strong></p>
+				<ul style="margin-top: 0px;">
+					<li><strong>Philosophers</strong></li>
+					<li><strong>Playwrights</strong></li>
+				</ul>
+		</td>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+		<td style="border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+	</tr>
+	<tr>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;">
+			<p style="margin-bottom: 0px;"><strong>Events in history that influenced existentialists</strong></p>
+		</td>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+		<td style="border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+	</tr>
+	<tr>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;">
+			<p style="margin-bottom: 0px;"><strong>Key ideas explored by existentialists</strong></p>
+		</td>
+		<td style="border-right: solid 1px #000; border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+		<td style="border-bottom: solid 1px #000;"><p>&nbsp;</p></td>
+	</tr>
+	<tr>
+		<td style="border-right: solid 1px #000;">
+			<p style="margin-bottom: 0px;"><strong>Important absurdist plays</strong></p>
+		</td>
+		<td style="border-right: solid 1px #000;"><p>&nbsp;</p></td>
+		<td><p>&nbsp;</p></td>
+	</tr>	
+</table>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+<a name="act4"></a>
+<h3>Activity 4: Chewing the fat</h3>
+
+<p style="margin-bottom: 0px;">Existentialist philosophers have spent much time considering these questions:</p>
+<ul style="margin-top: 0px;">
+	<li>What is the point in life?</li>
+	<li>Why is there something rather than nothing?</li>
+	<li>Why do I exist?</li>
+</ul>
+
+<ul style="margin-left: 8px; padding-left: 8px;">
+	<li>Head up large sheets of paper with these questions and use crayons to write down your ideas.</li><br /><br />
+	<li>As a class, listen to each other's ideas.</li><br /><br />
+	<li>Do you agree with the existentialist philosophers' view of life?</li>
+</ul>
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+<a name="act5"></a>
+<h3>Activity 5: Verbatim</h3>
+
+<p>Discuss the themes in existentialism to which the following quotes from the play could be linked.</p>
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td valign="top"><p>ESTRAGON</p></td>
+		<td width="75%" valign="top"><p>Nothing to be done.</p></td>
+	</tr>
+	<tr>
+		<td valign="top"><p>VLADIMIR</p></td>
+		<td valign="top"><p>I'm beginning to come around to that opinion. All my life I've tried to put it from me saying, Vladimir, be reasonable. You haven't yet tried everything. And I resumed the struggle.</p></td>
+	</tr>
+</table>
+<br />
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td valign="top"><p>ESTRAGON</p></td>
+		<td width="75%" valign="top"><p>We came here yesterday.</p></td>
+	</tr>
+	<tr>
+		<td valign="top"><p>VLADIMIR</p></td>
+		<td valign="top"><p>Ah, no, there you're mistaken.</p></td>
+	</tr>
+	<tr>
+		<td valign="top"><p>ESTRAGON</p></td>
+		<td width="75%" valign="top"><p>What did we do yesterday?</p></td>
+	</tr>
+	<tr>
+		<td><p>VLADIMIR</p></td>
+		<td><p>What did we do yesterday?</p></td>
+	</tr>
+	<tr>
+		<td valign="top"><p>ESTRAGON</p></td>
+		<td width="75%" valign="top"><p>Yes.</p></td>
+	</tr>
+	<tr>
+		<td valign="top"><p>VLADIMIR</p></td>
+		<td valign="top"><p>Why&#8230; Nothing is certain when you're about.</p></td>
+	</tr>
+</table>
+<br />
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td valign="top"><p>LUCKY</p></td>
+		<td valign="top" width="75%"><p>Given the existence as uttered forth in the public works of Puncher and Wattmann of a personal god 
+		quaquaquaqua with white beard quaquaquaqua outside time without extension who from the heights of divine apathia divine 
+		athambia divine aphasia loves us dearly with some exceptions for reasons unknown but time will tell and suffers like 
+		the divine Miranda with those who for reason unknown but time will tell are plunged in torment plunged in fire&#8230;</p></td>
+	</tr>
+</table>
+
+			<p style="margin-bottom: 0px;"><strong>Printing this page</strong><br />
+			To download and print this page, select from Word or PDF formats:</p>
+			<ul style="margin-top: 0px;">
+				<li><a href="docs/godot-world-of-the-play-acts.doc" target="_blank">Godot &#8211; Activities: World of play</a> (Word, 29kb)</li>
+				<li><a href="pdfs/godot-world-of-the-play-acts.pdf" target="_blank">Godot &#8211; Activities: World of play</a> (PDF, 14kb) <a href="javascript:popUp(400,300,'PDF_info','../../pdf.html');"><img src="../../img/about_pdf4.gif" border="0" alt="About PDFs" align="middle"></a></li>
+			</ul>		
+
+
+<p align="right">next: <a href="actors_e.html">The actors and their roles</a> | <a href="#top">Back to top</a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

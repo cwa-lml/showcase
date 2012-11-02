@@ -1,0 +1,468 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Archived Forum Discussion</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../inc/js_browser_detect-2.js"></script>
+<script type="text/javascript" src="../../../../inc/js_general-2.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "forum;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("index_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+
+<link rel="stylesheet" type="text/css" href="../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td><img src="../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2"><img src="../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="FF6600"><img src="../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+
+<td rowspan="2" bgcolor="EEEEEE" width="169"><a href="../../../../../index_e.html"><img src="../img/artspd_logo_sm.gif" 
+width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img 
+src="../img/spacer.gif" width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../index_e.html"><img 
+src="../img/nav_home.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../implementation/index_e.html"><img 
+src="../img/nav_implementation.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../materials/index_e.html"><img 
+src="../img/nav_materials.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../research/index_e.html"><img 
+src="../img/nav_research.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img 
+src="../img/spacer.gif" width="169" height="15" hspace="0" vspace="0" border="0"><a href="../events/index_e.html"><img 
+src="../img/nav_events.gif" width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><img 
+src="../img/spacer.gif" width="169" height="10" hspace="0" vspace="0" border="0">
+<br>
+<br>
+</td>
+
+</tr>
+
+<tr valign="top">
+
+<td><table cellpadding="0" cellspacing="0" border="0">
+
+<tr valign="top">
+
+<td bgcolor="#EEEEEE" class="h-forum" width="550"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Archived Forum Discussion</td>
+
+</tr>
+</table>
+
+<p>Below are excerpts from the weekly forum discussions which are held on Wednesday afternoons from 4 &#8211; 5pm.  Each discussion focuses on one of the four arts disciplines &#8211; dance, drama, music, or the visual arts.  An arts "expert", such as a National Coordinator &#8211; The Arts, or an arts celebrity such as Gareth Farr, is an invited guest online to respond to teachers' questions.</p>
+
+<table cellpadding="0" cellspacing="0" border="0" height="24">
+        <tr align="center" valign="top"> 
+          <td class="h-materials" width="550"> 
+            <div align="left"><img src="../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left"> 
+              <a href="#general" class="nav">General</a> | <a href="#dance" class="nav">Dance</a> 
+              | <a href="#drama" class="nav">Drama</a> | <a href="#music" class="nav">Music</a> 
+              | <a href="#visualarts" class="nav">Visual Arts</a> | <a href="#celebrities" class="nav">Arts Celebrities</a> 
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+<a name="general"></a>
+<p><b>General forum</b></p>
+
+      <ul>
+        <li>"<a href="f49_e.html" name="top">New Zealand Curriculum Exemplars for 
+          The Arts</a>", with Tracey McLennan, Senior Project Officer for Teacher 
+          and Leadership Capability for the Ministry of Education. 12 November 
+          2003.<br />
+          <br />
+        </li>
+        <li>"<a href="f48_e.html">Maori performing arts</a>", with Rawiri Hindle, 
+          the Ministry of Education&#8217;s National Coordinator for Nga Toi, 
+          a lecturer at the Wellington College of Education, and the Maori Content 
+          Coordinator for Te Kete Ipurangi (TKI) and Jojo Rangihaeata &#8211; 
+          a Maori Web Developer for TKI, and a long-time kapa haka performer, 
+          15 October2003.<br />
+          <br />
+        </li>
+        <li>"<a href="f47_e.html">Exploring Pasifika education and the arts</a>", 
+          Dr Airini (General Manager, Pasifika Development, Auckland College of 
+          Education), 29 October 2003.<br />
+          <br />
+        </li>
+        <li>"<a href="f45_e.html">The underlying philosophy of the Arts curriculum</a>", 
+          Camilla Highfield (Curriculum Facilitator for the Arts, Ministry of 
+          Education) 20 May 2003.<br />
+          <br />
+        </li>
+        <li>"<a href="f46_e.html">Developing an Implementation Plan</a>", Catherine 
+          Gibbs (Co&#8211;director The Arts Online) 7 May 2003.<br />
+          <br />
+        </li>
+        <li>"<a href="f44_e.html">Where to next?</a>", Camilla Highfield (Curriculum 
+          Facilitator for the Arts, Ministry of Education), 11 October 2002.<br />
+          <br />
+        </li>
+        <li>"<a href="f29_e.html">Welcome to the Arts Forum</a>", Catherine Gibbs 
+          (Curriculum Facilitator, Ministry of Education), 12 September 2001.<br />
+          <br />
+        </li>
+      </ul>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+
+<a name="dance"></a>
+<p><b>Dance forum</b></p>
+<ul>
+<li>"<a href="f33_e.html">Tina's Dance Forum &#8211; Wall Charts</a>", Excerpts from forum discussion with Tina Hong (National Co&#8211;ordinator, Dance), 9 October 2002.<br /><br /></li>
+<li>"<a href="f27_e.html">Planning for Dance and putting your plan into action</a>", Tina Hong (National Coordinator &#8211; Dance), 17 July 2002.<br /><br /></li>
+<li>"<a href="f16_e.html">Shape making</a>", Tina Hong (National Coordinator &#8211; Dance), 24 April 2002.<br /><br /></li>
+<li>"<a href="f19_e.html">Developing practical knowledge in Dance</a>", Tina Hong (National Coordinator &#8211; Dance), 6 March 2002.<br /><br /></li>
+<li>"<a href="f2_e.html">Dance resources</a>", Tina Hong (National Coordinator &#8211; Dance), 14 November 2001.<br /><br /></li>
+<li>"<a href="f1_e.html">Dance in the 21st Century</a>", Tina Hong (National Coordinator &#8211; Dance), 3 October 2001.<br /><br /></li>
+</ul>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+
+<a name="drama"></a>
+<p><b>Drama forum</b></p>
+
+<ul>
+<li>"<a href="f36_e.html">Importance of Drama Questions</a>", Excerpts from forum discussion with Peter O'Connor (National Co&#8211;ordinator Drama), 14 October 2002.<br /><br /></li>
+<li>"<a href="f35_e.html">Drama Planning for 2003</a>", Excerpts from forum discussion with Wayne Flanagan (Drama teacher and The Arts Online advisory team member), 4 November 2002.<br /><br /></li>
+<li>"<a href="f34_e.html">Drama Forum with Peter</a>", Excerpts from forum discussion with Peter O'Connor (National Co&#8211;ordinator Drama), 14 August 2002.<br /><br /></li>
+<li>"<a href="f31_e.html">How to integrate the arts into classroom programmes?</a>", Janinka Greenwood (Lecturer, Christchurch College of Education) and Wayne Flanagan (drama teacher, Gisborne Intermediate School), 24 July 2002.<br /><br /></li>
+<li>"<a href="f21_e.html">How does the curriculum expect me to deal with cultural issues in drama?</a>", Janinka Greenwood (Lecturer, Christchurch College of Education), 12 June 2002.<br /><br /></li>
+<li>"<a href="f15_e.html">Chorus of movement, chorus of voices</a>", Peter O'Connor (National Coordinator &#8211; Drama), 1 May 2002.<br /><br /></li>
+<li>"<a href="f17_e.html">Drama conventions</a>", Peter O'Connor (National Coordinator &#8211; Drama), 20 March 2002.<br /><br /></li>
+<li>"<a href="f24_e.html">Teacher in role</a>", Peter O'Connor (National Coordinator &#8211; Drama), 27 February 2002.<br /><br /></li>
+<li>"<a href="f4_e.html">End of year activities</a>", Peter O'Connor (National Coordinator &#8211; Drama), 23 November 2001.<br /><br /></li>
+<li>"<a href="f3_e.html">How does drama provide a space for young people to talk about important issues in a safe environment?</a>", Peter O'Connor (National Coordinator &#8211; Drama), 10 October 2001.<br /><br /></li>
+</ul>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+
+<a name="music"></a>
+<p><b>Music forum</b></p>
+
+<ul>
+        <li>"<a href="f41_e.html">Singing</a>", Merryn Dunmill (National Coordinator Music), 
+          30 October 2002.<br />
+          <br /></li>
+        <li>"<a href="f37_e.html">Into Music 2 &#8211; Classroom Resource</a>", Merryn 
+          Dunmill (National Coordinator Music), 11 September 2002.<br />
+          <br /></li>
+        <li>"<a href="f38_e.html">Merryn's Music Forum</a>", Merryn Dunmill (National Coordinator 
+          Music), 31 July 2002.<br />
+          <br /></li>
+<li>"<a href="f25_e.html">Music resources</a>", Merryn Dunmill (National Coordinator &#8211; Music), 26 June 2002.<br /><br /></li>
+<li>"<a href="f26_e.html">Creating and representing</a>", Merryn Dunmill (National Coordinator &#8211; Music), 5 June 2002.<br /><br /></li>
+<li>"<a href="f23_e.html">Ng&#257; Toi &#8211; Music, a bilingual forum</a>", Rawiri Hindle (National Coordinator &#8211; Ng&#257; Toi) and Rawiri Toia (National Facilitator &#8211; Ng&#257; Toi), 10 May 2002.<br /><br /></li>
+<li>"<a href="f28_e.html">Creating an active playing environment</a>", Merryn Dunmill (National Coordinator &#8211; Music), 8 May 2002.<br /><br /></li>
+<li>"<a href="f18_e.html">Singing</a>", Merryn Dunmill (National Coordinator &#8211; Music), 13 March 2002.<br /><br /></li>
+<li>"<a href="f30_e.html">Listening</a>", Merryn Dunmill (National Coordinator &#8211; Music), 20 February 2002.<br /><br /></li>
+<li>"<a href="f6_e.html">Practical ways of developing lessons from the <i>Starters and Strategies</i> music page</a>", Merryn Dunmill (National Coordinator &#8211; Music), 24 October 2001.<br /><br /></li>
+<li>"<a href="f5_e.html">Music troubleshooting</a>", Merryn Dunmill (National Coordinator &#8211; Music), 19 September 2001.<br /><br /></li>
+</ul>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+
+<a name="visualarts"></a>
+<p><b>The Visual Arts forum</b></p>
+
+<ul>
+<li>"<a href="f42_e.html">Time&#8211;based Art</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 20 November 2002.<br /><br /></li>
+<li>"<a href="f40_e.html">Sculpture</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 23 October 2002.<br /><br /></li>
+<li>"<a href="f39_e.html">National Library Resource &#8211; Discover</a>", Dylan Owen (National Advisor Schools Collection, National Library NZ), 4 September 2002.<br /><br /></li>
+<li>"<a href="f32_e.html">Computers in Art</a>", Tessa Gray (Teacher, Art Facilitator and Writer), 21 August 2002.<br /><br /></li>
+<li>"<a href="f43_e.html">Visual Arts Forum &#8211; Painting</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 7 August 2002.<br /><br /></li>
+<li>"<a href="f11_e.html">Visual Arts resources</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 19 June 2002.<br /><br /></li>
+<li>"<a href="f12_e.html">Planning and where to start</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 22 May 2002.<br /><br /></li>
+<li>"<a href="f13_e.html">How to use a drawing as a basis for work in another medium</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 17 April 2002.<br /><br /></li>
+<li>"<a href="f14_e.html">How do you make it safe for children to commence an observational drawing?</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 6 March 2002.<br /><br /></li>
+<li>"<a href="f7_e.html">Helping children to see</a>", Ann Brodie (National Coordinator &#8211; The Visual Arts), 28 November 2001.<br /><br /></li>
+</ul>
+
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+
+<a name="celebrities"></a>
+<p><b>Arts Celebrities</b></p>
+
+<ul>
+<li><a href="f22_e.html">Mary Jane O'Reilly QSM</a> (Artistic Director, Auckland Dance Company), 29 May 2002.<br /><br /></li>
+<li><a href="f20_e.html">Oliver Driver</a> (Associate Director, Auckland Theatre Company), 3 May 2002.<br /><br /></li>
+<li><a href="f10_e.html">Tim Balme</a> (actor), 28 November 2001.<br /><br /></li>
+<li><a href="f8_e.html">Gareth Farr</a> (musician, percussionist), 21 November 2001.<br /><br /></li>
+<li><a href="f9_e.html">Sue Trainor</a> (Limbs Dance Company), 30 October 2001.<br /><br /></li>
+</ul>
+<div align="right"><a href="#top"><img src="../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></div>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

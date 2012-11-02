@@ -1,0 +1,6 @@
+.highlighted-live, .highlighted-live1{cursor: move;}
+.masked {border-bottom: 1px dashed blue;cursor: pointer;}
+.zoom-colorbox-content, .zoom-colorbox-image{cursor: pointer;color:lightgreen;float: right;padding-right: 45px;}
+span.active-zoom{color: black;}
+div.colorbox-image-loading{background: url("../images/loading.gif") no-repeat scroll center center transparent;}
+div.colorbox-image-loading img{opacity: 0.2;}

@@ -1,0 +1,460 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Teacher PD Materials | Case Studies</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "cs_14;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("cs14_content_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../implementation/index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0"><BR>
+<a href="../cs_e.html" class="nav-materials">Case studies</a>
+<nobr><br><a href="../ohts_e.html" class="nav-materials">OHTs for PD meetings</a></nobr><br>
+<a href="../pdmodels_e.html" class="nav-materials">PD models</a><br>
+<a href="../reviewforms_e.html" class="nav-materials">School self-review form</a><br>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#CCFF00" class="h-materials" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Teacher Professional Development Materials</td>
+</tr>
+</table>
+
+<h2 class="h2-materials">The Arts in Collaboration Through a M&#257;ori Context &#8211; Paihia School</h2>
+      
+	  <table cellpadding="0" cellspacing="0" border="0" height="24">
+        <tr align="center" valign="top"> 
+          <td class="h-materials" width="550"> 
+            <div align="left"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left"> 
+              <a href="cs14_index_e.html" class="nav">Introduction</a> | <a href="cs14_organise_e.html" class="nav">Organisation/Planning </a> 
+              | <a href="cs14_content_e.html" class="nav">Content</a> | <a href="cs14_issues_e.html" class="nav">Issues</a> 
+              | <a href="cs14_eval_e.html" class="nav">Evaluation/Reflection</a> 
+            </div>
+          </td>
+        </tr>
+      </table>
+     <br />
+
+<h4 class="materials">Content</h4>
+
+<p><strong>Dance</strong></p>
+<p>The National Coordinator, Ng&#257; Toi, worked from a M&#257;ori perspective. At the start of each day, the whole school joined together in the wharenui for karakia and kanikani through music and movement. The four classes, focusing on one arts discipline in particular during the intensive, were able to experience a one-and-a-half hour dance session, on each of the three days, where dance was used as an expression of wairua.</p>
+
+<p>In-depth work occurred with the new entrant/year 1 class and the year 3/4 classes (levels 1 and 2). For the new entrants, the first theme was the movement of waves on the shore. The inspiration from the local story was the movement of the taniwha, which caused the swelling of the tide. The children drew on their personal experiences and ideas to move as waves travelling to and from the shore, exploring spatial awareness as they moved in different levels and directions to create the rolling effect of the waves. </p>
+
+<p>The second theme, taken from the Maikuku legend, was the taniwha moving around the cave. The children travelled in lines and different pathways. Several combined to make up the form of the taniwha and practised moving together with timed steps.  </p>
+
+<p>The year 3/4 class developed movement motifs based on the notion of sorrow. They explored what the main character in the Maikuku story would feel like when left alone in a cold dark cave.  They were asked to move very slowly and to use facial expressions to enhance the mood or atmosphere they were creating.  They also used a technique called 'moving as one' to provide the audience with a strong visual image of their interpretation of sorrow.</p>
+
+  
+
+<p>In both classes, the students were asked to draw on their personal experiences and use the elements of body awareness, space, time, energy, and relationships, to portray the chosen ideas and images from the story in each dance. They worked through the process of constructing the dances and rehearsing them. On the final afternoon of the three-day intensive they were able to share their dance work in an informal presentation.</p>
+
+
+<br />		
+      <p><strong>Drama</strong></p>
+
+<p>The drama facilitator worked with the year 5/6 teacher and her students during the in-depth stage of the professional development. The particular focus of the three-day intensive was to explore drama elements through the use of several conventions and to focus on the development of relevant techniques.</p>
+
+<p>The content to frame the drama was an exploration of the nature of love within the story of Maikuku.  Types of love looked at by the students included: parental love, unrequited love, love between man and woman, and their love for their offspring. </p>
+
+    
+
+<p>Conventions used included: </p>
+<ul>
+<li>a 'continuum of love', based on objects of affection</li>
+<li>frozen images, to show Maikuku's parents on the day of her birth</li>
+<li>role on the wall, to learn more about Maikuku</li>
+<li>collective mapping, to help recreate the journey of Huatakaroa to claim Maikuku for his wife.</li>
+</ul>
+
+<p>Other conventions that could have been used, if there was more time:</p>
+<ul>
+<li>role on the wall, of the taniwha and Huatakaroa</li>
+<li>blanket role of the members of  Huatakaroa's hapu, as he sets out on his journey to claim Maikuku for his wife</li>
+<li>defining space, to physically create the collective mapping with blocks, boxes, paper, material, cushions etc.</li>
+<li>soundscape of the journey of Huatakaroa.</li>
+</ul>
+
+<p>Students used their knowledge of the context, gained during the professional development stage and the workshop sessions, to formulate ideas for the performance.</p>
+
+
+
+
+
+<p><strong>Music</strong></p>
+
+<p>In preparation for their soundscape performance, the year 4/5 students listened to M&#257;ori instruments and explored their sound qualities and effects. They prepared their performance, rehearsed for it, presented it, and evaluated it afterwards.</p>
+
+<p>During the three-day intensive, M&#257;ori instruments were demonstrated and the students were given an interesting insight into the making of and use of the examples through korero and demonstration. They explored different sound sources in order to understand and then be able to imitate the sounds they had heard, and, through this process, discover new sounds.</p>
+
+<p>The students made koauau (flutes) from clay on the first day of the intensive. These were left to dry to leather-hardness, which took three days. While they were drying, the students were able to practise their blowing technique, which, although easy for some, proved difficult for others. Most students set themselves a challenge and practised endlessly, in break times and at home. In addition, the facilitator made every student a bamboo koauau. These were very popular as practise instruments as well as instruments to be mastered in their own right.</p>
+
+  
+<p>The following steps were used to create the class composition for the soundscape:</p>
+<ul>
+<li>They started with a brainstorm to break the legend into episodes. The students selected the idea of the cave as the motivation for their group composition. </li>
+<li>Words were put on the board to show the sounds that might be heard in the cave over a 24 hour period, for example, water, wind, silence of night, owls, other birds.</li>
+<li>They discussed the emotions that a person alone in the cave would feel. These included fear, anticipation, loneliness, peacefulness, anger, joy, etc. The students' task was to convey theses emotions through their own music.</li>
+<li>They each chose three sounds they would like to create music for, and the instruments that could represent them.</li>
+<li>As a class, they created a soundscape to depict both the sounds heard in the cave, and the sounds of the emotions the person in the cave might feel.</li>
+<li>The soundscape was played using traditional M&#257;ori instruments made by the students, found sounds, and some conventional instruments. Some students then decided to change their sound source. This re-crafting went on for several sessions. The students would have liked more time to continue this process, in order to act on their critical reflections.</li>
+<li>This work in progress became the finished piece for the Friday afternoon performance. In addition, the year 1/2 class, whose intensive focus was in the visual arts, were brought in to play stones, as accompanying percussion instruments, so that they too could participate in the final performance. They had not been involved in the process of creating the soundscape, but they were able to read and represent it easily, with their particular instruments.</li>
+</ul>
+
+
+
+
+<p><strong>The visual arts</strong></p>
+<p>The approach for visual arts differed from the other arts, in that all the classes were involved in creating a mural based on the local legend. The mural now has a permanent position in the school's wharenui. </p>
+
+<p>Working together, the staff read and discussed the legend, and broke the story into parts that could be developed at each class level, taking into consideration the capabilities of the students.</p>
+
+<p>Each teacher set the focus for their own learning, which would involve research, discussion, story telling, the development of ideas, and the exploration of a range of different materials, techniques, and processes.</p>
+
+<p>The senior class, working with staff, created an overview for the mural. This was recorded on paper, along with notes about possible approaches to the development of ideas that were added to and subtracted from as they evolved.</p>
+
+<p><strong>Materials</strong></p>
+<p>MDF board was used as a base for the work. Extra pieces were cut out and added, to create a relief effect. The children used mixed media including as pencil, paint, pastels, and collage to create the images and add colour textures and detail. </p>
+
+<p><strong>Examples of class activities</strong></p>
+
+<p>Year 4/5:  The ancestors<br />
+The focus for this class was the use of traditional patterns of tukutuku and kowhaiwhai in the design of cloaks and clothing. The children looked at the work of Robyn Kahukiwa for ideas about pattern and ways of representing the figure. They looked in her book Paikea and also used newspaper clippings about her exhibition, which was showing in Northland at that time.  A size was determined for any ancestor figures that were to be represented. The children drew their ancestor figure on paper, then cut it out and and transferred it to the mural. They used paint to complete it the figure.
+</p>
+
+
+<p>Year 3/4:  The taniwha<br />
+This class focused on developing their drawing skills, using line, pattern and texture. The teacher used stories and discussions to stimulate the students. They explored ways of using pencil and crayon in a series of drawings. Because there could be only one taniwha in the mural, the students voted for the person to make this figure. Ideas, textures, and patterns developed by the others were included.  The taniwha artist (aged 7) drew the work onto the mural and then enjoyed directing his classmates as they helped him to complete the taniwha.
+</p>
+<table align="right">
+<tr>
+<td> <a href="javascript:popUp(450,370, 'myWindow', 'popups/imagefour.html')"><IMG src="img/imagefour_small.jpg"  border="0" alt="Experimenting with colour to create waves"></a><BR>
+        <noscript>
+        <a href="popups/imagefour.html">enlarge image (no javascript link)</a><BR>
+        </noscript>
+        <a href="javascript:popUp(450,370, 'myWindow', 'popups/imagefour.html')">enlarge 
+        image+</a> 		</td>
+</tr>
+</table>
+
+<p>Year 0/1:  The waves<br />
+These students focused on making koru patterns and developing their painting skills. After making preliminary drawings, they drew their koru-inspired waves on paper and cut them out. The shapes were then traced onto board and cut out by the caretaker, who returned them to the students to be painted and glued onto the mural.</p>
+
+
+<p>During the three-day intensive, each group of students worked with the teacher and the facilitator developing enhancing and refining their ideas before applying them to working on the mural.</p>
+
+<p>Each class had times allocated times during which they could work on the mural. They worked in the playground, older children helping younger ones and a local flax artist working with older girls who then shared their skills with others.</p>
+<p>The mural was hung, in its unfinished state, for the final sharing performance. The school went on to finish the mural throughout the term, and it now hangs permanently in the wharenui.</p>
+
+<p><strong>Resources </strong></p>
+
+<p>Adsett, Sandy, Graham, Chris, McGregor, Rob. (1992). <em>Kowhaiwhai arts.</em> Tauranga: Education Advisory Service.</p>
+
+<p>Adsett, Sandy, Whiting, Cliff., & Ihimaera, Witi.,(Eds). (1996). <em>Mataora- the living face: Contemporary M&#257;ori artist.</em> Wellington: Batemean and Te Waaka Toi.</p>
+
+<p>Kahukiwa, Robyn (1993). <em>Paikea.</em> Puffin.</p>
+
+<p>Ministry of Education. (2001). <em>Exploring the visual arts years 1&#8211;6: Fabric and fibre.</em> Wellington: Learning Media</p>
+
+<p><strong>Assessment</strong></p>
+
+<p>Formative assessment information, related to relevant achievement objectives for each discipline, was gathered during observations of students involved in activities throughout the intensive. Discussions were held at the end of each day to feedback and feedforward on the work being done.   Throughout the video <em>Paihia School Project</em> the children can be seen and heard reflecting on their learning. Their conversations and reflections indicated they are engaged in higher-level thinking. The programme provided students with the opportunity to meet every essential skill</p>
+
+<a href="#top">Back to top</a>
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

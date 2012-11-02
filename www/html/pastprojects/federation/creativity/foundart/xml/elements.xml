@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<elements>
+	<el id="placeName">Discovery Bay</el>
+	<el id="eventName">Design challenge</el>
+	<el id="collectionName">Your net</el>
+	<el id="design_tools">Design tools</el>
+	<el id="collectionSpace">Beach</el>
+	
+	<el id="zone1">Dunes</el>
+	<el id="zone2">Tidal zone</el>
+	<el id="zone3">Rock pools</el>
+	<el id="zone4">Rubbish bin</el>
+	
+	<el id="design_theme_1">Guardian of the bay</el>
+	<el id="design_theme_2">Gateway sculpture</el>
+	<el id="design_theme_3">Seat or throne</el>
+	<el id="design_theme_4">Mural showing visitors from the past</el>
+	<el id="your_own_idea_colon">Your own idea:</el>
+	
+	<el id="s2_3_t1">Hello! I'm always sticking my big beak in and finding all kinds of things on the beach. That's why they call me Sticky Beak!<br /><br />To enter the design challenge, you need to type your name here:</el>
+	<el id="your_task">Your task</el>
+	<el id="s14_2_t1">Congratulations! Your design has hit the beach at Discovery Bay. It's making a flap at the summer festival!<br /><br />Select <font face="ArialBoldSymbol">Print</font> to print out your <font face="ArialBoldSymbol">Workbook</font> and final design. If you fancy, you can carry on creating! Just select any section you want to go back to.<br /><br />Nice work!</el>
+	<el id="poster1_text"><font size="16"><b>Creating found art</b></font><br /><br />Did you know that you can use things you find to design new objects? This is called found art.<br /><br />By taking objects out of their setting and putting them together in different ways, we can give them a new meaning.</el>
+	<el id="poster2_text"><font size="16"><b>Creating found art</b></font><br /><br />The Discovery Bay council is holding an exhibition of found art at their summer festival. The exhibition will be on the beach.<br /><br />They are inviting people to submit creative designs made of found objects.</el>
+	<el id="poster3_text"><font size="16"><b>Creating found art</b></font><br /><br /><b>Your task</b><br />To create your found art you need to:<br />•&#160;&#160;&#160;&#160;Come up with a design idea.<br />•&#160;&#160;&#160;&#160;Explore the environment and choose objects to use.<br />•&#160;&#160;&#160;&#160;Design your idea.<br />•&#160;&#160;&#160;&#160;Review your work in your workbook.</el>
+	<el id="poster4_text"><font size="16"><b>Creating found art</b></font><br /><br /><b>Your task</b><br />You will assess your design on:<br />•&#160;&#160;&#160;&#160;How you transform your found materials into new and<br />&#160;&#160;&#160;&#160;&#160;interesting uses.<br />•&#160;&#160;&#160;&#160;How your design suits its setting. It needs to be strong enough<br />&#160;&#160;&#160;&#160;&#160;to suit its environment.<br />•&#160;&#160;&#160;&#160;How you present an eye-catching and creative design.</el>
+	<el id="poster5_text"></el>	
+	<el id="poster6_text"><font size="16"><b>Creating found art</b></font><br /><br />Good. Now select <b>Ideas</b> at the bottom of the screen to find out some imaginative ways you could mix the materials you find to make new meanings.<br /><br />Have fun!</el>
+	<el id="takeSnapshotText">OK! A picture has been taken of your design so far.<br /><br />Select <font face="ArialBoldSymbol">Workbook: snapshots</font> to review your design and see if you're ready to submit it for the exhibition, or if you still want to work on it.</el>
+	<el id="choose_your_design_theme"><font size="16"><b>Creating found art</b></font><br /><br /><b>Choose your design theme</b></el>.
+	<el id="comma_select_your_theme">, select your theme:</el>
+
+	<el id="ok">OK</el>
+	<el id="submit">Submit</el>
+	<el id="next">Next</el>
+	<el id="back">Back</el>
+	<el id="print">Print</el>
+
+	<el id="glossary_title">Ideas</el>
+	<el id="contrast">Contrast</el>
+	<el id="composition">Composition</el>
+	<el id="juxtaposition">Juxtaposition</el>
+	<el id="perspective">Perspective</el>
+	<el id="repetition">Repetition</el>
+	
+	<el id="zoom_out">Step back</el>
+	<el id="move">Move</el>	
+	<el id="delete">Delete</el>	
+	<el id="scale">Scale</el>	
+	<el id="stamp">Stamp</el>	
+	<el id="rotate">Rotate</el>
+	<el id="tone">Tone</el>
+	<el id="layer">Layer</el>
+	<el id="undo">Undo</el>
+	
+	<el id="def_composition">Composition means how parts of a design or picture are arranged.<br /><br />Choose, plan and place materials in ways that make the viewer think about them differently.</el>
+	<el id="def_contrast">Put together found materials so their differences show up in an eye-catching way.<br /><br />This might be through contrast of colours, textures, light and dark, sizes or shapes.</el>
+	<el id="def_juxtaposition">Place similar or contrasting objects side by side to see how that changes their meaning.<br /><br />You can also try rotating them and joining them differently to make new meanings.</el>
+	<el id="def_perspective">•&#160;&#160;&#160;&#160;To make an object look nearer, make it<br />&#160;&#160;&#160;&#160;&#160;larger.<br />•&#160;&#160;&#160;&#160;To make an object look far away, <br />&#160;&#160;&#160;&#160;&#160;place it higher in the picture and make it <br />&#160;&#160;&#160;&#160;&#160;smaller.<br />•&#160;&#160;&#160;&#160;Overlapping shows nearer objects and<br />&#160;&#160;&#160;&#160;&#160;hides parts of farther objects.<br />•&#160;&#160;&#160;&#160;Objects in the distance look paler.</el>
+	<el id="def_repetition">Create patterns or textures by using the same object again and again. Try varying this with rotation.</el>
+	
+	<el id="please_enter_an_idea">Please enter an idea</el>
+	
+	<el id="ideas">Ideas</el>
+	<el id="design_space">Design space</el>
+	<el id="workbook">Workbook</el>
+	
+	<el id="view1_guide1">Keep these ideas in mind – you can always come back later. Select <b>Beach</b> when you are ready to begin finding objects.</el>
+	<el id="view1_guide2"></el>
+	<el id="view1_guide3"></el>
+	<el id="view1_guide4"></el>
+	
+	<el id="view1_stickybeak">Here are some ideas you can try with your found<br />objects – push your creativity!<br /><br />Select a word to get some ideas.</el>
+	
+	<el id="view2_guide1">Search the four areas to find objects for your design.</el>
+	<el id="view2_guide2">Select an area. Move objects you want to use to <b>Your net</b>.</el>
+	<el id="view2_guide3">You can collect up to seven objects in <b>Your net</b>.</el>
+	<el id="view2_guide4"></el>
+
+	<el id="view2Zoom_guide1">To select an object for your design, move it into <b>Your net</b>.</el>
+	<el id="view2Zoom_guide2">Use <b>Step back</b> to explore another area. When you're ready, select <b>Design space</b> to start creating your design.</el>
+	<el id="view2Zoom_guide3"></el>
+	<el id="view2Zoom_guide4"></el>
+
+	<el id="view3_guide1">Move objects from <b>Your net</b> onto the beach to start building your design.</el>
+	<el id="view3_guide2">To select different objects, go back to the <b>Beach</b>.</el>
+	<el id="view3_guide3">Select <b>Demo</b> to find out how to use the <b>Design tools</b>.</el>
+	<el id="view3_guide4">When you are happy with your design, select <b>Workbook</b> to review your work.</el>
+
+	<el id="view4_guide1">Now review your work. Answer all the questions, using the <b>Workbook</b> tabs to move to the other pages.</el>
+	<el id="view4_guide2">At any time, you can go back and make changes to your design. Or you can change your theme by selecting <b>Design challenge</b>.</el>
+	<el id="view4_guide3">Complete the questions, then submit your final design for the exhibition. You can use it to make your design with real objects!</el>	
+	<el id="view4_guide4"></el>
+
+	<el id="choose_what_youll_use"><font face="ArialBoldSymbol">Choose what you'll use</font></el>
+	<el id="lets_stick_our_beaks_in">Let's stick our beaks in and see what we can find.<br /><br />Keep your design idea in mind!</el>
+	
+	<el id="when_you_are_happy">When you are happy with your design, select <b>Workbook</b> to review your work.</el>
+	<el id="time_to_create">Time to create! Put your plan into action. Think about your theme.<br /><br />Try out different things to see what they look like. Spin things around; turn them upside-down. Change their size; use them twice. Be creative!</el>	
+
+	<el id="objects">Objects</el>
+	<el id="snapshots">Snapshots</el>
+	<el id="reflect">Reflect</el>
+	<el id="submission">Submission</el>
+	
+	<el id="print_acknowledgements">Printable worksheet made available by The Le@rning Federation: © Curriculum Corporation and <b><i>education.au limited</i></b>, 2006, except where indicated under Acknowledgements.</el>
+
+	<el id="your_theme">Your theme</el>
+	<el id="guide">Guide</el>
+	
+	<!-- workbook -->
+	<el id="my_design_theme_is">My design theme is:</el>
+	<el id="why_did_you_choose_that_theme">Why did you choose that theme?</el>
+	
+	<el id="why_did_you_choose_the_objects">Why did you choose the objects you did?</el>
+	<el id="how_did_you_put_them">How did you put them together and why?</el>
+	<el id="putting_the_objects">Putting the objects</el>
+	<el id="and">and</el>
+	<el id="side_by_side_was">side by side was surprising because they:</el>
+	
+	<el id="i_tried_out">I tried out a new tool and found it could:</el>
+	<el id="my_design_has_changed">My design has changed by:</el>
+	<el id="snapshot1_title"><b>Your artwork in progress: stage one</b></el>
+	<el id="snapshot2_title"><b>Your artwork in progress: stage two</b></el>
+	
+	<el id="the_objects_i_chose">The objects I chose helped me plan my design by giving me:</el>
+	<el id="i_changed_the_way">I changed the way these objects look by:</el>
+	<el id="i_was_pleased">I was pleased with how I arranged these objects because they now:</el>
+	<el id="my_overall_design">My overall design suggests the idea of:</el>
+	<el id="my_design_will">My design will make people stop and look because:</el>
+
+	<el id="if_i_made">If I made my design out of real objects, I'd make sure it would be strong and durable by:</el>
+	<el id="the_best_place">The best place for my design would be:</el>
+	<el id="i_most_enjoyed">I most enjoyed:</el>
+	<el id="changes_i_would">Changes I would still like to make are:</el>
+	
+	<el id="when_you_have_completed">When you have completed the questions, you can submit your design for the exhibition.</el>
+	<!-- end workbook -->
+
+	<el id="workbook">Workbook</el>
+	<el id="name">Name:</el>
+	<el id="design_theme">Design theme</el>
+	
+	<el id="thats_an_interesting_collection">You're building up an interesting collection! How do<br />you think these particular objects might help in your design?<br /><br />In your <font face="ArialBoldSymbol">Workbook</font>, select <font face="ArialBoldSymbol">Objects</font> and explain why you chose these objects.</el>
+
+	<el id="my_design_theme_colon">My design theme:</el>
+	<el id="design_process">Design process</el>
+
+</elements>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

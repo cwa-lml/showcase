@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>He Kurī</title>
+  <script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="../js/jQuery.jPlayer.2.1.0/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.pageify.js"></script>
+  <script type="text/javascript" src="../js/jquery.narrateify.js"></script>
+  <script type="text/javascript" src="../js/jquery.animateify.js"></script>
+  <script type="text/javascript" src="ready.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage">
+    <div id="book">
+
+      <!--
+      <div id="splash" class="page" style="background-image: url(splash/bg.jpg);">
+        <div class="narration"></div>
+        <div class="controls">
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+      -->
+
+      <div id="entry" class="page" style="background-image: url(entry/bg.jpg);">
+        <div style="text-align: center; position: absolute; top: 568px; width: 100%;">
+          <a href="#" class="btn-next-alone"  title=""><img src="i/btn-entry-mode-1.png" /></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#" class="btn-next-fluent" title=""><img src="i/btn-entry-mode-2.png" /></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#" class="btn-next-slow"   title=""><img src="i/btn-entry-mode-3.png" /></a>
+          <a href="#" class="btn-next"        title="Next" style="display: none;">&nbsp;</a>
+        </div>
+        <a href="#"
+           class="btn-jump"
+           data-pageify-jump="notes"
+           title="Teachers Notes"
+           style="position: absolute; left: 50px; top: 650px; width: 195px; height: 82px;">
+          &nbsp;
+        </a>
+      </div>
+
+      <div id="dog" class="page">
+        <img class="sprite" id="dog-dog" src="dog/dog.jpg" style="top: 78px; left: 290px;" />
+        <img class="sprite" id="dog-tail" src="dog/tail.png" style="top: 188px; left: 261px;" />
+        <img class="sprite" id="dog-tail-patch" src="dog/tail-patch.png" style="top: 166px; left: 401px;" />
+        <img class="sprite" id="dog-eyes" src="dog/eyes-open.jpg" style="top: 160px; left: 477px;" />
+        <div class="narration" data-narrateify-id="dog">
+          <div id="dog-fluent" class="jplayer"></div>
+          <div id="dog-slow" class="jplayer"></div>
+          <p>
+            <a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</a>.
+          </p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          3
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="snail" class="page" style="background-image: url(snail/bg.jpg)">
+        <img class="sprite" id="snail-snail" src="snail/snail.png" />
+        <div class="sprite" id="snail-dog-container" style="top: 29px; left: 165px; border: 1px dotted purple;">
+          <img class="sprite" id="snail-dog" src="snail/dog.png" />
+          <img class="sprite" id="snail-eyes" src="snail/eyes.png" style="top: 433px; left: 332px;" />
+        </div>
+        <div class="narration" data-narrateify-id="snail">
+          <div id="snail-fluent" class="jplayer"></div>
+          <div id="snail-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3" data-word="nui"><span class="syllable w3-s1">nu</span><span class="syllable w3-s2">i</span></a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          4
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="man" class="page" style="background-image: url(man/bg.jpg)">
+        <img class="sprite" id="man-man" src="man/man.png" style="top: 0px; left: 373px; opacity: 0.0;" />
+        <div class="sprite" id="man-dog-container" style="top: 178px; left: 150px; opacity: 0.0;">
+          <img class="sprite" id="man-dog" src="man/dog.png" style="top: 0; left: 0;"/>
+          <img class="sprite" id="man-eye" src="man/eye-open.png" style="top: 63px; left: 287px;" />
+        </div>
+        <img class="sprite" id="man-snail" src="man/snail.png" style="top: 520px; left: 489px;" />
+        <div class="narration" data-narrateify-id="man">
+          <div id="man-fluent" class="jplayer"></div>
+          <div id="man-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3" data-word="iti"><span class="syllable w3-s1">it</span><span class="syllable w3-s2">i</span></a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          5
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="slippers" class="page" style="background-image: url(slippers/bg.jpg)">
+        <img class="sprite" id="slippers-eyes" src="slippers/eyes-down.jpg" style="top: 261px; left: 551px; opacity: 50%;" />
+        <img class="sprite" id="slippers-tail" src="slippers/tail-up.jpg" style="top: 408px; left: 330px;" />
+        <div class="narration" data-narrateify-id="slippers">
+          <div id="slippers-fluent" class="jplayer"></div>
+          <div id="slippers-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3 syllable w3-s1" data-word="pai">pai</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          6
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="cement" class="page" style="background-image: url(cement/bg.jpg)">
+        <img class="sprite" id="cement-print-a" src="cement/print-s.png" style="top: 342px; left: -35px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-b" src="cement/print-l.png" style="top: 448px; left:   0px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-c" src="cement/print-s.png" style="top: 412px; left: 105px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-d" src="cement/print-s.png" style="top: 288px; left: 140px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-e" src="cement/print-l.png" style="top: 270px; left: 198px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-f" src="cement/print-s.png" style="top: 368px; left: 233px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-g" src="cement/print-l.png" style="top: 354px; left: 295px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-h" src="cement/print-s.png" style="top: 229px; left: 312px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-i" src="cement/print-l.png" style="top: 225px; left: 374px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-j" src="cement/print-s.png" style="top: 314px; left: 413px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-k" src="cement/print-l.png" style="top: 300px; left: 470px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-l" src="cement/print-s.png" style="top: 208px; left: 495px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-m" src="cement/print-s.png" style="top: 195px; left: 550px; opacity: 0.0;" />
+        <img class="sprite" id="cement-print-n" src="cement/print-s.png" style="top: 261px; left: 597px; opacity: 0.0;" />
+        <img class="sprite" id="cement-dog" src="cement/dog.png" style="top: 38px; left: 690px; opacity: 1.0;" />
+        <div class="narration" data-narrateify-id="cement">
+          <div id="cement-fluent" class="jplayer"></div>
+          <div id="cement-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3" data-word="kino"><span class="syllable w3-s1">ki</span><span class="syllable w3-s2">no</span></a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          7
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="coal" class="page" style="background-image: url(coal/bg.jpg)">
+        <img class="sprite" id="coal-coal" style="top: -10px; left: 808px;" src="coal/coal.png" />
+        <img class="sprite" id="coal-eyes" style="top: 96px; left: 590px;" src="coal/eyes-open.jpg" />
+        <img class="sprite" id="coal-mouth" style="top: 214px; left: 572px;" src="coal/mouth-pursed.jpg" />
+        <div class="narration" data-narrateify-id="coal">
+          <div id="coal-fluent" class="jplayer"></div>
+          <div id="coal-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3" data-word="pango"><span class="syllable w3-s1">pan</span><span class="syllable w3-s2">go</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          8
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="soap" class="page" style="background-image: url(soap/bg.jpg)">
+        <img class="sprite" id="soap-brush" src="soap/brush.png" style="top: 9px; left: 423px;" />
+        <img class="sprite" id="soap-brush-mask" src="soap/brush-mask.png" style="top: 68px; left: 477px;" />
+        <div class="narration" data-narrateify-id="soap">
+          <div id="soap-fluent" class="jplayer"></div>
+          <div id="soap-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3 syllable w3-s1" data-word="ma">mā</a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          9
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="ladder" class="page" style="background-image: url(ladder/bg.jpg)">
+        <img class="sprite" id="ladder-dog" style="top: 12px; left: 52px;" src="ladder/dog.jpg" />
+        <img class="sprite" id="ladder-can" src="ladder/can.png" />
+        <div class="narration" data-narrateify-id="ladder">
+          <div id="ladder-fluent" class="jplayer"></div>
+          <div id="ladder-slow" class="jplayer"></div>
+          <p><a class="word w1 syllable w1-s1" data-word="aue">Auē</a>!</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          10
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="paint" class="page" style="background-image: url(paint/bg.jpg)">
+        <img class="sprite" id="paint-eyes" src="paint/eyes-open.jpg" style="top: 159px; left: 582px;" />
+        <img class="sprite" id="paint-mouth" src="paint/mouth-small.jpg" style="top: 283px; left: 594px;" />
+        <div class="narration" data-narrateify-id="paint">
+          <div id="paint-fluent" class="jplayer"></div>
+          <div id="paint-slow" class="jplayer"></div>
+             <p><a class="word w1 syllable w1-s1" data-word="he">He</a>&nbsp;
+            <a class="word w2" data-word="kuri"><span class="syllable w2-s1">ku</span><span class="syllable w2-s2">rī</span></a>&nbsp;
+            <a class="word w3" data-word="kakariki"><span class="syllable w3-s1">kā</span><span class="syllable w3-s2">kā</span><span class="syllable w3-s3">ri</span><span class="syllable w3-s4">ki</span></a>.</p>
+        </div>
+        <div class="controls">
+          <a class="btn-prev" href="#"><img src="./i/btn-navleft.png" title="Prev Page" alt="Prev Page"></a>
+          <a class="btn-nav-show" href="#"><img src="./i/btn-navstrip.png" title="Navigation Strip" alt="Navigation Strip"></a>
+<!--
+          <a class="sound" href="#"><img src="../img/silk/sound.png" title="Sound On/Off" alt="Sound On/Off"></a>
+          11
+-->
+          <a class="btn-repeat" href="#"><img src="./i/btn-repeat.png" title="Repeat" alt="Repeat"></a>
+          <a class="btn-next" href="#"><img src="./i/btn-navright.png" title="Next Page" alt="Next Page"></a>
+        </div>
+      </div>
+
+      <div id="index" class="page">
+        <p>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="entry"><img src="nav/0.png" /></a>
+        </p>
+        <p>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="dog"><img src="nav/1.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="snail"><img src="nav/2.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="man"><img src="nav/3.png" /></a>
+          <br />
+          <a href="#" class="btn-jump thumb" data-pageify-jump="slippers"><img src="nav/4.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="cement"><img src="nav/5.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="coal"><img src="nav/6.png" /></a>
+          <br />
+          <a href="#" class="btn-jump thumb" data-pageify-jump="soap"><img src="nav/7.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="ladder"><img src="nav/8.png" /></a>
+          <a href="#" class="btn-jump thumb" data-pageify-jump="paint"><img src="nav/9.png" /></a>
+        <p>
+          <a href="/ebook/"><img src="i/btn-more-books.png" /></a>
+        </p>
+      </div>
+
+      <div id="notes" class="page" style="background-image: url(notes/bg.jpg)">
+        <a href="#"
+           class="btn-jump"
+           data-pageify-jump="entry"
+           title="Back to Title Page"
+           style="position: absolute; left: 920px; top: 670px; width: 42px; height: 42px;">
+          &nbsp;
+        </a>
+      </div>
+
+      <div id="nav">
+        <a href="" class="btn-nav-jump" data-pageify-jump="entry"><img src="nav/0.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="dog"><img src="nav/1.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="snail"><img src="nav/2.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="man"><img src="nav/3.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="slippers"><img src="nav/4.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="cement"><img src="nav/5.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="coal"><img src="nav/6.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="soap"><img src="nav/7.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="ladder"><img src="nav/8.png" /></a>
+        <a href="" class="btn-nav-jump" data-pageify-jump="paint"><img src="nav/9.png" /></a>
+      </div>
+
+    </div>
+
+    <div id="common-jplayer" class="jplayer"></div>
+
+  </div>
+</body>
+</html>

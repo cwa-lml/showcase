@@ -1,0 +1,27 @@
+            then : {
+                '#dog-tail' : {
+                    type : 'css',
+                    play : {
+                        duration : 200,
+                        easing: 'easeInOutSine',
+                        css : {
+                            top : '188px'
+                        }
+                    }
+                }
+            }
+
+
+
+            then : {
+                '#dog-tail' : {
+                    type : 'css',
+                    play : {
+                        duration : 200,
+                        easing: 'easeInOutSine',
+                        css : {
+                            top : '188px'
+                        }
+                    }
+                }
+            }

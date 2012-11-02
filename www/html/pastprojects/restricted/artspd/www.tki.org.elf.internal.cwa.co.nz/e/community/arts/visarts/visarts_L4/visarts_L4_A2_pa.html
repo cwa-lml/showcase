@@ -1,0 +1,602 @@
+
+
+<html>
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<head>
+<title>TKI - The Arts Curriculum: Visual Arts</title>
+<link	type="text/css"
+	rel="stylesheet"
+	href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-8.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-8.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "visarts_L4;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("http://www.tki.org.elf.internal.cwa.co.nz/community/arts/visarts/visarts_L4/visarts_L4_A2_pa_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+<!-- TKI SHELL BEGINS -->
+<a name="top"></a>
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+<tr>
+<td valign="top" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e-8.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e-8.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e-8.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_communityHL_e-5.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e-8.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e-8.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e-8.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e-8.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e-8.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></td>
+</tr>
+
+<!-- GLOBAL NAV ENDS -->
+
+
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+<tr>
+<!-- LANGUAGE BANNER BEGINS -->
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang-8.gif" width="750"></TD>
+<!-- LANGUAGE BANNER ENDS -->
+</tr>
+
+
+</table>
+
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+<tr>
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+	  <td valign=top width="750">
+	    <table bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" 
+	    hspace="0" vspace="0" width="100%">
+	      
+	      <tr>
+		<td  background="../img/visarts_bg.gif"class="content">
+
+				<!-- MAIN CONTENT BEGINS -->
+<link rel="stylesheet" type="text/css" href="../styles/visarts.css"><a name="top"></a>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+<tr valign="top">
+
+<td class="content" colspan="2"><img src="../img/arts_h_visarts.gif" width="580" height="90" hspace="0" vspace="0" border="0" alt="The Arts Curriculum: Visual Arts"></td>
+
+    <td class="content" rowspan="2" width="170"><img src="../img/arts_nav_visarts.gif" width="170" height="120" hspace="0" vspace="0" border="0" usemap="#nav_visarts"><img src="../img/arts_shell_4.gif" width="170" height="241" hspace="0" vspace="0" border="0" usemap="#shell_visarts"></td>
+
+</tr>
+
+
+
+<tr valign="top"> 
+
+<td class="content" width="130" align="center"><a href="javascript:popUp(570,600,'tipsWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/arts/arts_tips.php')"><img src="../img/arts_tips.gif" width="89" height="50" hspace="0" vspace="0" border="0" alt="Tips"></a>
+
+<br><br><img src="../img/visarts_sidenav_pa.gif" width="130" height="220" hspace="0" vspace="0" border="0" usemap="#sidenav2">
+
+<map name="sidenav2">
+
+<area shape="rect" coords="0,156,109,194" href="visarts_L4_A2_menu.html" title="Back to Menu" alt="Back to Menu">
+
+<area shape="rect" coords="0,122,109,155" href="visarts_L4_A2_ex.html" title="Exemplars and Case Studies" alt="Exemplars and Case Studies">
+
+<area shape="rect" coords="0,91,109,121" href="visarts_L4_A2_tm.html" title="Teaching and Learning Material" alt="Teaching and Learning Material">
+
+<area shape="rect" coords="0,70,108,91" href="visarts_L4_A2_glos.html" title="Glossary" alt="Glossary">
+
+<area shape="rect" coords="0,50,108,70" href="visarts_L4_A2_links.html" title="Links" alt="Links">
+
+<area shape="rect" coords="0,22,108,50" href="visarts_L4_A2_pa.html" title="Planning and Assessment" alt="Planning and Assessment">
+
+<area shape="rect" coords="0,0,108,21" href="visarts_L4_A2_ao.html" title="Achievement Objectives and Strands" alt="Achievement Objectives and Strands">
+
+</map>
+
+<br>
+
+<br>
+
+<br>
+
+</td>
+
+
+
+<td class="content">
+
+<table border="0" width="450" cellpadding="10" cellspacing="0">
+
+<tr valign="top">
+
+<td class="content">
+
+<h1>Level 4: Photography &#8211; Pinhole Camera</h1><p>
+
+<h2>PLANNING AND ASSESSMENT</h2>
+
+
+
+
+
+<p>
+
+Throughout the unit or lesson, teachers should be conferencing both individuals and groups of students whilst encouraging them to respond to and reflect on their own work and to the work of others by: </p>
+
+<ul>
+
+	<li>reinforcing their knowledge of basic <a href="visarts_L4_A2_glos.html#elements">elements</a> and <a href="visarts_L4_A2_glos.html#prin">principles</a> 
+
+	<li>focusing on specific principles using images and artists work for reference. 
+
+</ul>
+
+
+
+<p>The following elements and principles will be the focus for discussion in this learning example. </p>
+
+
+
+<h3>Elements </h3>
+
+
+
+<p>Focus on texture, tone, and shape. </p>
+
+
+
+
+
+<h3>Principles</h3> 
+
+
+
+<p><a href="visarts_L4_A2_glos.html#comp">Composition</a> &#8211; Consider how the shapes and elements are arranged in the photographic image (e.g., unity, balance, rhythm)</p>
+
+<p>Contrast &#8211; Examine the effect when opposites are used in close proximity (e.g., light/dark tones, warm/cold colours, large/small shapes)</p>
+
+<p>Movement &#8211; Consider the effects created by changing the position of the camera (e.g., fast, slow/stationary, jerky/smooth, towards/away from).  Consider the effects created when photographing a moving image.</p>
+
+
+
+
+
+<p>More inform on art elements </p>
+
+
+
+<a href=http://www.cyberschool.k12.or.us/~wallace/>http://www.cyberschool.k12.or.us/~wallace/</a><br>
+
+
+
+<a href=http://www.artlex.com/>http://www.artlex.com</a>
+
+
+
+<br>
+
+<br>
+
+
+
+
+
+<h3>Possible starting points</h3><p>
+
+<h4>Research </h4>
+
+
+
+<p>Study the basic scientific principles of light and its effects in photographic recording processes to discover how technology and scientific principles can be used as a tool for developing ideas and images </p>
+
+<p>Study the camera obscura, the early history of photography (eg the 16th Century camera obscura) and the work of contemporary artists who use pinhole camera photography for expression and image making (e.g. Ruth Thorne-Thompson, Garcia</p>
+
+<p>Discuss the use of this art making tool and the associated technology for the production of work with immediate and mysterious effects. </p>
+
+
+
+
+
+
+
+<h4>Construct a pinhole camera</h4> 
+
+
+
+<p>Construct a light excluding pinhole camera by selecting a box which can easily be opened and resealed with tape for loading and unloading light sensitive paper.  Paint the interior with black paint.  Cut a 10 mm square out of the surface of the box.  Cover the hole with tin foil using a sealing tape.  Pierce the centre of the piece of foil with a pin to create an aperture.  Use a piece of light excluding tape to seal the aperture on the outside.
+
+</p>
+
+
+
+View the following New Zealand website for simple instructions on building a pinhole camera
+
+<a href=http://www.qdesign.co.nz/pinhole.html>http://www.qdesign.co.nz/pinhole.html</a>
+
+
+
+<p>More information on art elements <a href="http://www.cyberschool.k12.or.us/~wallace/">http://www.cyberschool.k12.or.us/~wallace</a></p>
+
+
+
+
+
+<h3>Possible learning approaches</h3>
+
+
+
+<p>The school community may contain people with the necessary expertise to assist with setting-up the following simple camera operations. </p>
+
+
+
+<h4>Photographing the images </h4>
+
+
+
+<p>Open the camera in a darkroom with the red light on.  Attach a sheet of photosensitive paper to the back of the camera with small amounts of double sided tape.  Be sure the light sensitive surface faces out, towards the aperture, on the front of the box.</p>
+
+<p>Close the box and seal any edges with light excluding tape. </p>
+
+<p>Select a subject which is one metre from the fixed camera in sunny conditions.  </p>
+
+<p>Take the camera to the selected subject and tape it to a fixed surface which will function as a tripod e.g., a stool or fence.</p>
+
+<p>Expose the film by removing the tape from the aperture for 20 seconds.  Replace the tape carefully.</p>
+
+
+
+<p>Also consider:</p>
+
+			<ul> 
+
+					<li>experimenting with light sources
+
+					<li>capturing the effects of movement through changing the exposure times 
+
+					<li>exploring the qualities of texture within an image. 
+
+			</ul>
+
+
+
+
+
+
+
+
+
+
+
+<h4>Developing the photographs </h4>
+
+
+
+
+
+
+
+
+
+<p><b>IMPORTANT</b> Attention must be given to safety issues relating to avoiding contact with photographic chemicals.</p>
+
+
+
+<p>Produce a paper negative:</p>
+
+<ul>
+
+	<li>On your return to the red, lit darkroom undo the tape sealing the camera. 
+
+	<li>Carefully remove the photosensitive paper which will be put through a process of chemical development and then into a stop bath of water.
+
+	<li>Fix and wash the paper negative in running water to remove any chemicals before drying.
+
+</ul>
+
+
+
+
+
+<p>Produce a paper positive:	</p>
+
+<ul>
+
+	<li>Under red light conditions place a fresh piece of photosensitive paper emulsion side up on a the flat surface under your enlarger, or improvised light source (e.g., torch/lamp).
+
+	<li>Place the paper negative image side down on top of the emulsion of the positive paper and cover with a sheet of glass.
+
+	<li>Expose the papers to light from the enlarger for the recommended exposure time.
+
+</ul>
+
+
+
+
+
+
+
+
+
+<h4>Reflect and discuss </h4>
+
+<ul>
+
+	<li>Analyse, reconsider, and determine the exposure times of the paper negative and the positive image. 
+
+	<li>Analyse the images produced by the group, discuss and suggest new subjects and light conditions for capturing images.
+
+	<li>Encourage students to make a series of images which explore this technology and its ability to generate art works. </ul>
+
+<h4>Reprint images</h4> 
+
+<ul>
+
+	<li>Re-photograph and reprint a short series of photographs trying out different effects and arrangements based on the analysis. 
+
+</ul>
+
+
+
+
+
+
+
+<h3>Materials</h3> 
+
+
+
+<p>The following items and materials will need to be organised and considered in preparation for this activity: </p>
+
+<ul>
+
+	<li>A photographic darkroom, or improvised darkroom space, with a sink and cold running water, chemicals and containers for developing and fixing images, photosensitive papers, enlarger, or focused light source and a red light to avoid exposing the paper during the processes of producing an image in the darkroom. 
+
+	<li>A supply of rigid cardboard boxes with lids or a suitable pre-fabricated container to make the camera (i.e., a large milo/coffee tin).
+
+	<li>Scissors, cutting objects, light proof tapes, tin foil, rulers, black paint and brushes for painting out the interior of the camera, drying rack or line, pegs.
+
+	<li>An accessible subject close to the darkroom and illuminated by a good supply of light. 
+
+</ul>
+
+
+
+
+
+
+
+
+
+<h3>Assessment </h3>
+
+
+
+<p>Possible specific learning outcomes include: </p>
+
+
+
+<p>Students will be able to:</p>
+
+<ul>
+
+	<li>apply appropriate skills in handling photosensitive paper and chemicals in the darkroom (PK);
+
+	<li>use the processes involved in pinhole photography to produce photographic images (PK);
+
+	<li>identify photographs from different historical contexts and the purposes for which they were made (UC).
+
+</ul>
+
+
+
+
+
+<p>
+
+<br></td>
+
+</tr>
+
+</table>
+
+
+
+</td>
+
+  </tr>
+
+</table>
+
+
+
+
+
+<map name="nav_visarts">
+
+<area shape="poly" coords="76,69,90,83,121,83,121,55,90,55,76,69" href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/drama/drama_home.php" title="Drama" alt="Drama">
+
+<area shape="poly" coords="75,71,60,83,60,113,88,113,88,84,75,71" href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/music/music_home.php" title="Music" alt="Music">
+
+<area shape="poly" coords="74,67,90,53,90,22,61,22,61,52,74,67" href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/dance/dance_home.php" title="Dance" alt="Dance">
+
+<area shape="poly" coords="73,71,60,55,28,55,28,84,58,84,73,71" href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_home.php" title="Visual Arts" alt="Visual Arts">
+
+</map>
+
+
+
+<map name="shell_visarts">
+
+<area shape="poly" coords="40,174,42,193,59,210,79,215,98,211,112,193,113,179,101,197,80,202,59,196,40,174" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L8_chooser.php')" title="Level 8" alt="Level 8"> 
+
+<area shape="poly" coords="40,156,42,175,60,196,80,201,101,196,114,174,113,161,101,180,80,185,59,179,40,156" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L7_chooser.php')" title="Level 7" alt="Level 7"> 
+
+<area shape="poly" coords="43,143,41,157,60,179,80,184,101,179,113,158,111,148,101,163,80,168,59,162,43,143" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L6_chooser.php')" title="Level 6" alt="Level 6"> 
+
+<area shape="poly" coords="45,124,44,141,60,162,80,167,101,162,112,139,109,127,99,146,80,151,58,144,45,124" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L5_chooser.php')" title="Level 5" alt="Level 5"> 
+
+<area shape="poly" coords="46,108,44,119,58,143,78,150,99,145,110,122,106,114,95,131,78,136,56,127,46,108" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L4_chooser.php')" title="Level 4" alt="Level 4"> 
+
+<area shape="poly" coords="50,100,45,105,57,126,77,135,95,130,105,113,101,104,88,119,77,122,61,117,50,100" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L3_chooser.php')" title="Level 3" alt="Level 3"> 
+
+<area shape="poly" coords="65,104,54,91,50,98,61,115,77,120,89,116,101,101,97,90,89,104,65,104" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L2_chooser.php')" title="Level 2" alt="Level 2"> 
+
+<area shape="poly" coords="73,30,55,58,55,90,66,105,87,104,96,88,89,50,89,50,73,30" href="javascript:popUp(200,250,'myWindow','http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/visarts/visarts_L1_chooser.php')" title="Level 1" alt="Level 1"> 
+
+</map>
+
+
+
+
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				</TD>
+
+			</TR>
+
+</TABLE>
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+</TD>
+
+
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+<br><br>
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+
+

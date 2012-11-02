@@ -1,0 +1,87 @@
+/* CSS Document */
+
+#head-tabs {
+	display: none;
+}
+
+#head-login {
+	display: none;
+}
+
+#head-lang {
+	display: none;
+}
+
+#site-alert {
+	display: none;
+}
+
+#right-nav {
+	display: none;
+}
+
+#content {
+	width: 85%;
+}
+
+#footer {
+	display: none;
+}
+
+#head-banner h1 {
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+p.top {
+	display: none;
+}
+
+h2.line {
+    border-bottom: 2px solid #000;
+}
+
+a {
+    color: #000;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#000;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#000;
+}
+
+a.news-item-url {
+    color:#000;
+    font-size: 0.80em;
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+a.news-item-url:hover {
+    text-decoration: none;
+    color:#000;
+}
+
+a.news-item-url:visited {
+    color:#000;
+}
+
+.hide {
+    left: 0px !important;
+    font-size: 20pt !important;
+}
+
+h1.hide {
+	display: block;
+}
+.printpage{
+    display: none;
+}

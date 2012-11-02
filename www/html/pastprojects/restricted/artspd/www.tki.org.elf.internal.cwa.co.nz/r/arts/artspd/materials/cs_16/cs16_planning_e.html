@@ -1,0 +1,523 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Teacher PD Materials | Case Studies</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-5.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-5.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "cs_16;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("cs16_planning_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../implementation/index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0"><BR>
+<a href="../cs_e.html" class="nav-materials">Case studies</a>
+<nobr><br><a href="../ohts_e.html" class="nav-materials">OHTs for PD meetings</a></nobr><br>
+<a href="../pdmodels_e.html" class="nav-materials">PD models</a><br>
+<a href="../reviewforms_e.html" class="nav-materials">School self-review form</a><br>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#CCFF00" class="h-materials" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Teacher Professional Development Materials</td>
+</tr>
+</table>
+
+<h2 class="h2-materials">Establishing a School of Arts at Tauranga Boys' College  </h2>
+      
+	  <table cellpadding="0" cellspacing="0" border="0" height="24">
+        <tr align="center" valign="top"> 
+          <td class="h-materials" width="550"> 
+            <div align="left"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left"> 
+              <a href="cs16_index_e.html" class="nav">Introduction</a> | <a href="cs16_planning_e.html" class="nav">Organisation/Planning</a> 
+              | <a href="cs16_content_e.html" class="nav">Content</a> | <a href="cs16_issues_e.html" class="nav">Issues</a> 
+              | <a href="cs16_eval_e.html" class="nav">Evaluation/Reflection</a> 
+            </div>
+          </td>
+        </tr>
+      </table>
+     <br>
+
+<h4 class="materials">Organisation</h4>
+
+      <p>Tauranga Boys' College has always had a strong reputation in arts education 
+        with high student attainment achieved through quality teaching. The desire 
+        to develop new facilities and programmes, came from the value and recognition 
+        the teachers gave to the multi-media world the students engage in. To 
+        do this, the Arts departments reviewed their practices, established goals, 
+        and set in place a strategic plan to achieve the School of Arts. </p>
+
+<h5>The strategic plan for the School of Arts</h5>
+<p><strong>Mission</strong><br /> 
+Tauranga Boys' College enriches students' cultural heritage by promoting artistic excellence and advancing learning in the arts.</p>
+
+<p><strong>Vision</strong><br />
+ A college in which artistic excellence is celebrated, encouraged, supported, and available for all. A college where all students will have an appreciation of the arts, and a desire to make a positive contribution to New Zealand's society.
+</p>
+
+<p><strong>Guiding values </strong>
+<ul>
+<li>Artistic work and freedom of expression are a vital part of education. </li>
+<li>Participating in the arts and engaging in creative endeavour are an essential part of human development.</li>
+<li>Learning in the arts makes a positive contribution to our young people's academic achievement, interpersonal skills, confidence, motivation to succeed and preparation for work. </li>
+<li>Support of the arts relies on partnerships that build on existing strengths within our community.</li>
+<li>Appreciation of the arts enhances our knowledge and understanding of our cultural heritage.</li>
+</ul>
+
+</p>
+
+<h4 class="materials">Planning</h4>
+<p>Firstly, the school developed their strategic plan which included a mission statement, a vision statement, guiding values for the School of Arts, key strategic issues for the school, school goals, and teaching and learning goals. </p>
+
+<p>Key aspects of the strategic plan can be viewed in the statements above, while the 
+school goals are to:</p>
+<ul>
+<li>create clear curriculum pathways for student in the arts</li>
+<li>provide arts opportunities outside of the school timetable</li>
+<li>provide for cross-curricular links within the arts</li>
+<li>provide a Tauranga Boys' College youth theatre</li>
+<li>establish a community Arts council to fundraise and manage funds</li>
+<li>maintain and develop use of community as a resource.</li>
+</ul>
+
+<p>The implementation goals to guide teaching and student learning were developed from the school goals, the mission and vision statements, and guiding curriculum values. The implementation goals are to:</p>
+<ul>
+<li>support arts professional development</li>
+        <li>improve students' learning outcomes in the arts by ensuring full implementation 
+          of The Arts <em>in the New Zealand Curriculum </em>throughout the school</li>
+<li>establish a Student Arts Council</li>
+<li>make students aware of career pathways in the arts</li>
+        <li>broaden the range of arts curriculum opportunities/activities the 
+          school provides for all students</li>
+<li>provide scholarship opportunities for arts students</li>
+        <li>inform staff, students and the community of arts events via newsletters 
+          and The Arts Online website</li>
+<li>establish a timetable structure at years 9 and 10 that ensures appreciation of the arts for example, two  arts subjects at year 9, two  arts subjects at year 10.</li>
+<li>
+Strategic planning and fundraising have been carried out over the past two years with completion of the new and refurbished facilities anticipated in another two years time.  Needless to say, fundraising will continue for years to come as the multi-million dollar project costs are being met from within the school and from the wider community, with the largest cost being the building of the new Youth Theatre for Performing Arts.  This complex will be a multi-purpose facility, with space for functions, displays, and visual art exhibitions.</li>
+</ul>
+<table align="right">
+<tr>
+          <td> <img src="../../img/youth-theatre.jpg" alt="Youth theatre"  border="0">
+     
+       <p class="caption">Youth theatre</p> 		</td>
+</tr>
+</table>
+
+<p>The ongoing marketing of students' classroom-produced arts works, both at school and in the community (including sales of student art works at exhibitions) keeps the School of Arts profile high and funds rolling in. Many successful fundraising events have been staged which also profile students' performances and arts works. Sponsors have been generous in their support. </p>
+
+
+
+<p>School of Arts newsletters featuring successes and targets are distributed on a regular basis throughout the community. This has raised the profile of arts teaching and learning in the school and in the community. </p>
+<table align="right">
+<tr>
+          <td> <img src="../../img/fundraiser.jpg" alt="Fundraising event"  border="0">
+     
+       <p class="caption">Fundraising event</p> 		</td>
+</tr>
+</table>
+<p>Students are represented on the school's Student Arts Council and they play a significant role in the development and implementation of the arts strategic plan. </p>
+
+<p>The principal and his advisory management group are strong supporters of the School of Arts development plan and the director of the School of Arts is now a member of the Principal's Advisory Group. </p>
+
+<p>The architectural plans for the refurbished and additional facilities can be seen below. Completion is planned for 2006.</p>
+
+
+    <table align="left">
+<tr>
+          <td align="center"> <a href="javascript:popUp(500,415, 'myWindow', 'popups/plans1.html')"><img src="../../img/plans1_small.jpg" alt="architectural plan" width="198" height="142"  border="0" title="architectural plan"></a><BR>
+        <noscript>
+        <a href="popups/plans1.html">enlarge image (no javascript link)</a><BR>
+        </noscript>
+        <a href="javascript:popUp(500,415, 'myWindow', 'popups/plans1.html')">enlarge 
+image+</a> 		</td>
+
+ <td align="center"> <a href="javascript:popUp(500,445, 'myWindow', 'popups/plans3.html')"><img src="../../img/plans3_small.jpg" alt="architectural plan" title="architectural plan" width="198" height="149"  border="0"></a><BR>
+        <noscript>
+        <a href="popups/plans3.html">enlarge image (no javascript link)</a><BR>
+        </noscript>
+        <a href="javascript:popUp(500,445, 'myWindow', 'popups/plans3.html')">enlarge 
+image+</a> 		</td>
+</tr><tr>
+<td align="center"> <a href="javascript:popUp(500,280, 'myWindow', 'popups/plans2.html')"><img src="../../img/plans2_small.jpg" alt="architectural plan cross section" title="architectural plan - cross section" width="213" height="85"  border="0"></a><BR>
+        <noscript>
+        <a href="popups/plans2.html">enlarge image (no javascript link)</a><BR>
+        </noscript>
+        <a href="javascript:popUp(500,280, 'myWindow', 'popups/plans2.html')">enlarge 
+image+</a> 		</td>
+
+<td>&nbsp;</td>
+
+</tr>
+</table>    
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h5>School of Arts management structure</h5>
+
+      <p>In order to restructure the arts departments into a School of Arts, the 
+        'old' school structures for the arts needed to be reviewed and a 'new' 
+        structure articulated.</p>
+
+<p>Old management structure consisted of:</p>
+<ul>	
+	<li>self-contained departments with an Head of Department (HOD) responsible for that arts department and responsible for the department budget</li>
+	<li>programmes designed specific to the particular arts discipline within and beyond the classroom</li>
+	<li>departments responsible for their own promotion material</li>
+	<li>departmental meetings held on a regular basis.</li>
+</ul>
+   
+<p>New management structure to consist of:</p>
+<ul>
+<li>director of Arts</li>
+<li>teacher in charge of performing arts</li>
+<li>teacher in charge of visual arts</li>
+<li>development of cross-curricular programmes</li>
+<li>activities within and outside of the classroom and outside of schools hours with greater use of the community as a resource</li>
+        <li>timetable structured to support the arts, and clear curriculum pathways 
+          provided 
+        <li>inter-departmental meetings held on a regular basis</li>
+<li>access to additional finances to support the Arts for example, arts scholarships, new equipment, collaborative and cost-effective promotions</li>
+<li>representation on the Principal's Advisory Group.</li>
+</ul>
+  
+<h5>School of Arts discipline structure</h5>
+
+<p>The School of Arts restructured according to staffing and courses available to the school with the longer term vision of greater collaboration across courses and staff. The structure decided upon is based on two groups of learning activities represented in the various arts disciplines taught at Tauranga Boys' College:</p>
+
+<p>Performing arts</p>
+<ul>
+<li>music (including audio engineering and music technology, itinerant tuition)</li>
+<li>drama</li>
+<li>dance (including kapahaka)</li>
+</ul>
+
+<p>Visual arts</p>
+
+<ul>
+        <li>practical art (including photography, design, art history, contemporary 
+          M&#257;ori Art)</li>
+<li>e-art (multimedia/moving image, digital photography, special effects, 3- dimensional animation).</li>
+</ul>
+
+<p><strong>Management structure</strong><br />
+The performing arts and visual arts faculties of the School of Arts each have one head of faculty with an overall director of the School of Arts who is responsible for all operational and coordination aspects of the Schools of Arts.  
+</p>
+
+<p>Students have representation on the school Student Arts Council and there are currently seven senior student representatives, with the longer term aim of having two students from each year level so that there is a student voice throughout the school year levels. One student (a prefect) has been elected as student director of The Arts and they lead the Student Arts Council meetings which are comprised of a student leader representing each arts discipline. These students attend the School of Arts council meetings and share in decision-making and strategic planning. </p>
+
+<p><strong>Management positions for the School of Arts are currently held by:</strong><br />
+Grant Thompson &#8211; 4 management units (2 for visual arts, 2 as director of Arts which includes school arts coordination)<br />
+John Page &#8211; 3 management units (1 for HOD music, 1 as teacher in charge of performing arts, and 1 for Bay of Plenty regional Itinerant Teachers of Music scheme)<br />
+Kim Fridd &#8211; teacher in charge of drama <br />
+Nigel Bateman &#8211; teacher in charge of multi-media studies<br />
+        George ter Wal &#8211; HOD of computing and philosophy<br />
+Aramahou  Ririnui &#8211; HOD 'Aronui Department' who teaches kapahaka as the dance discipline component.
+</p>
+<br />
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

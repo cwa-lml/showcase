@@ -1,0 +1,545 @@
+
+
+
+
+<HTML>
+
+
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<HEAD>
+
+
+
+<TITLE>TKI - The Arts Online PD | Implementation | Waiting for Godot</TITLE>
+
+
+
+<link   type="text/css"
+
+        rel="stylesheet"
+
+        href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-6.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-6.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "godot;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("thewriter_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+
+
+
+</HEAD>
+
+
+<BODY 
+bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+
+
+
+
+
+
+
+<!-- TKI SHELL BEGINS --><a name="top"></a>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+
+
+
+
+<!-- GLOBAL NAV BEGINS -->
+
+
+
+<TR>
+
+<TD colspan="2" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../../../img/tab_tki_home_e.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../../../img/tab_tki_news_e.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../../../img/tab_tki_about_e.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../../../img/tab_tki_community_e.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../../../img/tab_tki_search_e.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../../../img/tab_tki_schools_e.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../../../img/tab_tki_interact_e.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../../../img/tab_tki_gateway_e.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../../../img/tab_tki_help_e.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></TD>
+
+</TR>
+
+
+
+<!-- GLOBAL NAV ENDS -->
+
+
+
+
+
+</TABLE>
+
+
+
+<TABLE bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="750">
+
+
+
+<TR>
+
+
+
+
+
+
+
+<!-- LANGUAGE BANNER BEGINS -->
+
+
+
+<TD width="750"><IMG border="0" height="20" hspace="0" src="../../../../../img/ban_nolang.gif" width="750"></TD>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+
+
+</TR>
+
+</TABLE>
+
+
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+
+
+<TABLE bgcolor=#ffffff border="0" cellpadding="0" cellspacing="0" width="750">
+
+	      
+
+	      <TR>
+
+		<TD width="750" class="content">
+
+
+
+				<!-- MAIN CONTENT BEGINS -->
+
+				
+
+ 
+<link rel="stylesheet" type="text/css" href="../../style/artspd.css">
+<style type="text/css">
+<!--
+
+-->
+</style>
+<table width="750" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td><img src="../../img/spacer.gif" width="550" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3"><img src="../../img/spacer.gif" width="15" height="23" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="FF6600"><img src="../../img/spacer.gif" width="1" height="19" hspace="0" vspace="0" border="0"></td>
+<td rowspan="3" bgcolor="EEEEEE" width="169"><a href="../../../../../../index_e.html"><img src="../../img/artspd_logo_sm.gif" width="169" height="86" hspace="0" vspace="0" border="0" alt="The Arts Online Professional Development"></a><img src="../../img/spacer.gif" 
+width="169" height="5" hspace="0" vspace="0" border="0"><a href="../../../../../../index_e.html"><img src="../../img/nav_home.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Home"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../index_e.html"><img src="../../img/nav_implementation.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Implementation"></a><img src="../../img/spacer.gif" 
+width="169" height="10" hspace="0" vspace="0" border="0">
+<p class="subnav-wrap">
+<a href="../policy_e.html" class="nav-implementation">Policy</a><br>
+<nobr><a href="../plans_e.html" class="nav-implementation">Curriculum plans</a><br></nobr>
+<nobr><a href="../assess_e.html" class="nav-implementation">Assessment &amp; reporting</a><br></nobr>
+<nobr><a href="../issues_e.html" class="nav-implementation">Teacher issues</a></nobr>
+</p>
+<img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../materials/index_e.html"><img src="../../img/nav_materials.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Teacher PD Materials"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../research/index_e.html"><img src="../../img/nav_research.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Research"></a><img src="../../img/spacer.gif" 
+width="169" height="15" hspace="0" vspace="0" border="0"><a href="../../events/index_e.html"><img src="../../img/nav_events.gif" 
+width="169" height="21" hspace="0" vspace="0" border="0" alt="Events"></a><BR>
+<BR>
+</td>
+</tr>
+
+<tr valign="top">
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td bgcolor="#0099FF" class="h-implementation" width="550"><img src="../../img/spacer.gif" width="4" height="18" hspace="0" vspace="0" border="0" align="left">Implementation</td>
+</tr>
+</table>
+<h2 class="h2-implementation">Waiting for Godot <span style="font-style: normal;">continued</span></h2>
+
+<p><a href="index_e.html">Introduction</a> | <a href="curriclinks_e.html">Curriculum links</a> | <strong>Writer</strong> | <a href="thewriter-activities_e.html">Activities: Writer</a> | <a href="worldplay_e.html">World of play</a> | <a href="worldplay-activities_e.html">Activities: World of play</a> | <a href="actors_e.html">Actors</a> | 
+<a href="actors-activities_e.html">Activities: Actors</a> | <a href="design_e.html">Design</a> | <a href="design-activities_e.html">Activities: Design</a> | <a href="extracts-references_e.html">Script extracts</a></p>
+
+<h1>The writer &#8211; Samuel Becket</h1>
+
+<p>Jump to > <a href="#1">Biography</a> / <a href="#2">About the play</a> / <a href="#3">References</a></p>
+
+<p style="float: right; margin-top: 30px;"><img src="images/thewriter.jpg" width="274" height="305" alt="Samuel Beckett" /><br />
+<span style="margin-left: 188px;"><strong>Samuel Beckett</strong></span></p><br />
+
+<a name="1"></a>
+<h3>Biography: Samuel Beckett</h3>
+
+<p>Samuel Beckett was born in Ireland in 1906. He graduated from Trinity College, Dublin, with majors in French and Italian.</p>
+
+<p>In 1928 he was appointed English lecturer at the famous &Eacute;cole Normale Sup&eacute;rieure in Paris, where he stayed until 1930. He returned 
+to Ireland briefly to obtain his Masters degree, then travelled widely throughout Europe between 1932 and 1937, before making Paris 
+his permanent home.</p>  
+
+<p>During World War II, Beckett became actively involved in the French resistance movement, until the arrest of several friends in 1942 
+obliged him to distance himself to escape Nazi detection. It was then that he moved to Vinchy and worked as a farm labourer.</p> 
+
+<p>Back in Paris after the war, Beckett soon became part of a group of avant-garde artists, developing a close friendship with 
+James Joyce.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></p>
+
+<p>It was in 1952 that Beckett wrote the work that would bring him international acclaim, <em>Waiting for Godot.</em></p> 
+
+<p>However, it had an inauspicious beginning. The premiere in Paris in 1953 was in a tiny theatre and with a cast of university students. 
+<a href="#3"><em>A student's guide to the plays of Samuel Beckett</em></a> (pp. 38&#8211;9) describes the initial reaction to the play:</p>
+
+<p style="margin-left: 30px;">The reactions of the Paris audience were mixed but the play immediately gained distinguished supporters. Jean Anouilh saw the opening 
+of Godot as being as important as the first production of a Pirandello play in Paris forty years earlier.</p>
+
+<p style="margin-left: 30px;">Jacques Audiberti wrote in <em>Arts</em> of 16 January 1953 that Godot seemed, 'a perfect work which deserves triumph,' and Armand Salacrou 
+claimed in the same magazine on 27 February that they had all been waiting 'for this play of our time.'</p>
+
+<p style="margin-left: 30px;">&#8230; At its first London production, the play was treated with bafflement and derision by the daily paper, but two important reviews 
+in the <em>Sunday Times</em> and <em>The Observer</em> &#8230; started the flow of enthusiasm, speculation, and controversy that has surrounded Godot ever 
+since. After the publication of the text by Faber in 1956, a review by GS Fraser in the <em>Times Literary Supplement</em> provoked a 
+correspondence lasting several weeks about the meaning of the play.</p>
+
+<p>Although best known for his plays, Beckett worked in a variety of literary forms, including novel, short story, poetry, and film, 
+radio and television scripts.</p>
+
+<p>That most of Beckett's important works, including Waiting for Godot, were originally written in French is surely a testament to 
+his outstanding literary ability.</p>
+
+<p>Beckett won the Nobel Prize for Literature at the age of 57, and died in his beloved Paris on 22 December 1989, aged 83.</p>
+
+<p><strong>Principal plays</strong><br />
+<em>Waiting for Godot</em> (in French 1952, in English 1954)<br />
+<em>Endgame</em> (in French 1957, in English 1958)<br />
+<em>All That Fall</em> (1957)<br />
+<em>Krapp's Last Tape</em> (in English 1959)<br />
+<em>Happy Days</em> (in English 1961)</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top"></a></p>
+
+
+<a name="2"></a>
+<h3>About the play</h3>
+
+<p><em>Waiting for Godot</em> is often described as a play in which nothing happens, twice. No doubt any audience will have some sympathy for 
+this assessment. The first and the second half of the play are remarkably similar and there is little if any dramatic movement.</p>
+
+<p>How is it, then, that this is considered one of the greatest plays of the twentieth century?</p>
+
+<p>The first question that undoubtedly springs to mind is 'Who or what is Godot?'</p>
+
+<img src="images/thewriter01.gif" width="269" height="302" align="right" alt="Image of Samuel Beckett" />
+
+
+<p>There are a number of equally valid answers to this question but, whoever or whatever Godot may be, the play is a fable about 
+existence. However, as Gunther Anders points out (in <a href="#3">Esslin (Ed.)</a>), <em>Waiting for Godot</em> is no ordinary fable.</p>
+
+<p>Essentially one could argue that <em>Waiting for Godot</em> is like a fable that lacks a moral or a lesson. Godot never arrives and, as such, 
+there are no sudden revelations about the meaning of life, about the existence of God, or even about death. The lesson of <em>Waiting for 
+Godot</em> is that there <strong>are</strong> no answers, that there is <strong>no</strong> moral.</p>
+
+<p>A good way to try and understand what a play may be about is to 
+look at each of the elements in the play, such as the setting, 
+action, dialogue, relationships, and themes. Each of these elements often helps 
+to elucidate the important themes of the work.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></p>
+
+<h4 style="margin-bottom: 0px;">Setting</h4>
+<p style="margin-top: 0px;">Both acts of the play take place in the same setting &#8211; a nondescript country road with a single tree. Also both acts happen at the 
+same time &#8211; the evening. Even though the second act happens the next day, there are no changes in the setting, which helps reinforce 
+a sense of stagnation. Just as there is no change in the setting, there is no dramatic movement in the play.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></p>
+
+<h4 style="margin-bottom: 0px;">Action</h4>
+
+<p style="margin: 0px;">There are a number of similarities between the action in the first and second acts:</p>
+
+<ul style="margin-top: 0px;">
+	<li>We learn that Estragon had just received a beating.</li>
+	<li>There is discussion about Estragon's feet and his boots.</li>
+	<li>There is discussion about Estragon's urination.</li>
+	<li>The characters consider suicide by hanging.</li>
+	<li>The two main characters meet Lucky, Pozzo, and a boy.</li>
+	<li>Both end in inaction, after the words, "Yes, let's go."</li>
+</ul>
+
+<p>We can say that <em>Waiting for Godot</em> does not have the linear structure that is typical of most drama, but instead has a circular 
+structure. Any movement that does occur brings the characters back to the same place. For example, we assume that, at the end of the 
+first act, Vladimir leaves but returns the next day and, as in the first act, Lucky and Pozzo arrive again in the second. For all 
+their movement, the characters are effectively stationary.</p>
+
+<h4 style="margin-bottom: 0px;">Dialogue</h4>
+
+<p style="margin-top: 0px;">Much like the action of the play, the dialogue is circular &#8211; it is inconclusive and repetitive. Whatever the characters talk about, 
+no firm conclusions are ever reached. They often consider the possibility of leaving but end up deciding that waiting is their only 
+sensible or real option. <a href="#3">J Blakey</a> explains:</p>
+
+<p style="margin-left: 30px;">The conversations &#8230; reach no logical conclusions. Perhaps the best illustration of the nature of the dialogue in the play is provided by 
+Lucky. In the first act, Lucky, at the command of his master, gives a long and justly well-known speech. It is in the form of a 
+quasi-theological address that, at its core, has an apparently serious statement to make. Eliminating the nonsensical repetitions 
+and comic irrelevancies, Lucky begins to make something like the following declaration:<br />
+<em>Given the existence &#8230; of a personal God &#8230; outside time &#8230; who loves us dearly &#8230; and suffers &#8230; with those who &#8230; are plunged in 
+torment &#8230; it is established beyond all doubt &#8230; that man &#8230;</em></p>
+
+<p style="margin-left: 30px;">From the point of view of coherence and logic, the speech ends there. The conclusion is never given; the 
+logical result of the assumptions (if any) never stated. The ultimate meaning is lost in a maze of irrelevance and incoherence &#8230; 
+Lucky's speech, which began with a solid core of meaning and degenerates into mere noises and finally silence, can be said to be 
+typical of much of the dialogue in <em>Waiting for Godot</em>.</p>
+
+<p>One might argue that the lack of meaning, of sensible dialogue, is a theme of the play, perhaps <strong>the</strong> theme of the play. Lucky's 
+failure to reconcile a personal God with man's suffering and torment is our spiritual crisis and, though it is by no means a new one, 
+it is the crisis of our existence.</p>
+
+<h4 style="margin-bottom: 0px;">Relationships</h4>
+
+<p style="margin-top: 0px;">Consider the 'Happy' exchange (<a href="extracts-references_e.html#1">Script extract 1</a>) between Estragon and Vladimir.</p>
+
+<p>The relationship between Vladimir and Estragon has no real effect on their lives. We cannot tell whether either of them benefits 
+from it in any way and it certainly brings about no real dramatic movement.</p>
+
+<p>At most, one might argue that they keep each other company but, as neither derive pleasure nor pain from the relationship, it seems 
+to be a pointless, meaningless one.</p> 
+
+<p>Initially it would appear that the relationship between Lucky and Pozzo is quite different. Grotesque as it may appear to the audience, 
+there is a clear structure to their relationship and Pozzo, at least, benefits from it. However, by the second act their relationship 
+is completely ambiguous and any trace of roles has all but vanished. Ultimately their relationship brings them as little benefit as 
+that of Vladimir and Estragon.</p>
+
+<p align="right"><a href="#top"><img src="../../../../../e/tki/img/back_2_top.gif" width="85" height="17" hspace="0" vspace="0" border="0" alt="Back to top" /></a></p>
+
+<h4 style="margin-bottom: 0px;">Themes</h4>
+<p style="margin-top: 0px;"><em>Waiting for Godot</em> is an enormously complex work. There can be no simple elucidation or explication of the text. One could argue that 
+this is the case with many important works because, if a simple explanation of the work's meaning were possible, it would probably 
+undermine the importance if not the very need for the work itself.</p>
+
+<p>In the case of <em>Waiting for Godot</em>, there is a veritable library of critical texts written about it. There is no single idea one can 
+point to in the play &#8211; it explores many important themes (such as religion, life, existence, God) simultaneously because there is a 
+complex interaction between these ideas that cannot be unravelled simply.</p>
+
+<p>As an example of this, and as an extract that might be considered generally representative of the play, consider Vladimir and 
+Estragon's discussion of the Crucifixion (<a href="extracts-references_e.html#2">Script extract 2</a>). </p>
+
+			<p>There are a number of ideas packed into this scene. What strikes one first 
+				and foremost is the role that chance plays in the lives of the 
+				thieves and, therefore, all people. Only two condemned men were 
+				executed with Jesus and so only those two were given the opportunity 
+				to receive absolution. One of those thieves abused Jesus and as 
+				a result was damned &#8211; the other came to Jesus' defence and was 
+				saved. That words uttered during a time of extreme pain and suffering 
+				could have such a significant impact on the lives of two ordinary 
+				men is nothing short of ridiculous &#8211; in fact, it is nothing 
+				short of absurd.</p>
+
+<p>However this is no isolated instance peculiar to the scriptures. Rather it serves as an observation that chance &#8211; simple 
+circumstance &#8211; can have an enormous and irreversible effect on our lives.</p> 
+
+<p>Furthermore, the disagreement in the scriptures about what actually happened serves to undermine our certainty in what is real. 
+As each second is lost we can only rely on memory to inform us of what happened and memory is fallible. Our grip on what is real is 
+tentative at best.</p>
+
+<p>Clearly a number of complex and related themes are all touched on in this simple exchange between the main protagonists.</p>
+
+<p style="margin-bottom:0;">Blakey argues:</p>
+
+<blockquote style="margin-top:0;">The play is a parable of &#8230; man's existence&#8230; He passes time. He hopes for something new, though hope is dispirited and lifeless. 
+He simply waits. What it is he awaits, he is not sure. But he feels compelled to wait.</blockquote>
+
+
+<a name="3"></a>
+<h3>References</h3>
+
+<p>Beckett, Samuel (1956, 1985 reprint). <em>Waiting for Godot</em>. London and Boston: Faber and Faber. <strong>Note:</strong> The page numbers for script extracts in this resource refer to this edition.</p>
+
+      <p>Blakey, J. (1976). <em>Waiting for Godot &#8211; Notes</em>. Toronto: Coles 
+        Publishing Ltd.</p>
+
+<p>Esslin, M. (Ed.), (1965). <em>Samuel Beckett &#8211; a collection of critical essays</em>. New Jersey: Prentice-Hall Publishers. <strong>Note:</strong> Includes essay by Gunther Anders.</p>
+
+<p>Fletcher, J. and Spurling, J. (1972). <em>Beckett: a study of his plays</em>. London: Eyre Methuen Publishers.</p>
+
+<p>Fletcher, B., Fletcher, J., Smith, B. and Bachem, W. (1978). <em>A student's guide to the plays of Samuel Beckett</em>. London and Boston: Faber and Faber.</p>
+
+
+<table width="100%" cellpadding="4" cellspacing="0" border="0" style="border: solid 1px #000;">
+	<tr>
+		<td>
+			<p style="margin-bottom: 0px;"><strong>Printing this page</strong><br />
+			To download and print this page, select from Word or PDF formats:</p>
+			<ul style="margin-top: 0px;">
+				<li><a href="docs/godot-the-writer.doc" target="_blank">Godot &#8211; Writer (Word, 129kb)</a></li>
+				<li><a href="pdfs/godot-the-writer.pdf" target="_blank">Godot &#8211; Writer (PDF, 80kb)</a> <a href="javascript:popUp(400,300,'PDF_info','../../pdf.html');"><img src="../../img/about_pdf4.gif" border="0" alt="About PDFs" align="middle" /></a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+
+<p align="right">next: <a href="thewriter-activities_e.html">Activities: Writer</a> | <a href="#top">Back to top</a></p>
+
+<p>&nbsp;</p>
+
+</td>
+</tr>
+</table>
+
+
+
+				<!-- MAIN CONTENT ENDS -->			
+
+		
+
+				
+</TD>
+
+			
+</TR>
+
+
+</TABLE>
+
+
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+
+
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+
+
+<br><br>
+
+
+
+
+<!-- TKI SHELL ENDS -->
+
+
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+

@@ -1,0 +1,346 @@
+		
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<head>
+<title>TKI - Hei tama tū tama</title>
+
+
+
+    <link rel="stylesheet" type="text/css" media="all" title="tki" href="../../../../../css/tki-2.css" />
+    <link rel="stylesheet" type="text/css" media="print" title="tki" href="../../../../../css/tki-print-2.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/exploring-te-ao-kori.css" />
+
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../../../inc/js_browser_detect-2.js"></script>
+<script type="text/javascript" src="../../../../../inc/js_general-2.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "javascript:;";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "heitama;All Communities";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("index_e.html");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript" src="../../../../assessment/parents/scripts/mov_clips.js" />
+ 
+<script type="text/javascript" src="../../../../../inc/tki-2.js"></script>
+
+</head>
+
+<body class="body-bg">
+
+<div><a id="top"></a></div>
+
+<div id="head-section">
+<!-- begin page heading -->
+
+<ul class="hide">
+    <li><a href="#content" accesskey="9" title="Skip TKI global navigation to content section">Skip TKI global navigation to content section</a></li>
+    <li><a href="#right-nav" accesskey="0" title="Skip TKI global navigation to local navigation">Skip TKI global navigation to local navigation</a></li>
+</ul>
+
+
+    <!-- top tabs -->
+    <div id="head-tabs">
+        <h2 class="hide">TKI global navigation</h2>
+            <ul>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="/" title="Return to TKI home and educational news">Home</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="1" title="Newsletters, news, and in the media">News</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="2" title="TKI's origins and development, site terms and conditions">About</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="3" title="Browse for information in a subject specific community">Communities</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="4" title="Search TKI for specific information">Search</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="5" title="Contact details for New Zealand Primary and Secondary schools">Schools</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="6" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="7" title="This area provides a gateway to online collections of references and resources">Gateway</a></li>
+                                                                                <li class="head-tab"><a href="javascript:;" accesskey="8" title="A guide to using TKI">Help</a></li>
+                        </ul>
+    </div> 
+
+
+
+
+
+
+    <div id="head-lang"></div>
+
+
+<!-- end page heading -->
+</div>
+
+
+    <div id="content-section">
+            
+    
+        <div id="right-nav">
+            <h2 class="hide">Hei tama tū tama local navigation</h2>
+                            
+<div id="backto">
+<p><a href="javascript:;" title="Link to Health and Physical Education Community">Health and Physical Education Community</a></p>
+<p><a href="javascript:;" title="Link to The Arts Commmunity">The Arts Commmunity</a></p>
+
+</div>
+
+<ul class="menu">
+<li><a href="javascript:;">Home – <em>Exploring Te&nbsp;Ao&nbsp;Kori</em></a></li>
+<li><a href="javascript:;">Sitemap – <em>Exploring Te Ao Kori</em></a></li>
+<li><a href="javascript:;">Introduction</a></li>
+<li><a href="javascript:;">What is te ao kori?</a></li>
+<li><a href="javascript:;">Planning learning experiences</a></li>
+<li><a href="javascript:;">Intended outcomes</a></li>
+<li><a href="javascript:;">Learning experiences</a>
+	<ul class="menu-sub">
+		<li class="menu-sub1-item"><a href="javascript:;">Our natural environment</a>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">Stick games</a>
+	</li>
+		<li class="menu-sub1-item"><a href="../index_e.html">Hand games</a>
+			<ul class="menu-sub">
+				<li class="menu-sub2-item"><a href="../hipitoitoi/index_e.html">Hipitoitoi</a></li>
+				<li class="menu-sub2-item"><a href="index_e.html" class="menu-current">Hei tama tū tama</a></li>
+				<li class="menu-sub2-item"><a href="../whakaropiropi/index_e.html">Whakaropiropi ai</a></li>
+				<li class="menu-sub2-item-last" ><a href="../tikanga_e.html">Exploring tikanga</a></li>
+			</ul>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">String games</a>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">Games and pastimes</a>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">Poi activities</a>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">Music and movement</a>
+	</li>
+		<li class="menu-sub1-item"><a href="javascript:;">Voice and movement</a>
+	</li>
+		<li class="menu-sub1-item-last" ><a href="javascript:;">Reflecting on te ao kori</a>
+	</li>
+	</ul>
+</li>
+<li><a href="javascript:;">Glossary</a></li>
+<li><a href="javascript:;">References</a></li>
+<li class="noline"><a href="javascript:;">Your feedback</a></li>
+ 
+</ul>
+                
+                    </div>
+        <!-- end right-nav -->
+
+                    <div id="head-banner-inside" class="banner-bg"><h1 class="hide">Exploring Te Ao Kori</h1></div>
+        
+        <div id="content">
+        <a name="content"></a>
+<!-- CONTENT STARTS HERE -->
+
+<!-- BREADCRUMBS START HERE -->
+<div id="breadcrumb">
+<ul>
+<li><strong>You are here:</strong></li>
+<li><a href="javascript:;">Home – <em>Exploring Te&nbsp;Ao&nbsp;Kori</em></a> &gt; </li>
+<li><a href="javascript:;">Learning experiences</a> &gt; </li>
+<li><a href="../index_e.html">Hand games</a> &gt; </li>
+<li>Hei tama tū tama</li>
+</ul>
+</div>
+
+
+<h2>Learning experience 3, Activity 2: Hei tama t&#363; tama </h2>
+
+<h3>Intended outcome(s)</h3>
+
+<p class="nobreak-bot">The students could:</p>
+<ul>
+	<li>participate in a wide range of ng&#257; mahi a te r&#275;hia (games and pastimes) activities and identify the factors that made the experience enjoyable (HPE 1 B2)</li>
+	<li>apply rules in hand games and demonstrate safe and fair play practices (HPE 2 B4)</li>
+	<li>identify and compare ways that playing games competitively can impact on friendships (HPE 2 C1)</li>
+</ul>
+
+<h3>Suggested approach</h3>
+
+<p>Hei Tama T&#363; Tama, like many early games, was designed to encourage mental dexterity.  Even though the winning was important, it was the way in which competitors won that was the focus.  The cheeky cajoling, the smile and grimace to put your opponent off were all part of the game.  The pedagogy is ako, in which games are always supportive.</p>
+
+<p>This game is played using the upper body, arms, and hands, ensuring a balanced position.</p>
+
+<h4>Positions</h4>
+<ul>
+	<li>Hands on hips.</li>
+	<li>Both forearms raised, fists clenched, and elbows to the side.</li>
+	<li>Right forearm raised with clenched fist, left hand on hip.</li>
+	<li>Left forearm raised with clenched fist, right hand on hip.</li>
+</ul>
+
+<div class="imgcenter">
+<img src="../../img/heitama1.jpg" width="100" height="114" alt="Hands on hips." /> <img src="../../img/heitama2.jpg" width="100" height="114" alt="Both forearms raised, fists clenched, and elbows to the side." /> <img src="../../img/heitama3.jpg" width="100" height="114" alt="Right forearm raised with clenched fist, left hand on hip." /> <img src="../../img/heitama4.jpg" width="100" height="114" alt="Left forearm raised with clenched fist, right hand on hip." />
+</div>
+
+<h4>Rules</h4>
+<ul>
+	<li>The defender begins the game by calling "Hei tama t&#363; tama" and places their hands in one of the four positions described above.</li>
+	<li>The challenger replies with "Hei tama t&#363; tama" and does a different action.</li>
+	<li>When one player catches the other doing the same action, that player calls "Hei tama t&#363; tama r&#257;!" and scores a point.</li>
+	<li>The winner of the point then re-starts the set, saying "Tahi.  Hei tama t&#363; tama", and play continues until a player is caught out again.</li>
+	<li>Each time a player scores a point, they re-start the set by saying the number of points they now have followed by "Hei tama t&#363; tama."</li>
+	<li>The game continues until one player reaches ten points &#8211; this completes the set.</li>
+</ul>
+
+<table class="videotbl">
+    <tr>
+        <td colspan="2" class="desc">
+            <p>Description required for Hei tama t&#363; tama video clip.</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="screenshot"> <img src="../../img/heitama-sm.jpg" width="115" height="65" alt="Screen shot of video clip" /> </td>
+        <td class="quicktime"> <a href="http://www.apple.com/quicktime/download/" title="Link to the Apple QuickTime website"><img src="../../img/video_get_qt.gif" width="88" height="31" alt="Quick Time Logo" /></a>
+            <p><a href="javascript:;"><strong>Help with QuickTime and viewing options</strong></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> <strong>Clip duration: 0:43</strong> </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="instruct"> Select the viewing option that best suits the speed of your Internet connection: </td>
+    </tr>
+    <tr>
+        <td> <strong>Download</strong> </td>
+        <td> <a href="javascript:qtPopUpNoVar('heitama_movie7488.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-audio.mov&size=audio',490,350,'QT');" title="View 28Kps movie in new window">28Kps</a> (audio) | <a href="javascript:qtPopUpNoVar('heitama_movied09d.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-small.mov&size=small',490,320,'QT');" title="View 56Kps movie in new window">56Kps</a> | <a href="javascript:qtPopUpNoVar('heitama_movieea54.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-medium.mov&size=medium',590,380,'QT');" title="View 128Kps movie in new window">128Kps</a> | <a href="javascript:qtPopUpNoVar('heitama_moviea585.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-large.mov&size=large',700,500,'QT');" title="View 256Kps movie in new window">256Kps</a> </td>
+    </tr>
+    <noscript>
+    <tr>
+        <td> <strong>Non-Javascript</strong> </td>
+        <td> <a href="heitama_movie7488.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-audio.mov&size=audio">28Kps</a> (audio) | <a href="heitama_movied09d.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-small.mov&size=small">56Kps</a> | <a href="heitama_movieea54.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-medium.mov&size=medium">128Kps</a> | <a href="heitama_moviea585.html?movie=/r/hpe/exploring_te_ao_kori/mov/hei-tama-tu-tama-large.mov&size=large">256Kps</a> </td>
+    </tr>
+    </noscript>
+    <tr>
+        <td colspan="2" class="instruct">If you have a slow, or dial-up, connection, select the 56Kps option.</td>
+    </tr>
+</table>
+
+<h4>Level 2</h4>
+<p>The students play the game Hei Tama T&#363; Tama in pairs, then form teams of four and play the game as a round robin.  Winners will be established within the group and the group will continue the games to determine rankings &#8211; one, two, three, or four.</p> 
+
+<p>The class will then split into new groups, based on their rankings of ones, twos, threes, and fours, and play the game as a round robin again.  The class will decide at what stage their games will terminate, for example, a group winner, one class winner.</p>
+
+<p>In their second set of groups, the students discuss and determine tactics and dynamics of the game, what it takes to win, what it takes to outsmart an opponent, how they feel when they win and/or lose.</p>
+
+
+
+<p class="top-new"><a href="#top">Back to top</a></p>
+
+<!--  CONTENT ENDS HERE  -->
+
+
+    </div><!-- end content -->
+
+</div><!-- end content-section -->
+
+<div id="footer">
+    <p class="footer-nav">
+                    <a href="javascript:;" title="Return to TKI home and educational news">Home</a>
+            |                    <a href="javascript:;" title="Newsletters, news, and in the media">News</a>
+            |                    <a href="javascript:;" title="TKI's origins and development, site terms and conditions">About</a>
+            |                    <a href="javascript:;" title="Browse for information in a subject specific community">Communities</a>
+            |                    <a href="javascript:;" title="Search TKI for specific information">Search</a>
+            |                    <a href="javascript:;" title="Contact details for New Zealand Primary and Secondary schools">Schools</a>
+            |                    <a href="javascript:;" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a>
+            |                    <a href="javascript:;" title="This area provides a gateway to online collections of references and resources">Gateway</a>
+            |                    <a href="javascript:;" title="A guide to using TKI">Help</a>
+                        </p>
+
+    <p class="footer-text">
+            &#169; Ministry of Education, Wellington, New Zealand. <a href="javascript:;" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+        This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5<br />
+	While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+    
+    </p>
+    
+
+    
+    
+    
+        
+</div>
+
+</body>
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>

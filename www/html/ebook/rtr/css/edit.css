@@ -1,0 +1,4 @@
+.highlighted-live {cursor: move;}
+.masked-mode .masked-live {border-top: 2px dashed blue;border-bottom: 2px dashed blue;}
+.masked-mode .masked-first {border-left: 2px dashed blue;}
+.masked-mode .masked-last {border-right: 2px dashed blue;}

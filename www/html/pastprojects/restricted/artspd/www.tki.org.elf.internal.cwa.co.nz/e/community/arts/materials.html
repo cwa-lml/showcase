@@ -1,0 +1,1085 @@
+
+		
+
+<html>
+
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+<head>
+<!-- top.php -->
+<script language="Javascript">
+
+function win() {
+
+window.open("http://www.tki.org.elf.internal.cwa.co.nz/r/kete/comms-stat/private/tkipad3.html","CS_PAD","height=380,width=380");
+
+}
+
+</script>
+
+<title>TKI - The Arts / Ng&#257; Toi Materials</title>
+
+<link	type="text/css"
+	rel="stylesheet"
+	href="http://www.tki.org.elf.internal.cwa.co.nz/e/inc/style-linked.css.php">
+
+
+
+
+	<meta name="DC.Title " lang="en" content="Arts/Nga Toi materials page">
+
+
+
+<meta name="DC.Creator" content="New Zealand Ministry of Education">
+
+
+
+	<meta name="DC.Subject" lang="en" content="Art, music, dance, drama, visual art, performing arts, education, student work, New Zealand, Te Kete Ipurangi, online teaching and learning material, resources, plans, Arts in the New Zealand Curriculum, Unwrapping the Arts, teaching plans, key collections, learning examples">
+
+
+
+	<meta name="DC.Description"  lang="en" content="The resources in the Arts and Nga Toi materials page are collections that have been developed to assist teaching and learning in the Arts in the New Zealand Curriculum. It contains a selection of learning examples including teaching and learning material, planning and assessment, elements and terms, links and resources.">
+
+
+
+	<meta name="DC.Publisher" content="CWA New Media">
+
+
+
+<meta name="DC.Date" scheme="W3CDTF" content="2003-07-08">
+
+
+
+	<meta name="DC.Language" scheme="RFC1766" content="en">
+
+
+
+	<meta name="DC.Language" scheme="RFC1766" content="mi">
+
+	
+
+	<meta name="DC.Rights" content="New Zealand Ministry of Education">
+
+<meta name="DC.Rights" content="http://www.minedu.govt.nz">
+
+
+
+<meta name="DC.Contributor" content="New Zealand Ministry of Education">
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- 
+///////////////////////
+// FUNCTIONS FOR TKI //
+///////////////////////
+
+
+/***************
+** POP-UP BOX **
+***************/
+
+function popWin(wid,high,labell,link) {
+	
+	labell = window.open(link,labell,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width="+wid+",height=350");
+	
+	labell.opener = window;
+	
+	if (labell.closed)
+	{
+		labell = window.open(link,labell,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width="+wid+",height="+high);
+	}
+	
+	else {
+		labell.focus();
+	}
+
+}
+
+
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "The Arts;All Communities;All ELAs";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+	searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("http://www.tki.org.elf.internal.cwa.co.nz/community/arts/materials_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	//alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</SCRIPT><STYLE TYPE="text/css">
+<!-- 
+.sidelink {	color:#ff6600;
+			font-family: arial mori, arial, helvetica, sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-decoration : none		
+			}
+			
+.sidedate {	color:#000000;
+			font-family: arial mori, arial, helvetica, sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-decoration : none;
+			background-color: #FFFF66
+			}
+
+.footdateps {
+	color:#666666;
+	font-family: "Times New Roman", Times, serif;
+	font-size: smaller;
+	text-decoration : none;
+}
+			
+			
+a:hover { color: #993300 }
+			
+.side { background-color: #ffffcc;
+		font-family: arial mori, arial, helvetica, sans-serif;
+
+ }
+
+.rhform {margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.sidebanner {
+color:#000000; 
+		font-family: arial mori, arial, helvetica, sans-serif;
+padding: 5px;
+ }
+
+.rhsubheading {
+		font-family: arial mori, arial, helvetica, sans-serif;
+ }
+
+.rhtext {
+		font-family: arial mori, arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+text-decoration:none;
+ }
+
+a.textlink {
+font-family: arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+text-decoration:none;
+}
+
+
+a.textlink:hover {
+color:#cc0000;
+text-decoration:none;
+}
+
+a.textlinkps {
+	font-family: "Times New Roman", Times, serif;
+	font-size: smaller;
+	color:#666666;
+	text-decoration:none;
+}
+
+
+a.textlinkps:hover {
+color:#666666;
+text-decoration:none;
+}
+
+
+a.rightnav {
+font-family: arial, helvetica, sans-serif;
+font-size:0.8em;
+color:#000000; 
+font-weight:bold;
+text-decoration:none;
+}
+
+
+a.rightnav:hover {
+color:#cc0000;
+text-decoration:none;
+}
+
+.sideborder { background-color: #ffffcc; 
+border: solid 1px #ffcc66;
+ }
+
+h2.toolbox {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    border-top: 1px solid #f60;
+    border-bottom: 2px solid #f60;
+    background: #fd6;
+    padding: 5px 6px 5px 6px;
+    margin: 6px 0 6px 0;
+}
+
+ul.toolbox {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+ul.toolbox li {
+    padding: 3px 10px 2px 10px;
+    font-size: .8em;
+}
+
+.bg_side { background-color: #FF6600 }
+
+.bg_side_link { background-color: white }
+
+.result-table th {
+	text-align: left;
+}
+
+/*
+Footer
+------------------
+*/
+
+#footer {
+    width: 750px;
+    border-bottom: 1px solid #fff;
+    clear: both;
+    background: #fff;
+    font-size: small;
+    
+}
+
+#footer .footer-text {
+    font-family: arial, helvetica, sans-serif;
+    color:#000;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: #fff;
+	padding: 0;
+}
+
+#footer .footer-nav {
+    text-align: left;
+    margin-top: 0;
+    border-top: 1px solid #f60;
+    border-bottom: 1px solid #f60;
+    background: #ffc;
+    padding: 4px 0 4px 30px;
+}
+
+#footer .footer-nav a {
+    font-family: arial, helvetica, sans-serif;
+    color: #000; 
+    text-decoration: none;
+}
+
+#footer .footer-nav a:visited {
+    color:#000;
+}
+
+#footer .footer-nav a:hover {
+    color:#000;
+    text-decoration:underline;
+}
+
+ Times New Roman, Times,  arial, helvetica, sans-serif
+// }
+?>
+
+//-->
+</STYLE>
+
+<script type="text/javascript">
+<!--
+
+    var LANG = 'e';
+
+// -->
+</script>
+<script type="text/javascript" src="../../../inc/js_browser_detect-4.js"></script>
+<script type="text/javascript" src="../../../inc/js_general-4.js"></script>
+
+<script type="text/javascript">
+<!-- 
+
+// The following 'Browse' class, 'my' object and 'makeLink' method, were copied from
+// htdocs/community/inc/browse_community_e.php. They are required for the 
+// 'Community Search' categorized searches (currently in the RHS nav on the community homepages).
+// NOTE: It is possible that they should not be included for any other pages.
+// JR 2004-09-10
+
+/***********************
+** BROWSE CONSTRUCTOR **
+***********************/
+
+function Browse(){
+
+	this.resultsPage = "http://www.tki.org.elf.internal.cwa.co.nz/e/results.php?";
+	this.type = '';
+	this.strand = '';
+	this.level = '';
+	this.coverage = '';
+	this.area =  "The Arts;All Communities;All ELAs";
+	
+	this.make = makeLink;
+	
+}
+
+var my = new Browse();
+
+
+function makeLink(){
+	
+	var searchstr;
+	var col = escape(':');
+	
+
+	// Modified PMC20050509
+	// language search information
+		searchstr = "1" + col + "elem=DC.Subject.Classification&" +
+				"1" + col + "val=" + escape(this.area) + "&" +
+				"1" + col + "valop=OR&";
+		
+
+
+
+				
+	if (this.type != '')
+	searchstr += "2" + col + "elem=DC.Type&" +
+				"2" + col + "val=" + escape(this.type) + "&" +
+				"2" + col + "valop=AND&";
+	
+	if (this.strand != '')
+	searchstr += "3" + col + "elem=DC.Subject.Keyword&" +
+				"3" + col + "val=" + escape(this.strand) + "&" +
+				"3" + col + "valop=AND&";
+
+	if (this.level != '' && this.level != 'All')
+	searchstr +="4" + col + "elem=TKI.Level&" +
+				"4" + col + "val=" + escape(this.level) + "&" +
+				"4" + col + "valop=OR&";
+
+	if (this.coverage != '' && this.coverage != 'All')
+	searchstr +="5" + col + "elem=DC.Coverage&" +
+				"5" + col + "val=" + escape(this.coverage) + "&" +
+				"5" + col + "valop=AND&";
+				
+	searchstr +="xsl_lang=en&" +
+				"xsl_path=" + escape("http://www.tki.org.elf.internal.cwa.co.nz/community/arts/materials_e.php");
+	
+	window.location.href = this.resultsPage + searchstr;
+	// alert(this.resultsPage + searchstr);
+
+}
+
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000000" link="#0000CC">
+<!-- /home/tki/htdocs , /home/tki/htdocs/community/arts/materials_e.php, /e/community/arts/materials.php -->
+<!-- TKI SHELL BEGINS -->
+<a name="top"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+<!-- GLOBAL NAV BEGINS -->
+<tr>
+<td colspan="2" valign="top" width="750"><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" target="_top"  title="Return to TKI home and educational news"><img src="../../../img/tab_tki_home_e-4.gif" name="home" height="30" width="84" vspace="0" hspace="0" border="0" alt="Home"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" target="_top" title="Newsletters, news, and in the media"><img src="../../../img/tab_tki_news_e-4.gif" name="news" width="83"  height="30" vspace="0" hspace="0" border="0" alt="News"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" target="_top" title="TKI's origins and development, site terms and conditions"><img src="../../../img/tab_tki_about_e-4.gif" name="about" width="83" height="30" vspace="0" hspace="0" border="0" alt="About"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" target="_top" title="Browse for information in a subject specific community"><img src="../../../img/tab_tki_communityHL_e-2.gif" name="community" width="84" height="30" vspace="0" hspace="0" border="0" alt="Communities"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" target="_top" title="Search TKI for specific information"><img src="../../../img/tab_tki_search_e-4.gif" name="search" width="83" height="30" vspace="0" hspace="0" border="0" alt="Search"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" target="_top" title="Contact details for New Zealand Primary and Secondary schools"><img src="../../../img/tab_tki_schools_e-4.gif" name="schools" width="83" height="30" vspace="0" hspace="0" border="0" alt="Schools"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" target="_top" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email."><img src="../../../img/tab_tki_interact_e-4.gif" name="interact" width="84" height="30" vspace="0" hspace="0" border="0" alt="Interact"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" target="_top" title="This area provides a gateway to online collections of references and resources"><img src="../../../img/tab_tki_gateway_e-4.gif" name="gateway" width="84" height="30" vspace="0" hspace="0" border="0" alt="Gateway"></a><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" target="_top" title="A guide to using TKI"><img src="../../../img/tab_tki_help_e-4.gif" name="help" width="82" height="30" vspace="0" hspace="0" border="0" alt="Help"></a></td>
+</tr>
+<!-- GLOBAL NAV ENDS -->
+</table>
+
+<!-- PLACE BANNER BEGINS -->
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+<tr>
+<td colspan="2" valign="top" width="750"><img border="0" hspace="0" alt="" height="50" src="img/ban_place_community_arts_e.gif" width="750"></td>
+</tr>
+<!-- PLACE BANNER ENDS -->
+
+
+<!-- NEW LOGIN STRIP BEGINS -->
+    <tr>
+	<td colspan="2" valign="top" width="750" bgcolor="#FF6600"><img border="0" hspace="0" src="../../tki/img/spacer.gif" height="1" width="750" alt=""></td>
+    </tr>
+    <tr>
+<td colspan="2" width="750" height="20" bgcolor="#FFB500" align="center"><table cellpadding="2" cellspacing="0" border="0">
+<tr>
+<td valign="middle"><form action="http://www.tki.org.elf.internal.cwa.co.nz/e/community/arts/materials.php" method="post" name="mylogin" class="rhform">&nbsp;<img src="../../tki/img/login_username.gif" align="absmiddle" width="70" height="16" hspace="0" vspace="0" border="0" alt="Username"><input type="text" name="tkiuser" size="20"><img src="../../tki/img/login_password.gif"  align="absmiddle" width="70" height="16" hspace="0" vspace="0" border="0" alt="Password"><input type="password" name="password" size="20"> &nbsp; &nbsp; <input type="image" src="../../tki/img/login_login.gif" align="absmiddle" width="80" height="16" alt="Login" border="0" name="submit">&nbsp;&nbsp;<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/kete/admin/kete_index.php"><img src="../../tki/img/kete_register.gif" align="absmiddle" width="80" height="16" alt="Need a password?  Register here" border="0" /></a><!-- 
+		<a href="javascript:void(login('yes'))"><img src="/e/tki/img/login_login.gif" align="absmiddle" width="80" height="16" alt="Login" border="0"></a> 
+		&#160; <a href="javascript:void(login('no'))"> <img src="/e/tki/img/login_no.gif" align="absmiddle" width="80" height="16" alt="No Thanks" border="0"></a>
+--></form></td>
+</tr>
+</table></td>
+</tr>
+<!-- NEW LOGIN STRIP ENDS -->
+
+
+<tr>
+<!-- LANGUAGE BANNER BEGINS -->
+<td width="750" colspan="2">
+<IMG border="0" alt="" height="20" hspace="0" src="../../img/ban_lang_e.gif" width="750" usemap="#LanguageMap"><map name="LanguageMap"><area shape="rect" coords="212,2,340,19" href="http://www.tki.org.elf.internal.cwa.co.nz/m/community/arts/materials.php" alt="Maori Language" title="Maori Language" target="_top"></map></td>
+
+<!-- LANGUAGE BANNER ENDS -->
+
+</tr>
+
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+
+<tr>
+
+
+
+<!-- MAIN CONTENT TABLE BEGINS -->
+
+	  <td valign=top width="580">
+	    <table border="0" cellpadding="10" cellspacing="0"	    hspace="0" vspace="0" width="100%">
+
+	      <tr>
+		<td class="content"><br>
+
+				<!-- MAIN CONTENT BEGINS -->
+
+
+
+
+
+
+ 
+
+<link rel="stylesheet" type="text/css" href="../../tki/help/inc/help.css">
+
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+
+<tr valign="top"> 
+
+<td width="451"><table border="0" cellspacing="0" cellpadding="0">
+<tr><td></td>
+<td colspan="3" bgcolor="#FF9900"><img src="../../../img/head1_pixspacer-2.gif" 
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+<tr valign="middle">
+<td width="3"><img src="../../../img/head1_pixspacer-2.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+<td bgcolor="#FF9900"><img src="../../../img/head1_pixspacer-2.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+
+<td background="../../../img/head1_backg-2.gif" bgcolor="#ffffcc" class="side"><font 
+size="3"><b><nobr> &#160; The Arts / Ng&#257; Toi Materials&#160;&#160;</nobr></b></font></td>
+
+<td bgcolor="#ff9900"><img src="../../../img/head1_pixspacer-2.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+<td width="3"><img src="../../../img/head1_pixspacer-2.gif"
+alt="" height="1" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+<tr>
+<td colspan="5" bgcolor="#ff3300"><img src="../../../img/head1_pixspacer-2.gif" 
+alt="" height="3" hspace="0" vspace="0" 
+border="0"></td>
+</tr>
+</table></td>
+
+
+
+
+
+<td width="111" align="center"><noscript><a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/site_alert.php">Site alert</a></noscript><a href="javascript:popUp(400,350, 'myWindow', 'http://www.tki.org.elf.internal.cwa.co.nz/e/tki/site_alert.php')" alt="Tell us about links to inappropriate material"><img src="../../tki/img/alert_button.gif" width="91" height="20" vspace="0" hspace="0" border="0" alt="Tell us about inappropriate material"></a>
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td colspan="2"><img src="../../../img/head1_pixspacer-2.gif" alt="" width="1" height="5" hspace="0" vspace="0" border="0"></td>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td align="left">&nbsp;</td>
+
+
+
+<td align="center"></td>
+
+
+
+ </tr>
+
+
+
+</table>
+
+<a href="#dance"><strong>Dance</strong></a> &#8211; <a href="#drama"><strong>Drama</strong></a> &#8211; <a href="#music"><strong>Music</strong></a> &#8211; <a href="#arts"><strong>Visual Arts</strong></a><p>
+
+
+<p>
+
+The resources in the following collections have been developed to assist teaching and learning in the <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/curriculum/statement/contents_e.php"><i>Arts in the New Zealand Curriculum</i></a>.
+
+</p>
+
+
+
+
+
+	<table border="0" width="100%" cellspacing="15" cellpadding="0">
+
+<tr valign="top"><td><img src="../../../community/arts/img/unwrapping_chooser.gif" width="96" height="96" usemap="#nav_arts" border="0" alt="Choose an arts area"></td>
+
+		<td>
+
+		<h2>Unwrapping the Arts</h2>
+
+<p>
+
+This collection unwraps the learning examples for levels 1-5 from <i>The Arts in the New Zealand Curriculum</i>.
+
+</p>
+
+
+
+<p>
+
+It provides useful advice for teachers on a selection of learning examples including comments on planning and assessment, elements and terms, links and resources.
+
+</p>
+
+		</td>
+
+	</tr>
+
+</table>
+
+
+
+<img src="../../arts/img/orange_hr_2px.gif" alt="" width="560" height="1" hspace="0" vspace="0" border="0">
+
+
+
+	
+
+<table border="0" width="100%" cellspacing="15" cellpadding="0">
+  <tr> 
+    <td colspan="2"><a name="dance"> 
+      <h2>Dance materials</h2>
+      </a> <p>Explore the following collections which have been developed to support 
+        the teaching and learning of dance in <i>The Arts in New Zealand Curriculum</i>.</p></td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/discover_dance/index_e.php"><img src="../../../community/arts/img/contemp_dance_thumb.jpg" alt="Discovering Dance - Teachers' Notes" width="48" height="48" border="0" title="Discovering Dance - Teachers' Notes"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/discover_dance/index_e.php"><strong>Discovering Dance &#8211; Teachers' Notes</strong></a><br>
+      These teachers' notes accompany the DVDs Discovering Dance, designed to help students in Aotearoa New Zealand learn and understand the discipline of dance. The two DVDs explore a range of dance genres/styles based around seven key themes originating from many different cultures.<br /> 
+      <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/discover_dance/index_e.php">http://www.tki.org.nz/r/arts/dance/discover_dance/index_e.php</a><br />
+</td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/index_e.php"><img src="../../../community/arts/img/arts-satya-thumb.gif" width="48" height="48" hspace="0" vspace="0" border="0" alt="Satyagraha"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/satyagraha/index_e.php"><strong>Satyagraha: Mahatma 
+      Gandhi's life in dance</strong></a><br />
+      This level 4 unit for the performing and visual arts, for years 7&#8211;10, 
+      is based around the life and times of Mahatma Gandhi. The unit incorporates 
+      contemporary Bollywood-style dance and drama into a four-scene play, which 
+      can be recorded or performed for an audience.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/satyagraha/index_e.php">http://www.tki.org.nz/r/arts/dance/satyagraha/index_e.php</a> 
+      <br /></td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/index_e.php"><img src="../../../community/arts/img/arts-dance_thumb.gif" width="48" height="48" hspace="0" vspace="0" border="0" alt="Dance Wall Charts"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/index_e.php"><strong>Dance Wall Charts Teacher 
+      Support Material</strong></a><br />
+      Eight large wall charts were developed by the Ministry of Education to support 
+      the teaching of dance as described in <i>The Arts in the New Zealand Curriculum</i>. 
+      This material provides dance exercises, discussion ideas and background 
+      information related to each chart.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/index_e.php">http://www.tki.org.nz/r/arts/dance/index_e.php</a><br /></td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/units6-8/"><img src="../../../community/arts/img/dance_units_thumb.gif" width="48" height="48" hspace="0" vspace="0" border="0" alt="Dance Units for Levels 6-8" title="Dance Units for Levels 6-8"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/units6-8/"><strong>Dance Units for Levels 6-8</strong></a><br />
+      Nine dance units developed to support the teaching of dance to students 
+      at levels 6, 7 and 8. These plans support the teaching of dance in <em>The 
+      Arts in the New Zealand Curriculum</em> for years 11-13.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/units6-8/">http://www.tki.org.nz/r/arts/dance/units6-8/</a><br /></td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/contemporary/index_e.php"><img src="../../../community/arts/img/contemp_dance_thumb.gif" alt="Contemporary Dance Aotearoa - Teachers Notes for Years 11-13" width="48" height="48" border="0" title="Contemporary Dance Aotearoa - Teachers Notes for Years 11-13"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/contemporary/index_e.php"><strong>Contemporary 
+      Dance Aotearoa &#8211; Teachers Notes for Years 11-13</strong></a><br>
+      These teachers notes accompany the video <em>Contemporary Dance Aotearoa 
+      &#8211; Three New Zealand Dance Works</em>, which features excerpts from 
+      performances that were staged in Auckland in 2003. The video allows students 
+      to view and interpret a variety of performances and to gain insights into 
+      how they were developed. Interviews with the choreographers will help students 
+      to understand the contexts of the dances and the choreographic process.<br /> 
+      <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/dance/contemporary/index_e.php">http://www.tki.org.nz/r/arts/dance/contemporary/index_e.php</a><br /></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" colspan=2> <p align=right><img src="../../arts/img/orange_hr_2px.gif" alt="" width="530" height="1" hspace="0" vspace="0" border="0"></p>
+      <p align=right><a href="#top"><img src="../../tki/img/back_2_top.gif" alt="Back to top" width="85" height="17" hspace="0" vspace="0" border="0"></a></p></td>
+  </tr>
+  <td colspan="2"> <a name="drama"> 
+    <h2>Drama materials</h2>
+    </a> <p>Explore the following collections which have been developed to support 
+      the teaching and learning of drama in <em>The Arts in New Zealand Curriculum</em>.</p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" height="77"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/radio/index_e.php"><img src="../../../community/arts/img/materials_radiodrama.gif" width="48" height="48" border="0" alt="Radio Drama: Bow Down Shadrach"></a></td>
+    <td height="77"> <p> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/radio/index_e.php"><strong>Radio Drama: <em>Bow Down Shadrach</em></strong></a><br />
+        This drama resource was developed around a Radio NZ radio play, <em>Bow Down Shadrach</em>, based on the novel of the same name by Joy Cowley. This resource supports the teaching of drama in <em>The Arts in the New Zealand Curriculum</em> for years 9 to 11, at level 6.
+<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/radio/index_e.php">http://www.tki.org.nz/r/arts/drama/radio/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" height="77"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/nzmonologues/index_e.php"><img src="../../../community/arts/img/materials_nzmono_icon.gif" width="48" height="48" border="0" alt="NZ Monologues"></a></td>
+    <td height="77"> <p> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/nzmonologues/index_e.php"><strong>NZ 
+        Monologues for Years 11&#8211;13</strong></a><br />
+        A selection of monologues from New Zealand plays for classroom drama performance 
+        and for study. This material supports the teaching of drama in <em>The 
+        Arts in New Zealand Curriculum</em> for years 11 to 13.<br>
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/nzmonologues/index_e.php">http://www.tki.org.nz/r/arts/drama/nzmonologues/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" height="93"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/hod_handbook/index_e.php"><img src="../../../community/arts/img/materials_hod_icon.gif" width="48" height="48" border="0" alt="Being Eve"></a></td>
+    <td height="93"> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/hod_handbook/index_e.php"><strong>HOD 
+        Handbook: Secondary Drama</strong></a><br>
+        A guide for heads of drama department providing information on programme 
+        planning, assessment, production, resources, and departmental policy and 
+        responsibilities. This material supports the teaching of drama in <em>The 
+        Arts in New Zealand Curriculum</em> for years 9 to 13.<br>
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/hod_handbook/index_e.php">http://www.tki.org.nz/r/arts/drama/hod_handbook/index_e.php</a> 
+      </p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/being_eve/index_e.php"><img src="../../../community/arts/img/materials_eve_icon.gif" width="48" height="48" border="0" alt="Being Eve"></a></td>
+    <td> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/being_eve/index_e.php"><strong>Being Eve</strong></a><br />
+        Developed around the teen drama television series <i>Being Eve</i>, this 
+        material supports the teaching and learning of drama in <i>The Arts in 
+        New Zealand Curriculum</i> for years 9 and 10.<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/being_eve/index_e.php">http://www.tki.org.nz/r/arts/being_eve/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/bellbird/index_e.php"><img src="../../../community/arts/img/materials_bellbird_icon.jpg" width="48" height="48" border="0" alt="The Bellbird"></a></td>
+    <td> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/bellbird/index_e.php"><strong>The Bellbird</strong></a><br />
+        Based on the development and performance of the recently-written historic 
+        New Zealand play <i>The Bellbird</i> by Stephen Sinclair, this material 
+        supports the teaching of drama in <i>The Arts in New Zealand Curriculum</i> 
+        for years 11 and 12.<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/bellbird/index_e.php">http://www.tki.org.nz/r/arts/drama/bellbird/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/baby/index_e.php"><img src="../../../community/arts/img/materials_baby_icon.jpg" width="48" height="48" border="0" alt="Play About the Baby"></a></td>
+    <td> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/baby/index_e.php"><strong>The Play about the 
+        Baby</strong></a><br />
+        A study of a professional staging of the contemporary American play <i>The 
+        Play about the Baby</i> by Edward Albee, this material supports the teaching 
+        of drama in <i>The Arts in New Zealand Curriculum</i> for years 12 and 
+        13.<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/baby/index_e.php">http://www.tki.org.nz/r/arts/drama/baby/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/travesties/index_e.php"><img src="../../../community/arts/img/materials_trav_icon.jpg" width="48" height="48" border="0" alt="Travesties"></a></td>
+    <td> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/travesties/index_e.php"><strong>Travesties</strong></a><br />
+        Based around the recent performance of the play <i>Travesties</i> by Tom 
+        Stoppard, this material supports the teaching of drama in <i>The Arts 
+        in New Zealand Curriculum</i> for years 12 and 13.<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/travesties/index_e.php">http://www.tki.org.nz/r/arts/drama/travesties/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/purapurawhetu/index_e.php"><img src="../../../community/arts/img/materials_pura_icon.jpg" width="48" height="48" border="0" alt="Purapurawhetu and the Pohutukawa Tree"></a></td>
+    <td> <p><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/purapurawhetu/index_e.php"><strong>Purapurawhet&#363; 
+        and the Pohutukawa Tree</strong></a><br />
+        Based on a comparison of the two New Zealand plays &#8211; <i>Purapurawhet&#363;</i> 
+        by Briar Grace-Smith and <i>The Pohutukawa Tree</i> by Bruce Mason &#8211; 
+        written 50 years apart and the bicultural landscape between them, this 
+        material supports the teaching of drama in <i>The Arts in New Zealand 
+        Curriculum</i> for years 12 and 13.<br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/drama/purapurawhetu/index_e.php">http://www.tki.org.nz/r/arts/drama/purapurawhetu/index_e.php</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" colspan=2> <p align=right><img src="../../arts/img/orange_hr_2px.gif" alt="" width="530" height="1" hspace="0" vspace="0" border="0"></p>
+      <p align=right><a href="#top"><img src="../../tki/img/back_2_top.gif" alt="Back to top" width="85" height="17" hspace="0" vspace="0" border="0"></a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" align="center"><div align="left"> <a name="music"> 
+        <h2>Music materials</h2>
+        </a> 
+        <p>Explore the following collections which have been developed to support 
+          the teaching and learning of music in <i>The Arts in New Zealand Curriculum</i>.</p>
+      </div></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic4/"><img src="../../../community/arts/img/into_music4_sm.gif" width="48" height="48" border="0" alt="Into Music 4"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic4/"><strong>Into Music 4</strong></a><br />
+      This site provides the online support material referred to in <em>Into Music 
+      4</em>, a resource for teachers of years 1&#8211;13 students. This online 
+      material contains 13 examples from schools of music planning, including 
+      school-wide music programmes, full unit plans, and learning ideas. There 
+      is also advice on assessment in music, and planning and reviewing a school 
+      arts policy.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic4/">http://www.tki.org.nz/r/arts/music/intomusic4/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic/"><img src="../../../community/arts/img/into_music_sml.gif" width="48" height="48" border="0" alt="Into Music 3"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic/"><strong>Into Music 3</strong></a><br />
+      Into Music 3, for teachers of students in years 7&#8211;10, is the third 
+      book and CD set in a series designed to support the music discipline of 
+      <i>The Arts in the New Zealand Curriculum</i>. From this web page you can 
+      download MIDI files that support the "Twelve-bar Blues" unit in the Playing 
+      chapter (page 51).<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/intomusic/">http://www.tki.org.nz/r/arts/music/intomusic/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/insideout/"><img src="../../../community/arts/img/insideout_sml.gif" width="48" height="48" border="0" alt="Music Inside Out"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/insideout/"><strong>Music Inside Out</strong></a><br />
+      Music Inside Out provides case studies of three community music education 
+      activities, representing the sorts of activities that typically complement 
+      classroom music curriculum programmes. The case studies celebrate students' 
+      musical achievement, and highlight how students and mentors share their 
+      passion for music with the world beyond the classroom.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/insideout/">http://www.tki.org.nz/r/arts/music/insideout/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/specialneeds/"><img src="../../../community/arts/img/special_needs_sml.gif" width="48" height="48" border="0" alt="Music and special needs"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/specialneeds/"><strong>Music and special needs</strong></a><br />
+      Music and special needs was written to help teachers and other carers to 
+      successfully involve children with special needs in regular classroom music, 
+      and to use the medium of music to encourage such children to develop many 
+      other important skills.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/music/specialneeds/">http://www.tki.org.nz/r/arts/music/specialneeds/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center" colspan=2> <p align=right><img src="../../arts/img/orange_hr_2px.gif" alt="" width="530" height="1" hspace="0" vspace="0" border="0"></p>
+      <p align=right><a href="#top"><img src="../../tki/img/back_2_top.gif" alt="Back to top" width="85" height="17" hspace="0" vspace="0" border="0"></a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="2" align="center"><div align="left"> <a name="arts"> 
+        <h2>Visual Arts</h2>
+        </a> 
+        <p>Explore the following collections which have been developed to support 
+          the teaching and learning of visual arts in <i>The Arts in New Zealand 
+          Curriculum</i>.</p>
+      </div></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/ans-westra/"><img src="../../../community/arts/img/ans_westra_thumb.jpg" width="48" height="48" border="0" alt="Ans Westra teacher and student resources"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/ans-westra/"><strong>Ans Westra teacher and student 
+      resources</strong></a> <p style="margin-top: 0;">This website has been developed 
+        to provide units of work: unit standard 9050 and achievement standards 
+        90021, 90471 and 90477. These units may be used as standalone units or 
+        in conjunction with a visit to the Ans Westra exhibition &#8211; Handboek: 
+        Ans Westra Photographs, the publication, <em>Handboek: Ans Westra photographs</em>, 
+        or the DVD, <em>Visible Evidence</em>.</p>
+      <p>The units may be used as an introduction to photography, as part of a 
+        year's photography course, or as a distinct unit within a Level 1 or 2 
+        general art programme. These materials may be modified to suit the needs 
+        of the students or adapted for use as part of a Level 3 programme. <br />
+        <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/ans-westra/">http://www.tki.org.nz/r/arts/visarts/ans-westra/</a></p></td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/portobello/"><img src="../../../community/arts/img/doll.gif" width="48" height="48" border="0" alt="The Portobello doll project"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/portobello/"><strong>The Portobello doll project</strong></a><br />
+      A series of richly woven learning experiences based around dolls is presented 
+      by Kerry Mackay, formerly a teacher at Portobello School in Dunedin. The 
+      project culminated in Dunedin artist Nicola Jackson's concept of a giant 
+      doll, called Portobello, whose skirt panels carried the school's students' 
+      visual narratives of family history to Te Papa and back.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/portobello/">http://www.tki.org.nz/r/arts/visarts/portobello/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/artauctions/"><img src="../../../community/arts/img/auctions.gif" width="48" height="48" border="0" alt="Art Auctions"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/artauctions/"><strong>Art auctions were just 
+      the beginning!</strong></a><br />
+      An amazingly visionary series of visual arts projects and events at Macandrew 
+      Intermediate School are described by specialist visual arts teacher Lesley 
+      Hirst. Practising artists are integral to the school's visual arts programme, 
+      which has transformed the culture and appearance of the school, engaged 
+      and enriched the wider Dunedin arts community, and is enthusiastically supported 
+      by local organisations and individuals.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/artauctions/">http://www.tki.org.nz/r/arts/visarts/artauctions/</a> 
+      <br />
+</td>
+  </tr>
+  <tr valign="top"> 
+    <td align="center"><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/matiti/"><img src="../../../community/arts/img/banner.gif" width="48" height="48" border="0" alt="The matiti banners"></a></td>
+    <td><a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/matiti/"><strong>The matiti banners </strong></a><br />
+      A spectacular series of mixed-media banners were the result of learning 
+      in, through, and about the visual arts in the contexts of science and M&#257;ori 
+      visual culture. Jane Winnie, Lecturer in the Visual Arts, provided this 
+      rich learning opportunity for language support teachers who were enrolled 
+      in the bilingual programme at the Wellington College of Education. They 
+      collaborated to create the banners on the theme of the matiti (growing seasons) 
+      of the traditional M&#257;ori calendar.<br /> <a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/visarts/matiti/">http://www.tki.org.nz/r/arts/visarts/matiti/</a> 
+      <br />
+</td>
+  </tr>
+</table>
+
+<p><img src="../../arts/img/orange_hr_2px.gif" alt="" width="560" height="1" hspace="0" vspace="0" border="0"></p>
+
+
+
+<p align="right"><a href="#top"><img src="../../tki/img/back_2_top.gif" alt="Back to top" width="85" height="17" hspace="0" vspace="0" border="0"></a></p>
+
+
+
+<map name="nav_arts">
+
+
+
+<area shape="poly" coords="49,49,69,36,92,35,91,63,72,61,49,49"  href="drama/drama_home.html" title="Drama" alt="Drama">
+
+
+
+<area shape="poly" coords="59,92,59,68,47,51,33,67,31,92,59,92"  href="music/music_home.html" title="Music" alt="Music">
+
+
+
+<area shape="poly" coords="48,47,61,29,62,6,35,5,34,28,48,47" href="dance/dance_home.html" title="Dance" alt="Dance">
+
+
+
+<area shape="poly" coords="46,49,30,37,4,35,4,64,31,62,46,49"  href="visarts/visarts_home.html" title="Visual Arts" alt="Visual Arts">
+
+
+
+</map>
+
+
+
+					</FONT>
+				<!-- MAIN CONTENT ENDS -->
+		
+				</TD>
+			</TR>
+</TABLE>
+
+
+<!-- MAIN CONTENT TABLE ENDS -->
+
+</TD>
+
+
+<!-- RIGHT SIDEBAR TABLE BEGINS -->
+
+<td valign="top" width="170" align="center" class="side">
+<table border="0" cellpadding="0" cellspacing="0" hspace="0" vspace="0" width="100%">
+	      
+	    <tr>
+		<td align="center">
+
+<!-- RIGHT SIDEBAR CONTENT BEGINS -->
+
+
+
+
+<div align="left"> 
+
+<IMG SRC="../../../community/arts/img/sidebar_h_arts_e-2.gif" ALT="The Arts / Ng&#257; Toi" TITLE="The Arts / Ng&#257; Toi" WIDTH="170" HEIGHT="26" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+<a href="index.html" title="Back to The Arts Community News page"><img src="img/sidebar_arts_backhm_e.gif" alt="Back to The Arts Community News page" width="170" height="46" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<!--key collections-->
+
+<IMG SRC="../../../community/arts/img/sidebar_arts_keycollect_e-2.gif" ALT="Key collections" TITLE="Key collections" WIDTH="170" HEIGHT="20" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="materials.html" title="The Arts / Ng&#257; Toi Materials"><img src="img/arts_materials_e.gif" alt="The Arts / Ng&#257; Toi Materials" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="../../../../index_e.html" title="The Arts Online PD"><img src="img/arts_onlinepd.gif" alt="The Arts Online PD" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/ngatoi/index_e.php" title="Ng&#257; Toi Online"><img src="img/nga_toi_online.gif" alt="Ng&#257; Toi Online" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/ssac/index_e.php" title="Secondary School Arts Coordinators Project"><img src="img/ssacp.gif" alt="Secondary School Arts Coordinators Project" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/arts/student_gallery/index_e.php" title="Student Gallery"><img src="img/sidebar_gallery_e.gif" alt="Student Gallery" width="170" height="32" hspace="0" vspace="0" border="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="12" hspace="0" vspace="0" border="0"><br>
+
+
+
+<!--assessment links-->
+
+<IMG SRC="../../../community/img/sidebar_assessment_banner_e.gif" ALT="Assessment" TITLE="Assessment" WIDTH="170" HEIGHT="26" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+
+
+<IMG SRC="../../../img/head1_pixspacer-2.gif" ALT="" WIDTH="170" HEIGHT="4" HSPACE="0" VSPACE="0" BORDER="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/r/assessment/exemplars/index_e.php" title="Exemplars"><IMG SRC="../../../community/img/sidebar_exemplars_e.gif" ALT="Exemplars" WIDTH="170" HEIGHT="32" HSPACE="0" VSPACE="0" BORDER="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/ncea/" title="National Certificate of Educational Achievement"><IMG SRC="../../../community/img/sidebar_assess_ncea_e.gif" ALT="National Certificate of Educational Achievement" WIDTH="170" HEIGHT="32" HSPACE="0" VSPACE="0" BORDER="0"></a><br>
+
+
+
+<img src="../../../img/head1_pixspacer-2.gif" alt="" width="170" height="4" hspace="0" vspace="0" border="0"><br>
+
+
+
+<img src="../../../img/sidebar_stripe_default.gif" alt="" width="170" height="3" hspace="0" vspace="0" border="0"><br>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- RIGHT SIDEBAR CONTENT ENDS -->
+
+				</td>
+			</tr>
+</table>
+</td>
+
+<!-- RIGHT SIDEBAR TABLE ENDS -->
+
+</tR>
+</table>
+
+<div id="footer">
+
+<p class="footer-nav">
+
+<a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/" title="Return to TKI home and educational news">Home</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/news/" title="Newsletters, news, and in the media">News</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/about/" title="TKI's origins and development, site terms and conditions">About</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/community/" title="Browse for information in a subject specific community">Communities</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/search/" title="Search TKI for specific information">Search</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/schools/" title="Contact details for New Zealand Primary and Secondary schools">Schools</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/interact/" title="Communicate via mailing lists, message boards, and discussion groups. Review a site or send us an email.">Interact</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/gateway/" title="This area provides a gateway to online collections of references and resources">Gateway</a> | <a href="http://www.tki.org.elf.internal.cwa.co.nz/e/tki/help/" title="A guide to using TKI">Help</a>
+
+</p>
+
+<p class="footer-text">
+&#169; Ministry of Education, Wellington, New Zealand. <a href="http://www.tki.org.elf.internal.cwa.co.nz/tki/about/terms.php" title="Terms and Conditions">Terms and conditions</a> | <a href="mailto:admin@tki.org.nz" title="Contact us">Contact us</a><br />
+This website is best viewed with a minimum of Netscape 6, Mozilla or Internet Explorer 5.<br />
+While websites linked from TKI have been screened for unsuitable content, the user is responsible for their own actions if using search engines on these sites.<br /><br />
+
+    
+    </p>
+
+</div>
+<br>
+<br>
+
+<!-- TKI SHELL ENDS -->
+
+</body>
+<!-- Mirrored from www.tki.org.elf.internal.cwa.co.nz by HTTrack Website Copier/3.x [XR&CO'2001] -->
+</html>
+ 
