@@ -1,0 +1,9 @@
+# Used to remove files from deployment using `git archive`
+# Refer:
+# http://pixelite.co.nz/article/using-git-attributes-exclude-files-your-release
+# http://git-scm.com/book/ch7-2.html
+#
+.gitattributes export-ignore
+.gitignore export-ignore
+.svn export-ignore
+.DS_Store export-ignore
