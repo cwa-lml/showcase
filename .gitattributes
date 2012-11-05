@@ -7,3 +7,4 @@
 .gitignore export-ignore
 .svn export-ignore
 .DS_Store export-ignore
+._* export-ignore
