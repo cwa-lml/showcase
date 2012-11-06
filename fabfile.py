@@ -93,7 +93,7 @@ def deploy(branch='master'):
     sudo_run('unzip -o -u ~/' + file + ' -d ' + deploy_path)
     
   # deploy external git sub-projects
-  deploy_external('moodle', 'MOODLE_23_STABLE', 'www/html')
+  deploy_external('moodle', 'MOODLE_23_STABLE', 'www/html/moodle')
   
   # set the permissions  
   setpermissions(deploy_path, user=user, group=group)
@@ -106,14 +106,13 @@ deploy an external project
 '''
 def deploy_external(ext_project, ext_branch, ext_path):
 
-	# change to the root directory of the external project 
-	local('cd ' + ext_path)
-
-	ext_file = ext_project + '.zip'
-	ext_tmp_file = '/tmp/' + ext_file
+  ext_file = ext_project + '.zip'
+  ext_tmp_file = '/tmp/' + ext_file
 	
-  # package up the file
-	build_package(ext_branch, ext_tmp_file)
+  # change to the root directory of the external project 
+  with lcd(ext_path):
+    # package up the file
+    build_package(ext_branch, ext_tmp_file)
 
   # if we are copying to the remote server then
   # push the archive to that server
@@ -126,9 +125,6 @@ def deploy_external(ext_project, ext_branch, ext_path):
     sudo_run('unzip -o -u ' + ext_tmp_file + ' -d ' + deploy_path + '/' + ext_path)
   else:
     sudo_run('unzip -o -u ~/' + ext_file + ' -d ' + deploy_path + '/' + ext_path)
-
-	# change back to the previous directory 
-	local('cd -')
 
 
 '''
