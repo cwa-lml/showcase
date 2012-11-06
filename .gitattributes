@@ -8,3 +8,7 @@
 .svn export-ignore
 .DS_Store export-ignore
 ._* export-ignore
+
+# Ignore the deployment script
+fabfile.py
+fabfile.pyc
