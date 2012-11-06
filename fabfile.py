@@ -1,12 +1,15 @@
-# Run for either localhost or remote:
-#   fab localhost deploy
-#   fab remote deploy
-#   fab remote:jason.darwin@showcase.learningmedia.co.nz deploy
+# How to run this script:
+#   For localhost:
+#     fab localhost deploy
+#   For remote:
+#     fab remote deploy
+#   or
+#     fab remote:jason.darwin@showcase.learningmedia.co.nz deploy
 
 import os
 from fabric.operations import local as lrun
 from fabric.api import *
-from fabric.contrib import files as rfiles
+from fabric.contrib import files as files
 
 '''
 helpful variables
@@ -15,7 +18,10 @@ helpful variables
 # name of the package
 project = "showcase"
 
-# name of our remote host
+# path to deploy to
+deploy_path = "/var/www/" + project
+
+# default name of our remote host
 remote_host = "showcase.learningmedia.co.nz"
 
 # user
@@ -29,9 +35,6 @@ git = "/usr/bin/git"
 
 # file name
 file = project + ".zip"
-
-# pat to deploy to
-deploy_path = "/var/www"
 
 # local temp file
 tmp_file = "/tmp/" + file
@@ -88,6 +91,9 @@ def deploy(branch='master'):
   if env.run is not lrun:
     put(tmp_file)
 
+  # Make deploy path if this is the initial deployment
+  sudo_run('mkdir -p ' + deploy_path)
+
   # if we are copying to local then set local path
   # otherwise unzip from where we uploaded the file
   if env.run is lrun:
@@ -133,15 +139,8 @@ def deploy_external(ext_project, ext_branch):
   # Create symlinks for any config files.
   # These are stored in .config/<project>
   target = ext_project + '/config.php'
-  if env.run is lrun:
-    if path.isfile(path):
-      config_exists = True
-  else:
-    if rfiles.exists(deploy_path + '/.config/' + target):
-      config_exists = True
-
-  if config_exists:
-  	source = '../.config/' + target
+  if files.exists(deploy_path + '/.config/' + target):
+    source = '../.config/' + target
     sudo_run('ln -s ' + source + ' ' + target)
 
 

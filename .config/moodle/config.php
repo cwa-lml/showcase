@@ -1,5 +1,8 @@
 <?php  // Moodle configuration file
 
+// Note that this file is deployed by the main fabfile.py, symlinked to 
+// the project directory.
+
 unset($CFG);
 global $CFG;
 $CFG = new stdClass();
