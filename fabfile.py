@@ -6,6 +6,7 @@
 import os
 from fabric.operations import local as lrun
 from fabric.api import *
+from fabric.contrib import files as rfiles
 
 '''
 helpful variables
@@ -30,7 +31,7 @@ git = "/usr/bin/git"
 file = project + ".zip"
 
 # pat to deploy to
-deploy_path = "/var"
+deploy_path = "/var/www"
 
 # local temp file
 tmp_file = "/tmp/" + file
@@ -46,6 +47,7 @@ Set up some variables to use locally
 '''  
 def localhost():
   env.run = lrun
+  env.cd = lcd
   env.hosts = ["localhost"]
 
 '''
@@ -53,6 +55,7 @@ Set up some variables to use if connecting remotely
 '''
 def remote(host=remote_host):
   env.run = run
+  env.cd = cd
   env.hosts = [host]
 
 '''
@@ -93,7 +96,7 @@ def deploy(branch='master'):
     sudo_run('unzip -o -u ~/' + file + ' -d ' + deploy_path)
     
   # deploy external git sub-projects
-  deploy_external('moodle', 'MOODLE_23_STABLE', 'www/html/moodle')
+  deploy_external('moodle', 'MOODLE_23_STABLE')
   
   # set the permissions  
   setpermissions(deploy_path, user=user, group=group)
@@ -101,16 +104,17 @@ def deploy(branch='master'):
   # clean up any unneeded files
   cleanup()
 
+
 '''
 deploy an external project
 '''
-def deploy_external(ext_project, ext_branch, ext_path):
+def deploy_external(ext_project, ext_branch):
 
   ext_file = ext_project + '.zip'
   ext_tmp_file = '/tmp/' + ext_file
 	
   # change to the root directory of the external project 
-  with lcd(ext_path):
+  with lcd(ext_project):
     # package up the file
     build_package(ext_branch, ext_tmp_file)
 
@@ -122,9 +126,23 @@ def deploy_external(ext_project, ext_branch, ext_path):
   # if we are copying to local then set local path
   # otherwise unzip from where we uploaded the file
   if env.run is lrun:
-    sudo_run('unzip -o -u ' + ext_tmp_file + ' -d ' + deploy_path + '/' + ext_path)
+    sudo_run('unzip -o -u ' + ext_tmp_file + ' -d ' + deploy_path + '/' + ext_project)
   else:
-    sudo_run('unzip -o -u ~/' + ext_file + ' -d ' + deploy_path + '/' + ext_path)
+    sudo_run('unzip -o -u ~/' + ext_file + ' -d ' + deploy_path + '/' + ext_project)
+
+  # Create symlinks for any config files.
+  # These are stored in .config/<project>
+  target = ext_project + '/config.php'
+  if env.run is lrun:
+    if path.isfile(path):
+      config_exists = True
+  else:
+    if rfiles.exists(deploy_path + '/.config/' + target):
+      config_exists = True
+
+  if config_exists:
+  	source = '../.config/' + target
+    sudo_run('ln -s ' + source + ' ' + target)
 
 
 '''
