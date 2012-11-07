@@ -9,7 +9,7 @@
 import os
 from fabric.operations import local as lrun
 from fabric.api import *
-from fabric.contrib import files as files
+from fabric.contrib import files
 
 '''
 helpful variables
@@ -19,16 +19,10 @@ helpful variables
 project = "showcase"
 
 # path to deploy to
-deploy_path = "/var/www/" + project
+deploy_path = "/var/www/html/" + project
 
 # default name of our remote host
 remote_host = "showcase.learningmedia.co.nz"
-
-# user
-user = "root"
-
-# group
-group = "apache"
 
 # path to git
 git = "/usr/bin/git"
@@ -53,6 +47,7 @@ def localhost():
   env.cd = lcd
   env.hosts = ["localhost"]
 
+
 '''
 Set up some variables to use if connecting remotely
 '''
@@ -60,6 +55,7 @@ def remote(host=remote_host):
   env.run = run
   env.cd = cd
   env.hosts = [host]
+
 
 '''
 run the command, this is a wrapper as sudo on localhost is poo
@@ -69,6 +65,7 @@ def sudo_run(cmd):
     env.run('sudo ' + cmd)
   else:
     sudo(cmd)
+
 
 '''
 package up the client with git archive
@@ -105,10 +102,10 @@ def deploy(branch='master'):
   deploy_external('moodle', 'MOODLE_23_STABLE')
   
   # set the permissions  
-  setpermissions(deploy_path, user=user, group=group)
+  setpermissions(deploy_path)
 
   # clean up any unneeded files
-  cleanup()
+  cleanup(file)
 
 
 '''
@@ -139,26 +136,37 @@ def deploy_external(ext_project, ext_branch):
   # Create symlinks for any config files.
   # These are stored in .config/<project>
   target = ext_project + '/config.php'
-  if files.exists(deploy_path + '/.config/' + target):
-    source = '../.config/' + target
-    sudo_run('ln -s ' + source + ' ' + target)
+  if env.run is lrun:
+    if os.path.exists(deploy_path + '/.config/' + target):
+      source = '../.config/' + target
+      sudo_run('ln -s ' + source + ' ' + deploy_path + '/' + target)
+  else:
+    if files.exists(deploy_path + '/.config/' + target):
+      source = '../.config/' + target
+      sudo_run('ln -s ' + source + ' ' + deploy_path + '/' + target)
+
+  # clean up any unneeded files
+  cleanup(ext_file)
 
 
 '''
 set permissions
 '''
-def setpermissions(path, user, group):
+def setpermissions(path):
   # sudo_run('chown -R ' + user + ':' + user + ' ' + deploy_path)
-  chown(path, user, group, True, True)
+  if env.run is lrun:
+    chown(path, 'root', 'wheel', True, True)
+  else:
+    chown(path, 'root', 'apache', True, True)
 
 
 '''
 remove any unneeded files
 '''
-def cleanup():
-  local('rm -f ' + tmp_file)
+def cleanup(file_to_remove):
+  local('rm -f /tmp/' + file_to_remove)
   if env.run is not lrun:
-    sudo_run('rm -f ~/' + file)
+    sudo_run('rm -f ~/' + file_to_remove)
 
 
 def chown(path, owner=None, group=None, recursive=False, sudo=False):
