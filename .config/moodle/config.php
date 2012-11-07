@@ -27,7 +27,7 @@ $CFG->directorypermissions = 02777;
 
 $CFG->passwordsaltmain = 'CR,+h6bf@I0oxO7@eXkfJ,>_';
 
-require_once(dirname(__FILE__) . '/lib/setup.php');
+require_once(dirname(__FILE__) . '/../../moodle/lib/setup.php');
 
 // There is no php closing tag in this file,
 // it is intentional because it prevents trailing whitespace problems!
