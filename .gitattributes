@@ -14,4 +14,4 @@ fabfile.py export-ignore
 fabfile.pyc export-ignore
 
 # Ignore pastprojects: it's huge and not updated often
-pastprojects/ export-ignore
+pastprojects export-ignore
