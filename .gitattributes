@@ -10,8 +10,8 @@
 ._* export-ignore
 
 # Ignore the deployment script
-fabfile.py
-fabfile.pyc
+fabfile.py export-ignore
+fabfile.pyc export-ignore
 
 # Ignore pastprojects: it's huge and not updated often
-pastprojects
+pastprojects/ export-ignore
