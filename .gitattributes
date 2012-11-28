@@ -12,3 +12,6 @@
 # Ignore the deployment script
 fabfile.py
 fabfile.pyc
+
+# Ignore pastprojects: it's huge and not updated often
+pastprojects
