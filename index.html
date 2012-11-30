@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title>index</title>
+		<title>Learning Media Showcase</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<style type="text/css" media="screen">
 		html, body { height:100%; background-color: #ffffff;}
@@ -12,61 +12,173 @@
 			font-family: sans-serif;
 			background: #ffeebb;
 		}
-		#content {
-			text-align: center;
-			  width: 830px ;
-			  margin-left: auto ;
-			  margin-right: auto ;
-			  background: #ffffff;
+		#content, #logo {
+            text-align: center;
+            width: 830px ;
+            margin-left: auto ;
+            margin-right: auto ;
+            background: #ffffff;
 		  }
-		.row {
-			height: 280px;
-			padding: 0px 0 20px 20px;
-		}
-		.thumbnail {
+        .thumbnail_container {
 			float: left;
+			width:  180px;
+			margin-right: 20px;
+            padding-bottom: 20px;
+        }
+        .thumbnail_container:nth-child(4n+1) {
+            padding-left: 20px;
+        }
+		.thumbnail {
 			border: solid 1px black;
 			height: 280px;
 			width:  180px;
-			margin-right: 20px;
 			background: #dddddd;
 		}
 		.front {
 			width: 180px;
 		}
+        .caption {
+            margin-top: 0;
+        }
 		.caption a {
 			text-decoration: none;
 		}
+        .btcf:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
 		</style>
+		
+        <!-- Use the cloudflare CDN with a fallback to local scripts if needed. -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/lib/jquery-1.8.3.min.js">\x3C/script>')</script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/lib/underscore-1.4.2.min.js">\x3C/script>')</script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/lib/backbone-0.9.2.min.js">\x3C/script>')</script>
+    
 	</head>
-	<body>
-		<div id="content" align="center">
+	<body class="btcf">
+		<div id="logo">
 			<img src="logo.jpg" alt="logo" />
-			<div class="row">
-				<div id="t1" class="thumbnail" style="background: #ffffff;">
-					<p class="caption"><a href="presentations/"><b>Presentations</b></a></p>
-				</div>
-				<div id="t2" class="thumbnail" style="background: #ffffff;">
-					<p class="caption"><a href="ebook/"><b>eBooks</b></a></p>
-				</div>
-				<div id="t3" class="thumbnail" style="background: #ffffff;">
-                                        <p class="caption"><a href="internal/"><b>Internal</b></a></p>
-				</div>
-				<div id="t4" class="thumbnail" style="background: #ffffff;">
-                                        <p class="caption"><a href="pastprojects/"><b>Past Projects</b></a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div id="t5" class="thumbnail" style="background: #ffffff;">
-                                        <p class="caption"><a href="moodle/"><b>Moodle</b></a></p>
-				</div>
-				<div id="t6" class="thumbnail">
-				</div>
-				<div id="t7" class="thumbnail">
-				</div>
-				<div id="t8" class="thumbnail">
-				</div>
-			</div>
 		</div>
+
+		<div id="content" align="center" class="btcf">
+		</div>
+
+        <script type="text/template" id="tile_template">
+          <div class="thumbnail_container">
+              <div class="thumbnail">
+                <a href="<%= url %>">
+                    <% if (typeof(image) != 'undefined') { %>
+                        <img class="front" src="<%= image %>" />
+                    <% } %>
+                </a>
+                <p class="caption"><a href="<%= url %>"><%= name %></a></p>
+              </div>
+            </div>
+        </script>
+
+		<script>
+            (function($){
+                // We'll be using Backbone.
+                // A good tutorial for this is to be found at:
+                // http://net.tutsplus.com/sessions/build-a-contacts-manager-using-backbone-js/
+                
+                /* Our main app variable */
+                var app;
+
+                /* Define our model */
+                var Tile = Backbone.Model.extend({
+                    defaults: {
+                        name: 'undefined'
+                    }
+                });
+
+                /* Define our collection */
+                var Tiles = Backbone.Collection.extend({
+                    model: Tile,
+                    url: './categories.json',
+                    initialize: function(models, options){
+                        typeof(options) != 'undefined' ? this.section = options.section : this.section = '';
+                    },
+                    /* We have to override the fetch method, as we have no server-side method
+                    ** of filtering our data.
+                    ** Therefore, we want to do the filtering post-fetch
+                    */
+                    fetch: function() {
+                        typeof(options) != 'undefined' || (options = {});
+                        options.success = this.postProcess;
+                        options.error = this.handleError;
+
+                        return Backbone.Collection.prototype.fetch.call(this, options);                        
+                    },
+                    postProcess : function (obj, collections) {
+                        /* Initialise our view with our collection of models */
+                        app = new TilesView(collections[obj.section]);
+                    }, 
+                    handleError : function (obj, data) {
+                        console.log(arguments);
+                        alert("error"); 
+                    }
+                });
+
+                /* Define our view */
+                var TilesView = Backbone.View.extend({
+                    el: $('#content'),
+                    initialize: function(tiles) {
+                        this.$el.empty();
+                        this.collection = new Tiles(tiles);
+                        this.render();
+                    },
+                    render: function(){
+                        var that = this;
+                        _.each(this.collection.models, function(tile){
+                            var template = _.template( $('#tile_template').html(), tile.toJSON() );
+                            that.$el.append(template);
+                        }, this);
+                    },
+                    events: {
+                    }
+                });
+
+                /* Define our router */
+                /* Note that we only need to worry about #routes */
+                var TilesRouter = Backbone.Router.extend({
+                    routes: {
+                        ''              : 'index',
+                        'ebook'         : 'ebook',
+                        'presentations' : 'presentations',
+                        'internal'      : 'internal'
+                    },
+                    index: function(){
+                        this.getTiles('categories');
+                    },
+                    ebook: function(){
+                        this.getTiles('ebooks');
+                    },
+                    presentations: function(){
+                        this.getTiles('presentations');
+                    },
+                    internal: function(){
+                        this.getTiles('internal');
+                    },
+                    getTiles: function(section) {
+                        var routerTiles = new Tiles([], {'section': section});
+                        routerTiles.fetch();
+                    }
+                });
+
+                /* Kick-off the app. */
+                var tilesRouter = new TilesRouter();                        
+                Backbone.history.start();
+                        
+            })(jQuery);
+
+		</script>
+
 	</body>
 </html>

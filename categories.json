@@ -1,0 +1,27 @@
+{ "categories": 
+    [
+        { "name": "ebook",            "url": "#ebook"},
+        { "name": "presentations",    "url": "#presentations"},
+        { "name": "pastprojects",     "url": "categories/pastprojects"},
+        { "name": "moodle",           "url": "categories/moodle"},
+        { "name": "internal",         "url": "#internal"}
+    ],
+
+    "ebooks":
+    [
+        { "name": "Bubbles",          "url": "categories/ebook/bubbles",       "image": "categories/ebook/bubbles/front.jpg"},
+        { "name": "He Kurī",          "url": "categories/ebook/he-kuri",       "image": "categories/ebook/he-kuri/front.jpg"},
+        { "name": "Ready to Read",    "url": "categories/ebook/rtr",           "image": "categories/ebook/rtr/front.jpg"},
+        { "name": "Eke Panuku",       "url": "categories/ebook/eke_panuku",    "image": "categories/ebook/eke_panuku/front.jpg"}
+    ],
+
+    "presentations":
+    [
+        { "name": "2012-10-30<br />Brownbag<br />Html interactivity", "url": "categories/presentations/2012_10_30_brownbag_html_interactivity", "image": "categories/presentations/2012_10_30_brownbag_html_interactivity/front.jpg"},
+        { "name": "2012-11-26<br />Brownbag<br />NDF 2012</b>",       "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",           "image": "categories/presentations/2012_11_26_brownbag_ndf_2012/front.jpg"}
+    ],
+    
+    "internal":
+    [
+    ]
+}
