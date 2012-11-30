@@ -99,7 +99,7 @@ def deploy(branch='master'):
     sudo_run('unzip -o -u ~/' + file + ' -d ' + deploy_path)
     
   # deploy external git sub-projects
-  deploy_external('categories/moodle' 'moodle', 'MOODLE_23_STABLE')
+  deploy_external('categories/moodle', 'moodle', 'MOODLE_23_STABLE')
   
   # set the permissions  
   setpermissions(deploy_path)
@@ -138,11 +138,11 @@ def deploy_external(ext_path, ext_project, ext_branch):
   target = ext_path + '/config.php'
   if env.run is lrun:
     if os.path.exists(deploy_path + '/.config/' + target):
-      source = '../.config/' + target
+      source = '../../.config/' + target
       sudo_run('ln -s ' + source + ' ' + deploy_path + '/' + target)
   else:
     if files.exists(deploy_path + '/.config/' + target):
-      source = '../.config/' + target
+      source = '../../.config/' + target
       sudo_run('ln -s ' + source + ' ' + deploy_path + '/' + target)
 
   # clean up any unneeded files
