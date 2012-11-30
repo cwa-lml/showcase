@@ -99,7 +99,7 @@ def deploy(branch='master'):
     sudo_run('unzip -o -u ~/' + file + ' -d ' + deploy_path)
     
   # deploy external git sub-projects
-  deploy_external('moodle', 'MOODLE_23_STABLE')
+  deploy_external('categories/moodle' 'moodle', 'MOODLE_23_STABLE')
   
   # set the permissions  
   setpermissions(deploy_path)
@@ -111,13 +111,13 @@ def deploy(branch='master'):
 '''
 deploy an external project
 '''
-def deploy_external(ext_project, ext_branch):
+def deploy_external(ext_path, ext_project, ext_branch):
 
   ext_file = ext_project + '.zip'
   ext_tmp_file = '/tmp/' + ext_file
 	
   # change to the root directory of the external project 
-  with lcd(ext_project):
+  with lcd(ext_path):
     # package up the file
     build_package(ext_branch, ext_tmp_file)
 
@@ -129,13 +129,13 @@ def deploy_external(ext_project, ext_branch):
   # if we are copying to local then set local path
   # otherwise unzip from where we uploaded the file
   if env.run is lrun:
-    sudo_run('unzip -o -u ' + ext_tmp_file + ' -d ' + deploy_path + '/' + ext_project)
+    sudo_run('unzip -o -u ' + ext_tmp_file + ' -d ' + deploy_path + '/' + ext_path)
   else:
-    sudo_run('unzip -o -u ~/' + ext_file + ' -d ' + deploy_path + '/' + ext_project)
+    sudo_run('unzip -o -u ~/' + ext_file + ' -d ' + deploy_path + '/' + ext_path)
 
   # Create symlinks for any config files.
-  # These are stored in .config/<project>
-  target = ext_project + '/config.php'
+  # These are stored in .config/<path_to_project>
+  target = ext_path + '/config.php'
   if env.run is lrun:
     if os.path.exists(deploy_path + '/.config/' + target):
       source = '../.config/' + target
