@@ -1,10 +1,10 @@
 { "categories": 
     [
-        { "name": "ebook",            "url": "#ebook"},
-        { "name": "presentations",    "url": "#presentations"},
-        { "name": "pastprojects",     "url": "categories/pastprojects"},
-        { "name": "moodle",           "url": "categories/moodle"},
-        { "name": "internal",         "url": "#internal"}
+        { "url": "#ebook",                  "image": "images/ebook.jpg"},
+        { "url": "#presentations",          "image": "images/presentations.jpg"},
+        { "url": "categories/pastprojects", "image": "images/pastprojects.jpg"},
+        { "url": "categories/moodle",       "image": "images/moodle.jpg"},
+        { "url": "#internal",               "image": "images/internal.jpg"}
     ],
 
     "ebooks":
