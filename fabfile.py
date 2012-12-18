@@ -136,6 +136,7 @@ def deploy_external(ext_path, ext_project, ext_branch):
   # Create symlinks for any config files.
   # These are stored in .config/<path_to_project>
   target = ext_path + '/config.php'
+  sudo_run('rm ' + deploy_path + '/' + target)
   if env.run is lrun:
     if os.path.exists(deploy_path + '/.config/' + target):
       source = '../../.config/' + target

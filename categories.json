@@ -17,8 +17,10 @@
 
     "presentations":
     [
-        { "name": "2012-10-30<br />Brownbag<br />Html interactivity", "url": "categories/presentations/2012_10_30_brownbag_html_interactivity", "image": "categories/presentations/2012_10_30_brownbag_html_interactivity/front.jpg"},
-        { "name": "2012-11-26<br />Brownbag<br />NDF 2012</b>",       "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",           "image": "categories/presentations/2012_11_26_brownbag_ndf_2012/front.jpg"}
+        { "name": "2012-10-30<br />Brownbag<br />Html interactivity",       "url": "categories/presentations/2012_10_30_brownbag_html_interactivity", "image": "categories/presentations/2012_10_30_brownbag_html_interactivity/front.jpg"},
+        { "name": "2012-11-26<br />Brownbag<br />NDF 2012</b>",             "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",           "image": "categories/presentations/2012_11_26_brownbag_ndf_2012/front.jpg"},
+        { "name": "2012-12-17<br />Innovation<br />Gesture technology</b>", "url": "categories/presentations/2012_12_17_innovation_gesture",           "image": "categories/presentations/2012_12_17_innovation_gesture/front.jpg"}
+        
     ],
     
     "internal":

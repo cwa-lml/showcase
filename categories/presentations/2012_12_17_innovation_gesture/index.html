@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="body">
+
+	   <div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1><br />Innovation</h1>
+                    <h2>Gesture Technology</h2>
+                </section>
+
+                <section>
+                    <h2>Approaches</h2>
+                    <ul>
+                        <li>Microsoft Kinect</li>
+                        <li>Webcams &amp; GetUserMedia</li>
+                        <li>Other third-party, e.g. <a href="http://www.forbes.com/sites/anthonykosner/2012/07/16/leap-motions-high-resolution-natural-user-interface-will-make-todays-touch-a-legacy/">LeapMotion</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Microsoft Kinect</h2>
+
+                    <ul>
+                        <li>Provides 3D motion detection</li>
+                        <li>Originally for Xbox</li>
+                        <li>Windows version released Feb 2012</li>
+                        <li><a href="http://openkinect.org/wiki/Main_Page">OpenKinect</a>: OpenSource community</li>
+                        <li>Very interesting but:
+                        <ul>
+                            <li>Requires a Kinect (i.e. not ubiquitous)</li>
+                            <li>Requires significant programming effort</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kinect example: Controlling Goggle Earth</h2>
+                    <iframe src="http://player.vimeo.com/video/21563702?badge=0" width="500" height="250" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/21563702">Kinect Earth</a> from <a href="http://vimeo.com/user1291099">Matt Fargo</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+                </section>
+
+                <section>
+                    <h2>A local example</h2>
+                    <ul>
+                        <li>NZPost Noise Ink, Auckland Arts Festival 2011</li>
+                    </ul>
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/ttdeZ0oMAFw" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <section>
+                    <h2>Webcams</h2>
+                    <ul>
+                        <li>Webcams are (almost) ubiquitous</li>
+                        <li>New APIs (e.g. GetUserMedia) mean the browser can directly interact with the webcam</li>
+                    </ul>
+                    <img src="http://1.bp.blogspot.com/-o6vwcWhYJxs/UEyAwRNs5bI/AAAAAAAAAOo/WQuiOk7tNVk/s1600/control-media-player-with-hand-gestures-technique1-650x284.png" />
+                </section>
+
+                <section>
+                    <h1><font color="#ff0099" style="font-size:120px">This presentation!</font></h1>
+                    <p>Courtesy <a href="http://tripleequals.blogspot.co.nz/2012/09/webcam-swiper.html">Webcam Swiper</a></p>
+                </section>
+
+                <section>
+                    <h2>Webcam Swiper</h2>
+                    <ul>
+                        <li>Basic recognition of movement between left and right sides of the screen</li>
+                        <li>Simply counts the number of pixels whose colour has changed</li>
+                        <li><a href="http://iambrandonn.github.com/WebcamSwiper/">The Webcam Swiper example</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Magic Xylophone</h2>
+                    <ul>
+                        <li>Allows the user the play the xylophone appearing at the top of their screen with their fingers</li>
+                        <li><a href="http://www.soundstep.com/blog/experiments/jsdetection/">The Magic Xylophone example</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Flutter</h2>
+                    <ul>
+                        <li>Control your music player with gestures</li>
+                        <li><a href="https://flutterapp.com/">The Flutter app</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>GetUserMedia API</h2>
+                    <ul>
+                        <li>These examples uses the <a href="">GetUserMedia API</a></li>
+                        <li>Allows browser to interact with OS peripherals (webcam, microphone, speakers)</li>
+                        <li><a href="http://caniuse.com/stream">Chrome and Firefox at the moment</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Browser compatibility</h2>
+                    <img src="img/caniuse.jpg" />
+                </section>
+
+                <section>
+                    <h2>The way it works</h2>
+                    <ul>
+                        <li>User navigates to URL</li>
+                        <li>Browser detects GetUserMedia call, and asks user for permission every time</li>
+                    </ul>
+                    <img src="img/permission.jpg" />
+                </section>
+
+                <section>
+                    <h2>The bigger picture</h2>
+                    <ul>
+                        <li>GetUserMedia is part of <a href="http://www.webrtc.org/">WebRTC</a></li>
+                        <li>WebRTC aims to allow use of multimedia capture for peer-to-peer communication using the browser</li>
+                        <li>A.K.A the "Skype-killer"</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Face detection</h2>
+                    <ul>
+                        <li>Captures webcam and detects pattern resembling a face</li>
+                        <li><a href="http://liuliu.me/ccv/js/nss/">The example</a></li>
+                        <li>Relies on some rocket science, e.g. <a href="http://libccv.org/">Core Computer Vision</a> (CCV) library</li>
+                        <li>Is becoming widely-used to <a href="http://facedetection.jaysalvat.com/#">detect faces in still images</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Face detection: examples</h2>
+                    <ul>
+                        <li><a href="http://neave.github.com/face-detection/">A humourous example showing face detection</a></li>
+                        <li><a href="http://harthur.github.com/kittydar/">Even face detection for cats!</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Face detection: FaceKat</h2>
+                    <ul>
+                        <li>A simple game using your face for navigation to avoid obstacles</li>
+                        <li><a href="http://shinydemos.com/facekat/">The example</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>The state of the art: Google</h2>
+                    <ul>
+                        <li><a href="http://www.movikantirevo.com/">Movi.Kanti.Revo</a></li>
+                        <li><a href="http://www.html5rocks.com/en/tutorials/casestudies/movikantirevo/">The details</a></li>
+                        <li>Makes use of the CCV face detection library</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>The state of the art: Toyota</h2>
+                    <ul>
+                        <li><a href="http://www.wired.com/autopia/2012/10/toyota-insect/">Toyota Smart INSECT</a></li>
+                        <li>Uses the Kinect</li>
+                        <li>Uses facial recognition to detect the owner</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Uses?</h2>
+                    <ul>
+                        <li>Entertaiment / promotional</li>
+                        <li>Has been <a href="http://lifekludger.net/2012/11/01/webcam-swiper-swipe-your-hand-to-turn-pages/">noticed by the disabled</a></li>
+                    </ul>
+                    <a href="http://lifekludger.net/2012/11/01/webcam-swiper-swipe-your-hand-to-turn-pages/">
+                        <img src="http://lifekludger.net/wp-content/uploads/2012/10/magicxylophone-300x190.png" />
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Related APIs</h2>
+                    <ul>
+                        <li><a href="http://www.html5rocks.com/tutorials/webaudio/intro/">Web Audio API</a></li>
+                        <li><a href="http://www.html5rocks.com/tutorials/geolocation/trip_meter/">Geolocation</a></li>
+                        <li><a href="http://www.html5rocks.com/tutorials/device/orientation/">Orientation API</a></li>
+                        <li><a href="http://www.w3.org/TR/webrtc/#peer-to-peer-connections">PeerConnection API</a></li> 
+                        <li><a href="http://www.html5rocks.com/tutorials/webgl/shaders/">WebGL</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Potential for Learning Media</h2>
+                    <ul>
+                        <li>Could create simple interactives that use the webcam to respond to gross movements</li>
+                        <li>Could use face detection to identify and interact with faces via webcam</li>
+                        <li>Watch out for "Gorilla Arm!"</li>
+                    </ul>
+                </section>
+
+            </div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+    <script src="js/webcam-swiper-0.1.js"></script>
+
+	<script>
+
+        /**
+         * Prevents an event's defaults behavior 
+         * and calls the specified delegate.
+         *
+         * @param {Function} delegate The method to call
+         * after the wrapper has been executed
+         */
+        function preventAndForward( delegate ) {
+            return function( event ) {
+                event.preventDefault();
+                delegate.call( null, event );
+            };
+        }
+
+        window.onload = function(){
+            var el = document.getElementById("body");
+            // A bit counter-intuitive maybe, but a swipe to the left means we want to advance
+            // the presentation to the right.
+            el.addEventListener("webcamSwipeLeft",  preventAndForward( Reveal.right ), false);
+            el.addEventListener("webcamSwipeRight", preventAndForward( Reveal.left ), false);
+            window.initializeWebcamSwiper();
+        };
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+
+			theme: Reveal.getQueryHash().theme || 'sky', // available themes are in /css/theme
+            // default/beige/serif/simple/sky
+			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+
+	</body>
+</html>
