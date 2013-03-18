@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>6 year observational results</title>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="js/d3.v2.js"></script>
+    <script type="text/javascript" src="js/crossfilter.js"></script>
+
+    <script type="text/javascript" src="js/dc.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+
+    <style type="text/css">
+        .row{
+            margin-left: 20px;
+        }
+    </style>
+
+    <link href='highlighter/shCore.css' rel='stylesheet' type='text/css'/>
+    <link href='highlighter/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+    <script src='highlighter/shCore.js' type='text/javascript'></script>
+    <script src="highlighter/shAutoloader.js" type="text/javascript"></script>
+    <script src='highlighter/shBrushJScript.js' type='text/javascript'></script>
+    <script src='highlighter/shBrushXml.js' type='text/javascript'></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Six-year-old observational study</h1>
+
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a class="tab-link" href="#tab1" data-toggle="tab">Letter ID</a></li>
+            <li><a class="tab-link" href="#tab2" data-toggle="tab">Concepts</a></li>
+            <li><a class="tab-link" href="#tab3" data-toggle="tab">Word test</a></li>
+            <li><a class="tab-link" href="#tab4" data-toggle="tab">Writing vocab</a></li>
+            <li><a class="tab-link" href="#tab5" data-toggle="tab">Hearing</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <div class="row">
+                    <div id="letterid-school-bubble-chart" class="dc-chart">
+                        <strong>Performance by school</strong> (bubble radius = number of students)
+                        <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="letterid-gender-chart" >
+                        <strong>By Gender</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="letterid-ethnicity-chart" >
+                        <strong>By Ethnicity</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.ethnicityChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="letterid-yearlevel-chart" >
+                        <strong>By Year Level</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.yearlevelChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="letterid-birthdate-chart" >
+                        <strong>By Birth Year</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.birthdateChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="letterid-stanine-chart" >
+                        <strong>By Stanine</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.stanineChart['letterid'], 'letterid');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <div class="row">
+                    <div id="concepts-school-bubble-chart" class="dc-chart">
+                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['concepts']);" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="concepts-gender-chart" >
+                        <strong>By Gender</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['concepts'], 'concepts');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="concepts-ethnicity-chart" >
+                        <strong>By Ethnicity</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.ethnicityChart['concepts'], 'concepts');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="concepts-yearlevel-chart" >
+                        <strong>By Year Level</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.yearlevelChart['concepts'], 'concepts');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="concepts-birthdate-chart" >
+                        <strong>By Birth Year</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.birthdateChart['concepts'], 'concepts');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="concepts-stanine-chart" >
+                        <strong>By Stanine</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.stanineChart['concepts'], 'concepts');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <div class="row">
+                    <div id="wordtest-school-bubble-chart" class="dc-chart">
+                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="wordtest-gender-chart" >
+                        <strong>By Gender</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="wordtest-ethnicity-chart" >
+                        <strong>By Ethnicity</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.ethnicityChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="wordtest-yearlevel-chart" >
+                        <strong>By Year Level</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.yearlevelChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="wordtest-birthdate-chart" >
+                        <strong>By Birth Year</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.birthdateChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="wordtest-stanine-chart" >
+                        <strong>By Stanine</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.stanineChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab4">
+                <div class="row">
+                    <div id="writingvocab-school-bubble-chart" class="dc-chart">
+                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="writingvocab-gender-chart" >
+                        <strong>By Gender</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="writingvocab-ethnicity-chart" >
+                        <strong>By Ethnicity</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.ethnicityChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="writingvocab-yearlevel-chart" >
+                        <strong>By Year Level</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.yearlevelChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="writingvocab-birthdate-chart" >
+                        <strong>By Birth Year</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.birthdateChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="writingvocab-stanine-chart" >
+                        <strong>By Stanine</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.stanineChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab5">
+                <div class="row">
+                    <div id="hearing-school-bubble-chart" class="dc-chart">
+                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="hearing-gender-chart" >
+                        <strong>By Gender</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.genderChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="hearing-ethnicity-chart" >
+                        <strong>By Ethnicity</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.ethnicityChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="hearing-yearlevel-chart" >
+                        <strong>By Year Level</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.yearlevelChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="hearing-birthdate-chart" >
+                        <strong>By Birth Year</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.birthdateChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="hearing-stanine-chart" >
+                        <strong>By Stanine</strong>
+                        <a class="reset" href="javascript:reset_chart(charts.stanineChart['hearing'], 'hearing');" style="display: none;">reset</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+            <div class="dc-data-count">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> records 
+                 | <a href="javascript:dc.filterAll(chart_selected); dc.renderAll(chart_selected);">Reset All</a>
+            </div>
+        </div>
+        <table class="table table-hover dc-data-table">
+            <thead>
+            <tr class="header">
+                <th>School</th>
+                <th>Last name</th>
+                <th>Gender</th>
+                <th>Ethnicity</th>
+                <th>Raw score</th>
+                <th>Stanine</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        function reset_chart(chart, chart_id){
+            chart.filterAll();dc.redrawAll(chart_id);
+        }
+        function chart(charts, chart_id, csv_file) {
+            charts.schoolBubbleChart[chart_id] = dc.bubbleChart("#" + chart_id + "-" + "school-bubble-chart", chart_id);
+            charts.genderChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "gender-chart", chart_id);
+            charts.ethnicityChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "ethnicity-chart", chart_id);
+            charts.yearlevelChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "yearlevel-chart", chart_id);
+            charts.birthdateChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "birthdate-chart", chart_id);
+            charts.stanineChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "stanine-chart", chart_id);
+
+            var bubble_width = 940;
+            var bubble_height = 260;
+
+            // load data from a csv file
+            d3.csv(csv_file, function(data) {
+                    var dateFormat = d3.time.format("%d/%m/%y");
+                    var numberFormat = d3.format(".2f");
+
+                    data.forEach(function(e) {
+                        e.dd = dateFormat.parse(e.birthdate);
+                        e.month = (+e.dd.getMonth() + 1); // pre-calculate month for better performance
+                        e.year = e.dd.getFullYear(); // pre-calculate year for better performance
+                    });
+
+                    // feed it through crossfilter
+                    var crossfiltered = crossfilter(data);
+                    var all = crossfiltered.groupAll();
+
+                    var schoolDimension = crossfiltered.dimension(function(d) {
+                        return d.school;
+                    });
+
+                    var schoolRawscoresGroup = schoolDimension.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                p.sumRawscores += +v.rawscore;
+                                p.avgRawscores = p.sumRawscores / p.count;
+                                p.sumStanines += +v.stanine;
+                                p.avgStanines = p.sumStanines / p.count;
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                p.sumRawscores -= +v.rawscore;
+                                p.avgRawscores = p.sumRawscores / p.count;
+                                p.sumStanines -= +v.stanine;
+                                p.avgStanines = p.sumStanines / p.count;
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {count:0, sumRawscores:0, avgRawscores:0, sumStanines: 0, avgStanines: 0};
+                            }
+                    );
+
+                    var gender = crossfiltered.dimension(function(d) {
+                        switch (d.gender) {
+                            case 'Male':
+                                return "Male";
+                            case 'Female':
+                                return "Female";
+                        }
+                    });
+                    var genderGroup = gender.group();
+
+                    var ethnicity = crossfiltered.dimension(function(d) {
+                        switch (d.ethnicity) {
+                            case 'NZ European/Pakeha':
+                                return "Pakeha";
+                            default:
+                                return d.ethnicity;
+                        }
+                    });
+                    var ethnicityGroup = ethnicity.group();
+
+                    var yearlevel = crossfiltered.dimension(function(d) {
+                        return d.yearlevel;
+                    });
+                    var yearlevelGroup = yearlevel.group();
+
+                    var birthdate = crossfiltered.dimension(function(d) {
+    //                    return d.month + '/' + d.year;
+                        return d.year;
+                    });
+                    var birthdateGroup = birthdate.group();
+
+                    var oldbirthdateGroup = birthdate.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                p.monthyear = v.month + '/' + v.year;
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                p.monthyear = v.month + '/' + v.year;
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {count:0, monthyear:''};
+                            }
+                    );
+
+                    var stanine = crossfiltered.dimension(function(d) {
+                        return d.stanine;
+                    });
+                    var stanineGroup = stanine.group();
+
+                    charts.schoolBubbleChart[chart_id].width(bubble_width)
+                            .height(bubble_height)
+                            .margins({top: 10, right: 50, bottom: 60, left: 50})
+                            .dimension(schoolDimension)
+                            .group(schoolRawscoresGroup)
+                            .transitionDuration(1500)
+                            .colors(["#a60000","#ff0000", "#ff4040","#ff7373","#67e667","#39e639","#00cc00"])
+                            .colorDomain([0, 9])
+                            .colorAccessor(function(d){return Math.round(d.value.avgStanines)})
+                            .keyAccessor(function(p) {
+                                return Math.round(p.value.avgStanines);
+                            })
+                            .valueAccessor(function(p) {
+                                return Math.round(p.value.avgRawscores);
+                            })
+                            .radiusValueAccessor(function(p) {
+                                return p.value.count;
+                            })
+                            .maxBubbleRelativeSize(0.2)
+                            .x(d3.scale.linear().domain([0, 9]))
+                            .y(d3.scale.linear().domain([30, 65]))
+                            .r(d3.scale.linear().domain([0, 100]))
+                            .elasticY(true)
+                            .yAxisPadding(10)
+                            //.elasticX(true)
+                            .xAxisPadding(1)
+                            .renderHorizontalGridLines(true)
+                            .renderVerticalGridLines(true)
+                            .renderLabel(true)
+                            .renderTitle(true)
+                            .label(function(p) {
+                                return p.key;
+                            })
+                            .title(function(p) {
+                                return p.key
+                                        + "\n"
+                                        + "Total students: " + p.value.count + "\n"
+                                        + "Total Raw Score: " + Math.round(p.value.sumRawscores) + "\n"
+                                        + "Average Raw Score: " + Math.round(p.value.avgRawscores) + "\n"
+                                        + "Average Stanine: " + Math.round(p.value.avgStanines) + "\n";
+                            })
+                            .yAxis().tickFormat(function(v) {
+                                return v;
+                            });
+
+                    charts.genderChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            .colors(['#3182bd', '#6baed6'])
+                            .dimension(gender)
+                            .group(genderGroup)
+                            .label(function(d) {
+                            return d.data.key + " (" + Math.floor(d.data.value / all.value() * 100) + "%)";
+                        });
+
+                    charts.ethnicityChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            //.colors(['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#dadaeb'])
+                            .dimension(ethnicity)
+                            .group(ethnicityGroup)
+                            .label(function(d) {
+                            return d.data.key + " (" + Math.floor(d.data.value / all.value() * 100) + "%)";
+                        });
+
+                    charts.yearlevelChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            //.colors(['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#dadaeb'])
+                            .dimension(yearlevel)
+                            .group(yearlevelGroup)
+                            .label(function(d) {
+                            return 'Level ' + d.data.key + " (" + Math.floor(d.data.value / all.value() * 100) + "%)";
+                        });
+
+                    charts.birthdateChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            //.colors(['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#dadaeb'])
+                            .dimension(birthdate)
+                            .group(birthdateGroup)
+                            .label(function(d) {
+                            return d.data.key + " (" + Math.floor(d.data.value / all.value() * 100) + "%)";
+                        });
+
+                    charts.stanineChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            //.colors(['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#dadaeb'])
+                            .dimension(stanine)
+                            .group(stanineGroup)
+                            .label(function(d) {
+                            return d.data.key + " (" + Math.floor(d.data.value / all.value() * 100) + "%)";
+                        });
+
+                    dc.dataCount(".dc-data-count", chart_id)
+                            .dimension(crossfiltered)
+                            .group(all);
+
+                    dc.dataTable(".dc-data-table", chart_id)
+                            .dimension(schoolDimension)
+                            .group(function(d) {
+                                return d.school;
+                            })
+                            .size(200)
+                            .columns([
+                        function(d) {
+                            return d.school;
+                        },
+                        function(d) {
+                            return d.lastname;
+                        },
+                        function(d) {
+                            return d.gender;
+                        },
+                        function(d) {
+                            return d.ethnicity;
+                        },
+                        function(d) {
+                            return d.rawscore;
+                        },
+                        function(d) {
+                            return d.stanine;
+                        }
+                    ])
+                            .sortBy(function(d) {
+                                return d.school + (10 - d.stanine);
+                            })
+                            .order(d3.ascending)
+                            .renderlet(function(table){
+                                table.selectAll(".dc-table-group").classed("info", true);
+                            });
+
+//                    dc.renderAll("letterid");
+//                    dc.renderAll("concepts");
+//                    dc.renderAll("wordtest");
+//                    dc.renderAll("writingvocab");
+//                    dc.renderAll("hearing");
+                    dc.renderAll(chart_id);
+
+                    // text label for the x axis
+                    d3.select("#" + chart_id + "-" + "school-bubble-chart svg").append("text")
+                        .attr("x", bubble_width / 2)
+                        .attr("y",  bubble_height - 20)
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("AVERAGE STANINE");
+
+                    // text label for the y axis
+                    d3.select("#" + chart_id + "-" + "school-bubble-chart svg").append("text")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 0)
+                        .attr("x",0 - (bubble_height / 2))
+                        .attr("dy", "1em")
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("AVERAGE RAWSCORE");
+
+                }
+        );
+        }
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var chart_selected;
+        var charts = {
+          schoolBubbleChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""},
+          genderChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""},
+          ethnicityChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""},
+          yearlevelChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""},
+          birthdateChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""},
+          stanineChart: {"letterid" : "", "concepts": "", "wordtest": "", "writingvocab": "", "hearing": ""}
+        };
+
+        $(document).ready(function(){
+            $('.tab-link').click(function(){
+                $('a.reset').css('display', 'none');
+                switch ($(this).html()) {
+                    case 'Letter ID':
+                        chart_selected = 'letterid'; 
+                        chart(charts, "letterid", "data/letterid.csv");
+                        break;
+                    case 'Concepts':
+                        chart_selected = 'concepts'; 
+                        chart(charts, "concepts", "data/concepts.csv");
+                        break;
+                    case 'Word test':
+                        chart_selected = 'wordtest'; 
+                        chart(charts, "wordtest", "data/wordtest.csv");
+                        break;
+                    case 'Writing vocab':
+                        chart_selected = 'writingvocab'; 
+                        chart(charts, "writingvocab", "data/writingvocab.csv");
+                        break;
+                    case 'Hearing':
+                        chart_selected = 'hearing'; 
+                        chart(charts, "hearing", "data/hearing.csv");
+                        break;
+                }
+                //alert('clicked' + $(this).html());
+            });
+            $('li.active a.tab-link').click();
+            chart_selected = 'letterid'; 
+        });
+    </script>
+</body>
+</html>

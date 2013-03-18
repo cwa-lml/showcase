@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/xCharts/xcharts.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Popular Kiwi baby names</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="#about">About</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="span12">
+                    <h1>How the Kiwi baby names were visualised</h1>
+                    <p class="lead">The following notes explain some of the more salient points about putting this
+                        visualisation together. All in all, thanks to some realtively clean and easily transformable data, and some useful tools such as Twitter Bootstrap, and the combination of D3.js and xCharts, this visualisation took only a few hours to put together (in fact, it took about as long as it took to put together this <em>about</em> page).</p>
+ 
+                    <div class="well">
+                        <h2>Getting the data</h2>
+                        <p>The data originated from New Zealand's Department of Internal Affairs (DIA), and was obtained as an Excel spreadsheet from <a href="http://data.govt.nz/dataset/show/764">data.govt.nz</a>. As per the blurb on data.govt.nz: 
+                            <blockquote>Excel spreadsheet of the 100 male and female first names for each year since 2004, based on births registered in New Zealand during each year. For name data for 1999 to 2003, please see the Statistics New Zealand website: <a href="http://www.stats.govt.nz/methods_and_services/access-data/tables/births.aspx">http://www.stats.govt.nz/methods_and_services/access-data/tables/births.aspx</a>
+                            </blockquote>
+                        </p>
+                    </div>
+
+                    <div class="well">
+                        <h2>Cleaning the data</h2>
+
+                            <h3>The original Excel data</h3>
+                            <p>The spreadsheet data is good for viewing in Excel, however, in order to be able to programmatically use the data, we need to do a bit of cleanup and transformation. As originally obtained, the data looked like the following:</p>
+                            <p><img src="img/excel1.jpg"/></p>
+
+                            <h3>Manual reformatting</h3>
+                            <p>First off, with some some relatively manual quick cut-and-paste, we copy the data into a new spreadsheet, so that each row contains the data for just one combination of name and year:</p>
+                            <p><img src="img/excel2.jpg"/></p>
+
+                            <h3>Excel Pivot Tables</h3>
+                            <p>We then transform the data into an Excel Pivot Table in a new worksheet, allowing us to generate the counts per name by year, and overall totals:</p>
+                            <p><img src="img/excel3.jpg"/></p>
+                            <p><a href="http://en.wikipedia.org/wiki/Pivot_table">Pivot Tables</a> are one of the great features of Excel for data analysis, and very worthwhile getting to know if you've not come across them before.</p>
+
+                            <h3>CSV to JSON</h3>
+                            <p>Now that we've got our data in the correct form, we need to transform it to a suitable format. What we want is JSON, and there's a number of services and scripts available for help with this conversion. For this project, I used <a href="http://shancarter.com/data_converter/">Mr. Data Converter</a>, which is a great browser-based service for converting Excel data into a number of formats, including JSON. Using it was as simple as copying the pivot table data (i.e. all the data points, and the last heading row, as highlighted above in blue), and then pasting this into the top box.</p>
+                            <p>Choosing to output the results as "JSON - Properties", we then obtain a nice JSON dataset, one row per name, with the yearly counts and grand totals of the name frequency:</p>
+                            <p><img src="img/mrdataconverter.jpg"/></p>
+                            <p>We can then copy out the results and save them as a JSON data set:</p>
+                            <p><img src="img/json1.jpg"/></p>
+                    </div>
+
+                    <div class="well">
+                        <h2>Presenting the data</h2>
+
+                            <h3>Twitter Bootstrap</h3>
+                            <p>As a starting point for our visualisation, <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> provides a great jumping-off point, as we get a basic skeleton of HTML, CSS and Javascript, than we can adapt as we need to.</a>. Twitter Bootstrap saves a heck of a lot of time, and is very helpful for promoting good practice, though it needs to be used with the consideration that the in-built styling will need some attention otherwise it will look a lot like a lot of other projects out there that have utilised Bootstrap.</p>
+
+                            <h3>Initializr</h3>
+                            <p><img src="img/initializr.jpg"/></p>
+                            <p>Although Twitter Bootstrap can be downloaded and used as is, we can make life a bit easier for ourselves by using <a href="http://www.initializr.com/">Initializr</a>, a useful service that lets you choose from a number of components when starting a new web project.</p>
+                            <p>In our case we want, at a minimum:
+                                <ul>
+                                    <li>Twitter Bootstrap</li>
+                                    <li>jQuery (minified)</li>
+                                    <li>Responsive Bootstrap 2.2.2</li>
+                                </ul>
+                            </p>
+                            <p><img src="img/initializr2.jpg"/></p>
+
+                            <h3>underscore.js Templates</h3>
+                            <p><a href="http://underscorejs.org/">Underscore.js</a> is a lovely little javascript utility library, containing many helpful methods. In our case though, we want it for its templating ability, allowing us to create <a href="http://www.bennadel.com/blog/2411-Using-Underscore-js-Templates-To-Render-HTML-Partials.htm">HTML partials</a>.</p>
+                            <pre>
+    &lt;script type="text/template" class="template_combo"&gt;
+        &lt;% _.each( rc, function( baby ){ %&gt; 
+            &lt;option&gt;&lt;%- baby.Name %&gt;&lt;/option&gt; 
+        &lt;% }); %&gt; 
+    &lt;/script&gt;
+                            </pre>
+                            <p>This means that, in our Javascript code, when we're creating the dropdown lists of names to choose from, all we need to do to populate the lists is:</p>
+                            <pre>
+    _.templateSettings.variable = "rc";
+    var template_combo = _.template(
+        $( "script.template_combo" ).html()
+    );
+
+    $('.select_girl').append(
+        template_combo( girls )
+    );
+
+    $('.select_boy').append(
+        template_combo( boys )
+    );
+                            </pre>
+                            <p>It could be argued that using a template to achieve just this is overkill, however it doesn't take too much generation of dynamic HTML such as this before the templating functionality that <a href="http://underscorejs.org/">underscore.js</a> provides becomes very useful.</p>
+
+                            <h3>xCharts and D3.js</h3>
+                            <p>Now we get into the meat and potatoes. We've got some great data, but need to create a visualisation. Specifically, we want:
+                                <ul>
+                                    <li>Bar charts, one for boys and one for girls, each initially showing the half dozen most popular names over the period</li>
+                                    <li>The ability to choose a name from a dropdown, and have the bar chart redraw such that it shows the annual popularity of the selected name each year over the period.</li>
+                                </ul></p>
+                            <p><a href="http://d3js.org/">D3.js</a> is a great Javascript visualisation library that uses SVG, being both very sophisticated but also very flexible. This means that it can be used to produce complex and custom visualisations, but also means that it comes with a relatively steep learning curve (this being the cost of having great flexibility).</p>
+                            <p>This is where <a href="http://tenxer.github.com/xcharts/">xCharts</a> comes in. XCharts provides an abstracted charting layer over D3, providing a simpler interface when using D3 to make charts. There are many dedicated Javascript charting libraries out there that are simpler to use than D3 (which is a visualation library, rather than a charting library), however they quickly become inflexible when you're trying to achieve custom styling and behaviours such as animation.</p>
+                            <p>If xCharts supports the type of chart that you want &#8212; and there's currently only a small number, though it does allow you to extend it and create your own chart types &#8212; then the combination of xCharts and D3 allows for charting that is:
+                                <ul>
+                                    <li>highly customisable in terms of styling</li>
+                                    <li>highly customisable in terms of animation behaviours</li>
+                                    <li>highly customisable in terms of interactivity</li>
+                                </ul>
+                            </p>
+                            <p>In fact, it makes life so easy for us, that we only need the following code to hook up our data to our chart, including allowing for the change event when the user chooses from the dropdown box (this is for the girls chart, but the boys chart is almost identical):
+                                <pre>
+    // Initialise the girls chart
+    var girlOpts = { "paddingTop": 20};
+    var girlChart = new xChart('bar', data_girls_popular, '#girlChart', girlOpts);
+
+    $('.select_girl').change(function(){
+        var girl = $('.select_girl option:selected').text();
+        $('#girl_heading').html('Popularity of <span class="girl_heading_name">' + girl + '</span>, 2004 &#8211; 2012');
+
+        var ind = girls.length;
+        while( ind-- ) {
+            if ( girls[ind].Name == girl ){
+
+                var data_girls = data_empty_girls;
+
+                $.each(girls[ind], function(index, value){
+                    if ( index != 'Name' ){
+                        data_girls.main[0].data.push( {x: index, y: value} );
+                    }
+                });
+            }
+        }
+
+        girlChart.setData(data_girls);
+    });
+                                </pre>
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Learning Media 2013</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

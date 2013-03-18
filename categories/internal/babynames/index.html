@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/xCharts/xcharts.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .hero-unit {
+                padding:10px 20px;
+                margin-bottom: 10px;
+                background-color: #cde;
+            }
+            .charts h2 {
+                margin-bottom: 0;
+            }
+            .charts h3 {
+                margin-top: 0;
+            }
+            #girlChart .color0 rect {
+                fill: #FA8CB8;
+            }
+            .girl_heading_name {
+                color: #FA8CB8;
+                font-weight: normal;
+            }
+            .boy_heading_name {
+                color: #3880aa;
+                font-weight: normal;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Popular Kiwi baby names</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <h1>Kiwi baby names</h1>
+                <p>Explore the popularity of names dished out to Kiwi kids over the period 2004&#8211;2012. <br />All data sourced from the Department of Internal Affairs via <a href="http://data.govt.nz/dataset/show/764">data.govt.nz</a></p>
+            </div>
+
+            <!-- Example row of columns -->
+            <div class="row charts">
+                <div class="span6 girls">
+                    <h2>Girls</h2>
+                    <div>
+                        <h3 id="girl_heading">Popular girls names, 2004 &#8211; 2012</h3>
+                        <figure style="width: 460px; height: 400px; margin-left:0;" id="girlChart"></figure>
+                    </div>
+                    <p>Choose any of the hundred most popular girls names in the period 2004 &#8211; 2012 to see how many girls were given that name for a given year.</p>
+                    <p><select class="select_girl"></select></p>
+                </div>
+                <div class="span6">
+                    <h2>Boys</h2>
+                    <div>
+                        <h3 id="boy_heading">Popular boys names, 2004 &#8211; 2012</h3>
+                        <figure style="width: 460px; height: 400px; margin-left:0;" id="boyChart"></figure>
+                    </div>
+                    <p>Choose any of the hundred most popular boys names in the period 2004 &#8211; 2012 to see how many boys were given that name for a given year.</p>
+                    <p><select class="select_boy"></select></p>
+               </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Learning Media 2013</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="lib/underscore/underscore-min.js"></script>
+        <script src="lib/d3/d3.v3.min.js"></script>
+        <!-- <script src="lib/xCharts/xcharts.min.js"></script> -->
+        <script src="lib/xCharts/xcharts.js"></script>
+
+        <script>
+            $(function() {
+
+                // When rending an underscore template, we want top-level
+                // variables to be referenced as part of an object. For
+                // technical reasons (scope-chain search), this speeds up
+                // rendering; however, more importantly, this also allows our
+                // templates to look / feel more like our server-side
+                // templates that use the rc (Request Context / Colletion) in
+                // order to render their markup.
+                _.templateSettings.variable = "rc";
+
+                var template_combo = _.template(
+                    $( "script.template_combo" ).html()
+                );
+
+                $('.select_girl').append(
+                    template_combo( girls )
+                );
+
+                $('.select_boy').append(
+                    template_combo( boys )
+                );
+
+                // Initialise the girls chart
+                var girlOpts = { "paddingTop": 20};
+                var girlChart = new xChart('bar', data_girls_popular, '#girlChart', girlOpts);
+
+                $('.select_girl').change(function(){
+                    var girl = $('.select_girl option:selected').text();
+                    $('#girl_heading').html('Popularity of <span class="girl_heading_name">' + girl + '</span>, 2004 &#8211; 2012');
+
+                    var ind = girls.length;
+                    while( ind-- ) {
+                        if ( girls[ind].Name == girl ){
+
+                            var data_girls = data_empty_girls;
+
+                            $.each(girls[ind], function(index, value){
+                                if ( index != 'Name' ){
+                                    data_girls.main[0].data.push( {x: index, y: value} );
+                                }
+                            });
+                        }
+                    }
+
+                    girlChart.setData(data_girls);
+                });
+
+                // Initialise the boys chart
+                var boyOpts = { "paddingTop": 20};
+                var boyChart = new xChart('bar', data_boys_popular, '#boyChart', boyOpts);
+
+                $('.select_boy').change(function(){
+                    var boy = $('.select_boy option:selected').text();
+
+                    var ind = boys.length;
+                    $('#boy_heading').html('Popularity of <span class="boy_heading_name">' + boy + '</span>, 2004 &#8211; 2012');
+                    while( ind-- ) {
+                        if ( boys[ind].Name == boy ){
+
+                            var data_boys = data_empty_boys;
+
+                            $.each(boys[ind], function(index, value){
+                                if ( index != 'Name' ){
+                                    data_boys.main[0].data.push( {x: index, y: value} );
+                                }
+                            });
+                        }
+                    }
+
+                    boyChart.setData(data_boys);
+                });
+
+            });
+        </script>
+
+        <script type="text/template" class="template_combo">
+            <% _.each( rc, function( baby ){ %>
+                <option><%- baby.Name %></option>
+            <% }); %>
+        </script>
+
+        <script>
+            var data_empty_girls = {
+              "xScale": "ordinal",
+              "yScale": "linear",
+              "type": "bar",
+              "main": [
+                {
+                  "className": ".girl_chart",
+                  "data": [
+                  ]
+                }
+              ]
+            }
+
+            var data_empty_boys = {
+              "xScale": "ordinal",
+              "yScale": "linear",
+              "type": "bar",
+              "main": [
+                {
+                  "className": ".boy_chart",
+                  "data": [
+                  ]
+                }
+              ]
+            }
+
+            var data_girls_popular = {
+              "xScale": "ordinal",
+              "yScale": "linear",
+              "type": "bar",
+              "main": [
+                {
+                  "className": ".girl_chart",
+                  "data": [
+                    {"x": "Sophie", "y": 2917},
+                    {"x": "Olivia", "y": 2695},
+                    {"x": "Ella", "y": 2664},
+                    {"x": "Charlotte", "y": 2569},
+                    {"x": "Emma", "y": 2333},
+                    {"x": "Emily", "y": 2295}
+                  ]
+                }
+              ]
+            }
+
+            var data_boys_popular = {
+              "xScale": "ordinal",
+              "yScale": "linear",
+              "type": "bar",
+              "main": [
+                {
+                  "className": ".boy_chart",
+                  "data": [
+                    {"x": "Jack", "y": 3749},
+                    {"x": "Joshua", "y": 3119},
+                    {"x": "James", "y": 2935},
+                    {"x": "William", "y": 2831},
+                    {"x": "Samuel", "y": 2792},
+                    {"x": "Liam","y": 2751}
+                  ]
+                }
+              ]
+            }
+
+        </script>
+
+        <script src="data/boys.js"></script>
+        <script src="data/girls.js"></script>
+
+    </body>
+</html>
