@@ -26,6 +26,6 @@
     "internal":
     [
         { "name": "Kiwi Baby Names",          "url": "categories/internal/babynames",       "image": "categories/internal/babynames/front.jpg"},
-        { "name": "6-year-old Observations",  "url": "categories/internal/dc.js",       "image": "categories/internal/dc.js/front.jpg"},
+        { "name": "6-year-old Observations",  "url": "categories/internal/dc.js",       "image": "categories/internal/dc.js/front.jpg"}
     ]
 }
