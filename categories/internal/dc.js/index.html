@@ -80,7 +80,7 @@
             <div class="tab-pane" id="tab2">
                 <div class="row">
                     <div id="concepts-school-bubble-chart" class="dc-chart">
-                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <strong>Performance by school</strong> (bubble radius = number of students)
                         <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['concepts']);" style="display: none;">reset</a>
                         <div class="clearfix"></div>
                     </div>
@@ -116,7 +116,7 @@
             <div class="tab-pane" id="tab3">
                 <div class="row">
                     <div id="wordtest-school-bubble-chart" class="dc-chart">
-                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <strong>Performance by school</strong> (bubble radius = number of students)
                         <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['wordtest'], 'wordtest');" style="display: none;">reset</a>
                         <div class="clearfix"></div>
                     </div>
@@ -152,7 +152,7 @@
             <div class="tab-pane" id="tab4">
                 <div class="row">
                     <div id="writingvocab-school-bubble-chart" class="dc-chart">
-                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <strong>Performance by school</strong> (bubble radius = number of students)
                         <a class="reset" href="javascript:reset_chart(charts.genderChart['writingvocab'], 'writingvocab');" style="display: none;">reset</a>
                         <div class="clearfix"></div>
                     </div>
@@ -188,7 +188,7 @@
             <div class="tab-pane" id="tab5">
                 <div class="row">
                     <div id="hearing-school-bubble-chart" class="dc-chart">
-                        <strong>Performance by school</strong> (x: index avg stanine, y: index avg rawscore, radius: number of students)
+                        <strong>Performance by school</strong> (bubble radius = number of students)
                         <a class="reset" href="javascript:reset_chart(charts.genderChart['hearing'], 'hearing');" style="display: none;">reset</a>
                         <div class="clearfix"></div>
                     </div>
@@ -234,7 +234,7 @@
             <thead>
             <tr class="header">
                 <th>School</th>
-                <th>Last name</th>
+                <th>Student</th>
                 <th>Gender</th>
                 <th>Ethnicity</th>
                 <th>Raw score</th>
@@ -382,7 +382,7 @@
                             .r(d3.scale.linear().domain([0, 100]))
                             .elasticY(true)
                             .yAxisPadding(10)
-                            //.elasticX(true)
+                            //.elasticY(true)
                             .xAxisPadding(1)
                             .renderHorizontalGridLines(true)
                             .renderVerticalGridLines(true)
@@ -468,7 +468,9 @@
                             return d.school;
                         },
                         function(d) {
-                            return d.lastname;
+                            //return d.lastname;
+                            // Randomise the nsn so that the student is not identifiable.
+                            return Math.floor(+d.nsn * Math.random())
                         },
                         function(d) {
                             return d.gender;
@@ -491,11 +493,6 @@
                                 table.selectAll(".dc-table-group").classed("info", true);
                             });
 
-//                    dc.renderAll("letterid");
-//                    dc.renderAll("concepts");
-//                    dc.renderAll("wordtest");
-//                    dc.renderAll("writingvocab");
-//                    dc.renderAll("hearing");
                     dc.renderAll(chart_id);
 
                     // text label for the x axis
