@@ -1,31 +1,92 @@
 { "categories": 
     [
-        { "url": "#ebook",                  "image": "images/ebook.jpg"},
-        { "url": "#presentations",          "image": "images/presentations.jpg"},
-        { "url": "categories/pastprojects", "image": "images/pastprojects.jpg"},
-        { "url": "categories/moodle",       "image": "images/moodle.jpg"},
-        { "url": "#internal",               "image": "images/internal.jpg"}
+        { "name": "Ebooks",
+          "url": "#ebook",
+          "icon": "icon-book",
+          "description": "A series of eBook prototypes created using various technologies."
+        },
+        { "name": "Presentations",
+          "url": "#presentations",
+          "icon": "icon-picture",
+          "description": "Presentations about aspects of technology and educational practice."
+        },
+        { "name": "Past CWA Projects",
+          "url": "categories/pastprojects",
+          "icon": "icon-rocket",
+          "description": "A miscellany of past CWA projects, retained here for internal reference."
+        },
+        { "name": "Data Visualisation",
+          "url": "#internal",
+          "icon": "icon-chat",
+          "description": "A series of internal projects demonstrating techniques of interactively exploring data."
+        },
+        { "name": "Moodle demonstrator",
+          "url": "categories/moodle",
+          "icon": "icon-college",
+          "description": "The demonstator moodle site"
+        }
     ],
 
     "ebooks":
     [
-        { "name": "Bubbles",          "url": "categories/ebook/bubbles",       "image": "categories/ebook/bubbles/front.jpg"},
-        { "name": "He Kurī",          "url": "categories/ebook/he-kuri",       "image": "categories/ebook/he-kuri/front.jpg"},
-        { "name": "Ready to Read",    "url": "categories/ebook/rtr",           "image": "categories/ebook/rtr/front.jpg"},
-        { "name": "Eke Panuku",       "url": "categories/ebook/eke_panuku",    "image": "categories/ebook/eke_panuku/front.jpg"}
+        { "name": "Bubbles",
+          "url": "categories/ebook/bubbles",
+          "image": "categories/ebook/bubbles/front.jpg",
+          "description": "Bubbles is a Flash-based eBook prototype, featuring 'Read with me' and 'I can read' modes. As it uses Flash, it will work in most web browsers, but will not work on many mobile devices, including the iPad."
+        },
+        { "name": "He Kurī",
+          "url": "categories/ebook/he-kuri",
+          "image": "categories/ebook/he-kuri/front.jpg",
+          "description": "He Kurī is an eBook prototype featuring multiple reading modes, animation, synchronised narration and in-built navigation.<br/ >He Kurī is built entirely using web standard technologies (HTML, CSS and JavaScript). This means that it can be web-served and viewed in a browser, but can also be compiled into a Fixed-Layout EPUB and delivered for offline viewing to the iPad. "
+        },
+        { "name": "Ready to Read",
+          "url": "categories/ebook/rtr",
+          "image": "categories/ebook/rtr/front.jpg",
+          "description": "The Ready to Read prototype provides a tool that a teacher can use on an interactive whiteboard in front of a class of beginning readers.<br />This prototype has been created using web standard technologies (HTML, CSS and JavaScript) and features multiple modes, customisation, highlight mode, phrased reading, and a workspace."
+        },
+        { "name": "Eke Panuku",
+          "url": "categories/ebook/eke_panuku",
+          "image": "categories/ebook/eke_panuku/front.jpg",
+          "description": "Eke Panuku is an eBook prototype built using Adobe Edge Animate, and is designed for use in a browser on the iPad, though it will also work after a fashion in desktop browsers.<br />This prototype is a simple example of a graphic novel, allowing users to double-tap on a given frame, and then swipe left or right to proceed through the story."
+        }
     ],
 
     "presentations":
     [
-        { "name": "2012-10-30<br />Brownbag<br />Html interactivity",       "url": "categories/presentations/2012_10_30_brownbag_html_interactivity", "image": "categories/presentations/2012_10_30_brownbag_html_interactivity/front.jpg"},
-        { "name": "2012-11-26<br />Brownbag<br />NDF 2012</b>",             "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",           "image": "categories/presentations/2012_11_26_brownbag_ndf_2012/front.jpg"},
-        { "name": "2012-12-17<br />Innovation<br />Gesture technology</b>", "url": "categories/presentations/2012_12_17_innovation_gesture",           "image": "categories/presentations/2012_12_17_innovation_gesture/front.jpg"}
+        { "name": "Html interactivity",
+          "url": "categories/presentations/2012_10_30_brownbag_html_interactivity",
+          "icon": "icon-picture",
+          "description": "A presentation about producing digital resources for use in the classrom, focusing in particular on the Bring Your Own Device problem, and examining some ways that technology cna help to meet this challenge."
+        },
+        { "name": "NDF 2012",
+          "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",
+          "icon": "icon-picture",
+          "description": "A roundup of some of the salient presentations from the 2012 National Digital Forum with links where appropriate."
+        },
+        { "name": "Gesture technology",
+          "url": "categories/presentations/2012_12_17_innovation_gesture",
+          "icon": "icon-picture",
+          "description": "A presentation discussing the rise of web-based gesture-based technologies, with links to online examples. This presentation makes use of a gesture-recognition library to let the presenter control the presentation using left and right swipe gestures via the webcam."
+        }
         
     ],
     
     "internal":
     [
-        { "name": "Kiwi Baby Names",          "url": "categories/internal/babynames",       "image": "categories/internal/babynames/front.jpg"},
-        { "name": "6-year-old Observations",  "url": "categories/internal/dc.js",       "image": "categories/internal/dc.js/front.jpg"}
+        { "name": "Kiwi Baby Names",
+          "url": "categories/internal/babynames",
+          "image": "categories/internal/babynames/front.jpg",
+          "description": "A data visualisation exploring the popularity of Kiwi baby names over the period 2004-2013. This visualisation is a demonstrator showing how rich interactives can be created from static data (in this case, an Excel spreadsheet), and providing a tutorial for creating such a visualisation (refer to the About page)."
+        },
+        { "name": "6-year-old Observations",
+          "url": "categories/internal/dc.js",
+          "image": "categories/internal/dc.js/front.jpg",
+          "description": "A prototype of a tool that lets the user explore and drill down into the data regarding six-year-old observations from a number of schools. Such a tool could be used by PLD professionals and teachers to better understand patterns regarding the potential and issues of certain student cohorts."
+        },
+        { "name": "Achievement Maps",
+          "url": "categories/internal/achievement_maps",
+          "image": "categories/internal/achievement_maps/front.jpg",
+          "description": "A prototype allowing the user to drill down and explore data regarding National Standards acheivements in reading, writing and maths. Such a tool could be used by PLD professionals and teachers to better understand patterns regarding the potential and issues of certain student cohorts."
+        }
     ]
 }

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National Standards: Achievement Maps</title>
+
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="js/dc.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+
+    <style type="text/css">
+        .tab-content {
+            overflow: hidden;
+        }
+        .chart-title{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .span4 {
+            background-color: #eee;
+            text-align: center;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .span4 .dc-chart {
+            width:100%;
+        }
+
+        /* Reading */
+        g.chartBody rect.bar.stack0:nth-child(1) {
+            fill: #c6dbef;
+        }
+
+        g.chartBody rect.bar.stack0:nth-child(2) {
+            fill: #9ecae1;
+        }
+
+        g.chartBody rect.bar.stack0:nth-child(3) {
+            fill: #6baed6;
+        }
+
+        g.chartBody rect.bar.stack0:nth-child(4) {
+            fill: #3182bd;
+        }
+
+        /* Writing */
+        g.chartBody rect.bar.stack1:nth-child(5) {
+            fill: #D7E85C;
+        }
+
+        g.chartBody rect.bar.stack1:nth-child(6) {
+            fill: #BDCE42;
+        }
+
+        g.chartBody rect.bar.stack1:nth-child(7) {
+            fill: #A4B529;
+        }
+
+        g.chartBody rect.bar.stack1:nth-child(8) {
+            fill: #8A9B0F;
+        }
+
+        /* Maths */
+        g.chartBody rect.bar.stack2:nth-child(9) {
+            fill: #FF808C;
+        }
+
+        g.chartBody rect.bar.stack2:nth-child(10) {
+            fill: #FF6672;
+        }
+
+        g.chartBody rect.bar.stack2:nth-child(11) {
+            fill: #E64D59;
+        }
+
+        g.chartBody rect.bar.stack2:nth-child(12) {
+            fill: #CC333F;
+        }
+
+    </style>
+
+    <link href='highlighter/shCore.css' rel='stylesheet' type='text/css'/>
+    <link href='highlighter/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+    <script src='highlighter/shCore.js' type='text/javascript'></script>
+    <script src="highlighter/shAutoloader.js" type="text/javascript"></script>
+    <script src='highlighter/shBrushJScript.js' type='text/javascript'></script>
+    <script src='highlighter/shBrushXml.js' type='text/javascript'></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>National Standards: Achievement Maps</h1>
+
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a class="tab-link" href="#tab1" data-toggle="tab">All students</a></li>
+            <li><a class="tab-link" href="#tab2" data-toggle="tab">Ethnicity</a></li>
+            <li><a class="tab-link" href="#tab3" data-toggle="tab">Gender</a></li>
+            <li><a class="tab-link" href="#tab4" data-toggle="tab">Year level</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <div class="row">
+                    <div class="span6">
+                        <div id="allstudents-school-bubble-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Performance by school</strong><br />(bubble radius = number of students)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['allstudents'], 'allstudents');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div id="allstudents-bar-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Student observations per quartile</strong><br />(blue=reading, green=writing, red=maths)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.barChart['allstudents'], 'allstudents');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <h2>Reading</h2>
+                        <div id="allstudents-reading-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.readingChart['allstudents'], 'allstudents');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Writing</h2>
+                        <div id="allstudents-writing-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.writingChart['allstudents'], 'allstudents');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Maths</h2>
+                        <div id="allstudents-maths-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.mathsChart['allstudents'], 'allstudents');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <div class="row">
+                    <div class="span6">
+                        <div id="ethnicity-school-bubble-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Performance by school</strong><br />(bubble radius = number of students)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['ethnicity']);" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div id="ethnicity-bar-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Student observations per quartile</strong><br />(blue=reading, green=writing, red=maths)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.barChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <h2>Reading</h2>
+                        <div id="ethnicity-reading-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.readingChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="ethnicity-criterion-reading-chart" >
+                            <h3>by ethnicity</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionReadingChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Writing</h2>
+                        <div id="ethnicity-writing-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.writingChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="ethnicity-criterion-writing-chart" >
+                            <h3>by ethnicity</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionWritingChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Maths</h2>
+                        <div id="ethnicity-maths-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.mathsChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="ethnicity-criterion-maths-chart" >
+                            <h3>by ethnicity</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionMathsChart['ethnicity'], 'ethnicity');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <div class="row">
+                    <div class="span6">
+                        <div id="gender-school-bubble-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Performance by school</strong><br />(bubble radius = number of students)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div id="gender-bar-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Student observations per quartile</strong><br />(blue=reading, green=writing, red=maths)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.barChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <h2>Reading</h2>
+                        <div id="gender-reading-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.readingChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="gender-criterion-reading-chart" >
+                            <h3>by gender</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionReadingChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Writing</h2>
+                        <div id="gender-writing-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.writingChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="gender-criterion-writing-chart" >
+                            <h3>by gender</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionWritingChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Maths</h2>
+                        <div id="gender-maths-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.mathsChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="gender-criterion-maths-chart" >
+                            <h3>by gender</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionMathsChart['gender'], 'gender');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab4">
+                <div class="row">
+                    <div class="span6">
+                        <div id="yearlevel-school-bubble-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Performance by school</strong><br />(bubble radius = number of students)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.schoolBubbleChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div id="yearlevel-bar-chart" class="dc-chart">
+                            <span class="chart-title"><strong>Student observations per quartile</strong><br />(blue=reading, green=writing, red=maths)</span>
+                            <a class="reset" href="javascript:reset_chart(charts.barChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <h2>Reading</h2>
+                        <div id="yearlevel-reading-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.readingChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="yearlevel-criterion-reading-chart" >
+                            <h3>by yearlevel</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionReadingChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Writing</h2>
+                        <div id="yearlevel-writing-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.writingChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="yearlevel-criterion-writing-chart" >
+                            <h3>by yearlevel</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionWritingChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h2>Maths</h2>
+                        <div id="yearlevel-maths-chart" >
+                            <h3>by achievement</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.mathsChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="yearlevel-criterion-maths-chart" >
+                            <h3>by year level</h3>
+                            <a class="reset" href="javascript:reset_chart(charts.criterionMathsChart['yearlevel'], 'yearlevel');" style="display: none;">reset</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+            <div class="dc-data-count">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> records 
+                 | <a href="javascript:dc.filterAll(chart_selected); dc.renderAll(chart_selected);">Reset All</a>
+            </div>
+        </div>
+        <table class="table table-hover dc-data-table">
+            <thead>
+            <tr class="header">
+                <th>School</th>
+                <th>Subject</th>
+                <th>Criterion</th>
+                <th>Students</th>
+                <th>Achievement</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        function reset_chart(chart, chart_id){
+            chart.filterAll();dc.redrawAll(chart_id);
+        }
+        function chart(charts, chart_id, csv_file) {
+            charts.schoolBubbleChart[chart_id] = dc.bubbleChart("#" + chart_id + "-" + "school-bubble-chart", chart_id);
+            charts.barChart[chart_id] = dc.barChart("#" + chart_id + "-" + "bar-chart", chart_id);
+            charts.readingChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "reading-chart", chart_id);
+            charts.writingChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "writing-chart", chart_id);
+            charts.mathsChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "maths-chart", chart_id);
+            charts.criterionReadingChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "criterion-reading-chart", chart_id);
+            charts.criterionWritingChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "criterion-writing-chart", chart_id);
+            charts.criterionMathsChart[chart_id] = dc.pieChart("#" + chart_id + "-" + "criterion-maths-chart", chart_id);
+
+            var bubble_width = 940 / 2;
+            var bubble_height = 260;
+
+            // load data from a csv file
+            d3.csv(csv_file, function(data) {
+                    var dateFormat = d3.time.format("%d/%m/%y");
+                    var numberFormat = d3.format(".2f");
+
+/*
+                    data.forEach(function(e) {
+                        e.dd = dateFormat.parse(e.all);
+                        e.month = (+e.dd.getMonth() + 1); // pre-calculate month for better performance
+                        e.year = e.dd.getFullYear(); // pre-calculate year for better performance
+                    });
+*/
+                    // feed it through crossfilter
+                    var crossfiltered = crossfilter(data);
+                    var all = crossfiltered.groupAll();
+
+                    var schoolDimension = crossfiltered.dimension(function(d) {
+                        return d.school;
+                    });
+
+                    var schoolStudentsGroup = schoolDimension.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                //p.sumStudents += +v.students;
+                                p.sumStudents += +v.students / 3;
+                                p.avgStudents = p.sumStudents / p.count;
+                                p.sumAchievements += rank_achievement(v.achievement) * (v.students / v.total);
+                                p.avgAchievements = p.sumAchievements / p.count * 100 * 4;
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                //p.sumStudents -= +v.students;
+                                p.sumStudents -= +v.students / 3;
+                                p.avgStudents = p.sumStudents / p.count;
+                                p.sumAchievements -= rank_achievement(v.achievement) * (v.students / v.total);
+                                p.avgAchievements = p.sumAchievements / p.count * 100 * 4;
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {count:0, sumStudents:0, avgStudents:0, sumAchievements: 0, avgAchievements: 0};
+                            }
+                    );
+
+                    var rank_achievement = function(value) {
+                        switch (value) {
+                            case 'Well below':
+                                return 0.25;
+                            case 'Below':
+                                return 0.50;
+                            case 'At':
+                                return 0.75;
+                            case 'Above':
+                                return 1.00;
+                        }
+                    };
+
+                    var unrank_achievement = function(value) {
+                        switch (value) {
+                            case 0.25:
+                                return 'Well below';
+                            case 0.50:
+                                return 'Below';
+                            case 0.75:
+                                return 'At';
+                            case 1.00:
+                                return 'Above';
+                        }
+                    };
+
+                    var criterion = crossfiltered.dimension(function(d) {
+                        return d.criterion;
+                    });
+                    var criterionGroup = criterion.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                p.students += +v.students;
+                                p.criterion = v.criterion;
+                                switch (v.subject) {
+                                    case 'Reading':
+                                        p.sumReading += +v.students;
+                                        break;
+                                    case 'Writing':
+                                        p.sumWriting += +v.students;
+                                        break;
+                                    case 'Maths':
+                                        p.sumMaths += +v.students;
+                                        break;
+                                }                                
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                p.students -= +v.students;
+                                p.criterion = v.criterion;
+                                switch (v.subject) {
+                                    case 'Reading':
+                                        p.sumReading -= +v.students;
+                                        break;
+                                    case 'Writing':
+                                        p.sumWriting -= +v.students;
+                                        break;
+                                    case 'Maths':
+                                        p.sumMaths -= +v.students;
+                                        break;
+                                }                                
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {criterion: '', count:0, students:0, sumReading:0, sumWriting: 0, sumMaths: 0};
+                            }
+                    );
+
+                    var ethnicity = crossfiltered.dimension(function(d) {
+                        switch (d.criterion) {
+                            case 'NZ European/Pakeha':
+                                return "Pakeha";
+                            case 'Māori':
+                                return d.criterion;
+                            case 'Pasifika':
+                                return d.criterion;
+                            default:
+                                return "";
+                        }
+                    });
+                    var ethnicityGroup = ethnicity.group();
+
+                    var gender = crossfiltered.dimension(function(d) {
+                        switch (d.criterion) {
+                            case 'Male':
+                                return d.criterion;
+                            case 'Female':
+                                return d.criterion;
+                            default:
+                                return "";
+                        }
+                    });
+                    var genderGroup = gender.group();
+
+                    var yearlevel = crossfiltered.dimension(function(d) {
+                        switch (d.criterion) {
+                            case 'After 1 year at school':
+                                return d.criterion;
+                            case 'After 2 years at school':
+                                return d.criterion;
+                            case 'After 3 years at school':
+                                return d.criterion;
+                            case 'End of Year 4':
+                                return d.criterion;
+                            case 'End of Year 5':
+                                return d.criterion;
+                            case 'End of Year 6':
+                                return d.criterion;
+                            case 'End of Year 7':
+                                return d.criterion;
+                            case 'End of Year 8':
+                                return d.criterion;
+                            default:
+                                return "";
+                        }
+                    });
+                    var yearlevelGroup = yearlevel.group();
+
+                    var allstudents = crossfiltered.dimension(function(d) {
+                        switch (d.criterion) {
+                            case 'All students':
+                                return d.criterion;
+                            default:
+                                return "";
+                        }
+                    });
+                    var allstudentsGroup = allstudents.group();
+
+                    var oldallstudentsGroup = allstudents.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                p.monthyear = v.month + '/' + v.year;
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                p.monthyear = v.month + '/' + v.year;
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {count:0, monthyear:''};
+                            }
+                    );
+
+                    var achievement = crossfiltered.dimension(function(d) {
+                        return rank_achievement(d.achievement) * 100 -25;
+                    });
+                    var achievementGroup = achievement.group().reduce(
+                            //add
+                            function(p, v) {
+                                ++p.count;
+                                p.students += +v.students;
+                                switch (v.subject) {
+                                    case 'Reading':
+                                        p.sumReading += +v.students;
+                                        break;
+                                    case 'Writing':
+                                        p.sumWriting += +v.students;
+                                        break;
+                                    case 'Maths':
+                                        p.sumMaths += +v.students;
+                                        break;
+                                }                                
+                                return p;
+                            },
+                            //remove
+                            function(p, v) {
+                                --p.count;
+                                p.students -= +v.students;
+                                switch (v.subject) {
+                                    case 'Reading':
+                                        p.sumReading -= +v.students;
+                                        break;
+                                    case 'Writing':
+                                        p.sumWriting -= +v.students;
+                                        break;
+                                    case 'Maths':
+                                        p.sumMaths -= +v.students;
+                                        break;
+                                }                                
+                                return p;
+                            },
+                            //init
+                            function() {
+                                return {count:0, students:0, sumReading:0, sumWriting: 0, sumMaths: 0};
+                            }
+                    );
+
+                    charts.schoolBubbleChart[chart_id].width(bubble_width)
+                            .height(bubble_height)
+                            .margins({top: 10, right: 50, bottom: 60, left: 50})
+                            .dimension(schoolDimension)
+                            .group(schoolStudentsGroup)
+                            .transitionDuration(1500)
+                            //.colors(["#a60000","#ff0000", "#ff4040","#ff7373","#67e667","#39e639","#00cc00"])
+                            .colors(["#F34D4D", "#00cc00"])
+                            // Color accessor domain is based on below 50% (red) or above 50% (green)
+                            .colorDomain([0, 1])
+                            .colorAccessor(function(d){
+                                return Math.round(d.value.avgAchievements / 100)
+                            })
+                            .keyAccessor(function(p) {
+                                return Math.round(p.value.avgAchievements);
+                            })
+                            .valueAccessor(function(p) {
+                                return Math.round(p.value.sumStudents);
+                            })
+                            .radiusValueAccessor(function(p) {
+                                return p.value.sumStudents;
+                            })
+                            .maxBubbleRelativeSize(0.2)
+                            .x(d3.scale.linear().domain([0, 100]))
+                            .y(d3.scale.linear().domain([0, 400]))
+                            .r(d3.scale.linear().domain([0, 1000]))
+                            .elasticY(true)
+                            .yAxisPadding(100)
+                            .elasticY(true)
+                            .xAxisPadding(1)
+                            .renderHorizontalGridLines(true)
+                            .renderVerticalGridLines(true)
+                            .renderLabel(true)
+                            .renderTitle(true)
+                            .label(function(p) {
+                                return p.key;
+                            })
+                            .title(function(p) {
+                                return p.key
+                                        + "\n"
+                                        + "Criterion: " + p.value.count + "\n"
+                                        + "Total Students: " + Math.round(p.value.sumStudents) + "\n"
+                                        + "Average Achievement: " + Math.round(p.value.avgAchievements) + "\n";
+                                        + "Total Achievement: " + Math.round(p.value.sumAchievements) + "\n";
+                            })
+                            .yAxis().tickFormat(function(v) {
+                                return v;
+                            });
+
+                    charts.barChart[chart_id].width(bubble_width)
+                            .height(bubble_height)
+                            .margins({top: 10, right: 0, bottom: 60, left: 50})
+                            .dimension(achievement)
+                            .group(achievementGroup)
+                            .stack(achievementGroup, function(d){return d.value.sumWriting})
+                            .stack(achievementGroup, function(d){return d.value.sumMaths})
+                            .transitionDuration(1500)
+                            .keyAccessor(function(p) {
+                                return p.key;
+                            })
+                            .valueAccessor(function(p) {
+                                return p.value.sumReading;
+                            })
+                            .x(d3.scale.linear().domain([0, 100]))
+                            .y(d3.scale.linear().domain([30, 65]))
+                            .elasticY(true)
+                            .yAxisPadding(10)
+                            //.elasticY(true)
+                            .brushOn(false)
+                            .xAxisPadding(1)
+                            .xUnits(function(){return 4;})
+                            //.centerBar(true)
+                            .gap(5)
+                            .renderHorizontalGridLines(true)
+                            .renderVerticalGridLines(true)
+                            .renderLabel(true)
+                            .renderTitle(true)
+                            .label(function(p) {
+                                return p.key;
+                            })
+                            .title(function(p) {
+                                return "Achievement: " + unrank_achievement((p.key + 25) / 100)
+                                        + "\n"
+                                        + "Reading: " + p.value.sumReading + "\n"
+                                        + "Writing: " + p.value.sumWriting + "\n"
+                                        + "Maths: " + p.value.sumMaths + "\n";
+                            })
+                            .yAxis().tickFormat(function(v) {
+                                return v;
+                            });
+
+                    charts.readingChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            .colors(['#6baed6', '#c6dbef', '#9ecae1', '#3182bd'])
+                            // Order of colours is: At, Well below, Below, Above
+                            // http://hexcolortool.com/ and http://pltts.me/ come in very handy here
+                            .dimension(achievement)
+                            .group(achievementGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumReading;
+                            })
+                            .label(function(d) {
+                                return unrank_achievement((d.data.key + 25) / 100) + " (" + d.data.value.sumReading + ")";
+                            })
+                            .title(function(d){
+                                return unrank_achievement((d.data.key + 25) / 100) + ": " + d.data.value.sumReading;
+                            });
+
+                    charts.writingChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            // Order of colours is: At, Well below, Below, Above
+                            // http://hexcolortool.com/ and http://pltts.me/ come in very handy here
+                            .colors(['#A4B529', '#D7E85C', '#BDCE42', '#8A9B0F'])
+                            .dimension(achievement)
+                            .group(achievementGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumWriting;
+                            })
+                            .label(function(d) {
+                                return unrank_achievement((d.data.key + 25) / 100) + " (" + d.data.value.sumWriting + ")";
+                            })
+                            .title(function(d){
+                                return unrank_achievement((d.data.key + 25) / 100) + ": " + d.data.value.sumWriting;
+                        });
+
+                    charts.mathsChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            // Order of colours is: At, Well below, Below, Above
+                            // http://hexcolortool.com/ and http://pltts.me/ come in very handy here
+                            .colors(['#E64D59', '#FF808C', '#FF6672', '#CC333F'])
+                            .dimension(achievement)
+                            .group(achievementGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumMaths;
+                            })
+                            .label(function(d) {
+                                return unrank_achievement((d.data.key + 25) / 100) + " (" + d.data.value.sumMaths + ")";
+                            })
+                            .title(function(d){
+                                return unrank_achievement((d.data.key + 25) / 100) + ": " + d.data.value.sumMaths;
+                        });
+
+                    var shortName = function(value){
+                        var label_name = '';
+                        switch (value) {
+                            case 'After 1 year at school':
+                                return '1 years';
+                            case 'After 2 years at school':
+                                return '2 years';
+                            case 'After 3 years at school':
+                                return '3 years';
+                            case 'End of Year 4':
+                                return 'Year 4';
+                            case 'End of Year 5':
+                                return 'Year 5';
+                            case 'End of Year 6':
+                                return 'Year 6';
+                            case 'End of Year 7':
+                                return 'Year 7';
+                            case 'End of Year 8':
+                                return 'Year 8';
+                            default:
+                                return value;
+                        }
+                    };
+
+                    charts.criterionReadingChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            .colors(['#F38630', '#FFA04A', '#FFB963', '#FFD37D', '#FFEC96'])
+                            .dimension(criterion)
+                            .group(criterionGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumReading;
+                            })
+                            .label(function(d) {
+                                return shortName(d.data.value.criterion) + " (" + d.data.value.sumReading + ")";
+                            })
+                            .title(function(d){
+                                return shortName(d.data.value.criterion) + ": " + d.data.value.sumReading;
+                            });
+
+                    charts.criterionWritingChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            .colors(['#F38630', '#FFA04A', '#FFB963', '#FFD37D', '#FFEC96'])
+                            .dimension(criterion)
+                            .group(criterionGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumWriting;
+                            })
+                            .label(function(d) {
+                                return shortName(d.data.value.criterion) + " (" + d.data.value.sumWriting + ")";
+                            })
+                            .title(function(d){
+                                return shortName(d.data.value.criterion) + ": " + d.data.value.sumWriting;
+                            });
+
+                    charts.criterionMathsChart[chart_id].width(180)
+                            .height(180)
+                            .radius(80)
+                            .colors(['#F38630', '#FFA04A', '#FFB963', '#FFD37D', '#FFEC96'])
+                            .dimension(criterion)
+                            .group(criterionGroup)
+                            .valueAccessor(function(p) {
+                                return p.value.sumMaths;
+                            })
+                            .label(function(d) {
+                                return shortName(d.data.value.criterion) + " (" + d.data.value.sumMaths + ")";
+                            })
+                            .title(function(d){
+                                return shortName(d.data.value.criterion) + ": " + d.data.value.sumMaths;
+                            });
+
+                    dc.dataCount(".dc-data-count", chart_id)
+                            .dimension(crossfiltered)
+                            .group(all);
+
+                    dc.dataTable(".dc-data-table", chart_id)
+                            .dimension(schoolDimension)
+                            .group(function(d) {
+                                return d.school + ": " + d.subject;
+                            })
+                            .size(200)
+                            .columns([
+                        function(d) {
+                            return d.school;
+                        },
+                        function(d) {
+                            return d.subject;
+                        },
+                        function(d) {
+                            return d.criterion;
+                        },
+                        function(d) {
+                            // Cast to an integer
+                            return ~~d.students;
+                        },
+                        function(d) {
+                            return d.achievement;
+                        },
+                        function(d) {
+                            return d.total;
+                        }
+                    ])
+                    .sortBy(function(d) {
+                        return d.school + d.subject + d.achievement;
+                    })
+                    .order(d3.ascending)
+                    .renderlet(function(table){
+                        table.selectAll(".dc-table-group").classed("info", true);
+                    });
+
+                    dc.renderAll(chart_id);
+
+                    // text label for the x axis
+                    d3.select("#" + chart_id + "-" + "bar-chart svg").append("text")
+                        .attr("x", bubble_width / 2)
+                        .attr("y",  bubble_height - 20)
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("QUARTILE (WELL BELOW, BELOW, AT, ABOVE)");
+
+                    // text label for the y axis
+                    d3.select("#" + chart_id + "-" + "bar-chart svg").append("text")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 0)
+                        .attr("x",0 - (bubble_height / 2))
+                        .attr("dy", "1em")
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("STUDENT OBSERVATIONS");
+
+                    // text label for the x axis
+                    d3.select("#" + chart_id + "-" + "school-bubble-chart svg").append("text")
+                        .attr("x", bubble_width / 2)
+                        .attr("y",  bubble_height - 20)
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("AVERAGE achievement");
+
+                    // text label for the y axis
+                    d3.select("#" + chart_id + "-" + "school-bubble-chart svg").append("text")
+                        .attr("transform", "rotate(-90)")
+                        .attr("y", 0)
+                        .attr("x",0 - (bubble_height / 2))
+                        .attr("dy", "1em")
+                        .style("text-anchor", "middle")
+                        .classed("dc-chart-axis-title", true)
+                        .text("NUMBER OF STUDENTS");
+
+                }
+        );
+        }
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var chart_selected;
+        var charts = {
+          schoolBubbleChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          barChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          readingChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          writingChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          mathsChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          criterionReadingChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          criterionWritingChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""},
+          criterionMathsChart: {"allstudents" : "", "ethnicity": "", "gender": "", "yearlevel": ""}
+        };
+
+        $(document).ready(function(){
+            $('.tab-link').click(function(){
+                $('a.reset').css('display', 'none');
+                switch ($(this).html()) {
+                    case 'All students':
+                        chart_selected = 'allstudents'; 
+                        chart(charts, "allstudents", "data/allstudents.csv");
+                        break;
+                    case 'Ethnicity':
+                        chart_selected = 'ethnicity'; 
+                        chart(charts, "ethnicity", "data/ethnicity.csv");
+                        break;
+                    case 'Gender':
+                        chart_selected = 'gender'; 
+                        chart(charts, "gender", "data/gender.csv");
+                        break;
+                    case 'Year level':
+                        chart_selected = 'yearlevel'; 
+                        chart(charts, "yearlevel", "data/yearlevel.csv");
+                        break;
+                }
+            });
+            $('li.active a.tab-link').click();
+            chart_selected = 'allstudents'; 
+        });
+    </script>
+</body>
+</html>

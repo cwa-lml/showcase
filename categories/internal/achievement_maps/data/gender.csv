@@ -1,0 +1,73 @@
+school,subject,criterion,by_all,by_year,by_gender,by_ethnicity,students,achievement,total
+Cannons Creek,Reading,Male,false,false,true,false,10.0,Well below,75
+Cannons Creek,Reading,Male,false,false,true,false,22.0,Below,75
+Cannons Creek,Reading,Male,false,false,true,false,24.0,At,75
+Cannons Creek,Reading,Male,false,false,true,false,19.0,Above,75
+Cannons Creek,Reading,Female,false,false,true,false,3.0,Well below,70
+Cannons Creek,Reading,Female,false,false,true,false,18.0,Below,70
+Cannons Creek,Reading,Female,false,false,true,false,23.0,At,70
+Cannons Creek,Reading,Female,false,false,true,false,26.0,Above,70
+Cannons Creek,Writing,Male,false,false,true,false,19.0,Well below,75
+Cannons Creek,Writing,Male,false,false,true,false,37.0,Below,75
+Cannons Creek,Writing,Male,false,false,true,false,16.0,At,75
+Cannons Creek,Writing,Male,false,false,true,false,3.0,Above,75
+Cannons Creek,Writing,Female,false,false,true,false,3.0,Well below,70
+Cannons Creek,Writing,Female,false,false,true,false,33.0,Below,70
+Cannons Creek,Writing,Female,false,false,true,false,28.0,At,70
+Cannons Creek,Writing,Female,false,false,true,false,6.0,Above,70
+Cannons Creek,Maths,Male,false,false,true,false,14.0,Well below,75
+Cannons Creek,Maths,Male,false,false,true,false,25.0,Below,75
+Cannons Creek,Maths,Male,false,false,true,false,31.0,At,75
+Cannons Creek,Maths,Male,false,false,true,false,5.0,Above,75
+Cannons Creek,Maths,Female,false,false,true,false,4.0,Well below,70
+Cannons Creek,Maths,Female,false,false,true,false,22.0,Below,70
+Cannons Creek,Maths,Female,false,false,true,false,38.0,At,70
+Cannons Creek,Maths,Female,false,false,true,false,6.0,Above,70
+Maraeroa,Reading,Male,false,false,true,false,18.0,Well below,60
+Maraeroa,Reading,Male,false,false,true,false,32.0,Below,60
+Maraeroa,Reading,Male,false,false,true,false,9.0,At,60
+Maraeroa,Reading,Male,false,false,true,false,1.0,Above,60
+Maraeroa,Reading,Female,false,false,true,false,6.0,Well below,59
+Maraeroa,Reading,Female,false,false,true,false,33.0,Below,59
+Maraeroa,Reading,Female,false,false,true,false,20.0,At,59
+Maraeroa,Reading,Female,false,false,true,false,0.0,Above,59
+Maraeroa,Writing,Male,false,false,true,false,17.0,Well below,60
+Maraeroa,Writing,Male,false,false,true,false,43.0,Below,60
+Maraeroa,Writing,Male,false,false,true,false,0.0,At,60
+Maraeroa,Writing,Male,false,false,true,false,0.0,Above,60
+Maraeroa,Writing,Female,false,false,true,false,7.0,Well below,59
+Maraeroa,Writing,Female,false,false,true,false,43.0,Below,59
+Maraeroa,Writing,Female,false,false,true,false,9.0,At,59
+Maraeroa,Writing,Female,false,false,true,false,0.0,Above,59
+Maraeroa,Maths,Male,false,false,true,false,21.0,Well below,60
+Maraeroa,Maths,Male,false,false,true,false,26.0,Below,60
+Maraeroa,Maths,Male,false,false,true,false,13.0,At,60
+Maraeroa,Maths,Male,false,false,true,false,0.0,Above,60
+Maraeroa,Maths,Female,false,false,true,false,13.0,Well below,59
+Maraeroa,Maths,Female,false,false,true,false,32.0,Below,59
+Maraeroa,Maths,Female,false,false,true,false,14.0,At,59
+Maraeroa,Maths,Female,false,false,true,false,0.0,Above,59
+Windley,Reading,Male,false,false,true,false,53.0,Well below,181
+Windley,Reading,Male,false,false,true,false,54.0,Below,181
+Windley,Reading,Male,false,false,true,false,53.0,At,181
+Windley,Reading,Male,false,false,true,false,21.0,Above,181
+Windley,Reading,Female,false,false,true,false,23.0,Well below,141
+Windley,Reading,Female,false,false,true,false,38.0,Below,141
+Windley,Reading,Female,false,false,true,false,56.0,At,141
+Windley,Reading,Female,false,false,true,false,24.0,Above,141
+Windley,Writing,Male,false,false,true,false,56.0,Well below,181
+Windley,Writing,Male,false,false,true,false,60.0,Below,181
+Windley,Writing,Male,false,false,true,false,57.0,At,181
+Windley,Writing,Male,false,false,true,false,8.0,Above,181
+Windley,Writing,Female,false,false,true,false,23.0,Well below,141
+Windley,Writing,Female,false,false,true,false,41.0,Below,141
+Windley,Writing,Female,false,false,true,false,59.0,At,141
+Windley,Writing,Female,false,false,true,false,18.0,Above,141
+Windley,Maths,Male,false,false,true,false,38.0,Well below,181
+Windley,Maths,Male,false,false,true,false,52.0,Below,181
+Windley,Maths,Male,false,false,true,false,71.0,At,181
+Windley,Maths,Male,false,false,true,false,20.0,Above,181
+Windley,Maths,Female,false,false,true,false,12.0,Well below,141
+Windley,Maths,Female,false,false,true,false,48.0,Below,141
+Windley,Maths,Female,false,false,true,false,64.0,At,141
+Windley,Maths,Female,false,false,true,false,17.0,Above,141

@@ -1,0 +1,73 @@
+school,subject,criterion,by_all,by_year,by_gender,by_ethnicity,students,achievement,total
+Cannons Creek,Reading,Māori,false,false,false,true,2.0,Well below,22
+Cannons Creek,Reading,Māori,false,false,false,true,7.0,Below,22
+Cannons Creek,Reading,Māori,false,false,false,true,7.0,At,22
+Cannons Creek,Reading,Māori,false,false,false,true,6.0,Above,22
+Cannons Creek,Reading,Pasifika,false,false,false,true,6.0,Well below,109
+Cannons Creek,Reading,Pasifika,false,false,false,true,28.0,Below,109
+Cannons Creek,Reading,Pasifika,false,false,false,true,40.0,At,109
+Cannons Creek,Reading,Pasifika,false,false,false,true,35.0,Above,109
+Cannons Creek,Writing,Māori,false,false,false,true,4.0,Well below,22
+Cannons Creek,Writing,Māori,false,false,false,true,10.0,Below,22
+Cannons Creek,Writing,Māori,false,false,false,true,8.0,At,22
+Cannons Creek,Writing,Māori,false,false,false,true,0.0,Above,22
+Cannons Creek,Writing,Pasifika,false,false,false,true,12.0,Well below,109
+Cannons Creek,Writing,Pasifika,false,false,false,true,55.0,Below,109
+Cannons Creek,Writing,Pasifika,false,false,false,true,34.0,At,109
+Cannons Creek,Writing,Pasifika,false,false,false,true,8.0,Above,109
+Cannons Creek,Maths,Māori,false,false,false,true,3.0,Well below,22
+Cannons Creek,Maths,Māori,false,false,false,true,8.0,Below,22
+Cannons Creek,Maths,Māori,false,false,false,true,10.0,At,22
+Cannons Creek,Maths,Māori,false,false,false,true,1.0,Above,22
+Cannons Creek,Maths,Pasifika,false,false,false,true,9.0,Well below,109
+Cannons Creek,Maths,Pasifika,false,false,false,true,36.0,Below,109
+Cannons Creek,Maths,Pasifika,false,false,false,true,55.0,At,109
+Cannons Creek,Maths,Pasifika,false,false,false,true,9.0,Above,109
+Maraeroa,Reading,Māori,false,false,false,true,5.0,Well below,34
+Maraeroa,Reading,Māori,false,false,false,true,18.0,Below,34
+Maraeroa,Reading,Māori,false,false,false,true,11.0,At,34
+Maraeroa,Reading,Māori,false,false,false,true,0.0,Above,34
+Maraeroa,Reading,Pasifika,false,false,false,true,18.0,Well below,81
+Maraeroa,Reading,Pasifika,false,false,false,true,46.0,Below,81
+Maraeroa,Reading,Pasifika,false,false,false,true,16.0,At,81
+Maraeroa,Reading,Pasifika,false,false,false,true,1.0,Above,81
+Maraeroa,Writing,Māori,false,false,false,true,6.0,Well below,35
+Maraeroa,Writing,Māori,false,false,false,true,27.0,Below,35
+Maraeroa,Writing,Māori,false,false,false,true,2.0,At,35
+Maraeroa,Writing,Māori,false,false,false,true,0.0,Above,35
+Maraeroa,Writing,Pasifika,false,false,false,true,17.0,Well below,79
+Maraeroa,Writing,Pasifika,false,false,false,true,55.0,Below,79
+Maraeroa,Writing,Pasifika,false,false,false,true,7.0,At,79
+Maraeroa,Writing,Pasifika,false,false,false,true,0.0,Above,79
+Maraeroa,Maths,Māori,false,false,false,true,9.0,Well below,35
+Maraeroa,Maths,Māori,false,false,false,true,19.0,Below,35
+Maraeroa,Maths,Māori,false,false,false,true,7.0,At,35
+Maraeroa,Maths,Māori,false,false,false,true,0.0,Above,35
+Maraeroa,Maths,Pasifika,false,false,false,true,23.0,Well below,79
+Maraeroa,Maths,Pasifika,false,false,false,true,37.0,Below,79
+Maraeroa,Maths,Pasifika,false,false,false,true,19.0,At,79
+Maraeroa,Maths,Pasifika,false,false,false,true,0.0,Above,79
+Windley,Reading,Māori,false,false,false,true,28.0,Well below,119
+Windley,Reading,Māori,false,false,false,true,27.0,Below,119
+Windley,Reading,Māori,false,false,false,true,47.0,At,119
+Windley,Reading,Māori,false,false,false,true,17.0,Above,119
+Windley,Reading,Pasifika,false,false,false,true,40.0,Well below,168
+Windley,Reading,Pasifika,false,false,false,true,63.0,Below,168
+Windley,Reading,Pasifika,false,false,false,true,48.0,At,168
+Windley,Reading,Pasifika,false,false,false,true,17.0,Above,168
+Windley,Writing,Māori,false,false,false,true,29.0,Well below,109
+Windley,Writing,Māori,false,false,false,true,38.0,Below,109
+Windley,Writing,Māori,false,false,false,true,33.0,At,109
+Windley,Writing,Māori,false,false,false,true,9.0,Above,109
+Windley,Writing,Pasifika,false,false,false,true,41.0,Well below,175
+Windley,Writing,Pasifika,false,false,false,true,58.0,Below,175
+Windley,Writing,Pasifika,false,false,false,true,66.0,At,175
+Windley,Writing,Pasifika,false,false,false,true,10.0,Above,175
+Windley,Maths,Māori,false,false,false,true,18.0,Well below,121
+Windley,Maths,Māori,false,false,false,true,33.0,Below,121
+Windley,Maths,Māori,false,false,false,true,57.0,At,121
+Windley,Maths,Māori,false,false,false,true,13.0,Above,121
+Windley,Maths,Pasifika,false,false,false,true,29.0,Well below,167
+Windley,Maths,Pasifika,false,false,false,true,63.0,Below,167
+Windley,Maths,Pasifika,false,false,false,true,60.0,At,167
+Windley,Maths,Pasifika,false,false,false,true,15.0,Above,167

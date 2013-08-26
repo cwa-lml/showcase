@@ -1,0 +1,37 @@
+school,subject,criterion,by_all,by_year,by_gender,by_ethnicity,students,achievement,total
+Cannons Creek,Reading,All students,true,false,false,false,13.0,Well below,145
+Cannons Creek,Reading,All students,true,false,false,false,40.0,Below,145
+Cannons Creek,Reading,All students,true,false,false,false,47.0,At,145
+Cannons Creek,Reading,All students,true,false,false,false,45.0,Above,145
+Cannons Creek,Writing,All students,true,false,false,false,22.0,Well below,145
+Cannons Creek,Writing,All students,true,false,false,false,70.0,Below,145
+Cannons Creek,Writing,All students,true,false,false,false,44.0,At,145
+Cannons Creek,Writing,All students,true,false,false,false,9.0,Above,145
+Cannons Creek,Maths,All students,true,false,false,false,18.0,Well below,145
+Cannons Creek,Maths,All students,true,false,false,false,47.0,Below,145
+Cannons Creek,Maths,All students,true,false,false,false,69.0,At,145
+Cannons Creek,Maths,All students,true,false,false,false,11.0,Above,145
+Maraeroa,Reading,All students,true,false,false,false,24.0,Well below,119
+Maraeroa,Reading,All students,true,false,false,false,65.0,Below,119
+Maraeroa,Reading,All students,true,false,false,false,29.0,At,119
+Maraeroa,Reading,All students,true,false,false,false,1.0,Above,119
+Maraeroa,Writing,All students,true,false,false,false,24.0,Well below,119
+Maraeroa,Writing,All students,true,false,false,false,86.0,Below,119
+Maraeroa,Writing,All students,true,false,false,false,9.0,At,119
+Maraeroa,Writing,All students,true,false,false,false,0.0,Above,119
+Maraeroa,Maths,All students,true,false,false,false,34.0,Well below,119
+Maraeroa,Maths,All students,true,false,false,false,58.0,Below,119
+Maraeroa,Maths,All students,true,false,false,false,27.0,At,119
+Maraeroa,Maths,All students,true,false,false,false,0.0,Above,119
+Windley,Reading,All students,true,false,false,false,76.0,Well below,322
+Windley,Reading,All students,true,false,false,false,92.0,Below,322
+Windley,Reading,All students,true,false,false,false,109.0,At,322
+Windley,Reading,All students,true,false,false,false,45.0,Above,322
+Windley,Writing,All students,true,false,false,false,79.0,Well below,322
+Windley,Writing,All students,true,false,false,false,101.0,Below,322
+Windley,Writing,All students,true,false,false,false,116.0,At,322
+Windley,Writing,All students,true,false,false,false,26.0,Above,322
+Windley,Maths,All students,true,false,false,false,50.0,Well below,322
+Windley,Maths,All students,true,false,false,false,100.0,Below,322
+Windley,Maths,All students,true,false,false,false,135.0,At,322
+Windley,Maths,All students,true,false,false,false,37.0,Above,322

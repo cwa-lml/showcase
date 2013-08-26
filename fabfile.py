@@ -99,7 +99,7 @@ def deploy(branch='master'):
     sudo_run('unzip -o -u ~/' + file + ' -d ' + deploy_path)
     
   # deploy external git sub-projects
-  deploy_external('categories/moodle', 'moodle', 'MOODLE_23_STABLE')
+#  deploy_external('categories/moodle', 'moodle', 'MOODLE_23_STABLE')
   
   # set the permissions  
   setpermissions(deploy_path)
