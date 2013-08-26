@@ -24,9 +24,9 @@
                         ready: function (ev) {
                             // console.log('jPlayer ready', options.soundfile);
                             $(this).jPlayer("setMedia", {
-                                "mp3" : 'http://' + location.host + '/ebook/he-kuri/' + options.soundfile + ".mp3",
-                                "m4a" : 'http://' + location.host + '/ebook/he-kuri/' + options.soundfile + ".m4a",
-                                "oga" : 'http://' + location.host + '/ebook/he-kuri/' + options.soundfile + ".ogg"
+                                "mp3" : 'http://' + location.host + '/categories/ebook/he-kuri/' + options.soundfile + ".mp3",
+                                "m4a" : 'http://' + location.host + '/categories/ebook/he-kuri/' + options.soundfile + ".m4a",
+                                "oga" : 'http://' + location.host + '/categories/ebook/he-kuri/' + options.soundfile + ".ogg"
                             });
                         },
                         progress: function (event) {

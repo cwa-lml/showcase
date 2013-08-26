@@ -34,10 +34,15 @@
           "image": "categories/ebook/bubbles/front.jpg",
           "description": "Bubbles is a Flash-based eBook prototype, featuring 'Read with me' and 'I can read' modes. As it uses Flash, it will work in most web browsers, but will not work on many mobile devices, including the iPad."
         },
-        { "name": "He Kurī",
+        { "name": "He Kurī (phase one)",
           "url": "categories/ebook/he-kuri",
           "image": "categories/ebook/he-kuri/front.jpg",
-          "description": "He Kurī is an eBook prototype featuring multiple reading modes, animation, synchronised narration and in-built navigation.<br/ >He Kurī is built entirely using web standard technologies (HTML, CSS and JavaScript). This means that it can be web-served and viewed in a browser, but can also be compiled into a Fixed-Layout EPUB and delivered for offline viewing to the iPad. "
+          "description": "He Kurī (phase one) is an eBook prototype featuring multiple reading modes, animation, synchronised narration and in-built navigation.<br/ >He Kurī is built entirely using web standard technologies (HTML, CSS and JavaScript). This means that it can be web-served and viewed in a browser, but can also be compiled into a Fixed-Layout EPUB and delivered for offline viewing to the iPad. "
+        },
+        { "name": "He Kurī (phase two)",
+          "url": "categories/ebook/he-kuri-phase-ii",
+          "image": "categories/ebook/he-kuri-phase-ii/front.jpg",
+          "description": "Phase two of the He Kurī project resulted in an interactive eBook prototype with sunstantial video animation (as opposed to JavaScript and CSS-based animation). This results in a more visual product, but one which is also substantially larger to deliver. This prototype again features multiple reading modes, animation, synchronised narration and in-built navigation."
         },
         { "name": "Ready to Read",
           "url": "categories/ebook/rtr",

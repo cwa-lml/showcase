@@ -782,12 +782,12 @@ $(function() {
 
         // get which word this is
         var word = $(this).data('word');
-        // console.log('Trying to play sound for ' + word);
+        //console.log('Trying to play sound for ' + word);
 
         // set the media for this sound
         $jplayer.jPlayer("setMedia", {
-            "mp3" : 'http://' + location.host + '/ebook/he-kuri/word/' + word + '.mp3',
-            "oga" : 'http://' + location.host + '/ebook/he-kuri/word/' + word + '.ogg'
+            "mp3" : 'http://' + location.host + '/categories/ebook/he-kuri/word/' + word + '.mp3',
+            "oga" : 'http://' + location.host + '/categories/ebook/he-kuri/word/' + word + '.ogg'
         });
 
         // finally, play it

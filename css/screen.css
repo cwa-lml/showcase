@@ -1,0 +1,121 @@
+html, body {
+    height:100%;
+    background-color: #f8f3f0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+}
+#logo, .section {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background: #ffffff;
+    height: auto;
+  }
+.section {
+    box-shadow: 0 0 12px rgba(171,139,110,.38);
+    -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38);
+    -moz-box-shadow: 0 0 12px rgba(171,139,110,.38);            
+    padding: 20px;
+}
+#logo + .section {
+    padding-top: 0;
+    box-shadow: 0 6px 12px rgba(171,139,110,.38);
+    -webkit-box-shadow: 0 6px 12px rgba(171,139,110,.38);
+    -moz-box-shadow: 0 6px 12px rgba(171,139,110,.38);            
+}
+.section h1 {
+    font-size: 2.5em;
+    margin: 0.2em;
+}
+#logo + .section h1 {
+    margin-top: 0;
+}
+.section p {
+    margin: 0.2em;
+    font-size: 1.3em;
+}
+.section h1, .section p {
+    font-style: italic;
+    font-weight: 300;
+    color: #907354;
+
+}
+#content {
+    padding: 40px 10px;
+}
+
+@media only screen and (min-width: 990px) {
+    .thumbnail_container {
+        padding: 40px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .thumbnail_container {
+        padding: 25px;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .thumbnail_container {
+        padding: 25px;
+    }
+}
+.thumbnail_container {
+    padding: 25px;
+    margin: 0 10px 35px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(171,139,110,.38);
+    -webkit-box-shadow: 0 0 12px rgba(171,139,110,.38);
+    -moz-box-shadow: 0 0 12px rgba(171,139,110,.38);            
+    height: auto;
+}
+
+.pure-g-r > div {
+    box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #5c5146;
+    font-family: 'Open Sans' , serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;            
+}
+.icon {
+    color: #e86741;
+    font-size: 72px;
+}
+.pure-g-r img.front {
+    max-width: 200px;
+}
+.caption {
+    margin-top: 10px;
+    font-size: 23px;
+    vertical-align: middle;
+}
+.caption a {
+    color: #5c5146;
+}
+.description {
+    font-style: italic;
+    font-weight: 300;
+    color: #8e8071;
+}
+.view {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e86741;
+    font-size: 16px;
+}
+.btcf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
