@@ -53,6 +53,26 @@
           "url": "categories/ebook/eke_panuku",
           "image": "categories/ebook/eke_panuku/front.jpg",
           "description": "Eke Panuku is an eBook prototype built using Adobe Edge Animate, and is designed for use in a browser on the iPad, though it will also work after a fashion in desktop browsers.<br />This prototype is a simple example of a graphic novel, allowing users to double-tap on a given frame, and then swipe left or right to proceed through the story."
+        },
+        { "name": "IN5 (fadein)",
+          "url": "categories/ebook/html5_output_web_slider_fadein",
+          "image": "categories/ebook/html5_output_web_slider_fadein/front.png",
+          "description": "IN5 is a plugin for InDesign that allows a layout to be exported directly to HTML for viewing in the browser. This allows us to relatively easily create web-based eBook experiences.<br />This publication was developed for use on the Samsung Galaxy 10 tablet, and was delivered wrapped as a PhoneGap app."
+        },
+        { "name": "IN5 (horizontal)",
+          "url": "categories/ebook/html5_output_web_slider_horizontal",
+          "image": "categories/ebook/html5_output_web_slider_horizontal/front.png",
+          "description": "IN5 is a plugin for InDesign that allows a layout to be exported directly to HTML for viewing in the browser. This allows us to relatively easily create web-based eBook experiences.<br />This publication was developed for use on the Samsung Galaxy 10 tablet, and was delivered wrapped as a PhoneGap app."
+        },
+        { "name": "Ask Einstein (EPUB)",
+          "url": "categories/ebook/ask_einstein/9780478229196_lml_ask_einstein.epub2.epub",
+          "image": "categories/ebook/ask_einstein/front.png",
+          "description": "An example of a junior chapter book converted to EPUB. Download the EPUB file, and then load it into an EPUB reader (for example, iBooks on iOS)."
+        },
+        { "name": "The Learning Landscape",
+          "url": "http://www.newzealandeducated.com/fairs/learning-landscape",
+          "image": "categories/ebook/readium/front.png",
+          "description": "The Learning Landscape was produced to profile New Zealand's educational publishers at the 2012 Frankfurt Book Fair. This publication is a Fixed-Layout EPUB, featuring video and JavaScript animation, and uses Readium to allow it to be read in the browser."
         }
     ],
 
@@ -61,7 +81,7 @@
         { "name": "Html interactivity",
           "url": "categories/presentations/2012_10_30_brownbag_html_interactivity",
           "icon": "icon-picture",
-          "description": "A presentation about producing digital resources for use in the classrom, focusing in particular on the Bring Your Own Device problem, and examining some ways that technology cna help to meet this challenge."
+          "description": "A presentation about producing digital resources for use in the classrom, focusing in particular on the Bring Your Own Device problem, and examining some ways that technology can help to meet this challenge."
         },
         { "name": "NDF 2012",
           "url": "categories/presentations/2012_11_26_brownbag_ndf_2012",

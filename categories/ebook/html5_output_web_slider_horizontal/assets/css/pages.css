@@ -1,0 +1,254 @@
+/* 	Begin Modified Meyer Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; }
+table { border-collapse: collapse; border-spacing: 0; }
+ul { list-style-type:disc; }
+/*General styles*/
+
+html, body, #container { height: 100%; }
+button { border:none; cursor:pointer; }
+#container { height: 100%; min-height: 100%;}
+a { color:inherit; text-decoration:inherit; }
+
+#in5footer{
+	width:100%;
+	height:26px;
+	line-height:26px;
+	color:#fff;
+	background:#666;
+	font-family:"Trebuchet MS", "Lucida Grande", Helvetica, sans-serif;
+	text-align:center;
+	font-size:15px;
+	clear:both;
+	position: relative;
+	margin-top: -26px;
+}
+
+#in5footer a {
+	text-decoration:none;
+	color:#99ccff;
+}
+
+.pageItem, pageItemIFrame {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:auto !important;
+	height:auto !important;
+}
+
+.page {
+	position:relative;
+	float: left;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+}
+
+.pages {
+	list-style: none outside none;
+	padding: 0;
+	margin: 0 auto ;
+}	
+
+.textColumn {
+	float:left;
+}
+
+.scroll {
+	overflow:auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.scroll-vert {
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (max-device-width : 1024px) {
+	.anythingSlider {padding:0;}
+}
+
+object, embed, img, a { 
+  outline: 0;
+}
+
+.noPlugin {
+	width:100%;
+	height:100%;
+	background:#ccc;
+	border:1px solid #666;
+	padding:6px;
+}
+
+.paper-vertical, .paper-horizontal {
+	padding: 0 8px;
+}
+
+.paper-horizontal {
+	position:absolute;
+	top:50%;
+	overflow:visible;
+}
+
+.paper-vertical .page, .paper-horizontal .page {
+	border: 1px solid #bbb;	
+	margin: 4px 4px 4px 0;
+	-moz-box-shadow: 0px 0px 0px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 5px #999;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+.liquid .page, .page.liquid {
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	display:none;
+}
+
+.page.liquid { /*for multi-file*/
+    display:block;
+}
+
+.liquid .page:first-child {
+	display:block;
+}
+
+#container > nav { display:none; }
+#container > nav > button {
+	display: block;
+	position:absolute;
+	top:50%;
+	width: 30px;
+	height: 40px;
+	margin: -20px 0 0 0; /* half height of image */
+	text-align: center;
+	outline: 0;
+	background: url(../images/arrows-minimalist.png) no-repeat;
+}	
+
+#container > nav > #backBtn { 
+	left: 0; 
+	background-position: left bottom;
+}
+#container > nav > #backBtn:hover { background-position: left top; }
+
+#container > nav > #nextBtn { 
+	right: 0; 
+	background-position: right bottom; 
+}
+#container > nav > #nextBtn:hover { background-position: right top; }
+
+
+/* ColorBox Core Style: The following CSS is consistent between example themes and should not be altered. */
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/* 	User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{
+	border-radius: 12px;
+    box-shadow: 0 0 10px 10px #CCCCCC;
+}
+    #cboxContent{background:#fff; overflow:hidden;}
+    #cboxMiddleLeft, #cboxMiddleRight { width:8px; }
+    cboxTopCenter{ height:24px; } 
+    #cboxBottomCenter { height:8px; }
+	.cboxIframe{background:#fff;}
+	#cboxError{padding:50px;}
+	#cboxLoadedContent{background:#fff; margin-top:28px;}
+	#cboxTitle{position:absolute; top:4px; left:0; text-align:center; width:100%; color:#949494;}
+	#cboxCurrent{position:absolute; top:4px; left:0px; color:#949494;}
+	#cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+	#cboxPrevious{position:absolute; top:50%; left:0px; margin-top:-32px; background:url(../images/lb_controls.png) no-repeat top left; width:33px; height:65px; text-indent:-9999px;}
+	#cboxNext{position:absolute; top:50%; right:0px; margin-top:-32px; background:url(../images/lb_controls.png) no-repeat top right; width:33px; height:65px; text-indent:-9999px;}
+	#cboxLoadingOverlay{background:#fff;}
+	#cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+	#cboxClose{position:absolute; top:2px; right:0px; display:block; background:url(../images/lb_controls.png) no-repeat top center; width:26px; height:24px; text-indent:-9999px;}
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+.hidden { display:none; }
+
+.flex-image {
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.fill-image {
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+/*anchor object styles*/
+img.noTextWrap {
+	position:absolute;
+}
+
+img.alignLeft { float:left; }
+img.alignRight { float:right; }
+img.alignCenter {display:block; margin-left:auto; margin-right:auto;}
+
+img.leftFullWidth {
+	float:left;
+	padding-right:100%;
+}
+
+img.rightFullWidth {
+	float:right;
+	padding-left:100%;
+}
+
+ul.thumbs {
+	padding:20px;
+	white-space: nowrap;
+    width: 1px;
+}
+
+ul.thumbs li { /*Baker index thumbnails*/
+    display:inline;
+    list-style-type:none;
+    margin: 0 4px;
+    outline: none;
+    vertical-align:top;
+}
+
+/*CSS Generated from InDesign Styles*/body { background:#ededed; }#slider { width:1280px; height:800px; }.page { width:1280px; height:800px; background: #fff !important; }.paper-vertical { width:1280px; height:100%; }.paper-horizontal { width:15480px; height:800px; margin-top:-400px; }@media all and (max-height:800px) {	.paper-horizontal { margin:0;top:0;}}@font-face {	font-family:FF-MinionPro-Regular;	src:url('../fonts/MinionPro-Regular.otf');}@font-face {	font-family:FF-Kupu;	src:url('../fonts/Kupu.ttf');}span.autoCharStyle7 {	font-size:48px;	line-height:69px;}span.autoCharStyle6 {	font-family:FF-Kupu,"Kupu (OTF)";	font-style:italic;}span.autoCharStyle5 {}span.autoCharStyle4 {	letter-spacing:0.010em;}span.autoCharStyle3 {	letter-spacing:0.050em;}span.autoCharStyle2 {	letter-spacing:0.020em;}span.autoCharStyle1 {	letter-spacing:0.035em;}span.None {}p.autoParaStyle53 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle52 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle51 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle50 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle49 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle48 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle47 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle46 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle45 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle44 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle43 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle42 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle41 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle40 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle39 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle38 {	font-style:italic;	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle37 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle36 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle35 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle34 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle33 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle32 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle31 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle30 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle29 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle28 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle27 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle26 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle25 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle24 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle23 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle22 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle21 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle20 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle19 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle18 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle17 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle16 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle15 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle14 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle13 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle12 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle11 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle10 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle9 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle8 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle7 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle6 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle5 {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.autoParaStyle4 {	font-family:"VAG Rounded";	font-size:227px;	line-height:273px;	color:;	text-align:center;}p.autoParaStyle3 {	font-family:"VAG Rounded";	font-size:133px;	line-height:159px;	color:;	letter-spacing:0.040em;	text-align:left;}p.autoParaStyle2 {	font-family:"VAG Rounded";	font-size:155px;	line-height:186px;	color:;	letter-spacing:0.020em;	text-align:left;}p.autoParaStyle1 {	font-family:"VAG Rounded";	font-size:31px;	line-height:37px;	color:#424242;	text-align:left;}p.Back-cover-question {	font-size:16px;	line-height:20px;	color:#000;	text-align:center;}p.Author/Illustrator {	font-size:14px;	line-height:17px;	color:#000;	text-align:center;}p.Body {	font-size:46px;	line-height:68px;	color:#000;	text-align:left;}p.Body-Sasson {	font-size:22px;	line-height:28px;	color:#000;	text-align:left;}p.Basic-Paragraph {	font-family:FF-MinionPro-Regular,"Minion Pro","Times New Roman", Times, serif;	font-size:12px;	line-height:14px;	color:#000;	text-align:left;}p.No-Paragraph-Style {	font-family:FF-MinionPro-Regular,"Minion Pro","Times New Roman", Times, serif;	font-size:12px;	line-height:14px;	color:#000;	text-align:left;}#item5 {	width:474px !important;	height:155px !important;	left:90px !important;	top:614px !important;}#item7 {	width:988px !important;	height:501px !important;	left:100px !important;	top:90px !important;}#item9 {	width:814px !important;	height:380px !important;	left:396px !important;	top:90px !important;}#item11 {	width:1120px !important;	height:358px !important;	left:100px !important;	top:317px !important;}#item13 {	width:1120px !important;	height:446px !important;	left:100px !important;	top:116px !important;}#item15 {	width:892px !important;	height:606px !important;	left:100px !important;	top:80px !important;}#item17 {	width:942px !important;	height:350px !important;	left:100px !important;	top:360px !important;}#item19 {	width:882px !important;	height:188px !important;	left:100px !important;	top:306px !important;}#item21 {	width:958px !important;	height:538px !important;	left:100px !important;	top:168px !important;}#item23 {	width:1100px !important;	height:468px !important;	left:100px !important;	top:80px !important;}#item25 {	width:812px !important;	height:708px !important;	left:101px !important;	top:90px !important;}#item27 {	width:1162px !important;	height:360px !important;	left:100px !important;	top:240px !important;}#in5footer {display:none;}
