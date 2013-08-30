@@ -50,7 +50,7 @@
           "description": "The Ready to Read prototype provides a tool that a teacher can use on an interactive whiteboard in front of a class of beginning readers.<br />This prototype has been created using web standard technologies (HTML, CSS and JavaScript) and features multiple modes, customisation, highlight mode, phrased reading, and a workspace."
         },
         { "name": "Eke Panuku",
-          "url": "categories/ebook/eke_panuku",
+          "url": "categories/ebook/eke_panuku/p2.html",
           "image": "categories/ebook/eke_panuku/front.jpg",
           "description": "Eke Panuku is an eBook prototype built using Adobe Edge Animate, and is designed for use in a browser on the iPad, though it will also work after a fashion in desktop browsers.<br />This prototype is a simple example of a graphic novel, allowing users to double-tap on a given frame, and then swipe left or right to proceed through the story."
         },
