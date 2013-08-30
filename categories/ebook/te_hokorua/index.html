@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="default-style" content="text/html; charset=utf-8" />
+
+    <!-- Prevent the user from resizing elements in Safari on iPad using double-tap: use user-scalable. -->
+    <!-- <meta name="viewport" content="user-scalable=no,width=device-width" /> -->
+    <meta name="viewport" content="width=768, height=1024, user-scalable=no" />
+	<title>Te Hokorua A Hineteiwaiwa</title>
+
+    <script type="text/javascript" charset="utf-8" src="p4_edgePreload.js"></script>
+    <script type="text/javascript" charset="utf-8" src="p5_edgePreload.js"></script>
+    <!-- http://blogs.adobe.com/edge/2012/05/15/bootstrapping-edge-compositions/ -->
+    <style>
+        .edgeLoad-p4 { display:none; }
+        .edgeLoad-p5 { display:none; }
+        .stage { visibility:hidden; }
+        #StageP4, #StageP5 {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #StageP5 {
+            display:none;
+        }
+    </style>
+    <script>
+        var wrapperCurrentPage = "p4";
+        var loadedComps = {};
+
+        AdobeEdge.bootstrapCallback(function(compId) {
+
+            loadedComps[compId[0]] = AdobeEdge.getComposition(compId[0]);
+            
+            // now it is safe to call into the and bind to things like...
+            AdobeEdge.Symbol.bindTimelineAction(compId, "stage", "Default Timeline", "complete", function(sym, e) { 
+                //loop
+                if(compId[0] == wrapperCurrentPage) {
+                    if (compId[0] == "p4") {
+                        wrapperCurrentPage = "p5";
+                        $("#StageP4").hide();
+                        $("#StageP5").show();
+                    }
+                    else if (compId[0] == "p5") {
+                        wrapperCurrentPage = "p4";
+                        $("#StageP5").hide();
+                        $("#StageP4").show();
+                    }
+                    
+                    if(loadedComps[wrapperCurrentPage]) {
+                        loadedComps[wrapperCurrentPage].getStage().play(0);
+                    }
+                    else {
+                        //it will play itself when loaded
+                    }
+                }
+
+            });
+            
+        });
+    </script>
+</head>
+<body style="margin:0;padding:0;">
+	<div id="StageP4" class="p4">
+	</div>
+    <div id="StageP5" class="p5">
+    </div>
+</body>
+</html>

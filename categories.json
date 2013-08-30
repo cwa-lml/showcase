@@ -54,6 +54,11 @@
           "image": "categories/ebook/eke_panuku/front.jpg",
           "description": "Eke Panuku is an eBook prototype built using Adobe Edge Animate, and is designed for use in a browser on the iPad, though it will also work after a fashion in desktop browsers.<br />This prototype is a simple example of a graphic novel, allowing users to double-tap on a given frame, and then swipe left or right to proceed through the story."
         },
+        { "name": "Te Hokorua",
+          "url": "categories/ebook/te_hokorua/index.html",
+          "image": "categories/ebook/te_hokorua/front.png",
+          "description": "Te Hokorua is an eBook prototype built using Adobe Edge Animate, and is designed for use in a browser on the iPad, or wrapped as a PhoneGap app, though it will also work after a fashion in desktop browsers (it uses touch events).<br />This prototype is a simple example of a graphic novel, allowing users to double-tap on a given frame, and then swipe left or right to proceed through the story."
+        },
         { "name": "IN5 (fadein)",
           "url": "categories/ebook/html5_output_web_slider_fadein",
           "image": "categories/ebook/html5_output_web_slider_fadein/front.png",

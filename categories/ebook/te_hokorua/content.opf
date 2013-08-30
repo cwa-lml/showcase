@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title>Te Hokorua A Hineteiwaiwa</dc:title>
+    <dc:creator>Learning Media Limited</dc:creator>
+    <dc:publisher>Learning Media Limited</dc:publisher>
+    <dc:language>en</dc:language>
+    <dc:identifier id="pub-id">1234</dc:identifier>
+    <dc:source>Learning Media Limited</dc:source>
+    <meta property="dcterms:modified">2012-10-10T03:18:06Z</meta>
+    <dc:date>2012-10-11</dc:date>
+    <dc:publisher>Learning Media</dc:publisher>
+    <dc:subject>Graphic novel</dc:subject>
+    <dc:type>Book</dc:type>
+  	<meta name="cover" content="images_front.jpg"/>
+    <!-- <x-metadata><EmbeddedCover>images/front.jpg</EmbeddedCover></x-metadata> -->
+</metadata>
+<manifest>
+<!-- '.'  -->
+    <item id='index.html' href='index.html' properties='scripted' media-type='application/xhtml+xml' />
+    <item id='config.xml' href='config.xml' media-type='text/plain' />
+    <item id='p4.html' href='p4.html' properties='scripted' media-type='application/xhtml+xml' />
+    <item id='p4_edge.js' href='p4_edge.js'  media-type='text/javascript' />
+    <item id='p4_edgeActions.js' href='p4_edgeActions.js'  media-type='text/javascript' />
+    <item id='p4_edgePreload.js' href='p4_edgePreload.js'  media-type='text/javascript' />
+    <item id='p5.html' href='p5.html' properties='scripted' media-type='application/xhtml+xml' />
+    <item id='p5_edge.js' href='p5_edge.js'  media-type='text/javascript' />
+    <item id='p5_edgeActions.js' href='p5_edgeActions.js'  media-type='text/javascript' />
+    <item id='p5_edgePreload.js' href='p5_edgePreload.js'  media-type='text/javascript' />
+    <item id='ncx' href='toc.ncx'  media-type='application/x-dtbncx+xml' />
+    <item id='toc.html' href='toc.html' properties='nav' media-type='application/xhtml+xml' />
+<!-- './audio'  -->
+    <item id='audio_flute_mp3' href='audio/flute.mp3'  media-type='audio/mp3' />
+    <item id='audio_water_mp3' href='audio/water.mp3'  media-type='audio/mp3' />
+    <item id='audio_swish_mp3' href='audio/swish.mp3'  media-type='audio/mp3' />
+<!-- './edge_includes'  -->
+    <item id='edge_includes_edge.1.0.0.min.js' href='edge_includes/edge.1.0.0.min.js'  media-type='text/javascript' />
+    <item id='edge_includes_jquery-1.7.1.min.js' href='edge_includes/jquery-1.7.1.min.js'  media-type='text/javascript' />
+    <item id='edge_includes_jquery.easing.1.3.js' href='edge_includes/jquery.easing.1.3.js'  media-type='text/javascript' />
+    <item id='edge_includes_json2_min.js' href='edge_includes/json2_min.js'  media-type='text/javascript' />
+<!-- './images'  -->
+    <item id='images_close.png' href='images/close.png'  media-type='image/png' />
+    <item id='images_front.jpg' href='images/front.jpg'  media-type='image/jpeg' />
+<!-- './images/art'  -->
+    <item id='images_art_thah4.jpg' href='images/art/thah4.jpg'  media-type='image/jpeg' />
+    <item id='images_art_thah5.jpg' href='images/art/thah5.jpg'  media-type='image/jpeg' />
+    <item id='images_art_thah6.jpg' href='images/art/thah6.jpg'  media-type='image/jpeg' />
+    <item id='images_art_thah7.jpg' href='images/art/thah7.jpg'  media-type='image/jpeg' />
+<!-- './images/complete'  -->
+    <item id='images_complete_thah4.jpg' href='images/complete/thah4.jpg'  media-type='image/jpeg' />
+    <item id='images_complete_thah5.jpg' href='images/complete/thah5.jpg'  media-type='image/jpeg' />
+    <item id='images_complete_thah6.jpg' href='images/complete/thah6.jpg'  media-type='image/jpeg' />
+    <item id='images_complete_thah7.jpg' href='images/complete/thah7.jpg'  media-type='image/jpeg' />
+<!-- './images/speech'  -->
+    <item id='images_speech_thah4.png' href='images/speech/thah4.png'  media-type='image/png' />
+    <item id='images_speech_thah5.png' href='images/speech/thah5.png'  media-type='image/png' />
+    <item id='images_speech_thah6.png' href='images/speech/thah6.png'  media-type='image/png' />
+    <item id='images_speech_thah7.png' href='images/speech/thah7.png'  media-type='image/png' />
+<!-- './OEBPS/res'  -->
+<!-- './OEBPS/res/icon'  -->
+    <item id='OEBPS_res_icon_icon.png' href='res/icon/icon.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/android'  -->
+    <item id='OEBPS_res_icon_android_icon-36-ldpi.png' href='res/icon/android/icon-36-ldpi.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_android_icon-48-mdpi.png' href='res/icon/android/icon-48-mdpi.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_android_icon-72-hdpi.png' href='res/icon/android/icon-72-hdpi.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_android_icon-96-xhdpi.png' href='res/icon/android/icon-96-xhdpi.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/bada'  -->
+    <item id='OEBPS_res_icon_bada_icon-128.png' href='res/icon/bada/icon-128.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/bada-wac'  -->
+    <item id='OEBPS_res_icon_bada-wac_icon-48-type5.png' href='res/icon/bada-wac/icon-48-type5.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_bada-wac_icon-50-type3.png' href='res/icon/bada-wac/icon-50-type3.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_bada-wac_icon-80-type4.png' href='res/icon/bada-wac/icon-80-type4.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/blackberry'  -->
+    <item id='OEBPS_res_icon_blackberry_icon-80.png' href='res/icon/blackberry/icon-80.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/ios'  -->
+    <item id='OEBPS_res_icon_ios_icon-57-2x.png' href='res/icon/ios/icon-57-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_ios_icon-57.png' href='res/icon/ios/icon-57.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_ios_icon-72-2x.png' href='res/icon/ios/icon-72-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_ios_icon-72.png' href='res/icon/ios/icon-72.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/webos'  -->
+    <item id='OEBPS_res_icon_webos_icon-64.png' href='res/icon/webos/icon-64.png'  media-type='image/png' />
+<!-- './OEBPS/res/icon/windows-phone'  -->
+    <item id='OEBPS_res_icon_windows-phone_icon-173-tile.png' href='res/icon/windows-phone/icon-173-tile.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_windows-phone_icon-48.png' href='res/icon/windows-phone/icon-48.png'  media-type='image/png' />
+    <item id='OEBPS_res_icon_windows-phone_icon-62-tile.png' href='res/icon/windows-phone/icon-62-tile.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen'  -->
+<!-- './OEBPS/res/screen/android'  -->
+    <item id='OEBPS_res_screen_android_screen-hdpi-landscape.png' href='res/screen/android/screen-hdpi-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-hdpi-portrait.png' href='res/screen/android/screen-hdpi-portrait.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-ldpi-landscape.png' href='res/screen/android/screen-ldpi-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-ldpi-portrait.png' href='res/screen/android/screen-ldpi-portrait.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-mdpi-landscape.png' href='res/screen/android/screen-mdpi-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-mdpi-portrait.png' href='res/screen/android/screen-mdpi-portrait.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-xhdpi-landscape.png' href='res/screen/android/screen-xhdpi-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_android_screen-xhdpi-portrait.png' href='res/screen/android/screen-xhdpi-portrait.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/bada'  -->
+    <item id='OEBPS_res_screen_bada_screen-portrait.png' href='res/screen/bada/screen-portrait.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/bada-wac'  -->
+    <item id='OEBPS_res_screen_bada-wac_screen-type3.png' href='res/screen/bada-wac/screen-type3.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_bada-wac_screen-type4.png' href='res/screen/bada-wac/screen-type4.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_bada-wac_screen-type5.png' href='res/screen/bada-wac/screen-type5.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/blackberry'  -->
+    <item id='OEBPS_res_screen_blackberry_screen-225.png' href='res/screen/blackberry/screen-225.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/ios'  -->
+    <item id='OEBPS_res_screen_ios_screen-ipad-landscape-2x.png' href='res/screen/ios/screen-ipad-landscape-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-ipad-landscape.png' href='res/screen/ios/screen-ipad-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-ipad-portrait-2x.png' href='res/screen/ios/screen-ipad-portrait-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-ipad-portrait.png' href='res/screen/ios/screen-ipad-portrait.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-iphone-landscape-2x.png' href='res/screen/ios/screen-iphone-landscape-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-iphone-landscape.png' href='res/screen/ios/screen-iphone-landscape.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-iphone-portrait-2x.png' href='res/screen/ios/screen-iphone-portrait-2x.png'  media-type='image/png' />
+    <item id='OEBPS_res_screen_ios_screen-iphone-portrait.png' href='res/screen/ios/screen-iphone-portrait.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/webos'  -->
+    <item id='OEBPS_res_screen_webos_screen-64.png' href='res/screen/webos/screen-64.png'  media-type='image/png' />
+<!-- './OEBPS/res/screen/windows-phone'  -->
+    <item id='OEBPS_res_screen_windows-phone_screen-portrait.jpg' href='res/screen/windows-phone/screen-portrait.jpg'  media-type='image/jpeg' />
+</manifest>
+
+<spine page-progression-direction="ltr" toc="ncx">
+    <itemref idref='index.html' />
+</spine>
+
+</package>
+
